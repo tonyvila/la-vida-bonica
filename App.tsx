@@ -3597,15 +3597,40 @@ function FavoritosScreen({
   onSelectRecipe: (recipe: RecipeData) => void;
 }) {
   const favouriteRecipes = RECIPES.filter(r => favourites.includes(r.id));
+  const [viewMode, setViewMode] = useState<'card' | 'table'>('card');
 
   return (
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
-      <Text style={styles.homeSectionTitle}>Favoritos</Text>
+      <View style={styles.favouritesHeader}>
+        <Text style={styles.homeSectionTitle}>Favoritos</Text>
+        {favouriteRecipes.length > 0 && (
+          <View style={styles.viewToggle}>
+            <TouchableOpacity
+              style={[styles.viewToggleButton, viewMode === 'card' && styles.viewToggleButtonActive]}
+              onPress={() => setViewMode('card')}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.viewToggleText, viewMode === 'card' && styles.viewToggleTextActive]}>
+                Tarjetas
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.viewToggleButton, viewMode === 'table' && styles.viewToggleButtonActive]}
+              onPress={() => setViewMode('table')}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.viewToggleText, viewMode === 'table' && styles.viewToggleTextActive]}>
+                Lista
+              </Text>
+            </TouchableOpacity>
+          </View>
+        )}
+      </View>
       {favouriteRecipes.length === 0 ? (
         <Text style={styles.emptyFavouritesText}>
           No tienes recetas guardadas todavía. Toca la ⭐ en cualquier receta para guardarla aquí.
         </Text>
-      ) : (
+      ) : viewMode === 'card' ? (
         favouriteRecipes.map(recipe => (
           <TouchableOpacity
             key={recipe.id}
@@ -3622,6 +3647,28 @@ function FavoritosScreen({
             </View>
           </TouchableOpacity>
         ))
+      ) : (
+        <View style={styles.table}>
+          <View style={styles.tableHeader}>
+            <Text style={[styles.tableHeaderText, { flex: 2 }]}>Receta</Text>
+            <Text style={[styles.tableHeaderText, { flex: 1 }]}>Categoría</Text>
+          </View>
+          {favouriteRecipes.map(recipe => (
+            <TouchableOpacity
+              key={recipe.id}
+              style={styles.tableRow}
+              onPress={() => onSelectRecipe(recipe)}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.tableCell, { flex: 2, paddingRight: 16 }]}>{recipe.title}</Text>
+              <View style={{ flex: 1, alignItems: 'flex-start' }}>
+                <View style={styles.categoryPill}>
+                  <Text style={styles.categoryPillText}>{recipe.category}</Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+          ))}
+        </View>
       )}
     </ScrollView>
   );
@@ -3737,6 +3784,37 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
   );
 }
 
+// --- Toast Component ---
+function Toast({ message, visible }: { message: string; visible: boolean }) {
+  const [fadeAnim] = useState(new Animated.Value(0));
+
+  useEffect(() => {
+    if (visible) {
+      Animated.sequence([
+        Animated.timing(fadeAnim, {
+          toValue: 1,
+          duration: 300,
+          useNativeDriver: true,
+        }),
+        Animated.delay(1700),
+        Animated.timing(fadeAnim, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    }
+  }, [visible, fadeAnim]);
+
+  if (!visible) return null;
+
+  return (
+    <Animated.View style={[styles.toastContainer, { opacity: fadeAnim }]}>
+      <Text style={styles.toastText}>{message}</Text>
+    </Animated.View>
+  );
+}
+
 // --- Sobre mí Screen ---
 function SobreMiScreen() {
   return (
@@ -3768,6 +3846,8 @@ export default function App() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [slideAnim] = useState(new Animated.Value(300));
   const [favourites, setFavourites] = useState<string[]>([]);
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastVisible, setToastVisible] = useState(false);
 
   useEffect(() => {
     setFavourites(getFavourites());
@@ -3802,8 +3882,18 @@ export default function App() {
   };
 
   const handleToggleFavourite = (recipeId: string) => {
+    const wasAlreadyFavourite = favourites.includes(recipeId);
     const updated = toggleFavourite(recipeId);
     setFavourites(updated);
+    
+    // Show toast
+    if (wasAlreadyFavourite) {
+      setToastMessage('Receta eliminada de Favoritos');
+    } else {
+      setToastMessage('Receta guardada en Favoritos ⭐');
+    }
+    setToastVisible(true);
+    setTimeout(() => setToastVisible(false), 2300);
   };
 
   return (
@@ -3914,6 +4004,7 @@ export default function App() {
           </Animated.View>
         </View>
       )}
+      <Toast message={toastMessage} visible={toastVisible} />
     </View>
   );
 }
@@ -4434,5 +4525,56 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#707940',
     fontWeight: 'bold',
+  },
+  // Toast
+  toastContainer: {
+    position: 'absolute',
+    bottom: 60,
+    left: 20,
+    right: 20,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    borderRadius: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 9999,
+  },
+  toastText: {
+    fontFamily: 'Karla',
+    fontSize: 16,
+    color: '#FFFFFF',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  // Favourites view toggle
+  favouritesHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  viewToggle: {
+    flexDirection: 'row',
+    backgroundColor: '#EBEEDD',
+    borderRadius: 8,
+    overflow: 'hidden',
+  },
+  viewToggleButton: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    backgroundColor: '#EBEEDD',
+  },
+  viewToggleButtonActive: {
+    backgroundColor: '#707940',
+  },
+  viewToggleText: {
+    fontFamily: 'Karla',
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#707940',
+  },
+  viewToggleTextActive: {
+    color: '#FFFFFF',
   },
 });
