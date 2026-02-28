@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useState } from 'react';
 
@@ -3687,10 +3687,35 @@ function SobreMiScreen() {
 export default function App() {
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeData | null>(null);
   const [currentPage, setCurrentPage] = useState<'recetas' | 'sobremi'>('recetas');
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+  const [slideAnim] = useState(new Animated.Value(300));
 
   const handleLogoClick = () => {
     setSelectedRecipe(null);
     setCurrentPage('recetas');
+  };
+
+  const openSidebar = () => {
+    setSidebarVisible(true);
+    Animated.timing(slideAnim, {
+      toValue: 0,
+      duration: 300,
+      useNativeDriver: true,
+    }).start();
+  };
+
+  const closeSidebar = () => {
+    Animated.timing(slideAnim, {
+      toValue: 300,
+      duration: 300,
+      useNativeDriver: true,
+    }).start(() => setSidebarVisible(false));
+  };
+
+  const handleMenuItemPress = (page: 'recetas' | 'sobremi') => {
+    setCurrentPage(page);
+    setSelectedRecipe(null);
+    closeSidebar();
   };
 
   return (
@@ -3704,21 +3729,12 @@ export default function App() {
             resizeMode="contain"
           />
         </TouchableOpacity>
-      </View>
-      <View style={styles.navTabs}>
         <TouchableOpacity
-          style={[styles.navTab, currentPage === 'recetas' && styles.navTabActive]}
-          onPress={() => { setCurrentPage('recetas'); setSelectedRecipe(null); }}
+          style={styles.hamburgerButton}
+          onPress={openSidebar}
           activeOpacity={0.7}
         >
-          <Text style={[styles.navTabText, currentPage === 'recetas' && styles.navTabTextActive]}>Recetas</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.navTab, currentPage === 'sobremi' && styles.navTabActive]}
-          onPress={() => { setCurrentPage('sobremi'); setSelectedRecipe(null); }}
-          activeOpacity={0.7}
-        >
-          <Text style={[styles.navTabText, currentPage === 'sobremi' && styles.navTabTextActive]}>Sobre mí</Text>
+          <Text style={styles.hamburgerIcon}>☰</Text>
         </TouchableOpacity>
       </View>
       {currentPage === 'sobremi' ? (
@@ -3727,6 +3743,61 @@ export default function App() {
         <RecipeScreen recipe={selectedRecipe} onBack={() => setSelectedRecipe(null)} />
       ) : (
         <HomeScreen onSelectRecipe={setSelectedRecipe} />
+      )}
+      {sidebarVisible && (
+        <View style={styles.sidebarOverlay}>
+          <TouchableOpacity
+            style={styles.sidebarBackdrop}
+            onPress={closeSidebar}
+            activeOpacity={1}
+          />
+          <Animated.View
+            style={[
+              styles.sidebarPanel,
+              { transform: [{ translateX: slideAnim }] },
+            ]}
+          >
+            <View style={styles.sidebarHeader}>
+              <TouchableOpacity onPress={closeSidebar} activeOpacity={0.7}>
+                <Text style={styles.sidebarCloseButton}>✕</Text>
+              </TouchableOpacity>
+            </View>
+            <TouchableOpacity
+              style={[
+                styles.sidebarMenuItem,
+                currentPage === 'recetas' && styles.sidebarMenuItemActive,
+              ]}
+              onPress={() => handleMenuItemPress('recetas')}
+              activeOpacity={0.7}
+            >
+              <Text
+                style={[
+                  styles.sidebarMenuText,
+                  currentPage === 'recetas' && styles.sidebarMenuTextActive,
+                ]}
+              >
+                Recetas
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.sidebarMenuItem,
+                currentPage === 'sobremi' && styles.sidebarMenuItemActive,
+              ]}
+              onPress={() => handleMenuItemPress('sobremi')}
+              activeOpacity={0.7}
+            >
+              <Text
+                style={[
+                  styles.sidebarMenuText,
+                  currentPage === 'sobremi' && styles.sidebarMenuTextActive,
+                ]}
+              >
+                Sobre mí
+              </Text>
+            </TouchableOpacity>
+          </Animated.View>
+        </View>
       )}
     </View>
   );
@@ -3739,10 +3810,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#EBEEDD',
   },
   navbar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     backgroundColor: '#FFFFFF',
     paddingTop: 12,
     paddingBottom: 12,
-    alignItems: 'center',
+    paddingHorizontal: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
@@ -3754,37 +3828,73 @@ const styles = StyleSheet.create({
     width: 150,
     height: 40,
   },
-  navTabs: {
-    flexDirection: 'row',
+  hamburgerButton: {
+    padding: 8,
+  },
+  hamburgerIcon: {
+    fontSize: 28,
+    color: '#707940',
+    fontWeight: 'bold',
+  },
+  sidebarOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1000,
+  },
+  sidebarBackdrop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  sidebarPanel: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    width: '70%',
+    maxWidth: 300,
     backgroundColor: '#FFFFFF',
+    shadowColor: '#000',
+    shadowOffset: { width: -2, height: 0 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
+  },
+  sidebarHeader: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    padding: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#E0E0E0',
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
-    elevation: 2,
-    zIndex: 9,
   },
-  navTab: {
-    paddingVertical: 12,
+  sidebarCloseButton: {
+    fontSize: 28,
+    color: '#707940',
+    fontWeight: 'bold',
+  },
+  sidebarMenuItem: {
+    paddingVertical: 20,
     paddingHorizontal: 24,
-    marginRight: 16,
-    borderBottomWidth: 3,
-    borderBottomColor: 'transparent',
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F0F0',
   },
-  navTabActive: {
-    borderBottomColor: '#707940',
+  sidebarMenuItemActive: {
+    backgroundColor: '#F5F5F5',
   },
-  navTabText: {
+  sidebarMenuText: {
     fontFamily: 'Karla',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: '600',
-    color: '#9E9E9E',
+    color: '#424242',
+    letterSpacing: 1,
   },
-  navTabTextActive: {
+  sidebarMenuTextActive: {
     color: '#707940',
     fontWeight: 'bold',
   },
