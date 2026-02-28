@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useState } from 'react';
 
@@ -13,6 +13,11 @@ interface RecipeData {
   defaultServings: number;
   ingredients: { id: string; baseQuantity: number | null; unit: string; name: string }[];
   steps: string[];
+  nutrition: {
+    totalWeightGrams: number;
+    perServing: { calories: number; protein: number; carbs: number; fat: number; fiber: number };
+    per100g: { calories: number; protein: number; carbs: number; fat: number; fiber: number };
+  };
 }
 
 // --- Recipe Data ---
@@ -40,6 +45,11 @@ const RECIPES: RecipeData[] = [
       'Envolver herméticamente el costillar en el papel (técnica papillote) e introducir al horno 90 minutos a 150º.',
       'Sacar del horno, subir temperatura a 180º, quitar el papel y hornear 30 minutos más hasta que quede crujiente.',
     ],
+    nutrition: {
+      totalWeightGrams: 2145,
+      perServing: { calories: 944, protein: 50.4, carbs: 0.9, fat: 82.1, fiber: 0.2 },
+      per100g: { calories: 264, protein: 14.1, carbs: 0.3, fat: 23.0, fiber: 0.1 },
+    },
   },
   {
     id: 'salmorejo-sin-pan',
@@ -63,6 +73,11 @@ const RECIPES: RecipeData[] = [
       'Una vez pasados los 4 minutos volver a programar en Vel 5 y por el brocal ir añadiendo AOVE (4 cucharadas aprox).',
       'Acompañar de huevo cocido y jamón picado. Si se prepara antes, envasar en recipiente hermético y a la nevera.',
     ],
+    nutrition: {
+      totalWeightGrams: 1384,
+      perServing: { calories: 250, protein: 10.5, carbs: 14.3, fat: 18.0, fiber: 4.2 },
+      per100g: { calories: 72, protein: 3.0, carbs: 4.1, fat: 5.2, fiber: 1.2 },
+    },
   },
   {
     id: 'nachos-con-guacamole',
@@ -92,6 +107,11 @@ const RECIPES: RecipeData[] = [
       'Hornear a 170º durante 15 minutos.',
       'Para el guacamole: chafar 2 aguacates maduros con tenedor, incorporar 2 tomates y 1 cebolleta rallados. Aliñar con zumo de limón, sal y pimienta.',
     ],
+    nutrition: {
+      totalWeightGrams: 820,
+      perServing: { calories: 418, protein: 11.1, carbs: 33.8, fat: 27.9, fiber: 12.5 },
+      per100g: { calories: 204, protein: 5.4, carbs: 16.5, fat: 13.6, fiber: 6.1 },
+    },
   },
   {
     id: 'salteado-ternera-setas-quinoa',
@@ -116,6 +136,11 @@ const RECIPES: RecipeData[] = [
       'Incorporar 300 gr de setas laminadas, 1 cucharadita de ras el hanout y sal. Remover a fuego alto para sellar. Cocinar a fuego lento 2-3 minutos.',
       'Acompañar con quinoa y uvas.',
     ],
+    nutrition: {
+      totalWeightGrams: 900,
+      perServing: { calories: 312, protein: 32.3, carbs: 21.5, fat: 9.4, fiber: 3.7 },
+      per100g: { calories: 138, protein: 14.3, carbs: 9.6, fat: 4.2, fiber: 1.6 },
+    },
   },
   {
     id: 'pollo-salsa-soja-tomates-secos',
@@ -144,6 +169,11 @@ const RECIPES: RecipeData[] = [
       'Bajar fuego y cocinar chup chup 25 minutos.',
       'Abrir y si queda mucha salsa, desatapar y subir fuego hasta consumir el agua.',
     ],
+    nutrition: {
+      totalWeightGrams: 1200,
+      perServing: { calories: 285, protein: 32.1, carbs: 8.2, fat: 13.5, fiber: 1.2 },
+      per100g: { calories: 95, protein: 10.7, carbs: 2.7, fat: 4.5, fiber: 0.4 },
+    },
   },
   {
     id: 'lubina-salsa-champinones',
@@ -170,6 +200,11 @@ const RECIPES: RecipeData[] = [
       'Agregar caldo o agua, sal y pimienta. Cocinar chup chup 5 minutos.',
       'Triturar para obtener consistencia de crema. Servir con la lubina.',
     ],
+    nutrition: {
+      totalWeightGrams: 850,
+      perServing: { calories: 268, protein: 28.4, carbs: 10.6, fat: 12.1, fiber: 1.4 },
+      per100g: { calories: 126, protein: 13.4, carbs: 5, fat: 5.7, fiber: 0.7 },
+    },
   },
   {
     id: 'merluza-salsa-puerros',
@@ -194,6 +229,11 @@ const RECIPES: RecipeData[] = [
       'Triturar bien para crear la salsa.',
       'Volver a poner en sartén con lomos de merluza y dar hervor conjunto de 1 minuto.',
     ],
+    nutrition: {
+      totalWeightGrams: 1000,
+      perServing: { calories: 195, protein: 30.2, carbs: 8.7, fat: 4.1, fiber: 1.8 },
+      per100g: { calories: 78, protein: 12.1, carbs: 3.5, fat: 1.6, fiber: 0.7 },
+    },
   },
   {
     id: 'galletas-naranja-almendra',
@@ -220,6 +260,11 @@ const RECIPES: RecipeData[] = [
       'Formar galletas y hornear hasta dorar.',
       'Para frosting: mezclar queso crema, 30 gr de mantequilla y miel. Decorar galletas cuando estén frías.',
     ],
+    nutrition: {
+      totalWeightGrams: 520,
+      perServing: { calories: 218, protein: 5.8, carbs: 23.1, fat: 11.7, fiber: 3.2 },
+      per100g: { calories: 503, protein: 13.4, carbs: 53.4, fat: 27, fiber: 7.4 },
+    },
   },
   {
     id: 'cookies-chocolate',
@@ -246,6 +291,11 @@ const RECIPES: RecipeData[] = [
       'Precalentar horno a 170º. Trocear 50 gr de chocolate y añadir a masa.',
       'Formar 10 bolas, aplastar ligeramente y hornear 15 minutos a 170º. Deben quedar firmes fuera y mórbidas dentro.',
     ],
+    nutrition: {
+      totalWeightGrams: 580,
+      perServing: { calories: 256, protein: 8.7, carbs: 28.4, fat: 12.6, fiber: 3.8 },
+      per100g: { calories: 441, protein: 15, carbs: 48.9, fat: 21.7, fiber: 6.6 },
+    },
   },
   {
     id: 'ensalada-quinoa-edamames',
@@ -271,6 +321,11 @@ const RECIPES: RecipeData[] = [
       'Preparar vinagreta con AOVE, salsa de soja, jengibre rallado, zumo de limón y sal.',
       'Añadir vinagreta, mezclar bien y guardar en nevera hasta consumir.',
     ],
+    nutrition: {
+      totalWeightGrams: 1050,
+      perServing: { calories: 348, protein: 18.7, carbs: 35.2, fat: 15.2, fiber: 9.8 },
+      per100g: { calories: 133, protein: 7.1, carbs: 13.4, fat: 5.8, fiber: 3.7 },
+    },
   },
   {
     id: 'sopa-tomate',
@@ -297,6 +352,11 @@ const RECIPES: RecipeData[] = [
       'Triturar hasta conseguir consistencia deseada.',
       'Acompañar con huevo cocido y aceitunas.',
     ],
+    nutrition: {
+      totalWeightGrams: 1500,
+      perServing: { calories: 188, protein: 11.3, carbs: 14.2, fat: 9.6, fiber: 3.8 },
+      per100g: { calories: 50, protein: 3, carbs: 3.8, fat: 2.6, fiber: 1 },
+    },
   },
   {
     id: 'sopa-pescado-gambas',
@@ -324,6 +384,11 @@ const RECIPES: RecipeData[] = [
       'Verter caldo reservado y llevar a ebullición. Incorporar fideos, pescado y gambas.',
       'Cocinar hasta que fideos estén hechos. Corregir sal.',
     ],
+    nutrition: {
+      totalWeightGrams: 1300,
+      perServing: { calories: 245, protein: 32.4, carbs: 18.7, fat: 4.2, fiber: 1.5 },
+      per100g: { calories: 75, protein: 10, carbs: 5.7, fat: 1.3, fiber: 0.5 },
+    },
   },
   {
     id: 'ensalada-remolacha-asada-naranja',
@@ -347,6 +412,11 @@ const RECIPES: RecipeData[] = [
       'Una vez asadas y atemperadas las remolachas y cebollas, trocearlas.',
       'Mezclar todos los ingredientes con hojas verdes y aliñar con AOVE, sal y vinagre al servir.',
     ],
+    nutrition: {
+      totalWeightGrams: 1000,
+      perServing: { calories: 236, protein: 4.2, carbs: 31.5, fat: 11.3, fiber: 6.4 },
+      per100g: { calories: 94, protein: 1.7, carbs: 12.6, fat: 4.5, fiber: 2.6 },
+    },
   },
   {
     id: 'hamburguesas-calabaza-gorgonzola',
@@ -369,6 +439,11 @@ const RECIPES: RecipeData[] = [
       'Dejar reposar en la nevera 30-60 minutos para facilitar el moldeado.',
       'Dar forma a las hamburguesas y cocinar en sartén con AOVE o en el horno.',
     ],
+    nutrition: {
+      totalWeightGrams: 1430,
+      perServing: { calories: 195, protein: 11.8, carbs: 14.6, fat: 10.7, fiber: 1.7 },
+      per100g: { calories: 55, protein: 3.3, carbs: 4.1, fat: 3, fiber: 0.5 },
+    },
   },
   {
     id: 'crema-puerros',
@@ -393,6 +468,11 @@ const RECIPES: RecipeData[] = [
       'Bajar a fuego medio-bajo y cocinar 10-12 minutos.',
       'Escurrir y triturar hasta obtener la textura deseada.',
     ],
+    nutrition: {
+      totalWeightGrams: 1300,
+      perServing: { calories: 138, protein: 3.2, carbs: 16.4, fat: 6.8, fiber: 2.8 },
+      per100g: { calories: 42, protein: 1, carbs: 5, fat: 2.1, fiber: 0.9 },
+    },
   },
   {
     id: 'tortilla-guisantes-ajos-tiernos',
@@ -415,6 +495,11 @@ const RECIPES: RecipeData[] = [
       'Batir los huevos, mezclar con la verdura sofrita.',
       'Cuajar la tortilla en la misma sartén.',
     ],
+    nutrition: {
+      totalWeightGrams: 750,
+      perServing: { calories: 285, protein: 21.2, carbs: 15.8, fat: 16.1, fiber: 6.2 },
+      per100g: { calories: 152, protein: 11.3, carbs: 8.4, fat: 8.6, fiber: 3.3 },
+    },
   },
   {
     id: 'berenjenas-rellenas-quinoa',
@@ -441,6 +526,11 @@ const RECIPES: RecipeData[] = [
       'Vaciar las berenjenas asadas con cuchara, picar su pulpa y añadirla a la sartén junto con la quinoa, orégano, salsa de tomate y caldo de pollo. Cocinar 2 minutos a fuego medio.',
       'Rellenar las pieles de berenjena, coronar con mozzarella y hornear 5 minutos para fundir el queso.',
     ],
+    nutrition: {
+      totalWeightGrams: 1650,
+      perServing: { calories: 378, protein: 32.7, carbs: 30.5, fat: 13.2, fiber: 7.1 },
+      per100g: { calories: 92, protein: 7.9, carbs: 7.4, fat: 3.2, fiber: 1.7 },
+    },
   },
   {
     id: 'zanahorias-horno-queso-cabra',
@@ -464,6 +554,11 @@ const RECIPES: RecipeData[] = [
       'Hornear 25 minutos a 190º, luego subir a 220º y hornear 15 minutos más para que queden crujientes.',
       'Acompañar con queso de cabra al servir.',
     ],
+    nutrition: {
+      totalWeightGrams: 600,
+      perServing: { calories: 145, protein: 2.8, carbs: 18.7, fat: 6.9, fiber: 4.2 },
+      per100g: { calories: 97, protein: 1.9, carbs: 12.5, fat: 4.6, fiber: 2.8 },
+    },
   },
   {
     id: 'solomillos-pavo-coco-pina',
@@ -487,6 +582,11 @@ const RECIPES: RecipeData[] = [
       'Dejar chup chup a fuego medio durante 10 minutos.',
       'Opcionalmente triturar la salsa para que quede uniforme.',
     ],
+    nutrition: {
+      totalWeightGrams: 1270,
+      perServing: { calories: 348, protein: 42.1, carbs: 11.8, fat: 15.2, fiber: 2.3 },
+      per100g: { calories: 110, protein: 13.3, carbs: 3.7, fat: 4.8, fiber: 0.7 },
+    },
   },
   {
     id: 'muslos-pollo-uvas-pasas',
@@ -514,6 +614,11 @@ const RECIPES: RecipeData[] = [
       'Hornear 15 minutos. Añadir caldo de pollo y hornear 60 minutos más.',
       'Triturar puerros, tomates, zanahorias y pasas hasta obtener consistencia cremosa. Servir sobre la carne y las patatas.',
     ],
+    nutrition: {
+      totalWeightGrams: 1730,
+      perServing: { calories: 342, protein: 32.4, carbs: 28.7, fat: 11.6, fiber: 4.5 },
+      per100g: { calories: 119, protein: 11.2, carbs: 10, fat: 4, fiber: 1.6 },
+    },
   },
   {
     id: 'pavo-salsa-ajo-almendras',
@@ -542,6 +647,11 @@ const RECIPES: RecipeData[] = [
       'Mientras, triturar ajos, pan y almendras con pimentón ahumado, tomate triturado y vino blanco.',
       'Añadir el majado triturado a la carne, junto con laurel, pimientos asados y caldo de pollo. Cocinar chup chup 20 minutos.',
     ],
+    nutrition: {
+      totalWeightGrams: 1450,
+      perServing: { calories: 385, protein: 44.2, carbs: 18.4, fat: 15.3, fiber: 2.8 },
+      per100g: { calories: 106, protein: 12.2, carbs: 5.1, fat: 4.2, fiber: 0.8 },
+    },
   },
   {
     id: 'albondigas-pollo-salsa-almendras',
@@ -572,6 +682,11 @@ const RECIPES: RecipeData[] = [
       'Triturar roquefort, almendras, caldo, vino blanco y mostaza. Añadir a la olla con la cebolla. Cocinar chup chup 10 minutos.',
       'Mezclar las albóndigas horneadas con la salsa y dar un hervor conjunto.',
     ],
+    nutrition: {
+      totalWeightGrams: 1350,
+      perServing: { calories: 468, protein: 48.7, carbs: 16.3, fat: 23.4, fiber: 3.1 },
+      per100g: { calories: 139, protein: 14.4, carbs: 4.8, fat: 6.9, fiber: 0.9 },
+    },
   },
   {
     id: 'pechugas-pavo-curry',
@@ -596,6 +711,11 @@ const RECIPES: RecipeData[] = [
       'Incorporar curry, granos de pimienta y leche. Dejar chup chup a fuego medio unos 10 minutos.',
       'Añadir queso rallado, remover y dejar fundir 2 minutos.',
     ],
+    nutrition: {
+      totalWeightGrams: 950,
+      perServing: { calories: 268, protein: 38.5, carbs: 9.2, fat: 8.4, fiber: 0.7 },
+      per100g: { calories: 113, protein: 16.2, carbs: 3.9, fat: 3.5, fiber: 0.3 },
+    },
   },
   {
     id: 'guiso-marisco',
@@ -625,6 +745,11 @@ const RECIPES: RecipeData[] = [
       'Agregar preparado de marisco, orégano, tomillo, fideos, sal y pimienta. Cocinar chup chup 5-6 minutos hasta que los fideos estén hechos.',
       'Incorporar los langostinos pelados y apagar el fuego. Se cocinarán con el calor residual.',
     ],
+    nutrition: {
+      totalWeightGrams: 1400,
+      perServing: { calories: 315, protein: 28.4, carbs: 32.7, fat: 6.8, fiber: 2.8 },
+      per100g: { calories: 90, protein: 8.1, carbs: 9.3, fat: 1.9, fiber: 0.8 },
+    },
   },
   {
     id: 'mousse-esparragos-atun',
@@ -649,6 +774,11 @@ const RECIPES: RecipeData[] = [
       'Verter en recipiente apto para microondas previamente engrasado con AOVE o mantequilla.',
       'Cocinar en microondas a máxima potencia durante 15 minutos.',
     ],
+    nutrition: {
+      totalWeightGrams: 1100,
+      perServing: { calories: 298, protein: 31.4, carbs: 7.2, fat: 16.1, fiber: 2.3 },
+      per100g: { calories: 108, protein: 11.4, carbs: 2.6, fat: 5.8, fiber: 0.8 },
+    },
   },
   {
     id: 'donuts-chocolate',
@@ -675,6 +805,11 @@ const RECIPES: RecipeData[] = [
       'Rellenar moldes de donuts (puede usarse manga pastelera). Hornear a 180º durante 25 minutos.',
       'Dejar enfriar. Derretir chocolate con 1 cucharada de aceite de coco en microondas. Cubrir los donuts.',
     ],
+    nutrition: {
+      totalWeightGrams: 720,
+      perServing: { calories: 224, protein: 8.3, carbs: 26.5, fat: 10.2, fiber: 3.7 },
+      per100g: { calories: 373, protein: 13.9, carbs: 44.2, fat: 17, fiber: 6.2 },
+    },
   },
   {
     id: 'helado-frutos-rojos-almendras',
@@ -694,6 +829,11 @@ const RECIPES: RecipeData[] = [
       'Introducir todos los ingredientes en un procesador potente.',
       'Triturar bien hasta conseguir una consistencia cremosa y homogénea.',
     ],
+    nutrition: {
+      totalWeightGrams: 530,
+      perServing: { calories: 185, protein: 5.8, carbs: 30.4, fat: 5.2, fiber: 4.8 },
+      per100g: { calories: 140, protein: 4.4, carbs: 23, fat: 3.9, fiber: 3.6 },
+    },
   },
   {
     id: 'ensalada-alubias-patatas',
@@ -717,6 +857,11 @@ const RECIPES: RecipeData[] = [
       'Mezclar en recipiente las alubias, patatas troceadas, huevos troceados, atún, tomates cherry y aceitunas verdes troceadas.',
       'Aliñar con AOVE, vinagre, sal y pimienta al gusto.',
     ],
+    nutrition: {
+      totalWeightGrams: 1480,
+      perServing: { calories: 385, protein: 24.7, carbs: 45.3, fat: 11.8, fiber: 11.2 },
+      per100g: { calories: 104, protein: 6.7, carbs: 12.2, fat: 3.2, fiber: 3 },
+    },
   },
   {
     id: 'ensalada-quinoa-lentejas',
@@ -738,6 +883,11 @@ const RECIPES: RecipeData[] = [
       'Mezclar quinoa, lentejas cocidas, salmón ahumado troceado, alcaparras lavadas y tomates cherry.',
       'Aliñar con AOVE, sal y pimienta blanca al gusto.',
     ],
+    nutrition: {
+      totalWeightGrams: 1100,
+      perServing: { calories: 342, protein: 24.8, carbs: 38.6, fat: 9.4, fiber: 8.2 },
+      per100g: { calories: 124, protein: 9, carbs: 14, fat: 3.4, fiber: 3 },
+    },
   },
   {
     id: 'sopa-alubias-patatas',
@@ -767,6 +917,11 @@ const RECIPES: RecipeData[] = [
       'Incorporar alubias blancas y leche de coco. Cocinar chup chup 10 minutos más.',
       'Retirar laurel. Triturar la mitad del contenido de la olla y volver a incorporar. Rectificar sal y pimienta. Cocinar 1 minuto más.',
     ],
+    nutrition: {
+      totalWeightGrams: 1650,
+      perServing: { calories: 268, protein: 10.2, carbs: 42.7, fat: 7.1, fiber: 9.8 },
+      per100g: { calories: 65, protein: 2.5, carbs: 10.3, fat: 1.7, fiber: 2.4 },
+    },
   },
   {
     id: 'sopa-espinacas',
@@ -794,6 +949,11 @@ const RECIPES: RecipeData[] = [
       'Añadir nata fresca, nuez moscada, sal y pimienta. Remover y cocinar 2 minutos más.',
       'Al servir, coronar con huevos cocidos troceados y salmón ahumado.',
     ],
+    nutrition: {
+      totalWeightGrams: 1150,
+      perServing: { calories: 258, protein: 20.3, carbs: 12.8, fat: 14.7, fiber: 3.2 },
+      per100g: { calories: 90, protein: 7.1, carbs: 4.5, fat: 5.1, fiber: 1.1 },
+    },
   },
   {
     id: 'caldo-asiatico-pollo',
@@ -814,6 +974,11 @@ const RECIPES: RecipeData[] = [
       'Cocinar chup chup durante 25 minutos.',
       'Colar y usar el caldo para sopas, fideos o congelar para futuras recetas.',
     ],
+    nutrition: {
+      totalWeightGrams: 1500,
+      perServing: { calories: 48, protein: 6.2, carbs: 2.8, fat: 1.4, fiber: 0.5 },
+      per100g: { calories: 13, protein: 1.7, carbs: 0.8, fat: 0.4, fiber: 0.1 },
+    },
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
 
@@ -848,6 +1013,7 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
   const [checkedSteps, setCheckedSteps] = useState<Set<number>>(new Set());
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [nutritionMode, setNutritionMode] = useState<'perServing' | 'per100g'>('perServing');
   const servingsOptions = Array.from({ length: 10 }, (_, i) => i + 1);
 
   const toggleIngredient = (id: string) => {
@@ -871,6 +1037,27 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
     const qty = formatQuantity(ing.baseQuantity, servings, recipe.defaultServings);
     const unit = ing.unit ? ` ${ing.unit}` : '';
     return `${qty}${unit} ${ing.name}`;
+  };
+
+  // Calculate nutrition values based on mode and servings
+  const getNutritionValues = () => {
+    if (nutritionMode === 'per100g') {
+      return recipe.nutrition.per100g;
+    }
+    // Calculate total recipe nutrition and divide by current servings
+    const totalCal = recipe.nutrition.perServing.calories * recipe.defaultServings;
+    const totalProtein = recipe.nutrition.perServing.protein * recipe.defaultServings;
+    const totalCarbs = recipe.nutrition.perServing.carbs * recipe.defaultServings;
+    const totalFat = recipe.nutrition.perServing.fat * recipe.defaultServings;
+    const totalFiber = recipe.nutrition.perServing.fiber * recipe.defaultServings;
+    
+    return {
+      calories: Math.round(totalCal / servings),
+      protein: Math.round((totalProtein / servings) * 10) / 10,
+      carbs: Math.round((totalCarbs / servings) * 10) / 10,
+      fat: Math.round((totalFat / servings) * 10) / 10,
+      fiber: Math.round((totalFiber / servings) * 10) / 10,
+    };
   };
 
   return (
@@ -941,6 +1128,44 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
         ))}
       </View>
 
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Nutrición</Text>
+        <View style={styles.nutritionSegments}>
+          <TouchableOpacity
+            style={[styles.nutritionSegment, nutritionMode === 'perServing' && styles.nutritionSegmentActive]}
+            onPress={() => setNutritionMode('perServing')}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.nutritionSegmentText, nutritionMode === 'perServing' && styles.nutritionSegmentTextActive]}>
+              Por ración
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.nutritionSegment, nutritionMode === 'per100g' && styles.nutritionSegmentActive]}
+            onPress={() => setNutritionMode('per100g')}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.nutritionSegmentText, nutritionMode === 'per100g' && styles.nutritionSegmentTextActive]}>
+              Por 100gr
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.nutritionList}>
+          {[
+            { label: 'Calorías', value: getNutritionValues().calories, unit: 'kcal' },
+            { label: 'Proteínas', value: getNutritionValues().protein, unit: 'g' },
+            { label: 'Carbohidratos', value: getNutritionValues().carbs, unit: 'g' },
+            { label: 'Grasas', value: getNutritionValues().fat, unit: 'g' },
+            { label: 'Fibra', value: getNutritionValues().fiber, unit: 'g' },
+          ].map((item, idx) => (
+            <View key={idx} style={styles.nutritionRow}>
+              <Text style={styles.nutritionLabel}>{item.label}</Text>
+              <Text style={styles.nutritionValue}>{item.value} {item.unit}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
+
       <View style={styles.footer}>
         <Text style={styles.footerText}>🍽️ ¡Buen provecho! 🍽️</Text>
       </View>
@@ -949,7 +1174,19 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
 }
 
 // --- Home Screen ---
+const ALL_CATEGORIES = [...new Set(RECIPES.map(r => r.category))].sort();
+
 function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) => void }) {
+  const [search, setSearch] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
+
+  const filteredRecipes = RECIPES.filter(r => {
+    const matchesSearch = !search || r.title.toLowerCase().includes(search.toLowerCase());
+    const matchesCategory = !selectedCategory || r.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
+
   return (
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
       {/* Recomendaciones del día */}
@@ -971,12 +1208,57 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
 
       {/* Todas las recetas */}
       <Text style={[styles.homeSectionTitle, { marginTop: 32 }]}>Todas las recetas</Text>
+
+      {/* Search + Filter row */}
+      <View style={styles.searchFilterRow}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Buscar receta..."
+          placeholderTextColor="#9E9E9E"
+          value={search}
+          onChangeText={setSearch}
+        />
+        <TouchableOpacity
+          style={[styles.filterButton, selectedCategory && styles.filterButtonActive]}
+          onPress={() => setCategoryDropdownOpen(true)}
+          activeOpacity={0.7}
+        >
+          <Text style={[styles.filterButtonText, selectedCategory && styles.filterButtonTextActive]}>
+            {selectedCategory || 'Categoría'}
+          </Text>
+          <Text style={[styles.filterArrow, selectedCategory && styles.filterButtonTextActive]}>▼</Text>
+        </TouchableOpacity>
+      </View>
+
+      <Modal visible={categoryDropdownOpen} transparent animationType="fade">
+        <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={() => setCategoryDropdownOpen(false)}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>Categoría</Text>
+            <TouchableOpacity
+              style={[styles.modalOption, !selectedCategory && styles.modalOptionSelected]}
+              onPress={() => { setSelectedCategory(null); setCategoryDropdownOpen(false); }}
+            >
+              <Text style={[styles.modalOptionText, !selectedCategory && styles.modalOptionTextSelected]}>Todas</Text>
+            </TouchableOpacity>
+            {ALL_CATEGORIES.map(cat => (
+              <TouchableOpacity
+                key={cat}
+                style={[styles.modalOption, cat === selectedCategory && styles.modalOptionSelected]}
+                onPress={() => { setSelectedCategory(cat); setCategoryDropdownOpen(false); }}
+              >
+                <Text style={[styles.modalOptionText, cat === selectedCategory && styles.modalOptionTextSelected]}>{cat}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        </TouchableOpacity>
+      </Modal>
+
       <View style={styles.table}>
         <View style={styles.tableHeader}>
           <Text style={[styles.tableHeaderText, { flex: 2 }]}>Receta</Text>
           <Text style={[styles.tableHeaderText, { flex: 1 }]}>Categoría</Text>
         </View>
-        {RECIPES.map(recipe => (
+        {filteredRecipes.map(recipe => (
           <TouchableOpacity
             key={recipe.id}
             style={styles.tableRow}
@@ -991,6 +1273,11 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
             </View>
           </TouchableOpacity>
         ))}
+        {filteredRecipes.length === 0 && (
+          <View style={styles.tableRow}>
+            <Text style={[styles.tableCell, { color: '#9E9E9E' }]}>No se encontraron recetas</Text>
+          </View>
+        )}
       </View>
     </ScrollView>
   );
@@ -1091,6 +1378,58 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#4a5229',
     lineHeight: 20,
+  },
+  // Search + Filter
+  searchFilterRow: {
+    flexDirection: 'row',
+    marginBottom: 12,
+    gap: 10,
+  },
+  searchInput: {
+    flex: 2,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    fontFamily: 'Karla',
+    fontSize: 15,
+    color: '#424242',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  filterButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  filterButtonActive: {
+    backgroundColor: '#707940',
+  },
+  filterButtonText: {
+    fontFamily: 'Karla',
+    fontSize: 14,
+    color: '#9E9E9E',
+    marginRight: 6,
+  },
+  filterButtonTextActive: {
+    color: '#FFFFFF',
+  },
+  filterArrow: {
+    fontSize: 10,
+    color: '#9E9E9E',
   },
   // Table
   table: {
@@ -1340,5 +1679,55 @@ const styles = StyleSheet.create({
     fontFamily: 'Karla',
     fontSize: 20,
     color: '#707940',
+  },
+  nutritionSegments: {
+    flexDirection: 'row',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    marginBottom: 16,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  nutritionSegment: {
+    flex: 1,
+    paddingVertical: 10,
+    alignItems: 'center',
+    backgroundColor: 'transparent',
+  },
+  nutritionSegmentActive: {
+    backgroundColor: '#707940',
+  },
+  nutritionSegmentText: {
+    fontFamily: 'Karla',
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#707940',
+  },
+  nutritionSegmentTextActive: {
+    color: '#FFFFFF',
+  },
+  nutritionList: {
+    marginTop: 8,
+  },
+  nutritionRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F0F0',
+  },
+  nutritionLabel: {
+    fontFamily: 'Karla',
+    fontSize: 16,
+    color: '#424242',
+    fontWeight: '600',
+  },
+  nutritionValue: {
+    fontFamily: 'Karla',
+    fontSize: 16,
+    color: '#707940',
+    fontWeight: 'bold',
   },
 });
