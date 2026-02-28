@@ -3611,7 +3611,7 @@ function FavoritosScreen({
               activeOpacity={0.7}
             >
               <Text style={[styles.viewToggleText, viewMode === 'card' && styles.viewToggleTextActive]}>
-                Tarjetas
+                ▦
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -3620,7 +3620,7 @@ function FavoritosScreen({
               activeOpacity={0.7}
             >
               <Text style={[styles.viewToggleText, viewMode === 'table' && styles.viewToggleTextActive]}>
-                Lista
+                ☰
               </Text>
             </TouchableOpacity>
           </View>
@@ -4248,6 +4248,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingHorizontal: 12,
     paddingVertical: 4,
+    alignSelf: 'flex-start',
   },
   categoryPillText: {
     fontFamily: 'Karla',
@@ -4570,7 +4571,7 @@ const styles = StyleSheet.create({
   },
   viewToggleText: {
     fontFamily: 'Karla',
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: '600',
     color: '#707940',
   },
