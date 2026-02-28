@@ -1,7 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+// --- localStorage Helpers ---
+const getFavourites = (): string[] => {
+  try {
+    return JSON.parse(localStorage.getItem('favourites') || '[]');
+  } catch {
+    return [];
+  }
+};
+
+const toggleFavourite = (recipeId: string): string[] => {
+  const favs = getFavourites();
+  const updated = favs.includes(recipeId)
+    ? favs.filter(id => id !== recipeId)
+    : [...favs, recipeId];
+  localStorage.setItem('favourites', JSON.stringify(updated));
+  return updated;
+};
 
 // --- Data Types ---
 interface RecipeData {
@@ -3383,7 +3401,17 @@ const formatQuantity = (baseQty: number, servings: number, defaultServings: numb
 };
 
 // --- Recipe Screen ---
-function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => void }) {
+function RecipeScreen({
+  recipe,
+  onBack,
+  isFavourite,
+  onToggleFavourite,
+}: {
+  recipe: RecipeData;
+  onBack: () => void;
+  isFavourite: boolean;
+  onToggleFavourite: (id: string) => void;
+}) {
   useKeepAwake();
   const [servings, setServings] = useState(recipe.defaultServings);
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
@@ -3440,9 +3468,20 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
       <Image source={{ uri: recipe.image }} style={styles.heroImage} resizeMode="cover" />
 
-      <TouchableOpacity style={styles.backButton} onPress={onBack} activeOpacity={0.7}>
-        <Text style={styles.backButtonText}>← Recetas</Text>
-      </TouchableOpacity>
+      <View style={styles.breadcrumbRow}>
+        <TouchableOpacity style={styles.backButton} onPress={onBack} activeOpacity={0.7}>
+          <Text style={styles.backButtonText}>← Recetas</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.starButton}
+          onPress={() => onToggleFavourite(recipe.id)}
+          activeOpacity={0.7}
+        >
+          <Text style={styles.starIcon}>
+            {isFavourite ? '★' : '☆'}
+          </Text>
+        </TouchableOpacity>
+      </View>
 
       <View style={styles.header}>
         <Text style={styles.title}>{recipe.title}</Text>
@@ -3545,6 +3584,45 @@ function RecipeScreen({ recipe, onBack }: { recipe: RecipeData; onBack: () => vo
       <View style={styles.footer}>
         <Text style={styles.footerText}>🍽️ ¡Buen provecho! 🍽️</Text>
       </View>
+    </ScrollView>
+  );
+}
+
+// --- Favoritos Screen ---
+function FavoritosScreen({
+  favourites,
+  onSelectRecipe,
+}: {
+  favourites: string[];
+  onSelectRecipe: (recipe: RecipeData) => void;
+}) {
+  const favouriteRecipes = RECIPES.filter(r => favourites.includes(r.id));
+
+  return (
+    <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
+      <Text style={styles.homeSectionTitle}>Favoritos</Text>
+      {favouriteRecipes.length === 0 ? (
+        <Text style={styles.emptyFavouritesText}>
+          No tienes recetas guardadas todavía. Toca la ⭐ en cualquier receta para guardarla aquí.
+        </Text>
+      ) : (
+        favouriteRecipes.map(recipe => (
+          <TouchableOpacity
+            key={recipe.id}
+            style={styles.recipeCard}
+            onPress={() => onSelectRecipe(recipe)}
+            activeOpacity={0.7}
+          >
+            <Image source={{ uri: recipe.image }} style={styles.cardImage} resizeMode="cover" />
+            <View style={styles.cardInfo}>
+              <Text style={styles.cardTitle}>{recipe.title}</Text>
+              <View style={styles.categoryPill}>
+                <Text style={styles.categoryPillText}>{recipe.category}</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        ))
+      )}
     </ScrollView>
   );
 }
@@ -3686,9 +3764,14 @@ function SobreMiScreen() {
 // --- App ---
 export default function App() {
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeData | null>(null);
-  const [currentPage, setCurrentPage] = useState<'recetas' | 'sobremi'>('recetas');
+  const [currentPage, setCurrentPage] = useState<'recetas' | 'favoritos' | 'sobremi'>('recetas');
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [slideAnim] = useState(new Animated.Value(300));
+  const [favourites, setFavourites] = useState<string[]>([]);
+
+  useEffect(() => {
+    setFavourites(getFavourites());
+  }, []);
 
   const handleLogoClick = () => {
     setSelectedRecipe(null);
@@ -3712,10 +3795,15 @@ export default function App() {
     }).start(() => setSidebarVisible(false));
   };
 
-  const handleMenuItemPress = (page: 'recetas' | 'sobremi') => {
+  const handleMenuItemPress = (page: 'recetas' | 'favoritos' | 'sobremi') => {
     setCurrentPage(page);
     setSelectedRecipe(null);
     closeSidebar();
+  };
+
+  const handleToggleFavourite = (recipeId: string) => {
+    const updated = toggleFavourite(recipeId);
+    setFavourites(updated);
   };
 
   return (
@@ -3739,8 +3827,18 @@ export default function App() {
       </View>
       {currentPage === 'sobremi' ? (
         <SobreMiScreen />
+      ) : currentPage === 'favoritos' ? (
+        <FavoritosScreen
+          favourites={favourites}
+          onSelectRecipe={setSelectedRecipe}
+        />
       ) : selectedRecipe ? (
-        <RecipeScreen recipe={selectedRecipe} onBack={() => setSelectedRecipe(null)} />
+        <RecipeScreen
+          recipe={selectedRecipe}
+          onBack={() => setSelectedRecipe(null)}
+          isFavourite={favourites.includes(selectedRecipe.id)}
+          onToggleFavourite={handleToggleFavourite}
+        />
       ) : (
         <HomeScreen onSelectRecipe={setSelectedRecipe} />
       )}
@@ -3777,6 +3875,23 @@ export default function App() {
                 ]}
               >
                 Recetas
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.sidebarMenuItem,
+                currentPage === 'favoritos' && styles.sidebarMenuItemActive,
+              ]}
+              onPress={() => handleMenuItemPress('favoritos')}
+              activeOpacity={0.7}
+            >
+              <Text
+                style={[
+                  styles.sidebarMenuText,
+                  currentPage === 'favoritos' && styles.sidebarMenuTextActive,
+                ]}
+              >
+                Favoritos
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -4057,16 +4172,38 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 250,
   },
-  backButton: {
+  breadcrumbRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 20,
     paddingTop: 16,
     paddingBottom: 4,
+  },
+  backButton: {
+    flex: 1,
   },
   backButtonText: {
     fontFamily: 'Karla',
     fontSize: 16,
     color: '#707940',
     fontWeight: '600',
+  },
+  starButton: {
+    padding: 8,
+  },
+  starIcon: {
+    fontSize: 24,
+    color: '#707940',
+  },
+  emptyFavouritesText: {
+    fontFamily: 'Karla',
+    fontSize: 16,
+    color: '#4a5229',
+    textAlign: 'center',
+    lineHeight: 24,
+    paddingHorizontal: 20,
+    marginTop: 20,
   },
   header: {
     marginBottom: 20,
