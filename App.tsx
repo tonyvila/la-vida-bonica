@@ -21,6 +21,135 @@ const toggleFavourite = (recipeId: string): string[] => {
   return updated;
 };
 
+// --- Weekly Planner Helpers ---
+type WeeklyPlan = { [weekKey: string]: { [dayIndex: number]: string[] } };
+
+const getWeekKey = (date: Date): string => {
+  const year = date.getFullYear();
+  const startOfYear = new Date(year, 0, 1);
+  const dayOfYear = Math.floor((date.getTime() - startOfYear.getTime()) / (24 * 60 * 60 * 1000));
+  const weekNumber = Math.ceil((dayOfYear + startOfYear.getDay() + 1) / 7);
+  return `${year}-W${String(weekNumber).padStart(2, '0')}`;
+};
+
+const getMondayOfWeek = (date: Date): Date => {
+  const d = new Date(date);
+  const day = d.getDay();
+  const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+  return new Date(d.setDate(diff));
+};
+
+const getWeeklyPlan = (): WeeklyPlan => {
+  try {
+    return JSON.parse(localStorage.getItem('weeklyPlan') || '{}');
+  } catch {
+    return {};
+  }
+};
+
+const addRecipeToDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+  const plan = getWeeklyPlan();
+  if (!plan[weekKey]) plan[weekKey] = {};
+  if (!plan[weekKey][dayIndex]) plan[weekKey][dayIndex] = [];
+  if (!plan[weekKey][dayIndex].includes(recipeId)) {
+    plan[weekKey][dayIndex].push(recipeId);
+  }
+  localStorage.setItem('weeklyPlan', JSON.stringify(plan));
+};
+
+const removeRecipeFromDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+  const plan = getWeeklyPlan();
+  if (plan[weekKey]?.[dayIndex]) {
+    plan[weekKey][dayIndex] = plan[weekKey][dayIndex].filter(id => id !== recipeId);
+    if (plan[weekKey][dayIndex].length === 0) delete plan[weekKey][dayIndex];
+    if (Object.keys(plan[weekKey]).length === 0) delete plan[weekKey];
+  }
+  localStorage.setItem('weeklyPlan', JSON.stringify(plan));
+};
+
+const getShoppingChecked = (weekKey: string): string[] => {
+  try {
+    return JSON.parse(localStorage.getItem(`shoppingChecked_${weekKey}`) || '[]');
+  } catch {
+    return [];
+  }
+};
+
+const toggleShoppingChecked = (ingredient: string, weekKey: string): void => {
+  const checked = getShoppingChecked(weekKey);
+  const updated = checked.includes(ingredient)
+    ? checked.filter(i => i !== ingredient)
+    : [...checked, ingredient];
+  localStorage.setItem(`shoppingChecked_${weekKey}`, JSON.stringify(updated));
+};
+
+// Weekly Planner Helpers
+type WeeklyPlan = { [weekKey: string]: { [dayIndex: number]: string[] } };
+type CheckedIngredients = { [weekKey: string]: string[] };
+
+const getWeekKey = (date: Date): string => {
+  const monday = new Date(date);
+  const day = monday.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+  monday.setDate(monday.getDate() + diff);
+  monday.setHours(0, 0, 0, 0);
+  
+  const yearStart = new Date(monday.getFullYear(), 0, 1);
+  const weekNum = Math.ceil(((monday.getTime() - yearStart.getTime()) / 86400000 + yearStart.getDay() + 1) / 7);
+  return `${monday.getFullYear()}-W${String(weekNum).padStart(2, '0')}`;
+};
+
+const getMondayOfWeek = (weekKey: string): Date => {
+  const [year, week] = weekKey.split('-W').map(Number);
+  const jan1 = new Date(year, 0, 1);
+  const daysOffset = (week - 1) * 7;
+  const monday = new Date(jan1);
+  monday.setDate(jan1.getDate() + daysOffset - jan1.getDay() + 1);
+  return monday;
+};
+
+const getWeeklyPlan = (): WeeklyPlan => {
+  try {
+    return JSON.parse(localStorage.getItem('weeklyPlan') || '{}');
+  } catch {
+    return {};
+  }
+};
+
+const saveWeeklyPlan = (plan: WeeklyPlan): void => {
+  localStorage.setItem('weeklyPlan', JSON.stringify(plan));
+};
+
+const addRecipeToDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+  const plan = getWeeklyPlan();
+  if (!plan[weekKey]) plan[weekKey] = {};
+  if (!plan[weekKey][dayIndex]) plan[weekKey][dayIndex] = [];
+  if (!plan[weekKey][dayIndex].includes(recipeId)) {
+    plan[weekKey][dayIndex].push(recipeId);
+  }
+  saveWeeklyPlan(plan);
+};
+
+const removeRecipeFromDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+  const plan = getWeeklyPlan();
+  if (plan[weekKey]?.[dayIndex]) {
+    plan[weekKey][dayIndex] = plan[weekKey][dayIndex].filter(id => id !== recipeId);
+  }
+  saveWeeklyPlan(plan);
+};
+
+const getCheckedIngredients = (): CheckedIngredients => {
+  try {
+    return JSON.parse(localStorage.getItem('checkedIngredients') || '{}');
+  } catch {
+    return {};
+  }
+};
+
+const saveCheckedIngredients = (checked: CheckedIngredients): void => {
+  localStorage.setItem('checkedIngredients', JSON.stringify(checked));
+};
+
 // --- Data Types ---
 interface RecipeData {
   id: string;
@@ -3404,13 +3533,17 @@ const formatQuantity = (baseQty: number, servings: number, defaultServings: numb
 function RecipeScreen({
   recipe,
   onBack,
+  backLabel,
   isFavourite,
   onToggleFavourite,
+  onOpenDayPicker,
 }: {
   recipe: RecipeData;
   onBack: () => void;
+  backLabel?: string;
   isFavourite: boolean;
   onToggleFavourite: (id: string) => void;
+  onOpenDayPicker?: (recipe: RecipeData) => void;
 }) {
   useKeepAwake();
   const [servings, setServings] = useState(recipe.defaultServings);
@@ -3470,17 +3603,26 @@ function RecipeScreen({
 
       <View style={styles.breadcrumbRow}>
         <TouchableOpacity style={styles.backButton} onPress={onBack} activeOpacity={0.7}>
-          <Text style={styles.backButtonText}>← Recetas</Text>
+          <Text style={styles.backButtonText}>{backLabel || '← Recetas'}</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.starButton}
-          onPress={() => onToggleFavourite(recipe.id)}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.starIcon}>
-            {isFavourite ? '★' : '☆'}
-          </Text>
-        </TouchableOpacity>
+        <View style={styles.actionButtons}>
+          <TouchableOpacity
+            style={styles.starButton}
+            onPress={() => onOpenDayPicker?.(recipe)}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.starIcon}>📅</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.starButton}
+            onPress={() => onToggleFavourite(recipe.id)}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.starIcon}>
+              {isFavourite ? '★' : '☆'}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <View style={styles.header}>
@@ -3596,13 +3738,24 @@ function FavoritosScreen({
   favourites: string[];
   onSelectRecipe: (recipe: RecipeData) => void;
 }) {
-  const favouriteRecipes = RECIPES.filter(r => favourites.includes(r.id));
   const [viewMode, setViewMode] = useState<'card' | 'table'>('card');
+  const [sortField, setSortField] = useState<'title' | 'category'>('title');
+  const [sortAsc, setSortAsc] = useState(true);
+
+  const handleSort = (field: 'title' | 'category') => {
+    if (sortField === field) { setSortAsc(!sortAsc); } else { setSortField(field); setSortAsc(true); }
+  };
+
+  const favouriteRecipes = RECIPES.filter(r => favourites.includes(r.id)).sort((a, b) => {
+    const valA = sortField === 'title' ? a.title.toLowerCase() : a.category.toLowerCase();
+    const valB = sortField === 'title' ? b.title.toLowerCase() : b.category.toLowerCase();
+    return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+  });
 
   return (
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
       <View style={styles.favouritesHeader}>
-        <Text style={styles.homeSectionTitle}>Favoritos</Text>
+        <Text style={[styles.homeSectionTitle, { marginBottom: 0 }]}>Favoritos</Text>
         {favouriteRecipes.length > 0 && (
           <View style={styles.viewToggle}>
             <TouchableOpacity
@@ -3650,8 +3803,12 @@ function FavoritosScreen({
       ) : (
         <View style={styles.table}>
           <View style={styles.tableHeader}>
-            <Text style={[styles.tableHeaderText, { flex: 2 }]}>Receta</Text>
-            <Text style={[styles.tableHeaderText, { flex: 1 }]}>Categoría</Text>
+            <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
+              <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
+              <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+            </TouchableOpacity>
           </View>
           {favouriteRecipes.map(recipe => (
             <TouchableOpacity
@@ -3681,11 +3838,21 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
+  const [sortField, setSortField] = useState<'title' | 'category'>('title');
+  const [sortAsc, setSortAsc] = useState(true);
+
+  const handleSort = (field: 'title' | 'category') => {
+    if (sortField === field) { setSortAsc(!sortAsc); } else { setSortField(field); setSortAsc(true); }
+  };
 
   const filteredRecipes = RECIPES.filter(r => {
     const matchesSearch = !search || r.title.toLowerCase().includes(search.toLowerCase());
     const matchesCategory = !selectedCategory || r.category === selectedCategory;
     return matchesSearch && matchesCategory;
+  }).sort((a, b) => {
+    const valA = sortField === 'title' ? a.title.toLowerCase() : a.category.toLowerCase();
+    const valB = sortField === 'title' ? b.title.toLowerCase() : b.category.toLowerCase();
+    return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
   });
 
   return (
@@ -3756,8 +3923,12 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
 
       <View style={styles.table}>
         <View style={styles.tableHeader}>
-          <Text style={[styles.tableHeaderText, { flex: 2 }]}>Receta</Text>
-          <Text style={[styles.tableHeaderText, { flex: 1 }]}>Categoría</Text>
+          <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
+            <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
+            <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+          </TouchableOpacity>
         </View>
         {filteredRecipes.map(recipe => (
           <TouchableOpacity
@@ -3785,6 +3956,271 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
 }
 
 // --- Toast Component ---
+// --- Day Picker Modal ---
+function DayPickerModal({
+  visible,
+  onClose,
+  onSelectDay,
+  weekKey,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  onSelectDay: (dayIndex: number) => void;
+  weekKey: string;
+}) {
+  const monday = getMondayOfWeek(weekKey);
+  const dayNames = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+  
+  const formatWeekDates = (): string => {
+    return `Semana del ${monday.getDate()} ${monthNames[monday.getMonth()]}`;
+  };
+
+  return (
+    <Modal visible={visible} transparent animationType="fade">
+      <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
+        <TouchableOpacity activeOpacity={1} onPress={(e) => e.stopPropagation()}>
+          <View style={styles.dayPickerModal}>
+            <Text style={styles.modalTitle}>{formatWeekDates()}</Text>
+            <View style={styles.dayGrid}>
+              {dayNames.map((dayName, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.dayButton}
+                  onPress={() => onSelectDay(index + 1)}
+                  activeOpacity={0.7}
+                >
+                  <Text style={styles.dayButtonText}>{dayName}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        </TouchableOpacity>
+      </TouchableOpacity>
+    </Modal>
+  );
+}
+
+// --- Planificador Screen ---
+function PlanificadorScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) => void }) {
+  const [currentWeekOffset, setCurrentWeekOffset] = useState(0);
+  const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
+
+  const getWeekDate = (): Date => {
+    const today = new Date();
+    const result = new Date(today);
+    result.setDate(today.getDate() + currentWeekOffset * 7);
+    return result;
+  };
+
+  const monday = (() => {
+    const date = getWeekDate();
+    const day = date.getDay();
+    const diff = day === 0 ? -6 : 1 - day;
+    const result = new Date(date);
+    result.setDate(date.getDate() + diff);
+    return result;
+  })();
+
+  const weekKey = getWeekKey(monday);
+  const plan = getWeeklyPlan();
+  const weekPlan = plan[weekKey] || {};
+
+  const dayNames = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+
+  const formatWeekRange = (): string => {
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    return `Semana del ${monday.getDate()} ${monthNames[monday.getMonth()]} - ${sunday.getDate()} ${monthNames[sunday.getMonth()]}`;
+  };
+
+  const getRecipeById = (id: string): RecipeData | undefined => {
+    return RECIPES.find(r => r.id === id);
+  };
+
+  const removeRecipe = (dayIndex: number, recipeId: string) => {
+    removeRecipeFromDay(recipeId, weekKey, dayIndex);
+    setCurrentWeekOffset(currentWeekOffset); // Force re-render
+  };
+
+  // Generate shopping list
+  const shoppingList: Array<{ name: string; quantity: number; unit: string }> = [];
+  const ingredientMap: { [key: string]: { quantity: number; unit: string } } = {};
+
+  Object.keys(weekPlan).forEach(dayIndexStr => {
+    const dayIndex = parseInt(dayIndexStr);
+    weekPlan[dayIndex]?.forEach(recipeId => {
+      const recipe = getRecipeById(recipeId);
+      if (!recipe) return;
+
+      recipe.ingredients.forEach(ing => {
+        if (ing.baseQuantity === null) {
+          const key = ing.name.toLowerCase();
+          if (!ingredientMap[key]) {
+            ingredientMap[key] = { quantity: 0, unit: '' };
+          }
+        } else {
+          const key = ing.name.toLowerCase();
+          if (!ingredientMap[key]) {
+            ingredientMap[key] = { quantity: 0, unit: ing.unit };
+          }
+          ingredientMap[key].quantity += ing.baseQuantity;
+        }
+      });
+    });
+  });
+
+  Object.keys(ingredientMap)
+    .sort()
+    .forEach(key => {
+      const { quantity, unit } = ingredientMap[key];
+      shoppingList.push({
+        name: key.charAt(0).toUpperCase() + key.slice(1),
+        quantity: Math.round(quantity * 10) / 10,
+        unit,
+      });
+    });
+
+  const toggleIngredient = (ingredientKey: string) => {
+    const checked = getCheckedIngredients();
+    const weekChecked = checked[weekKey] || [];
+    const updated = weekChecked.includes(ingredientKey)
+      ? weekChecked.filter(k => k !== ingredientKey)
+      : [...weekChecked, ingredientKey];
+    checked[weekKey] = updated;
+    saveCheckedIngredients(checked);
+    setCheckedIngredients(new Set(updated));
+  };
+
+  useEffect(() => {
+    const checked = getCheckedIngredients();
+    setCheckedIngredients(new Set(checked[weekKey] || []));
+  }, [weekKey]);
+
+  const copyShoppingList = () => {
+    const text = shoppingList
+      .map(item => {
+        if (item.quantity === 0) return item.name;
+        return `${item.quantity} ${item.unit} ${item.name}`;
+      })
+      .join('\n');
+    navigator.clipboard.writeText(text);
+    alert('Lista copiada al portapapeles ✓');
+  };
+
+  return (
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.planificadorContainer}>
+        <Text style={styles.planificadorTitle}>Planificador Semanal</Text>
+
+        {/* Week Selector */}
+        <View style={styles.weekSelector}>
+          <TouchableOpacity
+            style={styles.weekArrow}
+            onPress={() => setCurrentWeekOffset(currentWeekOffset - 1)}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.weekArrowText}>‹</Text>
+          </TouchableOpacity>
+          <Text style={styles.weekText}>{formatWeekRange()}</Text>
+          <TouchableOpacity
+            style={styles.weekArrow}
+            onPress={() => setCurrentWeekOffset(currentWeekOffset + 1)}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.weekArrowText}>›</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Weekly View */}
+        {dayNames.map((dayName, index) => {
+          const dayIndex = index + 1;
+          const dayDate = new Date(monday);
+          dayDate.setDate(monday.getDate() + index);
+          const recipes = weekPlan[dayIndex] || [];
+
+          return (
+            <View key={index} style={styles.daySection}>
+              <Text style={styles.dayHeader}>
+                {dayName} {dayDate.getDate()}
+              </Text>
+              {recipes.length === 0 ? (
+                <Text style={styles.emptyDayText}>Sin recetas</Text>
+              ) : (
+                <View style={styles.recipeList}>
+                  {recipes.map((recipeId, idx) => {
+                    const recipe = getRecipeById(recipeId);
+                    if (!recipe) return null;
+                    return (
+                      <View key={idx} style={styles.planRecipeCard}>
+                        <TouchableOpacity
+                          style={styles.planRecipeInfo}
+                          onPress={() => onSelectRecipe(recipe)}
+                          activeOpacity={0.7}
+                        >
+                          <Image source={{ uri: recipe.image }} style={styles.planRecipeImage} resizeMode="cover" />
+                          <Text style={styles.planRecipeTitle} numberOfLines={2}>
+                            {recipe.title}
+                          </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                          style={styles.removeButton}
+                          onPress={() => removeRecipe(dayIndex, recipeId)}
+                          activeOpacity={0.7}
+                        >
+                          <Text style={styles.removeButtonText}>✕</Text>
+                        </TouchableOpacity>
+                      </View>
+                    );
+                  })}
+                </View>
+              )}
+            </View>
+          );
+        })}
+
+        {/* Shopping List */}
+        <View style={styles.shoppingListSection}>
+          <View style={styles.shoppingListHeader}>
+            <Text style={styles.shoppingListTitle}>Lista de la compra 🛒</Text>
+            {shoppingList.length > 0 && (
+              <TouchableOpacity style={styles.copyButton} onPress={copyShoppingList} activeOpacity={0.7}>
+                <Text style={styles.copyButtonText}>Copiar lista</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+          {shoppingList.length === 0 ? (
+            <Text style={styles.emptyShoppingText}>No hay recetas asignadas esta semana</Text>
+          ) : (
+            shoppingList.map((item, index) => {
+              const key = item.name.toLowerCase();
+              const isChecked = checkedIngredients.has(key);
+              return (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.shoppingItem}
+                  onPress={() => toggleIngredient(key)}
+                  activeOpacity={0.7}
+                >
+                  <View style={[styles.shoppingCheckbox, isChecked && styles.checkboxChecked]}>
+                    {isChecked && <Text style={styles.checkmark}>✓</Text>}
+                  </View>
+                  <Text style={[styles.shoppingItemText, isChecked && styles.itemTextChecked]}>
+                    {item.quantity === 0
+                      ? item.name
+                      : `${item.quantity} ${item.unit} ${item.name}`}
+                  </Text>
+                </TouchableOpacity>
+              );
+            })
+          )}
+        </View>
+      </View>
+    </ScrollView>
+  );
+}
+
 function Toast({ message, visible }: { message: string; visible: boolean }) {
   const [fadeAnim] = useState(new Animated.Value(0));
 
@@ -3815,6 +4251,193 @@ function Toast({ message, visible }: { message: string; visible: boolean }) {
   );
 }
 
+// --- Planificador Screen ---
+function PlanificadorScreen({
+  onSelectRecipe,
+}: {
+  onSelectRecipe: (recipe: RecipeData) => void;
+}) {
+  const [currentWeekStart, setCurrentWeekStart] = useState(getMondayOfWeek(new Date()));
+  const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
+  
+  const weekKey = getWeekKey(currentWeekStart);
+  const plan = getWeeklyPlan();
+  const weekPlan = plan[weekKey] || {};
+
+  useEffect(() => {
+    const checked = getShoppingChecked(weekKey);
+    setCheckedIngredients(new Set(checked));
+  }, [weekKey]);
+
+  const dayNames = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  
+  const formatWeekRange = (monday: Date): string => {
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+    const startMonth = monthNames[monday.getMonth()];
+    const endMonth = monthNames[sunday.getMonth()];
+    if (startMonth === endMonth) {
+      return `${monday.getDate()} - ${sunday.getDate()} ${startMonth}`;
+    }
+    return `${monday.getDate()} ${startMonth} - ${sunday.getDate()} ${endMonth}`;
+  };
+
+  const navigateWeek = (direction: number) => {
+    const newWeek = new Date(currentWeekStart);
+    newWeek.setDate(currentWeekStart.getDate() + direction * 7);
+    setCurrentWeekStart(newWeek);
+  };
+
+  const handleRemoveRecipe = (recipeId: string, dayIndex: number) => {
+    removeRecipeFromDay(recipeId, weekKey, dayIndex);
+    // Force re-render by updating state
+    setCurrentWeekStart(new Date(currentWeekStart));
+  };
+
+  // Generate shopping list
+  const shoppingList: { [key: string]: { quantity: number, unit: string } } = {};
+  Object.keys(weekPlan).forEach(dayIndexStr => {
+    const recipeIds = weekPlan[parseInt(dayIndexStr)];
+    recipeIds.forEach(recipeId => {
+      const recipe = RECIPES.find(r => r.id === recipeId);
+      if (!recipe) return;
+      recipe.ingredients.forEach(ing => {
+        if (ing.baseQuantity === null) {
+          // No quantity specified
+          if (!shoppingList[ing.name]) {
+            shoppingList[ing.name] = { quantity: 0, unit: ing.unit || '' };
+          }
+        } else {
+          const key = ing.name;
+          if (!shoppingList[key]) {
+            shoppingList[key] = { quantity: 0, unit: ing.unit };
+          }
+          shoppingList[key].quantity += ing.baseQuantity;
+        }
+      });
+    });
+  });
+
+  const shoppingListArray = Object.keys(shoppingList).sort((a, b) => a.localeCompare(b)).map(name => {
+    const item = shoppingList[name];
+    if (item.quantity === 0) {
+      return name;
+    }
+    const qtyStr = item.quantity >= 100 
+      ? Math.round(item.quantity).toString() 
+      : item.quantity >= 10 
+      ? (Math.round(item.quantity * 10) / 10).toString() 
+      : (Math.round(item.quantity * 100) / 100).toString();
+    const unit = item.unit ? ` ${item.unit}` : '';
+    return `${qtyStr}${unit} ${name}`;
+  });
+
+  const toggleIngredient = (ingredient: string) => {
+    toggleShoppingChecked(ingredient, weekKey);
+    setCheckedIngredients(prev => {
+      const next = new Set(prev);
+      next.has(ingredient) ? next.delete(ingredient) : next.add(ingredient);
+      return next;
+    });
+  };
+
+  const copyShoppingList = () => {
+    const text = shoppingListArray.join('\n');
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Lista copiada al portapapeles');
+    }).catch(() => {
+      alert('No se pudo copiar la lista');
+    });
+  };
+
+  return (
+    <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
+      {/* Week selector */}
+      <View style={styles.weekSelector}>
+        <TouchableOpacity onPress={() => navigateWeek(-1)} activeOpacity={0.7}>
+          <Text style={styles.weekArrow}>←</Text>
+        </TouchableOpacity>
+        <Text style={styles.weekTitle}>Semana del {formatWeekRange(currentWeekStart)}</Text>
+        <TouchableOpacity onPress={() => navigateWeek(1)} activeOpacity={0.7}>
+          <Text style={styles.weekArrow}>→</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Weekly view */}
+      {dayNames.map((dayName, dayIndex) => {
+        const dayDate = new Date(currentWeekStart);
+        dayDate.setDate(currentWeekStart.getDate() + dayIndex);
+        const dayRecipes = weekPlan[dayIndex] || [];
+        
+        return (
+          <View key={dayIndex} style={styles.daySection}>
+            <Text style={styles.dayHeader}>{dayName} {dayDate.getDate()}</Text>
+            {dayRecipes.length === 0 ? (
+              <Text style={styles.emptyDay}>Sin recetas</Text>
+            ) : (
+              <View style={styles.dayRecipes}>
+                {dayRecipes.map((recipeId) => {
+                  const recipe = RECIPES.find(r => r.id === recipeId);
+                  if (!recipe) return null;
+                  return (
+                    <View key={recipeId} style={styles.plannerRecipeCard}>
+                      <TouchableOpacity
+                        style={styles.plannerRecipeInfo}
+                        onPress={() => onSelectRecipe(recipe)}
+                        activeOpacity={0.7}
+                      >
+                        <Image source={{ uri: recipe.image }} style={styles.plannerRecipeImage} resizeMode="cover" />
+                        <Text style={styles.plannerRecipeTitle} numberOfLines={2}>{recipe.title}</Text>
+                      </TouchableOpacity>
+                      <TouchableOpacity
+                        style={styles.removeRecipeButton}
+                        onPress={() => handleRemoveRecipe(recipeId, dayIndex)}
+                        activeOpacity={0.7}
+                      >
+                        <Text style={styles.removeRecipeText}>✕</Text>
+                      </TouchableOpacity>
+                    </View>
+                  );
+                })}
+              </View>
+            )}
+          </View>
+        );
+      })}
+
+      {/* Shopping list */}
+      {shoppingListArray.length > 0 && (
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Lista de la compra 🛒</Text>
+          {shoppingListArray.map((ingredient, idx) => (
+            <TouchableOpacity
+              key={idx}
+              style={styles.checkItem}
+              onPress={() => toggleIngredient(ingredient)}
+              activeOpacity={0.7}
+            >
+              <View style={[styles.checkbox, checkedIngredients.has(ingredient) && styles.checkboxChecked]}>
+                {checkedIngredients.has(ingredient) && <Text style={styles.checkmark}>✓</Text>}
+              </View>
+              <Text style={[styles.itemText, checkedIngredients.has(ingredient) && styles.itemTextChecked]}>
+                {ingredient}
+              </Text>
+            </TouchableOpacity>
+          ))}
+          <TouchableOpacity
+            style={styles.copyButton}
+            onPress={copyShoppingList}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.copyButtonText}>Copiar lista</Text>
+          </TouchableOpacity>
+        </View>
+      )}
+    </ScrollView>
+  );
+}
+
 // --- Sobre mí Screen ---
 function SobreMiScreen() {
   return (
@@ -3842,7 +4465,8 @@ function SobreMiScreen() {
 // --- App ---
 export default function App() {
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeData | null>(null);
-  const [currentPage, setCurrentPage] = useState<'recetas' | 'favoritos' | 'sobremi'>('recetas');
+  const [currentPage, setCurrentPage] = useState<'recetas' | 'favoritos' | 'sobremi' | 'planificador'>('recetas');
+  const [cameFromPage, setCameFromPage] = useState<'recetas' | 'favoritos' | 'planificador'>('recetas');
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [slideAnim] = useState(new Animated.Value(300));
   const [favourites, setFavourites] = useState<string[]>([]);
@@ -3875,10 +4499,16 @@ export default function App() {
     }).start(() => setSidebarVisible(false));
   };
 
-  const handleMenuItemPress = (page: 'recetas' | 'favoritos' | 'sobremi') => {
+  const handleMenuItemPress = (page: 'recetas' | 'favoritos' | 'sobremi' | 'planificador') => {
     setCurrentPage(page);
     setSelectedRecipe(null);
     closeSidebar();
+  };
+
+  const handleShowToast = (message: string) => {
+    setToastMessage(message);
+    setToastVisible(true);
+    setTimeout(() => setToastVisible(false), 2300);
   };
 
   const handleToggleFavourite = (recipeId: string) => {
@@ -3915,22 +4545,32 @@ export default function App() {
           <Text style={styles.hamburgerIcon}>☰</Text>
         </TouchableOpacity>
       </View>
-      {currentPage === 'sobremi' ? (
+      {selectedRecipe ? (
+        <RecipeScreen
+          recipe={selectedRecipe}
+          onBack={() => { 
+            setSelectedRecipe(null); 
+            if (cameFromPage === 'favoritos') setCurrentPage('favoritos');
+            else if (cameFromPage === 'planificador') setCurrentPage('planificador');
+          }}
+          backLabel={cameFromPage === 'favoritos' ? '← Favoritos' : cameFromPage === 'planificador' ? '← Planificador' : '← Recetas'}
+          isFavourite={favourites.includes(selectedRecipe.id)}
+          onToggleFavourite={handleToggleFavourite}
+          onShowToast={handleShowToast}
+        />
+      ) : currentPage === 'sobremi' ? (
         <SobreMiScreen />
+      ) : currentPage === 'planificador' ? (
+        <PlanificadorScreen
+          onSelectRecipe={(recipe) => { setCameFromPage('planificador'); setSelectedRecipe(recipe); }}
+        />
       ) : currentPage === 'favoritos' ? (
         <FavoritosScreen
           favourites={favourites}
-          onSelectRecipe={setSelectedRecipe}
-        />
-      ) : selectedRecipe ? (
-        <RecipeScreen
-          recipe={selectedRecipe}
-          onBack={() => setSelectedRecipe(null)}
-          isFavourite={favourites.includes(selectedRecipe.id)}
-          onToggleFavourite={handleToggleFavourite}
+          onSelectRecipe={(recipe) => { setCameFromPage('favoritos'); setSelectedRecipe(recipe); }}
         />
       ) : (
-        <HomeScreen onSelectRecipe={setSelectedRecipe} />
+        <HomeScreen onSelectRecipe={(recipe) => { setCameFromPage('recetas'); setSelectedRecipe(recipe); }} />
       )}
       {sidebarVisible && (
         <View style={styles.sidebarOverlay}>
@@ -3987,6 +4627,23 @@ export default function App() {
             <TouchableOpacity
               style={[
                 styles.sidebarMenuItem,
+                currentPage === 'planificador' && styles.sidebarMenuItemActive,
+              ]}
+              onPress={() => handleMenuItemPress('planificador')}
+              activeOpacity={0.7}
+            >
+              <Text
+                style={[
+                  styles.sidebarMenuText,
+                  currentPage === 'planificador' && styles.sidebarMenuTextActive,
+                ]}
+              >
+                Planificador
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.sidebarMenuItem,
                 currentPage === 'sobremi' && styles.sidebarMenuItemActive,
               ]}
               onPress={() => handleMenuItemPress('sobremi')}
@@ -4005,6 +4662,14 @@ export default function App() {
         </View>
       )}
       <Toast message={toastMessage} visible={toastVisible} />
+      {showDayPicker && recipeForPlanner && (
+        <DayPickerModal
+          visible={showDayPicker}
+          onClose={() => setShowDayPicker(false)}
+          onSelectDay={handleAddToDay}
+          weekKey={getWeekKey(new Date())}
+        />
+      )}
     </View>
   );
 }
@@ -4336,8 +5001,8 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   servingsLabel: {
-    fontSize: 18,
-    fontWeight: '600',
+    fontSize: 22,
+    fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
     color: '#707940',
@@ -4576,6 +5241,147 @@ const styles = StyleSheet.create({
     color: '#707940',
   },
   viewToggleTextActive: {
+    color: '#FFFFFF',
+  },
+  // Planner
+  actionButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  calendarButton: {
+    padding: 8,
+  },
+  calendarIcon: {
+    fontSize: 24,
+  },
+  dayGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 10,
+    marginTop: 12,
+  },
+  dayButton: {
+    backgroundColor: '#EBEEDD',
+    borderRadius: 10,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    minWidth: 70,
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: '#707940',
+  },
+  dayButtonText: {
+    fontFamily: 'League Gothic',
+    letterSpacing: 1,
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#707940',
+  },
+  weekSelector: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  weekArrow: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#707940',
+    paddingHorizontal: 12,
+  },
+  weekTitle: {
+    fontFamily: 'League Gothic',
+    letterSpacing: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#707940',
+    textAlign: 'center',
+  },
+  daySection: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  dayHeader: {
+    fontFamily: 'League Gothic',
+    letterSpacing: 1,
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#707940',
+    marginBottom: 12,
+  },
+  emptyDay: {
+    fontFamily: 'Karla',
+    fontSize: 14,
+    color: '#9E9E9E',
+    fontStyle: 'italic',
+  },
+  dayRecipes: {
+    gap: 10,
+  },
+  plannerRecipeCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#EBEEDD',
+    borderRadius: 10,
+    padding: 8,
+  },
+  plannerRecipeInfo: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  plannerRecipeImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 8,
+  },
+  plannerRecipeTitle: {
+    flex: 1,
+    fontFamily: 'Karla',
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#707940',
+  },
+  removeRecipeButton: {
+    padding: 8,
+    marginLeft: 8,
+  },
+  removeRecipeText: {
+    fontSize: 20,
+    color: '#707940',
+    fontWeight: 'bold',
+  },
+  copyButton: {
+    backgroundColor: '#707940',
+    borderRadius: 10,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    marginTop: 16,
+  },
+  copyButtonText: {
+    fontFamily: 'League Gothic',
+    letterSpacing: 1,
+    fontSize: 18,
+    fontWeight: 'bold',
     color: '#FFFFFF',
   },
 });
