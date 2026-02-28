@@ -84,7 +84,7 @@ const RECIPES: RecipeData[] = [
     title: 'Nachos con guacamole',
     category: 'Hidratos',
     summary: 'Nachos caseros de harina de garbanzo horneados con guacamole fresco. Un snack saludable para dipear.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/06/IMG_20200620_180602-e1662738748888.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/06/IMG_20200620_180549-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'harina de garbanzo' },
@@ -1419,7 +1419,7 @@ const RECIPES: RecipeData[] = [
     title: 'Guiso de pollo con garam masala',
     category: 'Carne',
     summary: 'Guiso aromático de pollo con champiñones, patatas y la mezcla de especias garam masala.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200121_154409-e1660130606874.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200118_171221-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'pechuga de pollo entera' },
@@ -1449,7 +1449,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alitas de pollo en escabeche',
     category: 'Carne',
     summary: 'Alitas de pollo en escabeche con verduras, hierbas aromáticas, vino blanco y vinagre de Jerez.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200115_154632-e1660131471336.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200111_170718-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 800, unit: 'gr de', name: 'alitas de pollo' },
@@ -1482,7 +1482,7 @@ const RECIPES: RecipeData[] = [
     title: 'Quinoa con pollo y pomelo',
     category: 'Carne',
     summary: 'Ensalada refrescante de quinoa con pollo especiado, pomelo, nueces y semillas de girasol.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200114_154636-e1660132018907.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200111_155814-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'pechugas de pollo' },
@@ -1811,7 +1811,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con paté de caballa y sardinas y coliflor',
     category: 'Hidratos',
     summary: 'Pasta integral con paté de caballa y sardinas, coliflor al microondas y queso rallado. Aprovechamiento delicioso.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/06/IMG_20200620_180602-e1662738748888.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/06/IMG_20200620_180549-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 160, unit: 'gr de', name: 'caballas en conserva escurridas' },
@@ -2757,7 +2757,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de arroz',
     category: 'Sopa',
     summary: 'Sopa de arroz con pimiento asado, tomate y caldo de carne. Acompañada de huevo cocido.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/10/IMG_20191024_135641-e1662739071764.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/03/IMG_20200302_211531.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'arroz' },
@@ -2787,7 +2787,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa cortijera',
     category: 'Sopa',
     summary: 'Sopa andaluza con verduras, espárragos, jamón serrano, pan integral y huevos escalfados.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/05/IMG_20190524_135424-e1662739107914.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/02/IMG_20200225_195231.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'tomate gordo maduro' },
@@ -2818,7 +2818,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de patatas estilo alemán',
     category: 'Sopa',
     summary: 'Sopa alemana cremosa de patatas con verduras y salchichas bratwurst. Reconfortante y sabrosa.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/10/IMG_20191025_131742-e1662739149826.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200127_153719.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: '', name: 'patatas medianas' },
@@ -2849,7 +2849,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de quinoa con almejas',
     category: 'Sopa',
     summary: 'Sopa de quinoa con almejas, alcachofas, zanahorias y caldo de pescado. Nutritiva y deliciosa.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2016/11/IMG_20161106_103634-e1662739175555.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2019/10/IMG_20191029_154804.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'quinoa' },
@@ -2879,7 +2879,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de cacahuete',
     category: 'Sopa',
     summary: 'Sopa de cacahuete con pollo, verduras y macarrones. Inspirada en recetas africanas con un toque especial.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/11/IMG_20191108_133330-e1662739204390.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2019/05/IMG_20190518_214303_resized_20190518_095217588.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'pechuga de pollo' },
@@ -2908,7 +2908,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de quinoa con garbanzos',
     category: 'Sopa',
     summary: 'Sopa de quinoa con garbanzos, bacalao fresco y verduras con toques de limón, alcaparras y hierbas.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2017/01/IMG_20170129_101902-e1662739232346.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2019/05/IMG_20190513_154245.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 60, unit: 'gr de', name: 'quinoa' },
@@ -2940,7 +2940,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de quinoa',
     category: 'Sopa',
     summary: 'Sopa de pollo y quinoa con verduras, maíz, pimientos asados y laurel. Receta reconfortante y nutritiva.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2015/09/IMG_20150902_134352-e1662739261990.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2018/12/img_20181216_201226765455136581871901.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 0.5, unit: 'litro de', name: 'caldo de pollo' },
@@ -2970,7 +2970,7 @@ const RECIPES: RecipeData[] = [
     title: 'Grisines al curry',
     category: 'Pan',
     summary: 'Grisines de harina integral con curry. Crujientes palitos de pan perfectos para aperitivos o snacks.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/01/IMG_20200107_182242-e1662739295513.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2019/04/IMG_20190413_155651_resized_20190413_045529473.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 250, unit: 'gr de', name: 'harina integral de trigo' },
@@ -2997,7 +2997,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pizzaca',
     category: 'Pan',
     summary: 'Pizza casera con tomate rallado, yogur griego, setas, salchichas frescas y queso. Receta familiar y versátil.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/12/IMG_20191210_135327-e1662739321467.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2018/12/IMG_20181209_121304_resized_20181209_121401895.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'masa de pizza' },
@@ -3025,7 +3025,7 @@ const RECIPES: RecipeData[] = [
     title: 'Regañás de Iván Yarza',
     category: 'Pan',
     summary: 'Regañás crujientes de harina integral con fermento largo. Receta del panadero Iván Yarza perfecta para snacks.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/02/IMG_20200221_115726-e1662739352636.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2018/11/44953761_10217424767519988_7076299614793498624_n.jpg',
     defaultServings: 8,
     ingredients: [
       { id: '1', baseQuantity: 50, unit: 'gr de', name: 'harina integral (fermento)' },
@@ -3056,7 +3056,7 @@ const RECIPES: RecipeData[] = [
     title: 'Espaguetis integrales en salsa negra',
     category: 'Hidratos',
     summary: 'Espaguetis con salsa de tinta de calamar, gambas, verduras y pimentón ahumado. Sabor intenso del mar.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2021/03/IMG_20210309_193026-e1662739400682.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/06/IMG_20200612_160605.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla' },
@@ -3087,7 +3087,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con salsa de uvas pasas y pollo',
     category: 'Hidratos',
     summary: 'Pasta con salsa cremosa de pollo, verduras, ciruelas pasas, coñac y especias. Toque dulce y sabroso.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2021/03/IMG_20210304_132957-e1662739432766.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/05/IMG_20200531_000546.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: '', name: 'muslos de pollo' },
@@ -3119,7 +3119,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con salsa de curry vegetal',
     category: 'Hidratos',
     summary: 'Pasta con salsa cremosa de curry, garbanzos, guisantes y leche de coco. Vegana y aromática.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2021/03/IMG_20210305_131917-e1662739463618.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/05/IMG_20200517_123756.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla' },
@@ -3151,7 +3151,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con pesto de brócoli',
     category: 'Hidratos',
     summary: 'Pasta con pesto verde de brócoli, avellanas, parmesano, limón y albahaca. Saludable y delicioso.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2021/03/IMG_20210301_194644-e1662739501169.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/05/IMG_20200509_213712-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'brócoli pequeño' },
@@ -3182,7 +3182,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con crema de coliflor y champiñones',
     category: 'Hidratos',
     summary: 'Pasta con crema sedosa de coliflor, anacardos y champiñones dorados. Receta cremosa sin nata.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2021/03/IMG_20210302_133111-e1662739530930.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/05/IMG_20200426_150746-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'coliflor pequeña' },
@@ -3212,7 +3212,7 @@ const RECIPES: RecipeData[] = [
     title: 'Lasaña de suegra',
     category: 'Hidratos',
     summary: 'Lasaña clásica con carne, verduras, bechamel casera y chorizo ibérico. Receta familiar tradicional.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/03/IMG_20200328_115637-e1662739558875.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/04/IMG_20200427_1606226479.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
@@ -3247,7 +3247,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con pesto de calabacín y gambas',
     category: 'Hidratos',
     summary: 'Pasta con pesto verde de calabacín, anacardos, albahaca y parmesano acompañado de gambas salteadas.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2022/07/IMG_20220707_135024-e1662739592562.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/04/IMG_20200419_180806.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'calabacines medianos' },
@@ -3277,7 +3277,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de arroz',
     category: 'Hidratos',
     summary: 'Ensalada fresca de arroz con tomate, atún, huevo cocido, aceitunas y vinagreta de mostaza y limón.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/09/IMG_20190927_124341-e1662739619494.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/04/IMG_20200414_161254.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'arroz' },
@@ -3306,7 +3306,7 @@ const RECIPES: RecipeData[] = [
     title: 'Quinoa con guisantes',
     category: 'Hidratos',
     summary: 'Quinoa salteada con guisantes, jamón serrano, cebolla, huevo cocido y toque de limón. Plato completo y nutritivo.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2019/10/IMG_20191008_124344-e1662739647780.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/04/IMG_20200401_153540.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'quinoa cruda' },
@@ -3334,7 +3334,7 @@ const RECIPES: RecipeData[] = [
     title: 'Tortilla de patata rallada y ajetes',
     category: 'Entrantes',
     summary: 'Tortilla de patata rallada con ajetes y espárragos verdes. Versión ligera cocinada al microondas con garam masala.',
-    image: 'https://lavidabonica.com/wp-content/uploads/2020/05/IMG_20200521_131929-e1662739673992.jpg',
+    image: 'https://lavidabonica.com/wp-content/uploads/2020/03/IMG_20200322_122833_resized_20200322_020112730-1.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'patatas' },
@@ -3659,15 +3659,45 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
   );
 }
 
+// --- Sobre mí Screen ---
+function SobreMiScreen() {
+  return (
+    <ScrollView style={styles.scrollView} contentContainerStyle={{ paddingBottom: 40 }}>
+      <View style={[styles.section, { maxWidth: 700, alignSelf: 'center', width: '100%', marginTop: 20 }]}>
+        <Text style={[styles.sectionTitle, { textAlign: 'center', fontSize: 28, marginBottom: 24 }]}>SOBRE MI</Text>
+        <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>Hola!!!</Text>
+        <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
+          Aquí una madre de dos peques de 7 y 9 años preocupada por la alimentación de su familia 🙋🏼‍♀️
+        </Text>
+        <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
+          Al mismo tiempo me encanta tener hobbies, que mis hijos jueguen en el parque, que mi marido ensaye con su grupo de música…. Es decir, no quiero ser una esclava de la cocina, así que intento cocinar un día a la semana y lo más sano posible.
+        </Text>
+        <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
+          Y en este blog os voy a intentar plasmar mis recetas con ingredientes reales y mis intentos para que mis cachorros se las coman. Ya os adelanto que no siempre será fácil, pero sabemos que dando ejemplo llegaremos lejos 💪🏽
+        </Text>
+        <Text style={[styles.itemText, { fontSize: 18, lineHeight: 28 }]}>
+          Si tenéis las mismas inquietudes me encantaría conocer vuestro día a día y vuestras ideas para que nuestros hijos se alimenten de una manera saludable.
+        </Text>
+      </View>
+    </ScrollView>
+  );
+}
+
 // --- App ---
 export default function App() {
   const [selectedRecipe, setSelectedRecipe] = useState<RecipeData | null>(null);
+  const [currentPage, setCurrentPage] = useState<'recetas' | 'sobremi'>('recetas');
+
+  const handleLogoClick = () => {
+    setSelectedRecipe(null);
+    setCurrentPage('recetas');
+  };
 
   return (
     <View style={styles.container}>
       <StatusBar style="dark" />
       <View style={styles.navbar}>
-        <TouchableOpacity onPress={() => setSelectedRecipe(null)} activeOpacity={0.7}>
+        <TouchableOpacity onPress={handleLogoClick} activeOpacity={0.7}>
           <Image
             source={{ uri: 'https://lavidabonica.com/wp-content/uploads/2024/02/logo-small.png' }}
             style={styles.navLogo}
@@ -3675,7 +3705,25 @@ export default function App() {
           />
         </TouchableOpacity>
       </View>
-      {selectedRecipe ? (
+      <View style={styles.navTabs}>
+        <TouchableOpacity
+          style={[styles.navTab, currentPage === 'recetas' && styles.navTabActive]}
+          onPress={() => { setCurrentPage('recetas'); setSelectedRecipe(null); }}
+          activeOpacity={0.7}
+        >
+          <Text style={[styles.navTabText, currentPage === 'recetas' && styles.navTabTextActive]}>Recetas</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.navTab, currentPage === 'sobremi' && styles.navTabActive]}
+          onPress={() => { setCurrentPage('sobremi'); setSelectedRecipe(null); }}
+          activeOpacity={0.7}
+        >
+          <Text style={[styles.navTabText, currentPage === 'sobremi' && styles.navTabTextActive]}>Sobre mí</Text>
+        </TouchableOpacity>
+      </View>
+      {currentPage === 'sobremi' ? (
+        <SobreMiScreen />
+      ) : selectedRecipe ? (
         <RecipeScreen recipe={selectedRecipe} onBack={() => setSelectedRecipe(null)} />
       ) : (
         <HomeScreen onSelectRecipe={setSelectedRecipe} />
@@ -3705,6 +3753,40 @@ const styles = StyleSheet.create({
   navLogo: {
     width: 150,
     height: 40,
+  },
+  navTabs: {
+    flexDirection: 'row',
+    backgroundColor: '#FFFFFF',
+    borderBottomWidth: 1,
+    borderBottomColor: '#E0E0E0',
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 2,
+    zIndex: 9,
+  },
+  navTab: {
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    marginRight: 16,
+    borderBottomWidth: 3,
+    borderBottomColor: 'transparent',
+  },
+  navTabActive: {
+    borderBottomColor: '#707940',
+  },
+  navTabText: {
+    fontFamily: 'Karla',
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#9E9E9E',
+  },
+  navTabTextActive: {
+    color: '#707940',
+    fontWeight: 'bold',
   },
   scrollView: {
     flex: 1,
