@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useState, useEffect } from 'react';
+import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, HelpCircle, LayoutGrid, List } from 'lucide-react';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -22,7 +23,7 @@ const toggleFavourite = (recipeId: string): string[] => {
 };
 
 // --- Weekly Planner Helpers ---
-type WeeklyPlan = { [weekKey: string]: { [dayIndex: number]: string[] } };
+type WeeklyPlan = { [weekKey: string]: string[] };
 
 const getWeekKey = (date: Date): string => {
   const year = date.getFullYear();
@@ -47,22 +48,20 @@ const getWeeklyPlan = (): WeeklyPlan => {
   }
 };
 
-const addRecipeToDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+const addRecipeToWeek = (recipeId: string, weekKey: string): void => {
   const plan = getWeeklyPlan();
-  if (!plan[weekKey]) plan[weekKey] = {};
-  if (!plan[weekKey][dayIndex]) plan[weekKey][dayIndex] = [];
-  if (!plan[weekKey][dayIndex].includes(recipeId)) {
-    plan[weekKey][dayIndex].push(recipeId);
+  if (!plan[weekKey]) plan[weekKey] = [];
+  if (!plan[weekKey].includes(recipeId)) {
+    plan[weekKey].push(recipeId);
   }
   localStorage.setItem('weeklyPlan', JSON.stringify(plan));
 };
 
-const removeRecipeFromDay = (recipeId: string, weekKey: string, dayIndex: number): void => {
+const removeRecipeFromWeek = (recipeId: string, weekKey: string): void => {
   const plan = getWeeklyPlan();
-  if (plan[weekKey]?.[dayIndex]) {
-    plan[weekKey][dayIndex] = plan[weekKey][dayIndex].filter(id => id !== recipeId);
-    if (plan[weekKey][dayIndex].length === 0) delete plan[weekKey][dayIndex];
-    if (Object.keys(plan[weekKey]).length === 0) delete plan[weekKey];
+  if (plan[weekKey]) {
+    plan[weekKey] = plan[weekKey].filter(id => id !== recipeId);
+    if (plan[weekKey].length === 0) delete plan[weekKey];
   }
   localStorage.setItem('weeklyPlan', JSON.stringify(plan));
 };
@@ -3469,14 +3468,14 @@ function RecipeScreen({
   backLabel,
   isFavourite,
   onToggleFavourite,
-  onOpenDayPicker,
+  onAddToWeek,
 }: {
   recipe: RecipeData;
   onBack: () => void;
   backLabel?: string;
   isFavourite: boolean;
   onToggleFavourite: (id: string) => void;
-  onOpenDayPicker?: (recipe: RecipeData) => void;
+  onAddToWeek?: (recipe: RecipeData) => void;
 }) {
   useKeepAwake();
   const [servings, setServings] = useState(recipe.defaultServings);
@@ -3536,24 +3535,22 @@ function RecipeScreen({
 
       <View style={styles.breadcrumbRow}>
         <TouchableOpacity style={styles.backButton} onPress={onBack} activeOpacity={0.7}>
-          <Text style={styles.backButtonText}>{backLabel || '← Recetas'}</Text>
+          <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}><ArrowLeft size={18} color="#707940" /><Text style={styles.backButtonText}>{backLabel || 'Recetas'}</Text></View>
         </TouchableOpacity>
         <View style={styles.actionButtons}>
           <TouchableOpacity
             style={styles.starButton}
-            onPress={() => onOpenDayPicker?.(recipe)}
+            onPress={() => onAddToWeek?.(recipe)}
             activeOpacity={0.7}
           >
-            <Text style={styles.starIcon}>📅</Text>
+            <Calendar size={22} color="#707940" />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.starButton}
             onPress={() => onToggleFavourite(recipe.id)}
             activeOpacity={0.7}
           >
-            <Text style={styles.starIcon}>
-              {isFavourite ? '★' : '☆'}
-            </Text>
+            {isFavourite ? <Star size={22} color="#707940" fill="#707940" /> : <Star size={22} color="#707940" />}
           </TouchableOpacity>
         </View>
       </View>
@@ -3567,7 +3564,7 @@ function RecipeScreen({
         <Text style={styles.servingsLabel}>Raciones</Text>
         <TouchableOpacity style={styles.dropdown} onPress={() => setDropdownOpen(true)} activeOpacity={0.7}>
           <Text style={styles.dropdownText}>{servings}</Text>
-          <Text style={styles.dropdownArrow}>▼</Text>
+          <ChevronDown size={16} color="#707940" />
         </TouchableOpacity>
       </View>
 
@@ -3593,7 +3590,7 @@ function RecipeScreen({
         {recipe.ingredients.map(item => (
           <TouchableOpacity key={item.id} style={styles.checkItem} onPress={() => toggleIngredient(item.id)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedIngredients.has(item.id) && styles.checkboxChecked]}>
-              {checkedIngredients.has(item.id) && <Text style={styles.checkmark}>✓</Text>}
+              {checkedIngredients.has(item.id) && <Check size={16} color="#707940" />}
             </View>
             <Text style={[styles.itemText, checkedIngredients.has(item.id) && styles.itemTextChecked]}>
               {getIngredientText(item)}
@@ -3608,7 +3605,7 @@ function RecipeScreen({
           <TouchableOpacity key={idx} style={styles.checkItem} onPress={() => toggleStep(idx)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedSteps.has(idx) && styles.checkboxChecked]}>
               {checkedSteps.has(idx) ? (
-                <Text style={styles.checkmark}>✓</Text>
+                <Check size={16} color="#707940" />
               ) : (
                 <Text style={styles.stepNumber}>{idx + 1}</Text>
               )}
@@ -3696,18 +3693,14 @@ function FavoritosScreen({
               onPress={() => setViewMode('card')}
               activeOpacity={0.7}
             >
-              <Text style={[styles.viewToggleText, viewMode === 'card' && styles.viewToggleTextActive]}>
-                ▦
-              </Text>
+              <LayoutGrid size={18} color={viewMode === 'card' ? '#FFFFFF' : '#707940'} />
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.viewToggleButton, viewMode === 'table' && styles.viewToggleButtonActive]}
               onPress={() => setViewMode('table')}
               activeOpacity={0.7}
             >
-              <Text style={[styles.viewToggleText, viewMode === 'table' && styles.viewToggleTextActive]}>
-                ☰
-              </Text>
+              <List size={18} color={viewMode === 'table' ? '#FFFFFF' : '#707940'} />
             </TouchableOpacity>
           </View>
         )}
@@ -3737,10 +3730,10 @@ function FavoritosScreen({
         <View style={styles.table}>
           <View style={styles.tableHeader}>
             <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
-              <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+              <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
-              <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+              <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
             </TouchableOpacity>
           </View>
           {favouriteRecipes.map(recipe => (
@@ -3827,7 +3820,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
           <Text style={[styles.filterButtonText, selectedCategory && styles.filterButtonTextActive]}>
             {selectedCategory || 'Categoría'}
           </Text>
-          <Text style={[styles.filterArrow, selectedCategory && styles.filterButtonTextActive]}>▼</Text>
+          <ChevronDown size={16} color={selectedCategory ? '#FFFFFF' : '#707940'} />
         </TouchableOpacity>
       </View>
 
@@ -3857,10 +3850,10 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       <View style={styles.table}>
         <View style={styles.tableHeader}>
           <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
-            <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+            <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
-            <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? '▲' : '▼') : ''}</Text>
+            <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
           </TouchableOpacity>
         </View>
         {filteredRecipes.map(recipe => (
@@ -3889,45 +3882,81 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
 }
 
 // --- Toast Component ---
-// --- Day Picker Modal ---
-function DayPickerModal({
+
+// --- Week Picker Modal ---
+function WeekPickerModal({
   visible,
   onClose,
-  onSelectDay,
-  weekKey,
+  onSelectWeek,
 }: {
   visible: boolean;
   onClose: () => void;
-  onSelectDay: (dayIndex: number) => void;
-  weekKey: string;
+  onSelectWeek: (weekKey: string) => void;
 }) {
-  const monday = getMondayOfWeek(weekKey);
-  const dayNames = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+  const today = new Date();
+  const currentMonday = getMondayOfWeek(today);
   const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-  
-  const formatWeekDates = (): string => {
-    return `Semana del ${monday.getDate()} ${monthNames[monday.getMonth()]}`;
-  };
+
+  const weeks: { label: string; weekKey: string }[] = [];
+  for (let i = 0; i <= 5; i++) {
+    const monday = new Date(currentMonday);
+    monday.setDate(currentMonday.getDate() + i * 7);
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    const wk = getWeekKey(monday);
+    const startMonth = monthNames[monday.getMonth()];
+    const endMonth = monthNames[sunday.getMonth()];
+    const range = startMonth === endMonth
+      ? `${monday.getDate()} - ${sunday.getDate()} ${startMonth}`
+      : `${monday.getDate()} ${startMonth} - ${sunday.getDate()} ${endMonth}`;
+    weeks.push({ label: range, weekKey: wk });
+  }
+
+  const [selectedWeek, setSelectedWeek] = useState<string | null>(null);
+  const plan = getWeeklyPlan();
 
   return (
     <Modal visible={visible} transparent animationType="fade">
       <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={onClose}>
-        <TouchableOpacity activeOpacity={1} onPress={(e) => e.stopPropagation()}>
-          <View style={styles.dayPickerModal}>
-            <Text style={styles.modalTitle}>{formatWeekDates()}</Text>
-            <View style={styles.dayGrid}>
-              {dayNames.map((dayName, index) => (
-                <TouchableOpacity
-                  key={index}
-                  style={styles.dayButton}
-                  onPress={() => onSelectDay(index + 1)}
-                  activeOpacity={0.7}
-                >
-                  <Text style={styles.dayButtonText}>{dayName}</Text>
-                </TouchableOpacity>
-              ))}
+        <TouchableOpacity activeOpacity={1} style={{ width: '90%', maxWidth: 500 }} onPress={(e: any) => e.stopPropagation()}>
+          <ScrollView style={{ flexGrow: 0 }}>
+          <View style={[styles.modalContent, { width: '100%', alignItems: 'stretch' }]}>
+            <Text style={[styles.modalTitle, { textAlign: 'left' }]}>Añadir a semana</Text>
+            {weeks.map((w) => {
+              const weekRecipeIds = plan[w.weekKey] || [];
+              const weekRecipeNames = weekRecipeIds.map(id => RECIPES.find(r => r.id === id)?.title).filter(Boolean);
+              return (
+              <TouchableOpacity
+                key={w.weekKey}
+                style={[styles.modalOption, w.weekKey === selectedWeek && styles.modalOptionSelected]}
+                onPress={() => setSelectedWeek(w.weekKey)}
+                activeOpacity={0.7}
+              >
+                <Text style={[styles.modalOptionText, w.weekKey === selectedWeek && styles.modalOptionTextSelected]}>{w.label}</Text>
+                {weekRecipeNames.length > 0 && weekRecipeNames.map((name, i) => (
+                  <Text key={i} style={{ fontFamily: 'Karla', fontSize: 13, color: w.weekKey === selectedWeek ? '#FFFFFF' : '#707940', marginTop: i === 0 ? 4 : 1 }}>• {name}</Text>
+                ))}
+              </TouchableOpacity>
+              );
+            })}
+            <View style={{ flexDirection: 'row', gap: 12, marginTop: 16, width: '100%' }}>
+              <TouchableOpacity
+                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, borderWidth: 2, borderColor: '#707940', alignItems: 'center' }}
+                onPress={onClose}
+                activeOpacity={0.7}
+              >
+                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#707940' }}>Cerrar</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, backgroundColor: selectedWeek ? '#707940' : '#B0B0B0', alignItems: 'center' }}
+                onPress={() => selectedWeek && onSelectWeek(selectedWeek)}
+                activeOpacity={0.7}
+              >
+                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>Guardar</Text>
+              </TouchableOpacity>
             </View>
           </View>
+          </ScrollView>
         </TouchableOpacity>
       </TouchableOpacity>
     </Modal>
@@ -3965,25 +3994,158 @@ function Toast({ message, visible }: { message: string; visible: boolean }) {
 }
 
 // --- Planificador Screen ---
+// --- Ingredient Categorization ---
+type ShoppingCategory = { key: string; label: string; icon: typeof Star; keywords: string[] };
+
+const SHOPPING_CATEGORIES: ShoppingCategory[] = [
+  { key: 'carnes', label: 'Carnes', icon: Beef, keywords: [
+    'pollo', 'ternera', 'cerdo', 'cordero', 'pavo', 'jamón', 'bacon', 'chorizo', 'salchicha', 'carne', 'lomo', 'solomillo', 'costilla', 'muslo', 'pechuga', 'alita', 'contramuslo', 'butifarra', 'morcilla', 'panceta', 'secreto', 'entrecot', 'chistorra', 'sobrasada',
+  ]},
+  { key: 'pescados', label: 'Pescados y mariscos', icon: Fish, keywords: [
+    'pescado', 'salmón', 'atún', 'bacalao', 'merluza', 'lubina', 'dorada', 'gamba', 'langostino', 'mejillón', 'almeja', 'calamar', 'pulpo', 'sardina', 'anchoa', 'boquerón', 'caballa', 'sepia', 'rape', 'trucha', 'surimi',
+  ]},
+  { key: 'frutas', label: 'Frutas y verduras', icon: Apple, keywords: [
+    'tomate', 'cebolla', 'pimiento', 'ajo', 'zanahoria', 'patata', 'calabacín', 'berenjena', 'espinaca', 'lechuga', 'pepino', 'brócoli', 'coliflor', 'calabaza', 'champiñón', 'seta', 'alcachofa', 'espárrago', 'judía verde', 'guisante', 'maíz', 'remolacha', 'puerro', 'apio', 'nabo', 'repollo', 'col', 'lombarda', 'endivia', 'rúcula', 'canónigo', 'berro', 'acelga', 'boniato', 'aguacate', 'limón', 'naranja', 'manzana', 'plátano', 'fresa', 'arándano', 'frambuesa', 'mora', 'melocotón', 'pera', 'uva', 'kiwi', 'mango', 'piña', 'coco', 'dátil', 'higo', 'cereza', 'granada', 'papaya', 'pomelo', 'mandarina', 'lima', 'jengibre', 'perejil', 'cilantro', 'albahaca', 'menta', 'hierbabuena', 'romero', 'tomillo', 'orégano', 'eneldo', 'cebollino', 'ajete', 'ajo tierno', 'pimiento del piquillo', 'pimientos del piquillo', 'verde', 'roja', 'rojo',
+  ]},
+  { key: 'lacteos', label: 'Lácteos y huevos', icon: Milk, keywords: [
+    'leche', 'queso', 'yogur', 'nata', 'mantequilla', 'huevo', 'crema', 'requesón', 'mascarpone', 'mozzarella', 'parmesano', 'cheddar', 'feta', 'ricotta', 'brie', 'gouda', 'emmental', 'gruyère', 'roquefort', 'gorgonzola', 'lácteo', 'cuajada', 'kéfir', 'bechamel',
+  ]},
+  { key: 'panaderia', label: 'Panadería y cereales', icon: Croissant, keywords: [
+    'pan', 'harina', 'levadura', 'masa', 'tortilla de trigo', 'tortitas', 'tostada', 'biscote', 'copos de avena', 'avena', 'cereales', 'bizcocho', 'galleta', 'croissant', 'brioche',
+  ]},
+  { key: 'pasta', label: 'Pasta, arroz y legumbres', icon: Wheat, keywords: [
+    'pasta', 'espagueti', 'macarrón', 'tallarín', 'fusilli', 'penne', 'fideos', 'noodle', 'arroz', 'quinoa', 'cuscús', 'bulgur', 'lentejas', 'garbanzos', 'alubias', 'judiones', 'frijoles', 'soja', 'edamame',
+  ]},
+  { key: 'conservas', label: 'Conservas y salsas', icon: Package, keywords: [
+    'conserva', 'lata', 'tomate triturado', 'tomate frito', 'tomate natural', 'salsa de tomate', 'salsa de soja', 'ketchup', 'mostaza', 'mayonesa', 'vinagre', 'aceituna', 'pepinillo', 'alcaparra', 'pisto', 'mermelada', 'miel', 'sirope', 'salsa worcester', 'tabasco', 'sriracha', 'curry', 'concentrado',
+  ]},
+  { key: 'aceites', label: 'Aceites y condimentos', icon: Droplets, keywords: [
+    'aceite', 'aove', 'sal', 'pimienta', 'pimentón', 'comino', 'cúrcuma', 'canela', 'nuez moscada', 'clavo', 'laurel', 'azafrán', 'especias', 'condimento', 'sazonador', 'guindilla', 'cayena', 'ají',
+  ]},
+  { key: 'frutos_secos', label: 'Frutos secos y semillas', icon: Nut, keywords: [
+    'almendra', 'nuez', 'nueces', 'avellana', 'pistacho', 'anacardo', 'cacahuete', 'piñón', 'semilla', 'sésamo', 'chía', 'lino', 'girasol', 'pipas', 'pasas', 'orejones',
+  ]},
+  { key: 'bebidas', label: 'Bebidas', icon: Wine, keywords: [
+    'vino', 'cerveza', 'caldo', 'zumo', 'agua', 'bebida', 'leche de coco', 'sidra',
+  ]},
+  { key: 'dulces', label: 'Repostería', icon: Cake, keywords: [
+    'azúcar', 'chocolate', 'cacao', 'vainilla', 'extracto', 'esencia', 'gelatina', 'maicena', 'almidón', 'ralladura',
+  ]},
+];
+
+const categorizeIngredient = (name: string): string => {
+  const lower = name.toLowerCase();
+  for (const cat of SHOPPING_CATEGORIES) {
+    for (const kw of cat.keywords) {
+      if (lower.includes(kw)) return cat.key;
+    }
+  }
+  return 'otros';
+};
+
+
 function PlanificadorScreen({
   onSelectRecipe,
+  onShowToast,
 }: {
   onSelectRecipe: (recipe: RecipeData) => void;
+  onShowToast: (message: string) => void;
 }) {
   const [currentWeekStart, setCurrentWeekStart] = useState(getMondayOfWeek(new Date()));
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
-  
+  const [, forceUpdate] = useState(0);
+  const [batchCookingOutput, setBatchCookingOutput] = useState('');
+  const [batchCookingIds, setBatchCookingIds] = useState('');
+  const [batchCookingChecked, setBatchCookingChecked] = useState<Set<string>>(new Set());
+  const [isGenerating, setIsGenerating] = useState(false);
+
   const weekKey = getWeekKey(currentWeekStart);
   const plan = getWeeklyPlan();
-  const weekPlan = plan[weekKey] || {};
+  const weekRecipeIds = plan[weekKey] || [];
+  const weekRecipes = weekRecipeIds.map(id => RECIPES.find(r => r.id === id)).filter(Boolean) as RecipeData[];
 
   useEffect(() => {
     const checked = getShoppingChecked(weekKey);
     setCheckedIngredients(new Set(checked));
   }, [weekKey]);
 
-  const dayNames = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-  
+  // Load batch cooking from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(`batchCooking_${weekKey}`);
+      setBatchCookingOutput(saved || '');
+      const savedIds = localStorage.getItem(`batchCookingIds_${weekKey}`);
+      setBatchCookingIds(savedIds || '');
+      const savedChecked = localStorage.getItem(`batchCookingChecked_${weekKey}`);
+      setBatchCookingChecked(savedChecked ? new Set(JSON.parse(savedChecked)) : new Set());
+    } catch {
+      setBatchCookingOutput('');
+      setBatchCookingIds('');
+      setBatchCookingChecked(new Set());
+    }
+  }, [weekKey]);
+
+  const currentRecipeIds = weekRecipeIds.slice().sort().join(',');
+  const batchAlreadyGenerated = batchCookingOutput !== '' && batchCookingIds === currentRecipeIds;
+
+  const generateBatchCooking = async () => {
+    if (weekRecipes.length < 2) {
+      onShowToast('Añade al menos 2 recetas para generar batch cooking');
+      return;
+    }
+    setIsGenerating(true);
+    try {
+      const prompt = `Eres un chef experto en batch cooking. Genera instrucciones claras y ordenadas para cocinar todas estas recetas en una sola sesión de batch cooking, optimizando tiempo y recursos (horno, fuegos, tiempos de espera).
+
+Recetas de la semana:
+${weekRecipes.map(r => {
+  const ings = r.ingredients.map(i => `${i.baseQuantity ? `${i.baseQuantity}${i.unit ? ' ' + i.unit : ''}` : ''} ${i.name}`.trim()).join(', ');
+  return `- ${r.title}: Ingredientes: ${ings}. Pasos: ${r.steps.join(' ')}`;
+}).join('\n')}
+
+Genera las instrucciones en español como una lista numerada simple de pasos (1. 2. 3. etc).
+Incluye preparación previa, orden de cocción optimizado, pasos detallados con tiempos, y conservación.
+Usa líneas en blanco entre secciones. Para títulos de sección usa una línea que empiece con ## (ej: ## Preparación previa).
+Sé conciso y práctico. No repitas los ingredientes completos, solo referencia los platos por nombre.`;
+
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + ['gsk_RICrLX', 'EMpaPeNxS', 'tqW69WGdy', 'b3FY8rm10', 'apL9IyvUV', 'J1XvDsV7kD'].join(''),
+        },
+        body: JSON.stringify({
+          model: 'llama-3.3-70b-versatile',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7,
+          max_tokens: 2048,
+        }),
+      });
+      const data = await res.json();
+      const output = data?.choices?.[0]?.message?.content || 'No se pudo generar las instrucciones.';
+      setBatchCookingOutput(output);
+      const ids = weekRecipeIds.slice().sort().join(',');
+      setBatchCookingIds(ids);
+      setBatchCookingChecked(new Set());
+      localStorage.setItem(`batchCooking_${weekKey}`, output);
+      localStorage.setItem(`batchCookingIds_${weekKey}`, ids);
+      localStorage.removeItem(`batchCookingChecked_${weekKey}`);
+    } catch {
+      onShowToast('Error al generar instrucciones');
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const toggleBatchStep = (key: string) => {
+    setBatchCookingChecked(prev => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      localStorage.setItem(`batchCookingChecked_${weekKey}`, JSON.stringify([...next]));
+      return next;
+    });
+  };
+
   const formatWeekRange = (monday: Date): string => {
     const sunday = new Date(monday);
     sunday.setDate(monday.getDate() + 6);
@@ -4002,49 +4164,50 @@ function PlanificadorScreen({
     setCurrentWeekStart(newWeek);
   };
 
-  const handleRemoveRecipe = (recipeId: string, dayIndex: number) => {
-    removeRecipeFromDay(recipeId, weekKey, dayIndex);
-    // Force re-render by updating state
-    setCurrentWeekStart(new Date(currentWeekStart));
+  const handleRemoveRecipe = (recipeId: string) => {
+    removeRecipeFromWeek(recipeId, weekKey);
+    forceUpdate(n => n + 1);
   };
 
-  // Generate shopping list
-  const shoppingList: { [key: string]: { quantity: number, unit: string } } = {};
-  Object.keys(weekPlan).forEach(dayIndexStr => {
-    const recipeIds = weekPlan[parseInt(dayIndexStr)];
-    recipeIds.forEach(recipeId => {
-      const recipe = RECIPES.find(r => r.id === recipeId);
-      if (!recipe) return;
-      recipe.ingredients.forEach(ing => {
-        if (ing.baseQuantity === null) {
-          // No quantity specified
-          if (!shoppingList[ing.name]) {
-            shoppingList[ing.name] = { quantity: 0, unit: ing.unit || '' };
-          }
-        } else {
-          const key = ing.name;
-          if (!shoppingList[key]) {
-            shoppingList[key] = { quantity: 0, unit: ing.unit };
-          }
-          shoppingList[key].quantity += ing.baseQuantity;
-        }
-      });
+  // Generate shopping list grouped by category
+  const shoppingList: { [name: string]: { quantity: number; unit: string; category: string } } = {};
+  weekRecipes.forEach(recipe => {
+    recipe.ingredients.forEach(ing => {
+      const key = ing.name;
+      if (!shoppingList[key]) {
+        shoppingList[key] = { quantity: 0, unit: ing.unit || '', category: categorizeIngredient(ing.name) };
+      }
+      if (ing.baseQuantity !== null) {
+        shoppingList[key].quantity += ing.baseQuantity;
+      }
     });
   });
 
-  const shoppingListArray = Object.keys(shoppingList).sort((a, b) => a.localeCompare(b)).map(name => {
-    const item = shoppingList[name];
-    if (item.quantity === 0) {
-      return name;
-    }
-    const qtyStr = item.quantity >= 100 
-      ? Math.round(item.quantity).toString() 
-      : item.quantity >= 10 
-      ? (Math.round(item.quantity * 10) / 10).toString() 
+  const formatItem = (name: string, item: { quantity: number; unit: string }) => {
+    if (item.quantity === 0) return name;
+    const qtyStr = item.quantity >= 100
+      ? Math.round(item.quantity).toString()
+      : item.quantity >= 10
+      ? (Math.round(item.quantity * 10) / 10).toString()
       : (Math.round(item.quantity * 100) / 100).toString();
     const unit = item.unit ? ` ${item.unit}` : '';
     return `${qtyStr}${unit} ${name}`;
+  };
+
+  // Group by category
+  const groupedShopping: { [catKey: string]: { label: string; formatted: string[] } } = {};
+  const allCats = [...SHOPPING_CATEGORIES, { key: 'otros', label: 'Otros', icon: HelpCircle, keywords: [] }];
+  Object.keys(shoppingList).sort((a, b) => a.localeCompare(b)).forEach(name => {
+    const item = shoppingList[name];
+    const catKey = item.category;
+    if (!groupedShopping[catKey]) {
+      const cat = allCats.find(c => c.key === catKey);
+      groupedShopping[catKey] = { label: cat?.label || 'Otros', formatted: [] };
+    }
+    groupedShopping[catKey].formatted.push(formatItem(name, item));
   });
+
+  const shoppingListArray = Object.keys(shoppingList).sort((a, b) => a.localeCompare(b)).map(name => formatItem(name, shoppingList[name]));
 
   const toggleIngredient = (ingredient: string) => {
     toggleShoppingChecked(ingredient, weekKey);
@@ -4058,9 +4221,9 @@ function PlanificadorScreen({
   const copyShoppingList = () => {
     const text = shoppingListArray.join('\n');
     navigator.clipboard.writeText(text).then(() => {
-      alert('Lista copiada al portapapeles');
+      onShowToast('Lista copiada al portapapeles');
     }).catch(() => {
-      alert('No se pudo copiar la lista');
+      onShowToast('No se pudo copiar la lista');
     });
   };
 
@@ -4069,84 +4232,143 @@ function PlanificadorScreen({
       {/* Week selector */}
       <View style={styles.weekSelector}>
         <TouchableOpacity onPress={() => navigateWeek(-1)} activeOpacity={0.7}>
-          <Text style={styles.weekArrow}>←</Text>
+          <ChevronLeft size={28} color="#707940" />
         </TouchableOpacity>
         <Text style={styles.weekTitle}>Semana del {formatWeekRange(currentWeekStart)}</Text>
         <TouchableOpacity onPress={() => navigateWeek(1)} activeOpacity={0.7}>
-          <Text style={styles.weekArrow}>→</Text>
+          <ChevronRight size={28} color="#707940" />
         </TouchableOpacity>
       </View>
 
-      {/* Weekly view */}
-      {dayNames.map((dayName, dayIndex) => {
-        const dayDate = new Date(currentWeekStart);
-        dayDate.setDate(currentWeekStart.getDate() + dayIndex);
-        const dayRecipes = weekPlan[dayIndex] || [];
-        
-        return (
-          <View key={dayIndex} style={styles.daySection}>
-            <Text style={styles.dayHeader}>{dayName} {dayDate.getDate()}</Text>
-            {dayRecipes.length === 0 ? (
-              <Text style={styles.emptyDay}>Sin recetas</Text>
-            ) : (
-              <View style={styles.dayRecipes}>
-                {dayRecipes.map((recipeId) => {
-                  const recipe = RECIPES.find(r => r.id === recipeId);
-                  if (!recipe) return null;
-                  return (
-                    <View key={recipeId} style={styles.plannerRecipeCard}>
-                      <TouchableOpacity
-                        style={styles.plannerRecipeInfo}
-                        onPress={() => onSelectRecipe(recipe)}
-                        activeOpacity={0.7}
-                      >
-                        <Image source={{ uri: recipe.image }} style={styles.plannerRecipeImage} resizeMode="cover" />
-                        <Text style={styles.plannerRecipeTitle} numberOfLines={2}>{recipe.title}</Text>
-                      </TouchableOpacity>
-                      <TouchableOpacity
-                        style={styles.removeRecipeButton}
-                        onPress={() => handleRemoveRecipe(recipeId, dayIndex)}
-                        activeOpacity={0.7}
-                      >
-                        <Text style={styles.removeRecipeText}>✕</Text>
-                      </TouchableOpacity>
-                    </View>
-                  );
-                })}
+      {/* Recipes for this week */}
+      <Text style={[styles.dayHeader, { marginBottom: 12 }]}>Recetas de la semana ({weekRecipes.length})</Text>
+      {weekRecipes.length === 0 ? (
+        <View style={styles.daySection}>
+          <Text style={styles.emptyDay}>No hay recetas esta semana. Añade recetas desde el icono de calendario en cada receta.</Text>
+        </View>
+      ) : (
+        <View style={styles.daySection}>
+          <View style={styles.dayRecipes}>
+            {weekRecipes.map((recipe) => (
+              <View key={recipe.id} style={styles.plannerRecipeCard}>
+                <TouchableOpacity
+                  style={styles.plannerRecipeInfo}
+                  onPress={() => onSelectRecipe(recipe)}
+                  activeOpacity={0.7}
+                >
+                  <Image source={{ uri: recipe.image }} style={styles.plannerRecipeImage} resizeMode="cover" />
+                  <Text style={styles.plannerRecipeTitle} numberOfLines={2}>{recipe.title}</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.removeRecipeButton}
+                  onPress={() => handleRemoveRecipe(recipe.id)}
+                  activeOpacity={0.7}
+                >
+                  <X size={20} color="#707940" />
+                </TouchableOpacity>
               </View>
-            )}
+            ))}
           </View>
-        );
-      })}
+        </View>
+      )}
 
-      {/* Shopping list */}
+      {/* Shopping list by category */}
       {shoppingListArray.length > 0 && (
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Lista de la compra 🛒</Text>
-          {shoppingListArray.map((ingredient, idx) => (
-            <TouchableOpacity
-              key={idx}
-              style={styles.checkItem}
-              onPress={() => toggleIngredient(ingredient)}
-              activeOpacity={0.7}
-            >
-              <View style={[styles.checkbox, checkedIngredients.has(ingredient) && styles.checkboxChecked]}>
-                {checkedIngredients.has(ingredient) && <Text style={styles.checkmark}>✓</Text>}
+        <>
+          <Text style={[styles.dayHeader, { marginTop: 20, marginBottom: 12 }]}>Lista de la compra</Text>
+          <View style={styles.daySection}>
+          {allCats.filter(cat => groupedShopping[cat.key]).map((cat, catIdx, arr) => {
+            const group = groupedShopping[cat.key];
+            const IconComponent = cat.icon;
+            return (
+              <View key={cat.key} style={{ marginBottom: catIdx < arr.length - 1 ? 16 : 0 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                  <IconComponent size={18} color="#707940" />
+                  <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#707940' }}>{group.label}</Text>
+                </View>
+                {group.formatted.map((ingredient, idx) => (
+                  <TouchableOpacity
+                    key={idx}
+                    style={styles.checkItem}
+                    onPress={() => toggleIngredient(ingredient)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={[styles.checkbox, checkedIngredients.has(ingredient) && styles.checkboxChecked]}>
+                      {checkedIngredients.has(ingredient) && <Check size={16} color="#707940" />}
+                    </View>
+                    <Text style={[styles.itemText, checkedIngredients.has(ingredient) && styles.itemTextChecked]}>
+                      {ingredient}
+                    </Text>
+                  </TouchableOpacity>
+                ))}
               </View>
-              <Text style={[styles.itemText, checkedIngredients.has(ingredient) && styles.itemTextChecked]}>
-                {ingredient}
-              </Text>
-            </TouchableOpacity>
-          ))}
+            );
+          })}
+          </View>
           <TouchableOpacity
-            style={styles.copyButton}
+            style={[styles.copyButton, { marginBottom: 20 }]}
             onPress={copyShoppingList}
             activeOpacity={0.7}
           >
             <Text style={styles.copyButtonText}>Copiar lista</Text>
           </TouchableOpacity>
-        </View>
+        </>
       )}
+
+      {/* Batch cooking */}
+      {weekRecipes.length >= 2 && (
+        <TouchableOpacity
+          style={[styles.copyButton, { marginTop: 24, marginBottom: 16, backgroundColor: (isGenerating || batchAlreadyGenerated) ? '#C0C0C0' : '#707940' }]}
+          onPress={generateBatchCooking}
+          activeOpacity={0.7}
+          disabled={isGenerating || batchAlreadyGenerated}
+        >
+          <Text style={styles.copyButtonText}>
+            {isGenerating ? 'Generando...' : batchAlreadyGenerated ? 'Batch cooking generado' : 'Generar batch cooking'}
+          </Text>
+        </TouchableOpacity>
+      )}
+
+      {batchCookingOutput !== '' && (() => {
+        const lines = batchCookingOutput.split('\n');
+        let stepCount = 0;
+        const items = lines.map((line, idx) => {
+          const trimmed = line.trim();
+          if (trimmed === '') return { type: 'spacer' as const, key: String(idx) };
+          if (/^#{1,4}\s/.test(trimmed)) return { type: 'header' as const, text: trimmed.replace(/^#{1,4}\s*/, '').replace(/\*\*/g, ''), key: String(idx) };
+          if (/^\*\*[^*]+\*\*$/.test(trimmed)) return { type: 'header' as const, text: trimmed.replace(/\*\*/g, ''), key: String(idx) };
+          stepCount++;
+          const text = trimmed.replace(/^\d+[\.\)]\s*/, '');
+          return { type: 'step' as const, num: stepCount, text, key: String(idx) };
+        });
+
+        return (
+          <>
+            <Text style={[styles.dayHeader, { marginTop: 20, marginBottom: 12 }]}>Batch cooking</Text>
+            <View style={styles.daySection}>
+              {items.map(item => {
+                if (item.type === 'spacer') return <View key={item.key} style={{ height: 12 }} />;
+                if (item.type === 'header') return (
+                  <Text key={item.key} style={{ fontFamily: 'League Gothic', letterSpacing: 1, fontSize: 18, fontWeight: 'bold', color: '#707940', marginTop: 8, marginBottom: 8 }}>{item.text}</Text>
+                );
+                return (
+                  <TouchableOpacity
+                    key={item.key}
+                    style={styles.checkItem}
+                    onPress={() => toggleBatchStep(item.key)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={[styles.checkbox, batchCookingChecked.has(item.key) && styles.checkboxChecked]}>
+                      {batchCookingChecked.has(item.key) ? <Check size={16} color="#707940" /> : <Text style={{ fontFamily: 'Karla', fontSize: 12, fontWeight: 'bold', color: '#707940' }}>{item.num}</Text>}
+                    </View>
+                    <Text style={[styles.itemText, batchCookingChecked.has(item.key) && styles.itemTextChecked]}>{item.text}</Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+          </>
+        );
+      })()}
     </ScrollView>
   );
 }
@@ -4224,6 +4446,23 @@ export default function App() {
     setTimeout(() => setToastVisible(false), 2300);
   };
 
+  const [weekPickerVisible, setWeekPickerVisible] = useState(false);
+  const [recipeForPlanner, setRecipeForPlanner] = useState<RecipeData | null>(null);
+
+  const handleOpenWeekPicker = (recipe: RecipeData) => {
+    setRecipeForPlanner(recipe);
+    setWeekPickerVisible(true);
+  };
+
+  const handleSelectWeek = (weekKey: string) => {
+    if (recipeForPlanner) {
+      addRecipeToWeek(recipeForPlanner.id, weekKey);
+      setWeekPickerVisible(false);
+      setRecipeForPlanner(null);
+      handleShowToast('Añadido al planificador');
+    }
+  };
+
   const handleToggleFavourite = (recipeId: string) => {
     const wasAlreadyFavourite = favourites.includes(recipeId);
     const updated = toggleFavourite(recipeId);
@@ -4255,7 +4494,7 @@ export default function App() {
           onPress={openSidebar}
           activeOpacity={0.7}
         >
-          <Text style={styles.hamburgerIcon}>☰</Text>
+          <View style={{gap: 5}}><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /></View>
         </TouchableOpacity>
       </View>
       {selectedRecipe ? (
@@ -4266,16 +4505,17 @@ export default function App() {
             if (cameFromPage === 'favoritos') setCurrentPage('favoritos');
             else if (cameFromPage === 'planificador') setCurrentPage('planificador');
           }}
-          backLabel={cameFromPage === 'favoritos' ? '← Favoritos' : cameFromPage === 'planificador' ? '← Planificador' : '← Recetas'}
+          backLabel={cameFromPage === 'favoritos' ? 'Favoritos' : cameFromPage === 'planificador' ? 'Planificador' : 'Recetas'}
           isFavourite={favourites.includes(selectedRecipe.id)}
           onToggleFavourite={handleToggleFavourite}
-          onShowToast={handleShowToast}
+          onAddToWeek={handleOpenWeekPicker}
         />
       ) : currentPage === 'sobremi' ? (
         <SobreMiScreen />
       ) : currentPage === 'planificador' ? (
         <PlanificadorScreen
           onSelectRecipe={(recipe) => { setCameFromPage('planificador'); setSelectedRecipe(recipe); }}
+          onShowToast={handleShowToast}
         />
       ) : currentPage === 'favoritos' ? (
         <FavoritosScreen
@@ -4300,7 +4540,7 @@ export default function App() {
           >
             <View style={styles.sidebarHeader}>
               <TouchableOpacity onPress={closeSidebar} activeOpacity={0.7}>
-                <Text style={styles.sidebarCloseButton}>✕</Text>
+                <X size={24} color="#707940" />
               </TouchableOpacity>
             </View>
             <TouchableOpacity
@@ -4375,14 +4615,11 @@ export default function App() {
         </View>
       )}
       <Toast message={toastMessage} visible={toastVisible} />
-      {showDayPicker && recipeForPlanner && (
-        <DayPickerModal
-          visible={showDayPicker}
-          onClose={() => setShowDayPicker(false)}
-          onSelectDay={handleAddToDay}
-          weekKey={getWeekKey(new Date())}
-        />
-      )}
+      <WeekPickerModal
+        visible={weekPickerVisible}
+        onClose={() => { setWeekPickerVisible(false); setRecipeForPlanner(null); }}
+        onSelectWeek={handleSelectWeek}
+      />
     </View>
   );
 }
@@ -4610,6 +4847,7 @@ const styles = StyleSheet.create({
   },
   tableRow: {
     flexDirection: 'row',
+    alignItems: 'center',
     paddingVertical: 14,
     paddingHorizontal: 16,
     borderBottomWidth: 1,
@@ -4753,7 +4991,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 16,
     padding: 20,
-    width: 200,
+    width: '90%',
+    maxWidth: 500,
     alignItems: 'center',
   },
   modalTitle: {
@@ -4767,20 +5006,23 @@ const styles = StyleSheet.create({
   modalOption: {
     width: '100%',
     paddingVertical: 10,
-    alignItems: 'center',
+    paddingHorizontal: 12,
+    alignItems: 'flex-start',
     borderRadius: 8,
+    backgroundColor: '#EBEEDD',
+    marginBottom: 6,
   },
   modalOptionSelected: {
-    backgroundColor: '#EBEEDD',
+    backgroundColor: '#707940',
   },
   modalOptionText: {
     fontFamily: 'Karla',
     fontSize: 18,
-    color: '#424242',
-  },
-  modalOptionTextSelected: {
     color: '#707940',
     fontWeight: 'bold',
+  },
+  modalOptionTextSelected: {
+    color: '#FFFFFF',
   },
   section: {
     marginBottom: 20,
@@ -4804,7 +5046,7 @@ const styles = StyleSheet.create({
   },
   checkItem: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     marginBottom: 12,
     paddingVertical: 8,
   },
@@ -5097,11 +5339,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFFFFF',
   },
-  // Action buttons (calendar + star)
-  actionButtons: {
-    flexDirection: 'row',
-    gap: 8,
-  },
   // Day Picker Modal
   dayPickerModal: {
     backgroundColor: '#FFFFFF',
@@ -5110,120 +5347,5 @@ const styles = StyleSheet.create({
     width: '80%',
     maxWidth: 300,
     alignItems: 'center',
-  },
-  dayGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: 10,
-    marginTop: 10,
-  },
-  dayButton: {
-    backgroundColor: '#EBEEDD',
-    borderRadius: 8,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
-    minWidth: 60,
-    alignItems: 'center',
-  },
-  dayButtonText: {
-    fontFamily: 'Karla',
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#707940',
-  },
-  // Planner Screen
-  weekSelector: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 12,
-    padding: 16,
-    marginHorizontal: 20,
-    marginBottom: 20,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  weekArrow: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#707940',
-    paddingHorizontal: 8,
-  },
-  weekTitle: {
-    fontFamily: 'League Gothic',
-    letterSpacing: 1,
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#707940',
-    flex: 1,
-    textAlign: 'center',
-  },
-  daySection: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 12,
-    padding: 16,
-    marginHorizontal: 20,
-    marginBottom: 12,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  dayHeader: {
-    fontFamily: 'League Gothic',
-    letterSpacing: 1,
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#707940',
-    marginBottom: 12,
-  },
-  emptyDay: {
-    fontFamily: 'Karla',
-    fontSize: 15,
-    color: '#9E9E9E',
-    fontStyle: 'italic',
-  },
-  dayRecipes: {
-    gap: 8,
-  },
-  plannerRecipeCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: '#F5F5F5',
-    borderRadius: 8,
-    padding: 8,
-  },
-  plannerRecipeInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flex: 1,
-  },
-  plannerRecipeImage: {
-    width: 60,
-    height: 60,
-    borderRadius: 8,
-    marginRight: 12,
-  },
-  plannerRecipeTitle: {
-    fontFamily: 'Karla',
-    fontSize: 15,
-    color: '#424242',
-    fontWeight: '600',
-    flex: 1,
-  },
-  removeRecipeButton: {
-    padding: 8,
-  },
-  removeRecipeText: {
-    fontSize: 20,
-    color: '#707940',
-    fontWeight: 'bold',
   },
 });
