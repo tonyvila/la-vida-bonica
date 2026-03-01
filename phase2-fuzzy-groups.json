@@ -1,0 +1,334 @@
+[
+  [
+    "Ensalada de Quinoa y Lentejas",
+    "Ensalada de Quinoa y Habas",
+    "Ensalada de Lentejas y Atún",
+    "Ensalada de Quinoa y Edamames"
+  ],
+  [
+    "Hamburguesas de Calabacín y Mozzarella",
+    "Hamburguesas de Pollo y Calabacín",
+    "Hamburguesas Vegetales de Garbanzos y Calabacín"
+  ],
+  [
+    "Berenjenas Rellenas con Pollo y Arroz",
+    "Berenjenas Rellenas con Arroz"
+  ],
+  [
+    "Ensalada de Verano con Alubias",
+    "Ensalada de Alubias con Patatas"
+  ],
+  [
+    "Sopa de Arroz con Pollo",
+    "Sopa de Verduras con Pollo Adobado",
+    "Sopa de Arroz"
+  ],
+  [
+    "Crema de Calabacín",
+    "Crema de Coliflor y Calabacín"
+  ],
+  [
+    "Pollo a la Mostaza",
+    "Pollo a la Crema"
+  ],
+  [
+    "Pollo con Cus Cus",
+    "Guisantes con Cus Cus",
+    "Lentejas con Cus Cus",
+    "Cus Cus con Guisantes"
+  ],
+  [
+    "Bizcocho de Coco y Almendra",
+    "Bizcocho de Coco y Té Matcha"
+  ],
+  [
+    "Crema de Acelgas y Zanahorias",
+    "Crema de Zanahorias"
+  ],
+  [
+    "Guiso de Alubias con Coles de Bruselas",
+    "Guisantes con Coles de Bruselas",
+    "Guiso de Alubias con Corvina",
+    "Asado de Pollo con Coles de Bruselas",
+    "Guiso de Alubias con Champiñones",
+    "Guiso de Coles de Bruselas con Alubias",
+    "Lomos de Bacalao con Coles de Bruselas",
+    "Alubias con Coles de Bruselas",
+    "Guiso de Alubias con Pollo",
+    "Guiso de Alubias con Setas y Bacalao",
+    "Guiso de Pavo con Alubias",
+    "Guiso de Pollo con Alubias Negras"
+  ],
+  [
+    "Arroz con Salsa de Soja y Tahini",
+    "Arroz Salteado con Verduras y Salsa de Soja"
+  ],
+  [
+    "Hamburguesas de Lentejas y Zanahorias",
+    "Hamburguesas de Lentejas y Atún",
+    "Hamburguesas de Atún y Lentejas"
+  ],
+  [
+    "Ensalada de Alubias con Crema de Yogur",
+    "Col con Crema de Yogur y Manzana",
+    "Ensalada de Fruta con Crema Dulce de Yogur",
+    "Crema de Alubias con Acelgas"
+  ],
+  [
+    "Arroz con Leche de Coco y Champiñones",
+    "Arroz con Leche de Coco y Pescado a la Plancha"
+  ],
+  [
+    "Pechugas de Pollo con Leche de Coco",
+    "Asado de Pollo con Salsa de Coco",
+    "Lentejas con Leche de Coco",
+    "Pescado Blanco con Leche de Coco",
+    "Sopa de Lentejas con Leche de Coco",
+    "Crema de Verduras con Leche de Coco"
+  ],
+  [
+    "Pescado Blanco en Salsa de Cítricos",
+    "Pescado Blanco en Salsa de Romero y Avellanas",
+    "Pescado Blanco en Salsa de Mandarina",
+    "Pescado Blanco en Salsa de Limón",
+    "Pescado en Salsa de Piquillos"
+  ],
+  [
+    "Crema de Espinacas y Aguacate",
+    "Crema de Espinacas y Ricotta",
+    "Crema de Manzana y Aguacate"
+  ],
+  [
+    "Albóndigas de Pollo en Salsa de Almendras",
+    "Pollo en Salsa de Tomate y Coco",
+    "Pavo en Salsa de Ajo y Almendras"
+  ],
+  [
+    "Mújol con Crema de Puerro y Manzana",
+    "Crema de Guisantes con Curry y Manzana"
+  ],
+  [
+    "Garbanzos con Leche de Coco y Tomates Secos",
+    "Hummus de Garbanzos con Tomates Secos"
+  ],
+  [
+    "Crema de Calabaza Asada",
+    "Crema de Calabaza"
+  ],
+  [
+    "Alubias con Setas y Chorizo Ibérico",
+    "Alubias con Setas y Espárragos"
+  ],
+  [
+    "Sopa de Alubias y Kale",
+    "Sopa de Alubias y Coliflor Asada"
+  ],
+  [
+    "Tortilla de Alcahofas y Cebolla",
+    "Tortilla de Habas y Cebolla"
+  ],
+  [
+    "Alitas de Pollo con Salsa de Tomate",
+    "Alubias con Salsa de Tomate",
+    "Pollo Satay con Salsa de Cacahuetes",
+    "Con Tomate Hummus de Alitas de Pollo con Salsa de Tomate"
+  ],
+  [
+    "Carne de Pavo y Pollo al Estilo Cajún",
+    "Muslos de Pavo al Estilo Cajún"
+  ],
+  [
+    "Tortitas de Espinacas",
+    "Tortitas de Espinacas con Queso"
+  ],
+  [
+    "Crema de Calabaza con Queso de Rulo de Cabra",
+    "Crema de Lentejas con Pavo",
+    "Crema de Calabaza y Zanahoria",
+    "Crema de Zanahorias con Hinojo",
+    "Sopa de Calabaza con Alubias",
+    "Pasta con Crema de Verduras",
+    "Tortitas de Calabacín con Queso",
+    "Zanahorias al Horno con Queso de Cabra",
+    "Crema de Garbanzos con Setas",
+    "Fiambre de Pollo con Calabaza"
+  ],
+  [
+    "Paté de Tomates Secos",
+    "Pate de Tomates Secos"
+  ],
+  [
+    "Muslos de Pollo a la Naranja",
+    "Asado de Pollo a la Naranja"
+  ],
+  [
+    "Alcachofas con Carne Picada",
+    "Alcachofas con Carne"
+  ],
+  [
+    "Lentejas Especiadas con Coliflor",
+    "Lentejas con Coliflor"
+  ],
+  [
+    "Ensalada con Quinoa y Espinacas",
+    "Alubias con Quinoa y Espinacas"
+  ],
+  [
+    "Hamburguesas de Pollo y Verduras",
+    "Hamburguesas de Pollo y Garbanzos"
+  ],
+  [
+    "Pollo Asado con Patatas",
+    "Pollo Asado con Especias"
+  ],
+  [
+    "Pasta Integral con Pesto de Brócoli",
+    "Pasta Integral con Pesto de Calabacín y Gambas",
+    "Pasta con Pesto de Brócoli",
+    "Pasta con Pesto de Calabacín"
+  ],
+  [
+    "Lentejas con Verduras",
+    "Hamburguesas de Verduras con Lentejas"
+  ],
+  [
+    "Solomillo de Cerdo en Salsa de Castañas",
+    "Solomillo de Cerdo con Salsa de Cebolla"
+  ],
+  [
+    "Ensalada de Lentejas con Arroz",
+    "Ensalada de Arroz con Toque Oriental",
+    "Ensalada de Arroz",
+    "Ensalada de Pasta con Lentejas",
+    "Corona de Arroz con Lentejas"
+  ],
+  [
+    "Bacalao con Salsa de Almendras",
+    "Bacalao con Salsa de Puerros"
+  ],
+  [
+    "Salmón al Horno con Verduras",
+    "Salmón al Horno con Espárragos"
+  ],
+  [
+    "Tortilla de Guisantes y Ajos Tiernos",
+    "Tortilla de Guisantes y Gambas"
+  ],
+  [
+    "Ensalada de Garbanzos y Pimientos Asados",
+    "Ensalada de Garbanzos y Bacalao",
+    "Ensalada de Pimientos y Bacalao"
+  ],
+  [
+    "Crema de Guisantes y Patatas",
+    "Crema de Guisantes"
+  ],
+  [
+    "Ensalada de Pasta de Lentejas y Langostinos con Pesto de Albahaca",
+    "Ensalada de Alubias y Langostinos",
+    "Ensalada de Pasta con Salmón Escalivada"
+  ],
+  [
+    "Ensalada de Alubias y Patatas",
+    "Ensalada de Patatas y Lenteja"
+  ],
+  [
+    "Crema de Verduras",
+    "Crema de Verduras Asadas"
+  ],
+  [
+    "Espaguetis con Pesto de Guisantes",
+    "Espaguetis con Pesto"
+  ],
+  [
+    "Hervido de Judías Verdes",
+    "Crema de Judías Verdes",
+    "Hervido de Judías Verdes con Refrito"
+  ],
+  [
+    "Hamburguesas de Patata y Brócoli",
+    "Hamburguesa de Patata y Brócoli"
+  ],
+  [
+    "Lasaña de Pollo y Bechamel de Setas",
+    "Bechamel de Calabacín y Pollo"
+  ],
+  [
+    "Hamburguesas de Alubias",
+    "Hamburguesas de Alubias Negras"
+  ],
+  [
+    "Pechugas de Pollo con Salsa de Tomates Asados",
+    "Pollo en Salsa de Soja con Tomates Secos"
+  ],
+  [
+    "Guiso de Pollo con Setas",
+    "Guiso de Pollo con Cúrcuma"
+  ],
+  [
+    "Contramuslos de Pollo con Salsa de Naranja y Soja",
+    "Pollo Marinado con Salsa de Soja y Naranja",
+    "Contramuslos de Pollo Marinados con Soja",
+    "Con Salsa de Bechamel de Calabacín y Pollo"
+  ],
+  [
+    "Pollo Asado a la Cerveza",
+    "Asado de Pollo a la Mandarina"
+  ],
+  [
+    "Crema de Berenjenas y Espárragos",
+    "Crema de Espárragos"
+  ],
+  [
+    "Merluza en Salsa de Puerros",
+    "Merluza en Salsa de Pimentón"
+  ],
+  [
+    "Haburguesas de Lentejas con Sésamo",
+    "Hamburguesas de Lentejas con Sésamo"
+  ],
+  [
+    "Marinada de Salsa de Soja",
+    "Boloñesa de Soja"
+  ],
+  [
+    "Tortilla de Patatas y Verduras",
+    "Tortilla de Verduras"
+  ],
+  [
+    "Crema de Verduras con Crema de Cacahuete",
+    "Crema de Maíz",
+    "Crema de Lechuga",
+    "Pasta con Crema de Coliflor y Atún",
+    "Crema de Champiñones",
+    "Crema de Garbanzos"
+  ],
+  [
+    "Hamburguesas de Quinoa y Remolacha",
+    "Hamburguesas de Quinoa y Aguacate"
+  ],
+  [
+    "Ensalada de Patatas con Garbanzos",
+    "Ensalada con Patatas"
+  ],
+  [
+    "Hummus de Guisantes",
+    "De Guisantes"
+  ],
+  [
+    "Patatas al Horno con Limón",
+    "Patatas al Limón"
+  ],
+  [
+    "Crema de Champiñones y Mantequilla de Avellanas",
+    "Mantequilla de Avellanas y Semillas"
+  ],
+  [
+    "Pechugas de Pollo al Curry",
+    "Pollo al Curry"
+  ],
+  [
+    "Fiambre de Pollo de Especias",
+    "Hambrguesas de Pollo"
+  ]
+]

@@ -1,0 +1,300 @@
+📋 *Batch Cooking — New Recipes for Review*
+
+*275 new recipes* to add to the app.
+Reply with any numbers to ❌ remove.
+
+*Ensaladas (30)*
+1. Ensalada con Bacalao y Naranja
+2. Ensalada con Quinoa y Espinacas
+3. Ensalada Cremosa con Uvas, Pollo y Picatostes
+4. Ensalada de Acelgas y Quinoa con Vinagreta
+5. Ensalada de Aguacate y Gambas
+6. Ensalada de Alubias Blancas con Vinagreta de Mostaza
+7. Ensalada de Alubias con Cerdo Adobado y Remolacha
+8. Ensalada de Alubias con Crema de Yogur
+9. Ensalada de Arroz con Toque Oriental
+10. Ensalada de Calabaza Asada y Maíz
+11. Ensalada de Col
+12. Ensalada de Coliflor
+13. Ensalada de Cus Cus
+14. Ensalada de Endibia con Granada
+15. Ensalada de Fruta con Crema Dulce de Yogur
+16. Ensalada de Garbanzos con Pollo y Queso
+17. Ensalada de Garbanzos y Bacalao
+18. Ensalada de Garbanzos y Pimientos Asados
+19. Ensalada de Judías Verdes y Anchoas
+20. Ensalada de Lentejas con Arroz
+21. Ensalada de Lentejas con Mayonesa de Aguacate
+22. Ensalada de Pasta con Lentejas
+23. Ensalada de Pasta de Lentejas y Langostinos con Pesto de Albahaca
+24. Ensalada de Patata y Naranja
+25. Ensalada de Patatas Alemana
+26. Ensalada de Pimientos y Bacalao
+27. Ensalada de Remolacha Asada
+28. Ensalada Verde de Quinoa
+29. Ensaladilla con Mayonesa de Aguacate
+30. Ensaladilla de Coliflor
+
+*Sopas y Cremas (40)*
+31. Arroz Caldoso con Pollo, Habas y Aceitunas
+32. Col con Crema de Yogur y Manzana
+33. Contramuslos de Pollo en Crema
+34. Crema de Acelgas y Zanahorias
+35. Crema de Alubias con Acelgas
+36. Crema de Calabaza Asada
+37. Crema de Calabaza con Queso de Rulo de Cabra
+38. Crema de Calabaza y Zanahoria
+39. Crema de Champiñones y Mantequilla de Avellanas
+40. Crema de Coliflor y Calabacín
+41. Crema de Espinacas y Aguacate
+42. Crema de Espinacas y Ricotta
+43. Crema de Garbanzos con Setas
+44. Crema de Guisantes con Curry y Manzana
+45. Crema de Guisantes y Patatas
+46. Crema de Judías Verdes
+47. Crema de Lentejas con Pavo
+48. Crema de Lombarda con Manzana Asada
+49. Crema de Manzana y Aguacate
+50. Crema de Pimientos Asados
+51. Crema de Verduras Asadas
+52. Crema de Verduras con Crema de Cacahuete
+53. Crema de Zanahorias con Hinojo
+54. Crema de Zanahorias y Leche de Coco
+55. Mújol con Crema de Puerro y Manzana
+56. Pasta con Crema de Verduras
+57. Pasta Integral con Crema de Acelgas y Zanahoria y Carne Picada
+58. Pasta Integral con Crema de Calabaza y Tomates Asados
+59. Pasta Integral con Crema de Zanahorias y Carne Adobada
+60. Puré de Brócoli con Semillas y Huevo
+61. Sopa con Pelotas
+62. Sopa de Alubias al Pesto
+63. Sopa de Alubias y Coliflor Asada
+64. Sopa de Alubias y Kale
+65. Sopa de Arroz con Pollo
+66. Sopa de Calabaza Asada y Queso Cheddar
+67. Sopa de Calabaza y Zanahoria
+68. Sopa de Lentejas con Leche de Coco
+69. Sopa de Verduras con Pollo Adobado
+70. Sopa Serrana
+
+*Legumbres (47)*
+71. Acelgas y Garbanzos Especiados
+72. Albóndigas de Garbanzos
+73. Alubias con Coles de Bruselas
+74. Alubias con Espárragos
+75. Alubias con Quinoa y Espinacas
+76. Alubias con Salsa de Tomate
+77. Alubias con Setas y Chorizo Ibérico
+78. Asado de Garbanzos
+79. Bhuja de Lentejas
+80. Corona de Arroz con Lentejas
+81. Curry de Garbanzos y Arroz Cocido
+82. Curry de Lentejas y Guisantes
+83. Garbanzos al Vino Blanco
+84. Garbanzos con Boloñesa de Carne
+85. Garbanzos con Leche de Coco y Tomates Secos
+86. Garbanzos con Picada y Huevo
+87. Garbanzos Especiados
+88. Guiso de Alubias con Coles de Bruselas
+89. Guiso de Carrillera Ibérica
+90. Guiso de Garbanzos con Langostinos
+91. Guiso de Lentejas y Berenjena
+92. Guiso de Patatas con Alcachofas
+93. Guiso de Pollo con Alubias Negras
+94. Guiso de Pollo y Maíz
+95. Guiso de Quinoa con Ternera
+96. Habas Rehogadas con Tomate y Huevo
+97. Hamburguesas de Alubias
+98. Hamburguesas de Atún y Lentejas
+99. Hamburguesas de Lentejas con Sésamo
+100. Hamburguesas de Lentejas y Zanahorias
+101. Hamburguesas de Pollo y Garbanzos
+102. Hamburguesas de Verduras con Garbanzos
+103. Hamburguesas de Verduras con Lentejas
+104. Hamburguesas Vegetales de Garbanzos y Calabacín
+105. Hummus de Alubias, Boniato Asado y Tomates Secos
+106. Hummus de Garbanzos con Nueces
+107. Hummus de Garbanzos con Tomates Secos
+108. Lentejas a las 1001 Noches
+109. Lentejas con Acelgas
+110. Lentejas con Leche de Coco
+111. Lentejas con Pavo y Coliflor
+112. Lentejas con Salmón
+113. Lentejas con Setas y Arroz
+114. Lentejas Estofadas con Arroz
+115. Nachos de Garbanzos
+116. Paté de Lentejas Rojas y Boniato Asado
+117. Tortilla de Habas y Cebolla
+
+*Carne (47)*
+118. Alcachofas con Carne Picada
+119. Alitas de Pollo con Salsa de Tomate
+120. Asado de Pollo a la Mandarina
+121. Asado de Pollo con Coles de Bruselas
+122. Asado de Pollo con Salsa de Coco
+123. Berenjenas Rellenas con Pollo y Arroz
+124. Brochetas de Solomillo de Pavo
+125. Carne de Pavo y Pollo al Estilo Cajún
+126. Chorizo Casero con Carne de Pollo
+127. Col con Carne Adobada
+128. Contramuslos de Pollo con Salsa de Naranja y Soja
+129. Contramuslos de Pollo Marinados con Soja
+130. Costillar de Cerdo a las Finas Hierbas
+131. Empanada de Carne
+132. Empanada de Pollo y Guisantes
+133. Fiambre de Pollo con Calabaza
+134. Fiambre de Pollo de Especias
+135. Hamburguesas de Cerdo con Calabacín y Champiñones
+136. Hamburguesas de Pollo y Quinoa
+137. Hamburguesas de Pollo y Verduras
+138. Hamburguesas Especiadas de Pavo
+139. Kebabs de Pollo Marinado
+140. Lasaña de Pollo y Bechamel de Setas
+141. Muslos de Pavo al Estilo Cajún
+142. Muslos de Pollo a la Naranja
+143. Pechugas de Pavo en Salsa de Champiñón y Queso
+144. Pechugas de Pollo con Leche de Coco
+145. Pechugas de Pollo con Salsa de Tomates Asados
+146. Pollo a la Mostaza
+147. Pollo al Ajillo con Vinagre
+148. Pollo al Horno con Quinoa
+149. Pollo Asado a la Cerveza
+150. Pollo en Salsa de Tomate y Coco
+151. Pollo Entero Asado con Especias y Salsa de Coco
+152. Pollo Especiado con Arroz
+153. Pollo Marinado con Salsa de Soja y Naranja
+154. Pollo Satay con Salsa de Cacahuetes
+155. Pollo Tikka Masala
+156. Quinoa con Pechuga de Pavo y Verdura
+157. Ragú de Carne a la Boloñesa
+158. Rollitos de Pollo Marinado con Pan de Pita
+159. Rulo de Carne Picada y Setas
+160. Solomillo de Cerdo con Salsa de Cebolla
+161. Solomillo de Cerdo en Salsa de Castañas
+162. Solomillo de Pavo Adobado
+163. Tartaletas de Patata con Carne Especiada
+164. Ternera al Horno con Boniato
+
+*Pescado (34)*
+165. Arroz con Leche de Coco y Pescado a la Plancha
+166. Arroz con Verduras y Bacalao
+167. Arroz de Coliflor con Bacalao
+168. Atún al Jerez
+169. Atún con Brócoli y Setas
+170. Bacalao a la Americana
+171. Bacalao con Salsa de Almendras
+172. Bacalao con Tomate al Curry
+173. Caballa con Picadillo
+174. Cazuela Marinera
+175. Curry de Pescado
+176. Dorada a la Plancha con Vinagreta de Pimientos Asados
+177. Filetes de Merluza en Salsa de Zanahoria
+178. Hamburguesas de Merluza
+179. Hamburguesas de Salmón
+180. Lomos de Atún con Soja
+181. Lomos de Atún Marinado con Salsa de Pimientos
+182. Lomos de Bacalao con Coles de Bruselas
+183. Lubina a la Naranja
+184. Merluza a la Cazuela
+185. Pastel de Atún y Gambas
+186. Pescado Blanco con Leche de Coco
+187. Pescado Blanco en Salsa de Cítricos
+188. Pescado Blanco en Salsa de Limón
+189. Pescado Blanco en Salsa de Mandarina
+190. Pescado Blanco en Salsa de Romero y Avellanas
+191. Pescado en Salsa de Piquillos
+192. Salmón al Horno con Espárragos
+193. Salmón al Horno con Verduras
+194. Salmón con Hierbas Aromáticas
+195. Tortilla de Bacalao, Patatas y Pimientos Asados
+196. Tortilla de Guisantes y Gambas
+197. Trucha Crujiente con Avena y Tomillo
+198. Truchas Rellenas de Cuscús
+
+*Hamburguesas y Albóndigas (7)*
+199. Albóndigas al Curry
+200. Albóndigas de Soja Texturizada con Salsa de Pimientos Asados
+201. Falafel con Pimientos del Piquillo
+202. Hamburguesas de Patata y Brócoli
+203. Hamburguesas de Quinoa y Aguacate
+204. Hamburguesas de Quinoa y Remolacha
+205. Nuggets Vegetales
+
+*Huevos y Tortillas (6)*
+206. Frittata de Verduras
+207. Patatas y Huevos en Salsa Verde
+208. Shakshuka
+209. Tortilla de Alcahofas y Cebolla
+210. Tortilla de Berenjena y Queso
+211. Tortilla de Verduras
+
+*Pasta y Arroz (8)*
+212. Arroz con Leche de Coco y Champiñones
+213. Arroz con Salsa de Soja y Tahini
+214. Berenjenas Rellenas con Arroz
+215. Espaguetis con Pesto de Guisantes
+216. Lasaña de Calabacín
+217. Lasaña de Coliflor
+218. Lasaña de Espinacas
+219. Pasta Integral con Soja Texturizada
+
+*Postres (7)*
+220. Bizcocho de Coco y Té Matcha
+221. Bizcocho de Piña
+222. Cookies Brownie sin Azúcar
+223. Galletas de Queso y Nueces
+224. Magdalenas de Plátano y Manzana
+225. Tarta de Boniato y Coco
+226. Tarta de Patata, Cebolla y Queso
+
+*Otros (49)*
+227. Alcachofas y Mozzarella
+228. Asado en Salsa de Tomates Secos y Romero
+229. Bacoreta con Anchoas y Cama de Verduras
+230. Berenpizzas
+231. Bocaditos de Espinacas y Ricotta
+232. Calabacín Hasselback
+233. Champiñones Rellenos de Jamón y Queso
+234. Chili Ahumado de Verduras
+235. Coliflor al Horno con Bechamel de Trufa
+236. Coliflor en Salsa
+237. Colirroz Estilo Asiático
+238. Cus Cus con Guisantes Salteados con Curry y Coco
+239. Estofado de Patatas con Setas
+240. Fiambre Vegano con Sabor a Chorizo
+241. Gazpacho con Remolacha
+242. Hervido de Judías Verdes con Refrito
+243. Menestra con Fideos
+244. Menestra de Judías Verdes con Pesto
+245. Menestra y Salchichas con Salsa de Yogur y Tahini
+246. Migas de Coliflor
+247. Pakoras
+248. Pastel de Alcachofas y Espárragos
+249. Pastel de Brócoli
+250. Pastel de Calabacín
+251. Pastel de Calabaza
+252. Pastel de Quinoa
+253. Pasteles de Apio
+254. Patatas a la Riojana con Chorizo Casero
+255. Patatas Adobadas al Horno
+256. Patatas al Horno con Limón
+257. Patatas Aliñadas con Limón, Ajo y Tomillo
+258. Paté de Tomates Secos
+259. Pechugas de la Abuela
+260. Picadillo Cubano Vegano
+261. Pipirrana On My Way
+262. Regañás de Queso
+263. Salteado de Setas con Garam Masala
+264. San Jacobos de Coliflor
+265. Setas y Brócoli en Salsa Americana
+266. Setas y Patatas al Ajillo
+267. Soufflé de Berenjena
+268. Tartar de Patata, Cebolla y Gorgonzola
+269. Torta de Calabacín
+270. Tortitas de Calabacín con Queso
+271. Tortitas de Calabaza
+272. Tortitas de Espinacas con Queso
+273. Tzatziki Griego
+274. Verduras al Vapor con Salsa de Yogur
+275. Zarangollo
+
