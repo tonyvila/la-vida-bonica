@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tortilla-de-guisantes-y-gambas",
+    "title": "Tortilla de Guisantes y Gambas",
+    "servings": 4,
+    "ingredients": "8  huevos, 300 gr de guisantes tiernos (yo los uso congelados), 300 gr de gambas peladas, 1 cucharadita de ajo en polvo, 0.5 cucharadita de cúrcuma, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "tortilla-de-habas-y-cebolla",
+    "title": "Tortilla de Habas y Cebolla",
+    "servings": 4,
+    "ingredients": "300 gr de habas (yo las tengo congeladas), 1  cebolla., 4  huevos., AOVE y sal"
+  },
+  {
+    "id": "tortilla-de-verduras",
+    "title": "Tortilla de Verduras",
+    "servings": 4,
+    "ingredients": "1  cebolla, 1  calabaza pequeña, 400 gr de zanahorias, caldo de verduras, AOVE, sal y pimienta, 1  mango"
+  },
+  {
+    "id": "tortitas-de-calabacin-con-queso",
+    "title": "Tortitas de Calabacín con Queso",
+    "servings": 4,
+    "ingredients": "2  calabacines, 1  cebolleta, 100 gr de queso, 3  huevos, Orégano y albahaca, 100 gr de harina de garbanzo, 0.5 cucharadita de nuez moscada, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "tortitas-de-calabaza",
+    "title": "Tortitas de Calabaza",
+    "servings": 4,
+    "ingredients": "400 gr de calabaza, 2 latas de pequeñas de maíz, 1  cebolleta, 20  tomates cherry, Olivas troceadas, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta, 1  chorro de limón, 1 cucharadita de albahaca seca"
+  },
+  {
+    "id": "tortitas-de-espinacas-con-queso",
+    "title": "Tortitas de Espinacas con Queso",
+    "servings": 4,
+    "ingredients": "2  huevos, 200 ml de leche, 5 cucharadas de soperas de harina integral de trigo, Sal, 50 gr de queso rallado, 3 puñados de espinacas frescas"
+  },
+  {
+    "id": "trucha-crujiente-con-avena-y-tomillo",
+    "title": "Trucha Crujiente con Avena y Tomillo",
+    "servings": 4,
+    "ingredients": "4  truchas pequeñas sin escamas y abiertas en libro, 15 gr de amos de tomillo, 2 cucharadas de copos de avena, AOVE, sal y pimienta"
+  },
+  {
+    "id": "truchas-rellenas-de-cuscus",
+    "title": "Truchas Rellenas de Cuscús",
+    "servings": 4,
+    "ingredients": "2  patatas medianas, 1  cebolla morada, 2  zanahorias ralladas., Medio pimiento verde, 100 gr de harina de garbanzo, 125 ml de agua., 1 cucharada de Garam masala, 1 cucharadita de pimentòn dulce, 1 cucharadita de comino, 1 cucharadita de ajo en polvo, AOVE, sal y pimienta"
+  },
+  {
+    "id": "tzatziki-griego",
+    "title": "Tzatziki Griego",
+    "servings": 4,
+    "ingredients": "3  berenjenas medianas, Salsa de tomate, 3  lonchas de lacón, 5  pimientos asados, 70 gr de queso semitierno, Orégano"
+  },
+  {
+    "id": "verduras-al-vapor-con-salsa-de-yogur",
+    "title": "Verduras al Vapor con Salsa de Yogur",
+    "servings": 4,
+    "ingredients": "2 dientes de ajo, troceados, 1/2 cebolla roja, troceada, 1  pimiento rojo, troceado (yo no tenía y le he puesto 3 alcachofas), 4 cucharadas de concentrado de tomate, 1 cucharada de orégano seco, 1 cucharada de comino molido, 1 cucharadita de sal, 1/8 cucharadita de cayena, 1/8 cucharadita de pimienta negra molida, 4 cucharadas de pasas (yo no tenía y he puesto 6 higos secos), 500 ml de caldo de verduras, 2  patatas medianas, peladas y troceadas en cubos, 1 bote de lentejas cocidas, 100 gr de aceitunas verdes sin hueso, 2 cucharadas de alcaparras, Cocina las verduras en un poco de, agua o aceite (ajo, cebolla y pimiento) en una sartén profunda, wok u olla a, fuego medio-alto hasta que empiecen a dorarse., Añade el concentrado de tomate y"
+  },
+  {
+    "id": "zarangollo",
+    "title": "Zarangollo",
+    "servings": 4,
+    "ingredients": "400 gr de champiñones, 50 gr de queso Emmental, 60 gr de jamón york (más del 90%-95% de carne nos asegura tomar un fiambre de calidad), Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  }
+]

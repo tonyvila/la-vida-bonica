@@ -1,0 +1,362 @@
+[
+  {
+    "id": "galletas-de-queso-y-nueces",
+    "totalWeightGrams": 620,
+    "perServing": {
+      "calories": 541,
+      "protein": 23.4,
+      "carbs": 29.1,
+      "fat": 40.6,
+      "fiber": 3.4
+    },
+    "per100g": {
+      "calories": 437,
+      "protein": 11.9,
+      "carbs": 14.8,
+      "fat": 20.7,
+      "fiber": 1.7
+    }
+  },
+  {
+    "id": "garbanzos-al-vino-blanco",
+    "totalWeightGrams": 1854,
+    "perServing": {
+      "calories": 462,
+      "protein": 37.4,
+      "carbs": 34.9,
+      "fat": 20.9,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 250,
+      "protein": 20.3,
+      "carbs": 19,
+      "fat": 11.4,
+      "fiber": 3.5
+    }
+  },
+  {
+    "id": "garbanzos-con-bolonesa-de-carne",
+    "totalWeightGrams": 900,
+    "perServing": {
+      "calories": 644,
+      "protein": 34.9,
+      "carbs": 43.1,
+      "fat": 37.4,
+      "fiber": 8.4
+    },
+    "per100g": {
+      "calories": 716,
+      "protein": 38.9,
+      "carbs": 48.1,
+      "fat": 41.7,
+      "fiber": 9.4
+    }
+  },
+  {
+    "id": "garbanzos-con-leche-de-coco-y-tomates-secos",
+    "totalWeightGrams": 1306,
+    "perServing": {
+      "calories": 654,
+      "protein": 43.8,
+      "carbs": 24.9,
+      "fat": 43.8,
+      "fiber": 3.4
+    },
+    "per100g": {
+      "calories": 501,
+      "protein": 33.5,
+      "carbs": 19.1,
+      "fat": 33.5,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "garbanzos-con-picada-y-huevo",
+    "totalWeightGrams": 1074,
+    "perServing": {
+      "calories": 432,
+      "protein": 37.4,
+      "carbs": 14.9,
+      "fat": 26.4,
+      "fiber": 3.4
+    },
+    "per100g": {
+      "calories": 402,
+      "protein": 34.7,
+      "carbs": 13.8,
+      "fat": 24.5,
+      "fiber": 3.2
+    }
+  },
+  {
+    "id": "garbanzos-especiados",
+    "totalWeightGrams": 725,
+    "perServing": {
+      "calories": 421,
+      "protein": 23.1,
+      "carbs": 36.4,
+      "fat": 24.1,
+      "fiber": 6.1
+    },
+    "per100g": {
+      "calories": 582,
+      "protein": 31.9,
+      "carbs": 50.3,
+      "fat": 33.3,
+      "fiber": 8.4
+    }
+  },
+  {
+    "id": "gazpacho-con-remolacha",
+    "totalWeightGrams": 1250,
+    "perServing": {
+      "calories": 122,
+      "protein": 3.4,
+      "carbs": 25.1,
+      "fat": 2.4,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 98,
+      "protein": 2.7,
+      "carbs": 20.1,
+      "fat": 1.9,
+      "fiber": 3.5
+    }
+  },
+  {
+    "id": "guiso-de-alubias-con-coles-de-bruselas",
+    "totalWeightGrams": 1700,
+    "perServing": {
+      "calories": 394,
+      "protein": 22.9,
+      "carbs": 43.1,
+      "fat": 17.4,
+      "fiber": 9.4
+    },
+    "per100g": {
+      "calories": 232,
+      "protein": 13.5,
+      "carbs": 25.5,
+      "fat": 10.3,
+      "fiber": 5.6
+    }
+  },
+  {
+    "id": "guiso-de-carrillera-iberica",
+    "totalWeightGrams": 2100,
+    "perServing": {
+      "calories": 844,
+      "protein": 53.9,
+      "carbs": 10.4,
+      "fat": 63.9,
+      "fiber": 2.4
+    },
+    "per100g": {
+      "calories": 402,
+      "protein": 25.7,
+      "carbs": 5,
+      "fat": 30.5,
+      "fiber": 1.1
+    }
+  },
+  {
+    "id": "guiso-de-garbanzos-con-langostinos",
+    "totalWeightGrams": 500,
+    "perServing": {
+      "calories": 282,
+      "protein": 18.4,
+      "carbs": 24.1,
+      "fat": 12.1,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 282,
+      "protein": 18.4,
+      "carbs": 24.1,
+      "fat": 12.1,
+      "fiber": 4.4
+    }
+  },
+  {
+    "id": "guiso-de-lentejas-y-berenjena",
+    "totalWeightGrams": 1550,
+    "perServing": {
+      "calories": 444,
+      "protein": 24.1,
+      "carbs": 54.4,
+      "fat": 18.4,
+      "fiber": 10.4
+    },
+    "per100g": {
+      "calories": 287,
+      "protein": 15.6,
+      "carbs": 35.2,
+      "fat": 11.9,
+      "fiber": 6.7
+    }
+  },
+  {
+    "id": "guiso-de-patatas-con-alcachofas",
+    "totalWeightGrams": 1600,
+    "perServing": {
+      "calories": 314,
+      "protein": 14.1,
+      "carbs": 43.9,
+      "fat": 12.4,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 196,
+      "protein": 8.8,
+      "carbs": 27.4,
+      "fat": 7.7,
+      "fiber": 4
+    }
+  },
+  {
+    "id": "guiso-de-pollo-con-alubias-negras",
+    "totalWeightGrams": 1800,
+    "perServing": {
+      "calories": 444,
+      "protein": 35.1,
+      "carbs": 34.1,
+      "fat": 22.4,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 247,
+      "protein": 19.5,
+      "carbs": 19,
+      "fat": 12.4,
+      "fiber": 3.6
+    }
+  },
+  {
+    "id": "guiso-de-pollo-y-maiz",
+    "totalWeightGrams": 1600,
+    "perServing": {
+      "calories": 362,
+      "protein": 29.4,
+      "carbs": 28.4,
+      "fat": 17.4,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 226,
+      "protein": 18.4,
+      "carbs": 17.8,
+      "fat": 10.9,
+      "fiber": 2.8
+    }
+  },
+  {
+    "id": "guiso-de-quinoa-con-ternera",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 522,
+      "protein": 35.4,
+      "carbs": 24.9,
+      "fat": 33.4,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 435,
+      "protein": 29.5,
+      "carbs": 20.8,
+      "fat": 27.9,
+      "fiber": 3.7
+    }
+  },
+  {
+    "id": "habas-rehogadas-con-tomate-y-huevo",
+    "totalWeightGrams": 900,
+    "perServing": {
+      "calories": 294,
+      "protein": 18.4,
+      "carbs": 23.1,
+      "fat": 16.4,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 327,
+      "protein": 20.5,
+      "carbs": 25.7,
+      "fat": 18.3,
+      "fiber": 4.9
+    }
+  },
+  {
+    "id": "hamburguesas-de-alubias",
+    "totalWeightGrams": 1500,
+    "perServing": {
+      "calories": 394,
+      "protein": 20.4,
+      "carbs": 34.4,
+      "fat": 20.9,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 262,
+      "protein": 13.6,
+      "carbs": 23,
+      "fat": 13.9,
+      "fiber": 4.3
+    }
+  },
+  {
+    "id": "hamburguesas-de-atun-y-lentejas",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 444,
+      "protein": 39.4,
+      "carbs": 24.1,
+      "fat": 24.1,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 370,
+      "protein": 32.9,
+      "carbs": 20.1,
+      "fat": 20.1,
+      "fiber": 5.3
+    }
+  },
+  {
+    "id": "hamburguesas-de-cerdo-con-calabacin-y-champinones",
+    "totalWeightGrams": 1700,
+    "perServing": {
+      "calories": 542,
+      "protein": 34.9,
+      "carbs": 20.9,
+      "fat": 36.4,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 318,
+      "protein": 20.5,
+      "carbs": 12.3,
+      "fat": 21.4,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "hamburguesas-de-lentejas-con-sesamo",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 462,
+      "protein": 24.1,
+      "carbs": 34.1,
+      "fat": 26.4,
+      "fiber": 6.4
+    },
+    "per100g": {
+      "calories": 385,
+      "protein": 20.1,
+      "carbs": 28.4,
+      "fat": 22,
+      "fiber": 5.3
+    }
+  }
+]

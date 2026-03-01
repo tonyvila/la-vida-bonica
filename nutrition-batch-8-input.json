@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hamburguesas-de-lentejas-y-zanahorias",
+    "title": "Hamburguesas de Lentejas y Zanahorias",
+    "servings": 4,
+    "ingredients": "400 gr de lenteja pardina cocida, 3  zanahorias ralladas, 2 cucharadas de salsa de soja sin azúcar, Comino, sal y pimienta, 1  huevo, 1 cucharada de harina de avena (o de cualquier otro tipo), Aceite de Oliva Virgen Extra (AOVE), sal y pimienta."
+  },
+  {
+    "id": "hamburguesas-de-merluza",
+    "title": "Hamburguesas de Merluza",
+    "servings": 4,
+    "ingredients": "400 gr de lentejas cocidas, 150 gr de arroz vaporizado, 2  berenjenas, 1  aguacate, 30 gr de tomates secos, 30 gr de anacardos, Zumo de ½ limón, 50 ml de leche animal o vegetal, 100 ml de agua, 1 cucharadita de comino, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "hamburguesas-de-patata-y-brocoli",
+    "title": "Hamburguesas de Patata y Brócoli",
+    "servings": 4,
+    "ingredients": "3  patatas, 1  brócoli, 1  cebolla, 1 diente de ajo, Comino y nuez moscada, AOVE, sal y pimienta, 100 gr de harina de garbanzo"
+  },
+  {
+    "id": "hamburguesas-de-pollo-y-garbanzos",
+    "title": "Hamburguesas de Pollo y Garbanzos",
+    "servings": 4,
+    "ingredients": "1  cebolla, 4  zanahorias, 1  calabaza, 500 ml de caldo de verduras, 200 ml de leche de coco, AOVE, sal, pimienta y comino"
+  },
+  {
+    "id": "hamburguesas-de-pollo-y-quinoa",
+    "title": "Hamburguesas de Pollo y Quinoa",
+    "servings": 4,
+    "ingredients": "50 gr de tomates secos, 50 gr de anacardos, 1  patata pequeña cocida, 1 diente de ajo, 1 cucharadita de orégano, 1 cucharada de pimentón dulce, 100 ml de agua, 2 cucharadas de AOVE"
+  },
+  {
+    "id": "hamburguesas-de-pollo-y-verduras",
+    "title": "Hamburguesas de Pollo y Verduras",
+    "servings": 4,
+    "ingredients": "1  pimiento, 2  puerros, 2  zanahorias, 2  pechugas de pollo, Cebolla en polvo, Ajo en polvo, Orégano en polvo, AOVE, sal y pimienta, 2  huevos, Pan integral rallado, Aceite de Oliva Virgen extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "hamburguesas-de-quinoa-y-aguacate",
+    "title": "Hamburguesas de Quinoa y Aguacate",
+    "servings": 4,
+    "ingredients": "La fruta que más os guste y que sea de temporada. En nuestro caso hemos elegido:, Manzana, Piña, Ciruela, Mango, ALIÑO, 1  yogur natural o griego, 50 gr de queso fresco batido, Canela, 2 cucharadas de miel, Un poco de agua"
+  },
+  {
+    "id": "hamburguesas-de-quinoa-y-remolacha",
+    "title": "Hamburguesas de Quinoa y Remolacha",
+    "servings": 4,
+    "ingredients": "1  puerro, 4  zanahorias, 400 gr de calabaza, 1  patata mediana, 1 litro de caldo de verduras, AOVE, sal y curry, 1  naranja, 1 cucharada de crema de cacahuete sin sal añadida"
+  },
+  {
+    "id": "hamburguesas-de-salmon",
+    "title": "Hamburguesas de Salmón",
+    "servings": 4,
+    "ingredients": "2  huevos, 200 ml de leche, 5 cucharadas de soperas de harina integral de trigo, Sal, 50 gr de queso rallado, 3 puñados de espinacas frescas"
+  },
+  {
+    "id": "hamburguesas-de-verduras-con-garbanzos",
+    "title": "Hamburguesas de Verduras con Garbanzos",
+    "servings": 4,
+    "ingredients": "1  cebolla, 1  pimiento rojo, 1  pimiento verde, 1 diente de ajo, 4  lomos de bacalao (yo los uso ya desalados), 200 ml de caldo de pescado, 2 cucharadas de rasas de harina, AOVE, sal y pimienta, 200 gr de quinoa"
+  },
+  {
+    "id": "hamburguesas-de-verduras-con-lentejas",
+    "title": "Hamburguesas de Verduras con Lentejas",
+    "servings": 4,
+    "ingredients": "2  calabacines medianos., 50 gr de anacardos, 50 gr de albahaca fresca, 1  cebolla, 30 g de parmesano rallado, AOVE y sal, Pasta integral al gusto, 250 gr de colas de gambas peladas, Guindilla (opcional)"
+  },
+  {
+    "id": "hamburguesas-especiadas-de-pavo",
+    "title": "Hamburguesas Especiadas de Pavo",
+    "servings": 4,
+    "ingredients": "500 gr de tomates maduros, 1  pimiento rojo, 2  zanahorias, 1  cebolla, 1 diente de ajo, AOVE, sal y pimienta, 700 ml de agua o caldo de verduras, Jengibre fresco, 4  huevos, 12  aceitunas"
+  },
+  {
+    "id": "hamburguesas-vegetales-de-garbanzos-y-calabacin",
+    "title": "Hamburguesas Vegetales de Garbanzos y Calabacín",
+    "servings": 4,
+    "ingredients": "400 gr de garbanzos cocidos, 1  calabacín, 1  huevo, 100 gr de pan integral rallado, 70 gr de nueces, 1 cucharadita de comino, AOVE, pimienta y sal"
+  },
+  {
+    "id": "hervido-de-judias-verdes-con-refrito",
+    "title": "Hervido de Judías Verdes con Refrito",
+    "servings": 4,
+    "ingredients": "1  cebolla pelada y entera, 1 kg de judías verdes (yo las he utilizado congeladas), 2  patatas grandes, Sal y AOVE, 1 cucharadita de pimentón, 1 cucharadita de harina integral, 2 dientes de ajo"
+  },
+  {
+    "id": "hummus-de-alubias-boniato-asado-y-tomates-secos",
+    "title": "Hummus de Alubias, Boniato Asado y Tomates Secos",
+    "servings": 4,
+    "ingredients": "Pulpa de un boniato asado, 400 gr de alubias blancas cocidas, 40 gr de tomates secos, 1 cucharada de colmada de semillas de sésamo, Zumo de ½ limón, 1 diente de ajo sin simiente, Aceite de Oliva Virgen Extra (AOVE) sal y pimienta, 1 cucharadita de albahaca seca, 150 ml de agua o caldo de verduras"
+  },
+  {
+    "id": "hummus-de-garbanzos-con-nueces",
+    "title": "Hummus de Garbanzos con Nueces",
+    "servings": 4,
+    "ingredients": "400 gr de garbanzos cocidos, 10  nueces, 1 cucharada de tahini, 1  ajo (le quito la simiente), 1 cucharadita de comino, zumo de limón, 100 ml de caldo de verduras, Aceite de Oliva Virgen Extra (AOVE) y sal"
+  },
+  {
+    "id": "hummus-de-garbanzos-con-tomates-secos",
+    "title": "Hummus de Garbanzos con Tomates Secos",
+    "servings": 4,
+    "ingredients": "1 cucharada de semillas de sésamo, 1  ajo (le quito la simiente), 1 cucharadita de comino, El zumo de un limón grande, 400 gr de garbanzos cocidos, 50 gr de tomates secos, 100 ml de caldo de verduras, Pimentón y Aceite de Oliva Virgen Extra (AOVE) para decorar"
+  },
+  {
+    "id": "kebabs-de-pollo-marinado",
+    "title": "Kebabs de Pollo Marinado",
+    "servings": 4,
+    "ingredients": "200 gr de quinoa., 2  tomates crudos cortados en dados, 1  cebolla cortada en dados (yo lo hago lo primero y la meto en un bowl con agua y mucho vinagre, para que luego no pique), 2 latas de atún natural, un puñado de nueces troceadas, 1  aguacate"
+  },
+  {
+    "id": "lasana-de-calabacin",
+    "title": "Lasaña de Calabacín",
+    "servings": 4,
+    "ingredients": "4  zanahorias, 2  trozos de apio, 2  patatas grandes, Morcillo y carne de pollo, 2  ajos enteros pelados, el zumo de un limón, 1  tomate rallado, sal y pimienta, 400 gr de garbanzos cocidos"
+  },
+  {
+    "id": "lasana-de-coliflor",
+    "title": "Lasaña de Coliflor",
+    "servings": 4,
+    "ingredients": "1  coliflor pequeña, 500 gr de carne picada (pícala tú mismo o tu carnicero de confianza, así sabes que lo que estás tomando es carne 100%), 400 gr de tomates maduros, 2  cebollas pequeñas, 2  huevos, 50 gr de queso rallado, Nuez moscada y pimentón ahumado, 3 cucharadas de harina de garbanzo, Varios pellizcos de mantequilla, Sal y pimienta"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "asado-de-pollo-con-coles-de-bruselas",
+    "title": "Asado de Pollo con Coles de Bruselas",
+    "servings": 4,
+    "ingredients": "3  muslos y contramuslos de pollo, 4  patatas, 300 gr de coles de bruselas, 1  tomate gordo y maduro, 100 ml de nata fresca, 1 trozo de jengibre fresco (2 cm), 40 gr de queso semitierno, 1 cucharadita de tomillo, 1 cucharadita de romero, 1 diente de ajo, 100 ml de agua o caldo de pollo, Sal y pimienta"
+  },
+  {
+    "id": "asado-de-pollo-con-salsa-de-coco",
+    "title": "Asado de Pollo con Salsa de Coco",
+    "servings": 6,
+    "ingredients": "6  muslos y contramuslos de pollo, 4  patatas, 4  rodajas de calabaza gruesas, 1 manojo de espárragos verdes, 400 gr de setas, 200 ml de leche de coco, 1 cucharada de crema de cacahuete, 2 cucharadas de coco rallado, 3 cucharadas de salsa de soja, 1  lima (zumo), 1 cucharadita de curry en polvo, 100 ml de agua"
+  },
+  {
+    "id": "asado-en-salsa-de-tomates-secos-y-romero",
+    "title": "Asado en Salsa de Tomates Secos y Romero",
+    "servings": 6,
+    "ingredients": "3  pechugas enteras de pollo, 3  patatas grandes, 250 gr de champiñones enteros, 2  zanahorias grandes, 50 gr de tomates secos, 40 gr de nueces peladas, 2 cucharadas de salsa de soja, 1 cucharadita de romero seco, AOVE, sal y pimienta"
+  },
+  {
+    "id": "atun-al-jerez",
+    "title": "Atún al Jerez",
+    "servings": 4,
+    "ingredients": "600 gr de lomo de atún en tacos, 200 ml de vino de Jerez, 2 dientes de ajo, Perejil picado, AOVE, sal y pimienta, Zumo de medio limón, Un poco de caldo de pollo"
+  },
+  {
+    "id": "atun-con-brocoli-y-setas",
+    "title": "Atún con Brócoli y Setas",
+    "servings": 4,
+    "ingredients": "600 gr de lomos de atún, 0.5  brócoli, 250 gr de setas, 1 cucharada de aceite de sésamo, 4 cucharadas de salsa de soja sin azúcar, Sal de hierbas, 0.5 cucharadita de eneldo picado"
+  },
+  {
+    "id": "bacalao-a-la-americana",
+    "title": "Bacalao a la Americana",
+    "servings": 4,
+    "ingredients": "4  lomos de bacalao, 2  cebollas grandes, 2  pimientos verdes pequeños, 4 dientes de ajo, 300 gr de tomate natural triturado, 100 ml de vino blanco, 2  hojas de laurel, Ajo y perejil para el majado, AOVE, sal y pimienta"
+  },
+  {
+    "id": "bacalao-con-salsa-de-almendras",
+    "title": "Bacalao con Salsa de Almendras",
+    "servings": 4,
+    "ingredients": "600 gr de lomos de bacalao desalado, 1  rebanada de pan integral, 4 dientes de ajo, 50 gr de almendras, 1  cebolla, 150 gr de tomate natural triturado, 150 ml de caldo de verdura, 100 ml de agua, AOVE y sal"
+  },
+  {
+    "id": "bacalao-con-tomate-al-curry",
+    "title": "Bacalao con Tomate al Curry",
+    "servings": 4,
+    "ingredients": "400 gr de lomos de bacalao, 200 gr de tomate natural triturado, 1  cebolla, 1 cucharada de pan rallado, 1 cucharada de salsa de soja, 1 cucharadita de curry en polvo, 0.5 cucharadita de ajo en polvo, AOVE, sal y pimienta"
+  },
+  {
+    "id": "bacoreta-con-anchoas-y-cama-de-verduras",
+    "title": "Bacoreta con Anchoas y Cama de Verduras",
+    "servings": 4,
+    "ingredients": "600 gr de rodajas gruesas de bacoreta, 1 lata pequeña de anchoas, 1  cebolleta, 2  calabacines, AOVE, sal y pimienta"
+  },
+  {
+    "id": "berenjenas-rellenas-con-arroz",
+    "title": "Berenjenas Rellenas con Arroz",
+    "servings": 4,
+    "ingredients": "3  berenjenas, 1  cebolla grande, 1  pimiento verde, 1  pechuga de pollo picada, 50 gr de arroz, 100 gr de salsa de tomate, 150 ml de caldo de carne o verdura, 1 cucharadita de tomillo seco, 1 cucharadita de pimentón dulce o ahumado, AOVE, sal y pimienta, Queso rallado al gusto"
+  },
+  {
+    "id": "berenjenas-rellenas-con-pollo-y-arroz",
+    "title": "Berenjenas Rellenas con Pollo y Arroz",
+    "servings": 4,
+    "ingredients": "4  berenjenas, 1  pechuga de pollo picada, 50 gr de arroz, 150 gr de salsa de tomate, 150 ml de caldo de carne o verdura, 1 cucharadita de tomillo seco, 1 cucharadita de pimentón dulce o ahumado, AOVE, sal y pimienta, Queso rallado al gusto"
+  },
+  {
+    "id": "berenpizzas",
+    "title": "Berenpizzas",
+    "servings": 4,
+    "ingredients": "3  berenjenas medianas, Salsa de tomate, 3 lonchas de lacón, 5  pimientos asados, 70 gr de queso semitierno, Orégano"
+  },
+  {
+    "id": "bhuja-de-lentejas",
+    "title": "Bhuja de Lentejas",
+    "servings": 4,
+    "ingredients": "200 gr de lentejas rojas secas, 1  patata grande, 1  cebolla, 2 cucharadas de pan integral rallado, 1 cucharadita de levadura química, 1 cucharadita de cúrcuma, 1 cucharadita de comino, AOVE y sal, 50 gr de tomate concentrado, 200 ml de agua, 200 ml de nata para cocinar, 2 dientes de ajo, Jengibre fresco"
+  },
+  {
+    "id": "bizcocho-de-coco-y-te-matcha",
+    "title": "Bizcocho de Coco y Té Matcha",
+    "servings": 8,
+    "ingredients": "8  dátiles, 2  huevos, 1  yogur natural griego, Una puntita de sal, 1 cucharada de canela en polvo, 2 cucharaditas de levadura química, 60 gr de copos de avena, 60 gr de coco rallado, 100 ml de leche, 1  manzana dulce, 1 cucharada de té matcha, AOVE o aceite de coco"
+  },
+  {
+    "id": "bizcocho-de-pina",
+    "title": "Bizcocho de Piña",
+    "servings": 8,
+    "ingredients": "140 gr de piña (sin azúcar añadido), 3  huevos, 160 gr de harina integral de trigo, 1 sobre de levadura Royal, 4 onzas de chocolate 72% cacao"
+  },
+  {
+    "id": "bocaditos-de-espinacas-y-ricotta",
+    "title": "Bocaditos de Espinacas y Ricotta",
+    "servings": 4,
+    "ingredients": "3  patatas cocidas, 200 gr de espinacas frescas, 120 gr de queso ricotta, 1  cebolla, 1 diente de ajo, 1  huevo, AOVE, sal y pimienta"
+  },
+  {
+    "id": "brochetas-de-solomillo-de-pavo",
+    "title": "Brochetas de Solomillo de Pavo",
+    "servings": 4,
+    "ingredients": "600 gr de solomillo de pavo, 1  yogur griego, 1 cucharada de mostaza, 1 cucharada de salsa de soja, AOVE, sal y pimienta, 1  calabacín, Champiñones"
+  },
+  {
+    "id": "caballa-con-picadillo",
+    "title": "Caballa con Picadillo",
+    "servings": 4,
+    "ingredients": "4  caballas frescas de ración (en lomos), 2  tomates grandes rojos, 1  pimiento rojo, 1  cebolleta, AOVE, vinagre y sal"
+  },
+  {
+    "id": "calabacin-hasselback",
+    "title": "Calabacín Hasselback",
+    "servings": 2,
+    "ingredients": "1  calabacín grande, 1  bola de mozzarella, 50 gr de jamón ibérico, 1 cucharadita de ajo en polvo, 1 cucharadita de orégano, AOVE, sal y pimienta"
+  },
+  {
+    "id": "carne-de-pavo-y-pollo-al-estilo-cajun",
+    "title": "Carne de Pavo y Pollo al Estilo Cajún",
+    "servings": 4,
+    "ingredients": "2  muslos de pavo, 2  pechugas de pollo, 1 cucharadita de pimentón dulce, 0.5 cucharadita de pimentón picante, 0.5 cucharadita de pimienta negra, 0.5 cucharadita de comino, 0.5 cucharadita de orégano, 0.5 cucharadita de ajo en polvo, 1 cucharadita de sal, 0.5 cucharadita de semillas de mostaza, 1 cucharada de AOVE, 1  bolsa de asar"
+  }
+]

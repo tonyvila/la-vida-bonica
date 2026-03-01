@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cazuela-marinera",
+    "title": "Cazuela Marinera",
+    "servings": 4,
+    "ingredients": "300 gr de langostinos crudos, 400 gr de rape, 1  pimiento rojo, 1  cebolla, 2 dientes de ajo, 3 cucharadas de tomate triturado, 1/2 vaso de vino blanco, Una cucharadita de pimentón dulce, 1  patata, 2 puñados de fideos gruesos, AOVE, sal y pimienta"
+  },
+  {
+    "id": "champinones-rellenos-de-jamon-y-queso",
+    "title": "Champiñones Rellenos de Jamón y Queso",
+    "servings": 4,
+    "ingredients": "400 gr de champiñones, 50 gr de queso Emmental, 60 gr de jamón york (más del 90%-95% de carne nos asegura tomar un fiambre de calidad), Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "chili-ahumado-de-verduras",
+    "title": "Chili Ahumado de Verduras",
+    "servings": 4,
+    "ingredients": "2  cebollas, 2  pimientos grandes, 2  patatas grandes (o 1 patata y 1 boniato), 400 gr de alubias negras, 800 gr de tomate en conserva, 1 cucharadita de comino en polvo, 2 cucharaditas de cacao puro en polvo, 2 cucharaditas de pimentón ahumado, 1 cucharada de colmada de mantequilla de cacahuete, AOVE, sal y pimienta"
+  },
+  {
+    "id": "chorizo-casero-con-carne-de-pollo",
+    "title": "Chorizo Casero con Carne de Pollo",
+    "servings": 4,
+    "ingredients": "100 gr de pan integral seco, 100 gr de queso Cheddar, 1  huevo, 250 gr de pechuga de pollo, 100 gr de champiñones, Sal, orégano y albahaca"
+  },
+  {
+    "id": "col-con-carne-adobada",
+    "title": "Col con Carne Adobada",
+    "servings": 4,
+    "ingredients": "½ col, 500 gr de carne picada (yo he utilizado cerdo que me picaron en la carnicería), Especias al gusto: Yo he utilizado cebolla en polvo, curry, ajo en polvo, pimentón, sal y pimienta."
+  },
+  {
+    "id": "col-con-crema-de-yogur-y-manzana",
+    "title": "Col con Crema de Yogur y Manzana",
+    "servings": 4,
+    "ingredients": "500 gr de coles de bruselas congeladas, Sobras de salmón de hacer un caldo de pescado (el día anterior cocí 1 cabeza de salmón y su espina dorsal y la carne que había en ellos la desmenucé y la he utilizado con esta receta, pero es opcional), 25 gr de mantequilla, 1 cucharada de ajo en polvo, Sal y pimienta al gusto."
+  },
+  {
+    "id": "coliflor-al-horno-con-bechamel-de-trufa",
+    "title": "Coliflor al Horno con Bechamel de Trufa",
+    "servings": 4,
+    "ingredients": "1  coliflor, AOVE, sal y pimienta, 50 gr de harina, 2 cucharadas de mantequilla, 700 ml de leche caliente, 0.5 cucharadita de nuez moscada, 2 cucharaditas de pasta de trufa"
+  },
+  {
+    "id": "coliflor-en-salsa",
+    "title": "Coliflor en Salsa",
+    "servings": 4,
+    "ingredients": "400 gr de lentejas cocidas, 1  puerro, 250 gr de champiñones, 400 ml de caldo de verduras, 4 cucharadas de salsa de soja, 0.5 cucharadita de jengibre seco, 10 gr de mantequilla, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta, 400 gr de salmón"
+  },
+  {
+    "id": "colirroz-estilo-asiatico",
+    "title": "Colirroz Estilo Asiático",
+    "servings": 4,
+    "ingredients": "1  coliflor pequeña, 2  cebolletas, 5 dientes de ajo, Un trozo (como un dedo pulgar) de jengibre fresco, 6 cucharadas de salsa de soja, Sal de hierbas ( https://lavidabonica.com/sal-de-hierbas/ ), 2 cucharadas de Aceite de Oliva Virgen Extra (AOVE), 1 cucharada de aceite de sésamo"
+  },
+  {
+    "id": "contramuslos-de-pollo-con-salsa-de-naranja-y-soja",
+    "title": "Contramuslos de Pollo con Salsa de Naranja y Soja",
+    "servings": 4,
+    "ingredients": "4  contramuslos de pollo, 1  naranja, 6 cucharadas de salsa de soja, 1 cucharadita de orégano, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "contramuslos-de-pollo-en-crema",
+    "title": "Contramuslos de Pollo en Crema",
+    "servings": 4,
+    "ingredients": "600 gr de contramuslos de pollo, 500 gr de coles de bruselas, 3 dientes de ajo, 250 ml de leche o bebida vegetal, Zumo de ½ limón, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta, Tomates cherry para decorar"
+  },
+  {
+    "id": "contramuslos-de-pollo-marinados-con-soja",
+    "title": "Contramuslos de Pollo Marinados con Soja",
+    "servings": 4,
+    "ingredients": "50 ml de salsa de soja sin azúcar, 150 ml de agua, 2 dientes de ajo, Albahaca seca, orégano, sal y pimienta, 250 gr de patatas pequeñas, ½ brócoli, 150 gr de judías verdes, 4  contramuslos de pollo"
+  },
+  {
+    "id": "cookies-brownie-sin-azucar",
+    "title": "Cookies Brownie sin Azúcar",
+    "servings": 4,
+    "ingredients": "400 gr de garbanzos cocidos y lavados, 10  dátiles, 60 gr de cacao en polvo sin azúcar, 100 gr de crema de cacahuete, almendras o avellanas, 8 gr de levadura tipo “Royal”, 50 gr de chocolate puro picado en cuadraditos, 2 cucharadas de vainilla líquida, 50 gr de harina de garbanzo"
+  },
+  {
+    "id": "costillar-de-cerdo-a-las-finas-hierbas",
+    "title": "Costillar de Cerdo a las Finas Hierbas",
+    "servings": 4,
+    "ingredients": "900 gr de costillas de cerdo, 4  patatas medianas, 1  cebolla, 2  tomates, 1 cucharadita de pimentón, 1 cucharadita de finas hierbas, AOVE, sal y pimienta, Limón"
+  },
+  {
+    "id": "crema-de-acelgas-y-zanahorias",
+    "title": "Crema de Acelgas y Zanahorias",
+    "servings": 4,
+    "ingredients": "8  alcachofas grandes, 8  ajos tiernos, 300 gr de gambas peladas, 4 cucharadas de salsa de tomate, 1  bola de mozzarella, 1 cucharadita de orégano, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "crema-de-alubias-con-acelgas",
+    "title": "Crema de Alubias con Acelgas",
+    "servings": 4,
+    "ingredients": "400 gr de garbanzos cocidos, 1  cebolla, 1 diente de ajo, 200 gr de carne picada (por ti o por tu carnicero de confianza, sabrás lo que estáis comiendo), 1 lata de pequeña de tomate natural triturado (unos 400 gr), 4  huevos, 500 ml de caldo de carne, AOVE, sal y pimienta, 1 cucharadita de comino, 50 gr de pan integral duro, 8  almendras tostadas sin sal, 1 cucharada de piñones"
+  },
+  {
+    "id": "crema-de-calabaza-asada",
+    "title": "Crema de Calabaza Asada",
+    "servings": 4,
+    "ingredients": "600 gr de pollo picado, 2  huevos, 2 dientes de ajo picados, 2 cucharadas de perejil picado, Sal, pimienta y jengibre seco, 3 cucharadas de rasas de harina integral"
+  },
+  {
+    "id": "crema-de-calabaza-con-queso-de-rulo-de-cabra",
+    "title": "Crema de Calabaza con Queso de Rulo de Cabra",
+    "servings": 4,
+    "ingredients": "1  cebolla grande, 4  zanahorias, 1  calabaza violina, Aceite de Oliva Virgen Extra (AOVE) y sal, Agua o caldo de verduras, 80 gr de amos de queso de rulo de cabra, Pipas de calabaza"
+  },
+  {
+    "id": "crema-de-calabaza-y-zanahoria",
+    "title": "Crema de Calabaza y Zanahoria",
+    "servings": 4,
+    "ingredients": "1  calabaza violín, 3  zanahorias grandes, Aceite de Oliva Virgen Extra (AOVE), pimienta y sal, Agua, En primer lugar doramos a fuego medio alto con 1 cucharada de AOVE toda la verdura pelada y cortada en trozos grandes, Pasados un par de minutos, que ya ha empezado a dorarse añadimos agua hasta cubrirlas., Rectificamos de sal y dejamos chup chup 10-12 minutos., Ya sólo nos queda incorporar la verdura en un procesador de alimentos y batir hasta conseguir la consistencia deseada (reservamos el agua de la cocción y vamos añadiendo conforme vayamos necesitando), Todo un clásico que en nuestra nevera no puede faltar: Huevos y arroz cocido, Y ya está lista la sesión de esta semana. Y tan lista que la preparé ayer para poder tener el domingo libre e irnos de comida familiar 😃, Como siempre os he dicho el batch cooking es una forma excelente de planificar los menús de una familia pero hay mil formas de ejecutar las sesiones: Desde semanales a quincenales e incluso mensuales; repitiendo menús cada «x» tiempo; los domingos por la mañana o los martes por la tarde… El caso es amoldarlo a nuestra rutina, y en cada casa es diferente., Hacedle un hueco y ya veréis el ahorro de tiempo, os lo garantizo, ¡Feliz semana!, Navegación de entradas, Anterior  Sesión de batch cooking de ensaladas con legumbres (y más cosas, que los míos comen como limas), Siguiente   Sesión de batch cooking para despedirnos de las vacaciones, Deja un comentario Cancelar respuesta, Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *, Escribe aquí...Nombre*, Correo electrónico*"
+  },
+  {
+    "id": "crema-de-champinones-y-mantequilla-de-avellanas",
+    "title": "Crema de Champiñones y Mantequilla de Avellanas",
+    "servings": 4,
+    "ingredients": "400 gr de champiñones pequeños, 1  cebolla, 2 dientes de ajo, 2 cucharadas de mantequilla de avellanas (puedes usar cualquier tipo de mantequilla de fruto seco: de anacardos, de cacahuete…), 250 ml de caldo de verduras, 250 ml de leche, Orégano, tomillo y albahaca, AOVE, sal y pimienta"
+  }
+]

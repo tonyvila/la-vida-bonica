@@ -1,0 +1,362 @@
+[
+  {
+    "id": "pollo-entero-asado-con-especias-y-salsa-de-coco",
+    "totalWeightGrams": 2850,
+    "perServing": {
+      "calories": 743,
+      "protein": 43.8,
+      "carbs": 63.9,
+      "fat": 34.9,
+      "fiber": 4.3
+    },
+    "per100g": {
+      "calories": 261,
+      "protein": 15.3,
+      "carbs": 22.5,
+      "fat": 12.3,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "pollo-especiado-con-arroz",
+    "totalWeightGrams": 2400,
+    "perServing": {
+      "calories": 654,
+      "protein": 37.4,
+      "carbs": 54.8,
+      "fat": 25.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 272,
+      "protein": 15.5,
+      "carbs": 22.8,
+      "fat": 10.6,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "pollo-marinado-con-salsa-de-soja-y-naranja",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 351,
+      "protein": 26.3,
+      "carbs": 14.1,
+      "fat": 20.5,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 334,
+      "protein": 25.1,
+      "carbs": 13.4,
+      "fat": 19.5,
+      "fiber": 4.3
+    }
+  },
+  {
+    "id": "pollo-satay-con-salsa-de-cacahuetes",
+    "totalWeightGrams": 3450,
+    "perServing": {
+      "calories": 1034,
+      "protein": 43.8,
+      "carbs": 43.9,
+      "fat": 63.9,
+      "fiber": 5.8
+    },
+    "per100g": {
+      "calories": 299,
+      "protein": 12.7,
+      "carbs": 12.7,
+      "fat": 18.5,
+      "fiber": 1.7
+    }
+  },
+  {
+    "id": "pollo-tikka-masala",
+    "totalWeightGrams": 1750,
+    "perServing": {
+      "calories": 634,
+      "protein": 31.9,
+      "carbs": 34.9,
+      "fat": 37.4,
+      "fiber": 2.8
+    },
+    "per100g": {
+      "calories": 362,
+      "protein": 18.3,
+      "carbs": 20.1,
+      "fat": 21.5,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "pure-de-brocoli-con-semillas-y-huevo",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 184,
+      "protein": 11.4,
+      "carbs": 14.9,
+      "fat": 8.5,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 175,
+      "protein": 10.8,
+      "carbs": 14.1,
+      "fat": 8.1,
+      "fiber": 4.7
+    }
+  },
+  {
+    "id": "quinoa-con-pechuga-de-pavo-y-verdura",
+    "totalWeightGrams": 2250,
+    "perServing": {
+      "calories": 543,
+      "protein": 29.5,
+      "carbs": 34.5,
+      "fat": 26.3,
+      "fiber": 5.5
+    },
+    "per100g": {
+      "calories": 241,
+      "protein": 13.1,
+      "carbs": 15.3,
+      "fat": 11.7,
+      "fiber": 2.4
+    }
+  },
+  {
+    "id": "ragu-de-carne-a-la-bolonesa",
+    "totalWeightGrams": 3450,
+    "perServing": {
+      "calories": 1039,
+      "protein": 43.5,
+      "carbs": 43.9,
+      "fat": 63.5,
+      "fiber": 5.5
+    },
+    "per100g": {
+      "calories": 300,
+      "protein": 12.5,
+      "carbs": 12.6,
+      "fat": 18.3,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "reganas-de-queso",
+    "totalWeightGrams": 2000,
+    "perServing": {
+      "calories": 573,
+      "protein": 30.9,
+      "carbs": 24.9,
+      "fat": 36.4,
+      "fiber": 2.9
+    },
+    "per100g": {
+      "calories": 286,
+      "protein": 15.5,
+      "carbs": 12.5,
+      "fat": 18.2,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "rulo-de-carne-picada-y-setas",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 351,
+      "protein": 23.5,
+      "carbs": 10.5,
+      "fat": 23.9,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 334,
+      "protein": 22.4,
+      "carbs": 10.1,
+      "fat": 22.9,
+      "fiber": 2.4
+    }
+  },
+  {
+    "id": "salmon-al-horno-con-esparragos",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 278,
+      "protein": 29.5,
+      "carbs": 0.9,
+      "fat": 16.5,
+      "fiber": 0.5
+    },
+    "per100g": {
+      "calories": 264,
+      "protein": 28.1,
+      "carbs": 0.9,
+      "fat": 15.7,
+      "fiber": 0.5
+    }
+  },
+  {
+    "id": "salmon-al-horno-con-verduras",
+    "totalWeightGrams": 1550,
+    "perServing": {
+      "calories": 364,
+      "protein": 30.9,
+      "carbs": 10.5,
+      "fat": 20.9,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 235,
+      "protein": 20.1,
+      "carbs": 6.8,
+      "fat": 13.5,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "salmon-con-hierbas-aromaticas",
+    "totalWeightGrams": 2350,
+    "perServing": {
+      "calories": 444,
+      "protein": 34.9,
+      "carbs": 20.5,
+      "fat": 24.5,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 189,
+      "protein": 14.9,
+      "carbs": 8.7,
+      "fat": 10.4,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "salteado-de-setas-con-garam-masala",
+    "totalWeightGrams": 1650,
+    "perServing": {
+      "calories": 201,
+      "protein": 10.5,
+      "carbs": 24.1,
+      "fat": 6.5,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 122,
+      "protein": 6.4,
+      "carbs": 14.6,
+      "fat": 3.9,
+      "fiber": 2.7
+    }
+  },
+  {
+    "id": "san-jacobos-de-coliflor",
+    "totalWeightGrams": 1450,
+    "perServing": {
+      "calories": 394,
+      "protein": 24.5,
+      "carbs": 14.9,
+      "fat": 25.9,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 271,
+      "protein": 16.9,
+      "carbs": 10.3,
+      "fat": 17.9,
+      "fiber": 3.1
+    }
+  },
+  {
+    "id": "setas-y-brocoli-en-salsa-americana",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 246,
+      "protein": 14.9,
+      "carbs": 14.5,
+      "fat": 14.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 234,
+      "protein": 14.2,
+      "carbs": 13.8,
+      "fat": 13.8,
+      "fiber": 3.3
+    }
+  },
+  {
+    "id": "setas-y-patatas-al-ajillo",
+    "totalWeightGrams": 2050,
+    "perServing": {
+      "calories": 421,
+      "protein": 17.5,
+      "carbs": 43.5,
+      "fat": 22.5,
+      "fiber": 6.5
+    },
+    "per100g": {
+      "calories": 205,
+      "protein": 8.5,
+      "carbs": 21.1,
+      "fat": 10.9,
+      "fiber": 3.2
+    }
+  },
+  {
+    "id": "shakshuka",
+    "totalWeightGrams": 2850,
+    "perServing": {
+      "calories": 654,
+      "protein": 37.4,
+      "carbs": 43.9,
+      "fat": 34.9,
+      "fiber": 5.8
+    },
+    "per100g": {
+      "calories": 229,
+      "protein": 13.1,
+      "carbs": 15.3,
+      "fat": 12.2,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "solomillo-de-cerdo-en-salsa-de-castanas",
+    "totalWeightGrams": 2350,
+    "perServing": {
+      "calories": 634,
+      "protein": 34.9,
+      "carbs": 34.5,
+      "fat": 37.4,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 269,
+      "protein": 14.8,
+      "carbs": 14.6,
+      "fat": 15.8,
+      "fiber": 1.9
+    }
+  },
+  {
+    "id": "solomillo-de-pavo-adobado",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 351,
+      "protein": 29.5,
+      "carbs": 10.5,
+      "fat": 20.5,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 334,
+      "protein": 28.1,
+      "carbs": 10.1,
+      "fat": 19.5,
+      "fiber": 2.4
+    }
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "lasana-de-espinacas",
+    "totalWeightGrams": 1410,
+    "perServing": {
+      "calories": 523,
+      "protein": 37.8,
+      "carbs": 23.9,
+      "fat": 34.9,
+      "fiber": 4.8
+    },
+    "per100g": {
+      "calories": 371,
+      "protein": 26.8,
+      "carbs": 16.9,
+      "fat": 24.7,
+      "fiber": 3.4
+    }
+  },
+  {
+    "id": "lasana-de-pollo-y-bechamel-de-setas",
+    "totalWeightGrams": 2830,
+    "perServing": {
+      "calories": 943,
+      "protein": 63.9,
+      "carbs": 54.8,
+      "fat": 57.8,
+      "fiber": 6.1
+    },
+    "per100g": {
+      "calories": 334,
+      "protein": 22.7,
+      "carbs": 19.4,
+      "fat": 20.5,
+      "fiber": 2.2
+    }
+  },
+  {
+    "id": "lentejas-a-las-1001-noches",
+    "totalWeightGrams": 240,
+    "perServing": {
+      "calories": 120,
+      "protein": 2.5,
+      "carbs": 6.3,
+      "fat": 10.5,
+      "fiber": 1.9
+    },
+    "per100g": {
+      "calories": 500,
+      "protein": 10.4,
+      "carbs": 26.3,
+      "fat": 43.8,
+      "fiber": 7.9
+    }
+  },
+  {
+    "id": "lentejas-con-acelgas",
+    "totalWeightGrams": 1410,
+    "perServing": {
+      "calories": 523,
+      "protein": 37.8,
+      "carbs": 23.9,
+      "fat": 34.9,
+      "fiber": 4.8
+    },
+    "per100g": {
+      "calories": 371,
+      "protein": 26.8,
+      "carbs": 16.9,
+      "fat": 24.7,
+      "fiber": 3.4
+    }
+  },
+  {
+    "id": "lentejas-con-leche-de-coco",
+    "totalWeightGrams": 1820,
+    "perServing": {
+      "calories": 734,
+      "protein": 43.8,
+      "carbs": 34.9,
+      "fat": 51.9,
+      "fiber": 5.5
+    },
+    "per100g": {
+      "calories": 403,
+      "protein": 24.1,
+      "carbs": 19.2,
+      "fat": 28.5,
+      "fiber": 3
+    }
+  },
+  {
+    "id": "lentejas-con-pavo-y-coliflor",
+    "totalWeightGrams": 2460,
+    "perServing": {
+      "calories": 857,
+      "protein": 54.5,
+      "carbs": 24.1,
+      "fat": 53.9,
+      "fiber": 7.1
+    },
+    "per100g": {
+      "calories": 348,
+      "protein": 22.2,
+      "carbs": 9.8,
+      "fat": 22,
+      "fiber": 2.9
+    }
+  },
+  {
+    "id": "lentejas-con-salmon",
+    "totalWeightGrams": 2140,
+    "perServing": {
+      "calories": 734,
+      "protein": 51.5,
+      "carbs": 24.9,
+      "fat": 46.9,
+      "fiber": 6.3
+    },
+    "per100g": {
+      "calories": 343,
+      "protein": 24.1,
+      "carbs": 11.7,
+      "fat": 22,
+      "fiber": 2.9
+    }
+  },
+  {
+    "id": "lentejas-con-setas-y-arroz",
+    "totalWeightGrams": 1010,
+    "perServing": {
+      "calories": 454,
+      "protein": 23.9,
+      "carbs": 26.5,
+      "fat": 29.5,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 449,
+      "protein": 23.7,
+      "carbs": 26.2,
+      "fat": 29.3,
+      "fiber": 4.5
+    }
+  },
+  {
+    "id": "lentejas-estofadas-con-arroz",
+    "totalWeightGrams": 1720,
+    "perServing": {
+      "calories": 573,
+      "protein": 21.1,
+      "carbs": 73.5,
+      "fat": 20.5,
+      "fiber": 8.9
+    },
+    "per100g": {
+      "calories": 333,
+      "protein": 12.3,
+      "carbs": 42.9,
+      "fat": 11.9,
+      "fiber": 5.2
+    }
+  },
+  {
+    "id": "lomos-de-atun-con-soja",
+    "totalWeightGrams": 950,
+    "perServing": {
+      "calories": 369,
+      "protein": 43.8,
+      "carbs": 4.1,
+      "fat": 23.5,
+      "fiber": 1.3
+    },
+    "per100g": {
+      "calories": 389,
+      "protein": 46.3,
+      "carbs": 4.3,
+      "fat": 24.9,
+      "fiber": 1.4
+    }
+  },
+  {
+    "id": "lomos-de-atun-marinado-con-salsa-de-pimientos",
+    "totalWeightGrams": 250,
+    "perServing": {
+      "calories": 141,
+      "protein": 12.3,
+      "carbs": 6.9,
+      "fat": 8.5,
+      "fiber": 2.1
+    },
+    "per100g": {
+      "calories": 564,
+      "protein": 49.2,
+      "carbs": 27.6,
+      "fat": 34,
+      "fiber": 8.4
+    }
+  },
+  {
+    "id": "lomos-de-bacalao-con-coles-de-bruselas",
+    "totalWeightGrams": 1750,
+    "perServing": {
+      "calories": 494,
+      "protein": 37.5,
+      "carbs": 23.5,
+      "fat": 29.9,
+      "fiber": 6.1
+    },
+    "per100g": {
+      "calories": 282,
+      "protein": 21.5,
+      "carbs": 13.4,
+      "fat": 17.1,
+      "fiber": 3.5
+    }
+  },
+  {
+    "id": "lubina-a-la-naranja",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 454,
+      "protein": 26.5,
+      "carbs": 30.9,
+      "fat": 28.5,
+      "fiber": 3.9
+    },
+    "per100g": {
+      "calories": 432,
+      "protein": 25.4,
+      "carbs": 29.6,
+      "fat": 27.3,
+      "fiber": 3.7
+    }
+  },
+  {
+    "id": "magdalenas-de-platano-y-manzana",
+    "totalWeightGrams": 520,
+    "perServing": {
+      "calories": 283,
+      "protein": 4.8,
+      "carbs": 34.9,
+      "fat": 14.5,
+      "fiber": 4.3
+    },
+    "per100g": {
+      "calories": 543,
+      "protein": 9.2,
+      "carbs": 66.9,
+      "fat": 27.8,
+      "fiber": 8.3
+    }
+  },
+  {
+    "id": "menestra-con-fideos",
+    "totalWeightGrams": 1120,
+    "perServing": {
+      "calories": 503,
+      "protein": 20.5,
+      "carbs": 54.9,
+      "fat": 25.9,
+      "fiber": 5.5
+    },
+    "per100g": {
+      "calories": 448,
+      "protein": 18.3,
+      "carbs": 49.1,
+      "fat": 23.1,
+      "fiber": 4.9
+    }
+  },
+  {
+    "id": "menestra-de-judias-verdes-con-pesto",
+    "totalWeightGrams": 250,
+    "perServing": {
+      "calories": 141,
+      "protein": 4.5,
+      "carbs": 6.5,
+      "fat": 11.9,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 564,
+      "protein": 18,
+      "carbs": 26,
+      "fat": 47.6,
+      "fiber": 10
+    }
+  },
+  {
+    "id": "menestra-y-salchichas-con-salsa-de-yogur-y-tahini",
+    "totalWeightGrams": 530,
+    "perServing": {
+      "calories": 258,
+      "protein": 10.3,
+      "carbs": 14.9,
+      "fat": 17.5,
+      "fiber": 2.9
+    },
+    "per100g": {
+      "calories": 486,
+      "protein": 19.4,
+      "carbs": 28.1,
+      "fat": 33.1,
+      "fiber": 5.5
+    }
+  },
+  {
+    "id": "merluza-a-la-cazuela",
+    "totalWeightGrams": 1650,
+    "perServing": {
+      "calories": 573,
+      "protein": 43.1,
+      "carbs": 14.5,
+      "fat": 37.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 347,
+      "protein": 26.1,
+      "carbs": 8.8,
+      "fat": 22.7,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "migas-de-coliflor",
+    "totalWeightGrams": 2230,
+    "perServing": {
+      "calories": 734,
+      "protein": 43.5,
+      "carbs": 34.1,
+      "fat": 46.9,
+      "fiber": 6.9
+    },
+    "per100g": {
+      "calories": 329,
+      "protein": 19.5,
+      "carbs": 15.3,
+      "fat": 21.1,
+      "fiber": 3.1
+    }
+  },
+  {
+    "id": "mujol-con-crema-de-puerro-y-manzana",
+    "totalWeightGrams": 1240,
+    "perServing": {
+      "calories": 523,
+      "protein": 37.9,
+      "carbs": 23.1,
+      "fat": 34.1,
+      "fiber": 3.9
+    },
+    "per100g": {
+      "calories": 422,
+      "protein": 30.6,
+      "carbs": 18.6,
+      "fat": 27.6,
+      "fiber": 3.1
+    }
+  }
+]

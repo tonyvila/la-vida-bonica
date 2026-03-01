@@ -1,0 +1,362 @@
+[
+  {
+    "id": "patatas-y-huevos-en-salsa-verde",
+    "totalWeightGrams": 2150,
+    "perServing": {
+      "calories": 541,
+      "protein": 33.8,
+      "carbs": 43.9,
+      "fat": 26.3,
+      "fiber": 6.3
+    },
+    "per100g": {
+      "calories": 252,
+      "protein": 15.7,
+      "carbs": 20.4,
+      "fat": 12.2,
+      "fiber": 2.9
+    }
+  },
+  {
+    "id": "pate-de-lentejas-rojas-y-boniato-asado",
+    "totalWeightGrams": 760,
+    "perServing": {
+      "calories": 369,
+      "protein": 14.5,
+      "carbs": 43.8,
+      "fat": 17.4,
+      "fiber": 8.5
+    },
+    "per100g": {
+      "calories": 193,
+      "protein": 7.6,
+      "carbs": 22.9,
+      "fat": 9.1,
+      "fiber": 4.5
+    }
+  },
+  {
+    "id": "pate-de-tomates-secos",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 201,
+      "protein": 3.4,
+      "carbs": 24.9,
+      "fat": 9.5,
+      "fiber": 4.2
+    },
+    "per100g": {
+      "calories": 167,
+      "protein": 2.8,
+      "carbs": 20.7,
+      "fat": 7.9,
+      "fiber": 3.5
+    }
+  },
+  {
+    "id": "pechugas-de-la-abuela",
+    "totalWeightGrams": 1040,
+    "perServing": {
+      "calories": 321,
+      "protein": 30.6,
+      "carbs": 14.1,
+      "fat": 17.3,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 154,
+      "protein": 14.7,
+      "carbs": 6.8,
+      "fat": 8.3,
+      "fiber": 2.2
+    }
+  },
+  {
+    "id": "pechugas-de-pavo-en-salsa-de-champinon-y-queso",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 407,
+      "protein": 41.9,
+      "carbs": 8.5,
+      "fat": 26.5,
+      "fiber": 2.1
+    },
+    "per100g": {
+      "calories": 205,
+      "protein": 21.1,
+      "carbs": 4.3,
+      "fat": 13.4,
+      "fiber": 1.1
+    }
+  },
+  {
+    "id": "pechugas-de-pollo-con-leche-de-coco",
+    "totalWeightGrams": 630,
+    "perServing": {
+      "calories": 246,
+      "protein": 34.8,
+      "carbs": 4.3,
+      "fat": 12.9,
+      "fiber": 0.5
+    },
+    "per100g": {
+      "calories": 163,
+      "protein": 23.1,
+      "carbs": 2.9,
+      "fat": 8.6,
+      "fiber": 0.3
+    }
+  },
+  {
+    "id": "pechugas-de-pollo-con-salsa-de-tomates-asados",
+    "totalWeightGrams": 1030,
+    "perServing": {
+      "calories": 344,
+      "protein": 37.4,
+      "carbs": 10.9,
+      "fat": 18.5,
+      "fiber": 3.1
+    },
+    "per100g": {
+      "calories": 167,
+      "protein": 18.1,
+      "carbs": 5.3,
+      "fat": 9,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "pescado-blanco-con-leche-de-coco",
+    "totalWeightGrams": 1220,
+    "perServing": {
+      "calories": 341,
+      "protein": 37.4,
+      "carbs": 8.5,
+      "fat": 20.6,
+      "fiber": 2.1
+    },
+    "per100g": {
+      "calories": 159,
+      "protein": 17.3,
+      "carbs": 4,
+      "fat": 9.6,
+      "fiber": 1
+    }
+  },
+  {
+    "id": "pescado-blanco-en-salsa-de-citricos",
+    "totalWeightGrams": 910,
+    "perServing": {
+      "calories": 374,
+      "protein": 35.6,
+      "carbs": 6.3,
+      "fat": 25.9,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 206,
+      "protein": 19.7,
+      "carbs": 3.5,
+      "fat": 14.3,
+      "fiber": 1.4
+    }
+  },
+  {
+    "id": "pescado-blanco-en-salsa-de-limon",
+    "totalWeightGrams": 1610,
+    "perServing": {
+      "calories": 382,
+      "protein": 41.5,
+      "carbs": 14.1,
+      "fat": 20.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 168,
+      "protein": 18.3,
+      "carbs": 6.2,
+      "fat": 9,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "pescado-blanco-en-salsa-de-mandarina",
+    "totalWeightGrams": 1230,
+    "perServing": {
+      "calories": 394,
+      "protein": 38.9,
+      "carbs": 16.5,
+      "fat": 23.1,
+      "fiber": 3.3
+    },
+    "per100g": {
+      "calories": 176,
+      "protein": 17.4,
+      "carbs": 7.4,
+      "fat": 10.4,
+      "fiber": 1.5
+    }
+  },
+  {
+    "id": "pescado-blanco-en-salsa-de-romero-y-avellanas",
+    "totalWeightGrams": 1250,
+    "perServing": {
+      "calories": 421,
+      "protein": 42.1,
+      "carbs": 10.3,
+      "fat": 28.9,
+      "fiber": 3.9
+    },
+    "per100g": {
+      "calories": 191,
+      "protein": 19.1,
+      "carbs": 4.7,
+      "fat": 13.1,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "pescado-en-salsa-de-piquillos",
+    "totalWeightGrams": 900,
+    "perServing": {
+      "calories": 306,
+      "protein": 31.4,
+      "carbs": 12.1,
+      "fat": 18.3,
+      "fiber": 2.9
+    },
+    "per100g": {
+      "calories": 170,
+      "protein": 17.5,
+      "carbs": 6.8,
+      "fat": 10.2,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "picadillo-cubano-vegano",
+    "totalWeightGrams": 1700,
+    "perServing": {
+      "calories": 544,
+      "protein": 34.8,
+      "carbs": 43.1,
+      "fat": 29.5,
+      "fiber": 6.1
+    },
+    "per100g": {
+      "calories": 255,
+      "protein": 16.3,
+      "carbs": 20.3,
+      "fat": 13.8,
+      "fiber": 2.9
+    }
+  },
+  {
+    "id": "pipirrana-on-my-way",
+    "totalWeightGrams": 1550,
+    "perServing": {
+      "calories": 321,
+      "protein": 20.5,
+      "carbs": 15.1,
+      "fat": 20.9,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 165,
+      "protein": 10.5,
+      "carbs": 7.7,
+      "fat": 10.7,
+      "fiber": 2.3
+    }
+  },
+  {
+    "id": "pollo-a-la-mostaza",
+    "totalWeightGrams": 1000,
+    "perServing": {
+      "calories": 374,
+      "protein": 35.9,
+      "carbs": 6.5,
+      "fat": 25.9,
+      "fiber": 2.3
+    },
+    "per100g": {
+      "calories": 187,
+      "protein": 18,
+      "carbs": 3.3,
+      "fat": 13,
+      "fiber": 1.2
+    }
+  },
+  {
+    "id": "pollo-al-ajillo-con-vinagre",
+    "totalWeightGrams": 1400,
+    "perServing": {
+      "calories": 364,
+      "protein": 33.5,
+      "carbs": 14.5,
+      "fat": 20.9,
+      "fiber": 4.1
+    },
+    "per100g": {
+      "calories": 163,
+      "protein": 15,
+      "carbs": 6.5,
+      "fat": 9.4,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "pollo-al-horno-con-quinoa",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 421,
+      "protein": 38.5,
+      "carbs": 25.9,
+      "fat": 23.9,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 196,
+      "protein": 18,
+      "carbs": 12.1,
+      "fat": 11.2,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "pollo-asado-a-la-cerveza",
+    "totalWeightGrams": 2000,
+    "perServing": {
+      "calories": 544,
+      "protein": 41.9,
+      "carbs": 24.5,
+      "fat": 30.9,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 227,
+      "protein": 17.5,
+      "carbs": 10.2,
+      "fat": 12.9,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "pollo-en-salsa-de-tomate-y-coco",
+    "totalWeightGrams": 1130,
+    "perServing": {
+      "calories": 366,
+      "protein": 32.9,
+      "carbs": 15.3,
+      "fat": 22.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 174,
+      "protein": 15.7,
+      "carbs": 7.3,
+      "fat": 10.7,
+      "fiber": 1.7
+    }
+  }
+]

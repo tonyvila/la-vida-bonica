@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sopa-con-pelotas",
+    "title": "Sopa con Pelotas",
+    "servings": 4,
+    "ingredients": "400 gr de bacalao, 1 kg de tomates, 3  pimientos italianos, 150 gr de olivas negras, AOVE y sal, 2 dientes de ajo sin simiente (para que no indigeste)"
+  },
+  {
+    "id": "sopa-de-alubias-al-pesto",
+    "title": "Sopa de Alubias al Pesto",
+    "servings": 4,
+    "ingredients": "1  ramillete de hojas de albahaca fresca, 50 gr de queso parmesano, 1 cucharada de piñones, 1 diente de ajo sin simiente, AOVE, sal y pimienta"
+  },
+  {
+    "id": "sopa-de-alubias-y-coliflor-asada",
+    "title": "Sopa de Alubias y Coliflor Asada",
+    "servings": 4,
+    "ingredients": "1  cebolla, 2  zanahorias, 2  tallos de apio, 1 cucharadita de orégano seco, 500 ml de caldo de verduras o agua, AOVE, sal y pimienta, 400 gr de alubias blancas cocidas, enjuagadas y escurridas, 150 ml de leche de coco, Unos floretes de coliflor asada, Aceite de Oliva Virgen Extra (AOVE)"
+  },
+  {
+    "id": "sopa-de-alubias-y-kale",
+    "title": "Sopa de Alubias y Kale",
+    "servings": 4,
+    "ingredients": "400 gr de alubias cocidas, 1  cebolla, 250 gr de setas  (le he puesto champiñón), 1 diente de ajo, 1 cucharadita de tomillo seco, 2 cucharadas de salsa de soja, 50 ml de leche o bebida vegetal, 500 ml de caldo de verduras, 100 gr de kale, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "sopa-de-arroz-con-pollo",
+    "title": "Sopa de Arroz con Pollo",
+    "servings": 4,
+    "ingredients": "1  pechuga de pollo, 200 gr de arroz, 1  pimiento asado, 1  cebolla, 2  tomates, 2 dientes de ajo, 1 litro de caldo de carne, Azafrán, AOVE, sal y pimienta, 4  huevos cocidos"
+  },
+  {
+    "id": "sopa-de-calabaza-asada-y-queso-cheddar",
+    "title": "Sopa de Calabaza Asada y Queso Cheddar",
+    "servings": 4,
+    "ingredients": "1  cebolla, 2 dientes de ajo, 2 rodajas de gruesas de calabaza asada (unos 300 gr), 2  zanahorias ralladas, 400 gr de lentejas cocidas, 1 cucharadita de pimentón, 500 ml de caldo de verdura, 200 ml de leche animal o vegetal, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta, 50 gr de queso Cheddar rallado, Rebanada de pan integral tostado (opcional)"
+  },
+  {
+    "id": "sopa-de-calabaza-y-zanahoria",
+    "title": "Sopa de Calabaza y Zanahoria",
+    "servings": 4,
+    "ingredients": "400 gr de calabaza asada, 2  tallos de apio, 1  cebolla, 3  zanahorias, 200 ml de bebida vegetal, 300 ml de caldo de verduras, 100 gr de queso, 1 cucharadita de ajo en polvo, 1 cucharadita de romero, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "sopa-de-lentejas-con-leche-de-coco",
+    "title": "Sopa de Lentejas con Leche de Coco",
+    "servings": 4,
+    "ingredients": "2  muslos de pavo, 4  patatas medianas, Especias cajún, 2  bolsas de asar"
+  },
+  {
+    "id": "sopa-de-verduras-con-pollo-adobado",
+    "title": "Sopa de Verduras con Pollo Adobado",
+    "servings": 4,
+    "ingredients": "4  zanahorias, 2  trozos de apio, 2  patatas grandes, 300 gr de judías verdes, Morcillo y carne de pollo, 2  ajos enteros pelados, El zumo de un limón, 1  tomate rallado, Sal y pimienta, 400 gr de garbanzos cocidos, 1 cucharadita de pimentón"
+  },
+  {
+    "id": "sopa-serrana",
+    "title": "Sopa Serrana",
+    "servings": 4,
+    "ingredients": "3  pechugas enteras de pollo, 3  patatas grandes, 250 gr de champiñones enteros, 2  zanahorias grandes, 50 gr de tomates secos, 40 gr de nueces peladas, 2 cucharadas de salsa de soja, 1 cucharadita de romero seco, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "souffle-de-berenjena",
+    "title": "Soufflé de Berenjena",
+    "servings": 4,
+    "ingredients": "1  cebolla, 1  pimiento rojo, 1  pimiento verde, 1 diente de ajo, 4  lomos de bacalao (yo los uso ya desalados), 200 ml de caldo de pescado, 2 cucharadas de rasas de harina, AOVE, sal y pimienta, 200 gr de quinoa"
+  },
+  {
+    "id": "tarta-de-boniato-y-coco",
+    "title": "Tarta de Boniato y Coco",
+    "servings": 4,
+    "ingredients": "1  boniato mediano, 125 gr de chocolate más del 70% cacao, 200 ml de nata fresca, 1 cucharada de canela"
+  },
+  {
+    "id": "tarta-de-patata-cebolla-y-queso",
+    "title": "Tarta de Patata, Cebolla y Queso",
+    "servings": 4,
+    "ingredients": "500 gr de patatas peladas, 300 gr de acelgas, 2  cebolletas, 4  huevos grandes, 250 gr de queso fresco batido desnatado, 50 gr de queso Gorgonzola, Ralladura de un limón, AOVE, sal y pimienta"
+  },
+  {
+    "id": "tartaletas-de-patata-con-carne-especiada",
+    "title": "Tartaletas de Patata con Carne Especiada",
+    "servings": 4,
+    "ingredients": "4  patatas medianas, 4  huevos, 4 cucharadas de salsa de tomate, 1 cucharadita de albahaca seca, 50 gr de queso parmesano, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta, 200 gr de carne picada, 100 gr de calabaza, 1 cucharadita de ras al hanut, Jengibre, Canela, Cúrcuma, 50 ml de caldo de pollo"
+  },
+  {
+    "id": "tartar-de-patata-cebolla-y-gorgonzola",
+    "title": "Tartar de Patata, Cebolla y Gorgonzola",
+    "servings": 4,
+    "ingredients": "500 gr de patatas peladas, 300 gr de acelgas, 2  cebolletas, 4  huevos grandes, 250 gr de queso fresco batido desnatado, 50 gr de queso Gorgonzola, Ralladura de un limón, AOVE, sal y pimienta"
+  },
+  {
+    "id": "ternera-al-horno-con-boniato",
+    "title": "Ternera al Horno con Boniato",
+    "servings": 4,
+    "ingredients": "100 gr de quinoa, 500 gr de pechuga de pollo, 150 ml de leche de coco, 250 ml de caldo de carne, 200 gr de champiñones, 1 cucharadita de orégano, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "torta-de-calabacin",
+    "title": "Torta de Calabacín",
+    "servings": 4,
+    "ingredients": "500 gr de espinacas, 1  cebolla (yo la he puesto morada), 600 ml de caldo de ave, 2 cucharadas de harina integral, 2 cucharadas de mantequilla, 2 cucharadas de nata fresca, 100 gr de salmón ahumado, 2  huevos, Sal, pimienta y nuez moscada"
+  },
+  {
+    "id": "tortilla-de-alcahofas-y-cebolla",
+    "title": "Tortilla de Alcahofas y Cebolla",
+    "servings": 4,
+    "ingredients": "1  cebolla, 500 gr de alcachofas (yo he utilizado 2 botes en conserva), 6  huevos, 50 gr de queso rallado, 1 cucharadita de orégano seco, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  },
+  {
+    "id": "tortilla-de-bacalao-patatas-y-pimientos-asados",
+    "title": "Tortilla de Bacalao, Patatas y Pimientos Asados",
+    "servings": 4,
+    "ingredients": "2  patatas, 1  pimiento rojo grande, 300 gr de bacalao fresco, 6  huevos, Aceite de Oliva Virgen Extra (AOVE), 1 cucharadita de orégano, 1 cucharadita de ajo en polvo, Sal y pimienta"
+  },
+  {
+    "id": "tortilla-de-berenjena-y-queso",
+    "title": "Tortilla de Berenjena y Queso",
+    "servings": 4,
+    "ingredients": "2  berenjenas, 1 cucharadita de comino molido, 6  huevos, 1 cucharadita de tahini, 50 gr de queso, Aceite de Oliva Virgen Extra (AOVE), sal y pimienta"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "acelgas-y-garbanzos-especiados",
+    "totalWeightGrams": 825,
+    "perServing": {
+      "calories": 421,
+      "protein": 23.8,
+      "carbs": 43.1,
+      "fat": 20.5,
+      "fiber": 6.3
+    },
+    "per100g": {
+      "calories": 203,
+      "protein": 11.5,
+      "carbs": 20.8,
+      "fat": 9.9,
+      "fiber": 3
+    }
+  },
+  {
+    "id": "albondigas-al-curry",
+    "totalWeightGrams": 1721,
+    "perServing": {
+      "calories": 734,
+      "protein": 37.4,
+      "carbs": 43.9,
+      "fat": 43.8,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 296,
+      "protein": 15.1,
+      "carbs": 17.8,
+      "fat": 17.8,
+      "fiber": 1
+    }
+  },
+  {
+    "id": "albondigas-de-garbanzos",
+    "totalWeightGrams": 1204,
+    "perServing": {
+      "calories": 503,
+      "protein": 20.9,
+      "carbs": 54.1,
+      "fat": 22.1,
+      "fiber": 6.8
+    },
+    "per100g": {
+      "calories": 208,
+      "protein": 8.6,
+      "carbs": 22.4,
+      "fat": 9.1,
+      "fiber": 2.8
+    }
+  },
+  {
+    "id": "albondigas-de-soja-texturizada-con-salsa-de-pimientos-asados",
+    "totalWeightGrams": 851,
+    "perServing": {
+      "calories": 394,
+      "protein": 24.5,
+      "carbs": 24.5,
+      "fat": 20.8,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 185,
+      "protein": 11.6,
+      "carbs": 11.6,
+      "fat": 9.8,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "alcachofas-con-carne-picada",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 544,
+      "protein": 35.6,
+      "carbs": 24.4,
+      "fat": 34.9,
+      "fiber": 6.1
+    },
+    "per100g": {
+      "calories": 227,
+      "protein": 14.9,
+      "carbs": 10.2,
+      "fat": 14.6,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "alcachofas-y-mozzarella",
+    "totalWeightGrams": 941,
+    "perServing": {
+      "calories": 444,
+      "protein": 26.8,
+      "carbs": 20.9,
+      "fat": 28.5,
+      "fiber": 4.4
+    },
+    "per100g": {
+      "calories": 188,
+      "protein": 11.4,
+      "carbs": 8.9,
+      "fat": 12.1,
+      "fiber": 1.9
+    }
+  },
+  {
+    "id": "alitas-de-pollo-con-salsa-de-tomate",
+    "totalWeightGrams": 640,
+    "perServing": {
+      "calories": 360,
+      "protein": 24.1,
+      "carbs": 12.2,
+      "fat": 23.9,
+      "fiber": 1.4
+    },
+    "per100g": {
+      "calories": 178,
+      "protein": 11.9,
+      "carbs": 6,
+      "fat": 11.8,
+      "fiber": 0.7
+    }
+  },
+  {
+    "id": "alubias-con-coles-de-bruselas",
+    "totalWeightGrams": 1250,
+    "perServing": {
+      "calories": 555,
+      "protein": 31.9,
+      "carbs": 43.4,
+      "fat": 30.6,
+      "fiber": 8.4
+    },
+    "per100g": {
+      "calories": 222,
+      "protein": 12.7,
+      "carbs": 17.3,
+      "fat": 12.2,
+      "fiber": 3.4
+    }
+  },
+  {
+    "id": "alubias-con-esparragos",
+    "totalWeightGrams": 2550,
+    "perServing": {
+      "calories": 734,
+      "protein": 37.4,
+      "carbs": 63.1,
+      "fat": 34.5,
+      "fiber": 9.3
+    },
+    "per100g": {
+      "calories": 243,
+      "protein": 12.4,
+      "carbs": 21,
+      "fat": 11.4,
+      "fiber": 3.1
+    }
+  },
+  {
+    "id": "alubias-con-quinoa-y-espinacas",
+    "totalWeightGrams": 1701,
+    "perServing": {
+      "calories": 544,
+      "protein": 23.1,
+      "carbs": 63.9,
+      "fat": 20.5,
+      "fiber": 9.5
+    },
+    "per100g": {
+      "calories": 204,
+      "protein": 8.6,
+      "carbs": 23.9,
+      "fat": 7.7,
+      "fiber": 3.6
+    }
+  },
+  {
+    "id": "alubias-con-salsa-de-tomate",
+    "totalWeightGrams": 1015,
+    "perServing": {
+      "calories": 446,
+      "protein": 20.5,
+      "carbs": 54.1,
+      "fat": 20.1,
+      "fiber": 8.1
+    },
+    "per100g": {
+      "calories": 192,
+      "protein": 8.8,
+      "carbs": 23.3,
+      "fat": 8.7,
+      "fiber": 3.5
+    }
+  },
+  {
+    "id": "alubias-con-setas-y-chorizo-iberico",
+    "totalWeightGrams": 1300,
+    "perServing": {
+      "calories": 573,
+      "protein": 26.3,
+      "carbs": 43.9,
+      "fat": 34.9,
+      "fiber": 7.3
+    },
+    "per100g": {
+      "calories": 237,
+      "protein": 10.9,
+      "carbs": 18.2,
+      "fat": 14.5,
+      "fiber": 3
+    }
+  },
+  {
+    "id": "arroz-caldoso-con-pollo-habas-y-aceitunas",
+    "totalWeightGrams": 1750,
+    "perServing": {
+      "calories": 544,
+      "protein": 26.8,
+      "carbs": 63.9,
+      "fat": 20.9,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 206,
+      "protein": 10.2,
+      "carbs": 24.4,
+      "fat": 7.9,
+      "fiber": 1.9
+    }
+  },
+  {
+    "id": "arroz-con-leche-de-coco-y-champinones",
+    "totalWeightGrams": 800,
+    "perServing": {
+      "calories": 446,
+      "protein": 10.9,
+      "carbs": 54.5,
+      "fat": 25.1,
+      "fiber": 3.4
+    },
+    "per100g": {
+      "calories": 223,
+      "protein": 5.4,
+      "carbs": 27.3,
+      "fat": 12.6,
+      "fiber": 1.7
+    }
+  },
+  {
+    "id": "arroz-con-leche-de-coco-y-pescado-a-la-plancha",
+    "totalWeightGrams": 900,
+    "perServing": {
+      "calories": 360,
+      "protein": 23.8,
+      "carbs": 30.4,
+      "fat": 17.1,
+      "fiber": 2.1
+    },
+    "per100g": {
+      "calories": 178,
+      "protein": 11.8,
+      "carbs": 15,
+      "fat": 8.5,
+      "fiber": 1
+    }
+  },
+  {
+    "id": "arroz-con-salsa-de-soja-y-tahini",
+    "totalWeightGrams": 700,
+    "perServing": {
+      "calories": 394,
+      "protein": 18.5,
+      "carbs": 43.9,
+      "fat": 20.1,
+      "fiber": 3.9
+    },
+    "per100g": {
+      "calories": 198,
+      "protein": 9.3,
+      "carbs": 22.1,
+      "fat": 10.1,
+      "fiber": 2
+    }
+  },
+  {
+    "id": "arroz-con-verduras-y-bacalao",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 446,
+      "protein": 24.1,
+      "carbs": 43.4,
+      "fat": 23.5,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 205,
+      "protein": 11,
+      "carbs": 19.8,
+      "fat": 10.7,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "arroz-de-coliflor-con-bacalao",
+    "totalWeightGrams": 1220,
+    "perServing": {
+      "calories": 503,
+      "protein": 33.9,
+      "carbs": 20.5,
+      "fat": 29.5,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 217,
+      "protein": 14.7,
+      "carbs": 8.9,
+      "fat": 12.7,
+      "fiber": 2.1
+    }
+  },
+  {
+    "id": "asado-de-garbanzos",
+    "totalWeightGrams": 800,
+    "perServing": {
+      "calories": 394,
+      "protein": 18.5,
+      "carbs": 43.4,
+      "fat": 20.1,
+      "fiber": 6.8
+    },
+    "per100g": {
+      "calories": 196,
+      "protein": 9.2,
+      "carbs": 21.6,
+      "fat": 10,
+      "fiber": 3.4
+    }
+  },
+  {
+    "id": "asado-de-pollo-a-la-mandarina",
+    "totalWeightGrams": 1750,
+    "perServing": {
+      "calories": 544,
+      "protein": 35.6,
+      "carbs": 24.4,
+      "fat": 34.5,
+      "fiber": 2.6
+    },
+    "per100g": {
+      "calories": 228,
+      "protein": 14.9,
+      "carbs": 10.2,
+      "fat": 14.4,
+      "fiber": 1.1
+    }
+  }
+]

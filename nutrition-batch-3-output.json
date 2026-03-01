@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cazuela-marinera",
+    "totalWeightGrams": 2450,
+    "perServing": {
+      "calories": 742,
+      "protein": 43.8,
+      "carbs": 34.9,
+      "fat": 46.3,
+      "fiber": 4.3
+    },
+    "per100g": {
+      "calories": 304,
+      "protein": 18,
+      "carbs": 14.3,
+      "fat": 19,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "champinones-rellenos-de-jamon-y-queso",
+    "totalWeightGrams": 450,
+    "perServing": {
+      "calories": 281,
+      "protein": 18.4,
+      "carbs": 5.1,
+      "fat": 20.6,
+      "fiber": 1.4
+    },
+    "per100g": {
+      "calories": 624,
+      "protein": 40.9,
+      "carbs": 11.4,
+      "fat": 45.8,
+      "fiber": 3.1
+    }
+  },
+  {
+    "id": "chili-ahumado-de-verduras",
+    "totalWeightGrams": 3400,
+    "perServing": {
+      "calories": 531,
+      "protein": 14.1,
+      "carbs": 73.4,
+      "fat": 20.5,
+      "fiber": 10.3
+    },
+    "per100g": {
+      "calories": 156,
+      "protein": 4.1,
+      "carbs": 21.5,
+      "fat": 6,
+      "fiber": 3
+    }
+  },
+  {
+    "id": "chorizo-casero-con-carne-de-pollo",
+    "totalWeightGrams": 650,
+    "perServing": {
+      "calories": 434,
+      "protein": 33.9,
+      "carbs": 10.3,
+      "fat": 29.5,
+      "fiber": 2.5
+    },
+    "per100g": {
+      "calories": 283,
+      "protein": 22.1,
+      "carbs": 6.7,
+      "fat": 19.2,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "col-con-carne-adobada",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 382,
+      "protein": 29.5,
+      "carbs": 14.1,
+      "fat": 23.9,
+      "fiber": 4.1
+    },
+    "per100g": {
+      "calories": 181,
+      "protein": 14,
+      "carbs": 6.7,
+      "fat": 11.4,
+      "fiber": 2
+    }
+  },
+  {
+    "id": "col-con-crema-de-yogur-y-manzana",
+    "totalWeightGrams": 575,
+    "perServing": {
+      "calories": 201,
+      "protein": 13.4,
+      "carbs": 14.1,
+      "fat": 10.3,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 111,
+      "protein": 7.4,
+      "carbs": 7.8,
+      "fat": 5.7,
+      "fiber": 2.5
+    }
+  },
+  {
+    "id": "coliflor-al-horno-con-bechamel-de-trufa",
+    "totalWeightGrams": 1750,
+    "perServing": {
+      "calories": 442,
+      "protein": 14.9,
+      "carbs": 24.9,
+      "fat": 31.9,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 203,
+      "protein": 6.8,
+      "carbs": 11.5,
+      "fat": 14.7,
+      "fiber": 2.3
+    }
+  },
+  {
+    "id": "coliflor-en-salsa",
+    "totalWeightGrams": 2100,
+    "perServing": {
+      "calories": 541,
+      "protein": 37.4,
+      "carbs": 23.1,
+      "fat": 34.5,
+      "fiber": 5.5
+    },
+    "per100g": {
+      "calories": 260,
+      "protein": 17.9,
+      "carbs": 11.1,
+      "fat": 16.6,
+      "fiber": 2.6
+    }
+  },
+  {
+    "id": "colirroz-estilo-asiatico",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 246,
+      "protein": 10.3,
+      "carbs": 24.9,
+      "fat": 12.1,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 117,
+      "protein": 4.9,
+      "carbs": 11.9,
+      "fat": 5.8,
+      "fiber": 2.2
+    }
+  },
+  {
+    "id": "contramuslos-de-pollo-con-salsa-de-naranja-y-soja",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 361,
+      "protein": 31.9,
+      "carbs": 10.3,
+      "fat": 20.5,
+      "fiber": 2.1
+    },
+    "per100g": {
+      "calories": 180,
+      "protein": 15.9,
+      "carbs": 5.1,
+      "fat": 10.2,
+      "fiber": 1.1
+    }
+  },
+  {
+    "id": "contramuslos-de-pollo-en-crema",
+    "totalWeightGrams": 1850,
+    "perServing": {
+      "calories": 444,
+      "protein": 37.4,
+      "carbs": 14.5,
+      "fat": 29.1,
+      "fiber": 4.3
+    },
+    "per100g": {
+      "calories": 240,
+      "protein": 20.2,
+      "carbs": 7.9,
+      "fat": 15.7,
+      "fiber": 2.3
+    }
+  },
+  {
+    "id": "contramuslos-de-pollo-marinados-con-soja",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 321,
+      "protein": 29.1,
+      "carbs": 10.9,
+      "fat": 17.3,
+      "fiber": 2.9
+    },
+    "per100g": {
+      "calories": 174,
+      "protein": 15.7,
+      "carbs": 5.9,
+      "fat": 9.3,
+      "fiber": 1.6
+    }
+  },
+  {
+    "id": "cookies-brownie-sin-azucar",
+    "totalWeightGrams": 770,
+    "perServing": {
+      "calories": 382,
+      "protein": 10.9,
+      "carbs": 34.5,
+      "fat": 22.1,
+      "fiber": 6.3
+    },
+    "per100g": {
+      "calories": 368,
+      "protein": 10.5,
+      "carbs": 33.3,
+      "fat": 21.3,
+      "fiber": 6.1
+    }
+  },
+  {
+    "id": "costillar-de-cerdo-a-las-finas-hierbas",
+    "totalWeightGrams": 2400,
+    "perServing": {
+      "calories": 743,
+      "protein": 43.8,
+      "carbs": 20.5,
+      "fat": 53.5,
+      "fiber": 3.5
+    },
+    "per100g": {
+      "calories": 304,
+      "protein": 17.9,
+      "carbs": 8.4,
+      "fat": 21.9,
+      "fiber": 1.4
+    }
+  },
+  {
+    "id": "crema-de-acelgas-y-zanahorias",
+    "totalWeightGrams": 1950,
+    "perServing": {
+      "calories": 444,
+      "protein": 24.1,
+      "carbs": 23.1,
+      "fat": 29.5,
+      "fiber": 4.5
+    },
+    "per100g": {
+      "calories": 228,
+      "protein": 12.4,
+      "carbs": 11.9,
+      "fat": 15.2,
+      "fiber": 2.3
+    }
+  },
+  {
+    "id": "crema-de-alubias-con-acelgas",
+    "totalWeightGrams": 2150,
+    "perServing": {
+      "calories": 541,
+      "protein": 25.9,
+      "carbs": 43.9,
+      "fat": 29.1,
+      "fiber": 8.1
+    },
+    "per100g": {
+      "calories": 260,
+      "protein": 12.4,
+      "carbs": 21.1,
+      "fat": 14,
+      "fiber": 3.9
+    }
+  },
+  {
+    "id": "crema-de-calabaza-asada",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 361,
+      "protein": 29.5,
+      "carbs": 14.1,
+      "fat": 20.9,
+      "fiber": 3.1
+    },
+    "per100g": {
+      "calories": 204,
+      "protein": 16.6,
+      "carbs": 8,
+      "fat": 11.8,
+      "fiber": 1.8
+    }
+  },
+  {
+    "id": "crema-de-calabaza-con-queso-de-rulo-de-cabra",
+    "totalWeightGrams": 1300,
+    "perServing": {
+      "calories": 381,
+      "protein": 14.1,
+      "carbs": 24.5,
+      "fat": 24.9,
+      "fiber": 4.3
+    },
+    "per100g": {
+      "calories": 191,
+      "protein": 7.1,
+      "carbs": 12.3,
+      "fat": 12.5,
+      "fiber": 2.2
+    }
+  },
+  {
+    "id": "crema-de-calabaza-y-zanahoria",
+    "totalWeightGrams": 1200,
+    "perServing": {
+      "calories": 141,
+      "protein": 2.5,
+      "carbs": 24.9,
+      "fat": 4.5,
+      "fiber": 4.9
+    },
+    "per100g": {
+      "calories": 67,
+      "protein": 1.2,
+      "carbs": 12,
+      "fat": 2.2,
+      "fiber": 2.4
+    }
+  },
+  {
+    "id": "crema-de-champinones-y-mantequilla-de-avellanas",
+    "totalWeightGrams": 1050,
+    "perServing": {
+      "calories": 281,
+      "protein": 10.9,
+      "carbs": 14.5,
+      "fat": 19.1,
+      "fiber": 2.9
+    },
+    "per100g": {
+      "calories": 143,
+      "protein": 5.5,
+      "carbs": 7.4,
+      "fat": 9.7,
+      "fiber": 1.5
+    }
+  }
+]
