@@ -11756,13 +11756,13 @@ function FavoritosScreen({
         favouriteRecipes.map(recipe => (
           <TouchableOpacity
             key={recipe.id}
-            style={styles.recipeCard}
+            style={[styles.recipeCard, {backgroundColor: t.white}]}
             onPress={() => onSelectRecipe(recipe)}
             activeOpacity={0.7}
           >
             <Image source={{ uri: recipe.image }} style={styles.cardImage} resizeMode="cover" />
             <View style={styles.cardInfo}>
-              <Text style={styles.cardTitle}>{recipe.title}</Text>
+              <Text style={[styles.cardTitle, {color: t.olive}]}>{recipe.title}</Text>
               <View style={styles.categoryPill}>
                 <Text style={styles.categoryPillText}>{recipe.category}</Text>
               </View>
@@ -11832,13 +11832,13 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       {DAILY_PICKS.map(recipe => (
         <TouchableOpacity
           key={recipe.id}
-          style={styles.recipeCard}
+          style={[styles.recipeCard, {backgroundColor: t.white}]}
           onPress={() => onSelectRecipe(recipe)}
           activeOpacity={0.7}
         >
           <Image source={{ uri: recipe.image }} style={styles.cardImage} resizeMode="cover" />
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>{recipe.title}</Text>
+            <Text style={[styles.cardTitle, {color: t.olive}]}>{recipe.title}</Text>
             <Text style={styles.cardSummary} numberOfLines={2}>{recipe.summary}</Text>
           </View>
         </TouchableOpacity>
