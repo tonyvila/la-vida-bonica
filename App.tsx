@@ -6007,7 +6007,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Alubias con Cerdo Adobado y Remolacha',
     category: 'Verdura',
     summary: 'Ensalada de Alubias con Cerdo Adobado y Remolacha al estilo La Vida Bonica.',
-    image: 'images/2022_05_IMG_20220522_191620-1024x856.jpg',
+    image: 'images/ensalada-de-alubias-con-cerdo-adobado-y-remolacha.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
@@ -6276,7 +6276,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Garbanzos con Pollo y Queso',
     category: 'Verdura',
     summary: 'Ensalada de Garbanzos con Pollo y Queso al estilo La Vida Bonica.',
-    image: 'images/2021_06_IMG_20210607_153431_resized_20210607_103043405.jpg',
+    image: 'images/ensalada-de-garbanzos-con-pollo-y-queso.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos' },
@@ -7581,7 +7581,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Merluza',
     category: 'Pescado',
     summary: 'Hamburguesas de Merluza al estilo La Vida Bonica.',
-    image: 'images/2021_09_rbc.jpg',
+    image: 'images/hamburguesas-de-merluza.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'lentejas cocidas' },
@@ -8598,7 +8598,7 @@ const RECIPES: RecipeData[] = [
     title: 'Menestra de Judías Verdes con Pesto',
     category: 'Verdura',
     summary: 'Menestra de Judías Verdes con Pesto al estilo La Vida Bonica.',
-    image: 'images/2022_05_IMG_20220522_191620-1024x856.jpg',
+    image: 'images/menestra-de-judias-verdes-con-pesto.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'ramillete de hojas de albahaca fresca' },
@@ -9477,7 +9477,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pechugas de Pollo con Leche de Coco',
     category: 'Carne',
     summary: 'Pechugas de Pollo con Leche de Coco al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'images/pechugas-de-pollo-con-leche-de-coco.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'pechugas enteras de pollo' },
@@ -9561,7 +9561,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pescado Blanco en Salsa de Cítricos',
     category: 'Pescado',
     summary: 'Pescado Blanco en Salsa de Cítricos al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'images/pescado-blanco-en-salsa-de-citricos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
@@ -9585,7 +9585,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pescado Blanco en Salsa de Limón',
     category: 'Pescado',
     summary: 'Pescado Blanco en Salsa de Limón al estilo La Vida Bonica.',
-    image: 'images/2020_09_RBC.jpg',
+    image: 'images/pescado-blanco-en-salsa-de-limon.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 800, unit: 'gr de', name: 'pescado blanco' },
@@ -11404,7 +11404,7 @@ const RECIPES: RecipeData[] = [
     title: 'Zarangollo',
     category: 'Verdura',
     summary: 'Zarangollo al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'images/zarangollo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
