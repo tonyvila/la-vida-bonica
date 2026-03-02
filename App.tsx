@@ -4,6 +4,9 @@ import { useKeepAwake } from 'expo-keep-awake';
 import { useState, useEffect, useRef } from 'react';
 import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List, Share2 } from 'lucide-react';
 
+// --- Colors ---
+const OLIVE = '#707940';
+
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
   try {
@@ -11570,15 +11573,15 @@ function RecipeScreen({
             onPress={() => servings > 1 && setServings(servings - 1)}
             activeOpacity={0.7}
           >
-            <Text style={{color: '#707940', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>−</Text>
+            <Text style={{color: OLIVE, fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>−</Text>
           </TouchableOpacity>
-          <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#707940'}}>{servings}</Text>
+          <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: OLIVE}}>{servings}</Text>
           <TouchableOpacity
             style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#F0F0F0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings < 20 && setServings(servings + 1)}
             activeOpacity={0.7}
           >
-            <Text style={{color: '#707940', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>+</Text>
+            <Text style={{color: OLIVE, fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>+</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -11693,14 +11696,14 @@ function FavoritosScreen({
               onPress={() => setViewMode('card')}
               activeOpacity={0.7}
             >
-              <LayoutGrid size={18} color={viewMode === 'card' ? '#FFFFFF' : '#707940'} />
+              <LayoutGrid size={18} color={viewMode === 'card' ? '#FFFFFF' : OLIVE} />
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.viewToggleButton, viewMode === 'table' && styles.viewToggleButtonActive]}
               onPress={() => setViewMode('table')}
               activeOpacity={0.7}
             >
-              <List size={18} color={viewMode === 'table' ? '#FFFFFF' : '#707940'} />
+              <List size={18} color={viewMode === 'table' ? '#FFFFFF' : OLIVE} />
             </TouchableOpacity>
           </View>
         )}
@@ -11820,7 +11823,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
           <Text style={[styles.filterButtonText, selectedCategory && styles.filterButtonTextActive]}>
             {selectedCategory || 'Categoría'}
           </Text>
-          <ChevronDown size={16} color={selectedCategory ? '#FFFFFF' : '#707940'} />
+          <ChevronDown size={16} color={selectedCategory ? '#FFFFFF' : OLIVE} />
         </TouchableOpacity>
       </View>
 
@@ -11934,21 +11937,21 @@ function WeekPickerModal({
               >
                 <Text style={[styles.modalOptionText, w.weekKey === selectedWeek && styles.modalOptionTextSelected]}>{w.label}</Text>
                 {weekRecipeNames.length > 0 && weekRecipeNames.map((name, i) => (
-                  <Text key={i} style={{ fontFamily: 'Karla', fontSize: 13, color: w.weekKey === selectedWeek ? '#FFFFFF' : '#707940', marginTop: i === 0 ? 4 : 1 }}>• {name}</Text>
+                  <Text key={i} style={{ fontFamily: 'Karla', fontSize: 13, color: w.weekKey === selectedWeek ? '#FFFFFF' : OLIVE, marginTop: i === 0 ? 4 : 1 }}>• {name}</Text>
                 ))}
               </TouchableOpacity>
               );
             })}
             <View style={{ flexDirection: 'row', gap: 12, marginTop: 16, width: '100%' }}>
               <TouchableOpacity
-                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, borderWidth: 2, borderColor: '#707940', alignItems: 'center' }}
+                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, borderWidth: 2, borderColor: OLIVE, alignItems: 'center' }}
                 onPress={onClose}
                 activeOpacity={0.7}
               >
-                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#707940' }}>Cerrar</Text>
+                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: OLIVE }}>Cerrar</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, backgroundColor: selectedWeek ? '#707940' : '#B0B0B0', alignItems: 'center' }}
+                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, backgroundColor: selectedWeek ? OLIVE : '#B0B0B0', alignItems: 'center' }}
                 onPress={() => selectedWeek && onSelectWeek(selectedWeek)}
                 activeOpacity={0.7}
               >
@@ -12288,7 +12291,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
               <View key={cat.key} style={{ marginBottom: catIdx < arr.length - 1 ? 16 : 0 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                   <IconComponent size={18} color="#707940" />
-                  <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#707940' }}>{group.label}</Text>
+                  <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: OLIVE }}>{group.label}</Text>
                 </View>
                 {group.formatted.map((ingredient, idx) => (
                   <TouchableOpacity
@@ -12322,7 +12325,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
       {/* Batch cooking */}
       {weekRecipes.length >= 2 && (
         <TouchableOpacity
-          style={[styles.copyButton, { marginTop: 24, marginBottom: 16, backgroundColor: (isGenerating || batchAlreadyGenerated) ? '#C0C0C0' : '#707940' }]}
+          style={[styles.copyButton, { marginTop: 24, marginBottom: 16, backgroundColor: (isGenerating || batchAlreadyGenerated) ? '#C0C0C0' : OLIVE }]}
           onPress={generateBatchCooking}
           activeOpacity={0.7}
           disabled={isGenerating || batchAlreadyGenerated}
@@ -12353,7 +12356,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
               {items.map(item => {
                 if (item.type === 'spacer') return <View key={item.key} style={{ height: 12 }} />;
                 if (item.type === 'header') return (
-                  <Text key={item.key} style={{ fontFamily: 'League Gothic', letterSpacing: 1, fontSize: 18, fontWeight: 'bold', color: '#707940', marginTop: 8, marginBottom: 8 }}>{item.text}</Text>
+                  <Text key={item.key} style={{ fontFamily: 'League Gothic', letterSpacing: 1, fontSize: 18, fontWeight: 'bold', color: OLIVE, marginTop: 8, marginBottom: 8 }}>{item.text}</Text>
                 );
                 return (
                   <TouchableOpacity
@@ -12363,7 +12366,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
                     activeOpacity={0.7}
                   >
                     <View style={[styles.checkbox, batchCookingChecked.has(item.key) && styles.checkboxChecked]}>
-                      {batchCookingChecked.has(item.key) ? <Check size={16} color="#707940" /> : <Text style={{ fontFamily: 'Karla', fontSize: 12, fontWeight: 'bold', color: '#707940' }}>{item.num}</Text>}
+                      {batchCookingChecked.has(item.key) ? <Check size={16} color="#707940" /> : <Text style={{ fontFamily: 'Karla', fontSize: 12, fontWeight: 'bold', color: OLIVE }}>{item.num}</Text>}
                     </View>
                     <Text style={[styles.itemText, batchCookingChecked.has(item.key) && styles.itemTextChecked]}>{item.text}</Text>
                   </TouchableOpacity>
@@ -12499,7 +12502,7 @@ export default function App() {
           onPress={openSidebar}
           activeOpacity={0.7}
         >
-          <View style={{gap: 5}}><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /><View style={{width: 22, height: 3, backgroundColor: '#707940'}} /></View>
+          <View style={{gap: 5}}><View style={{width: 22, height: 3, backgroundColor: OLIVE}} /><View style={{width: 22, height: 3, backgroundColor: OLIVE}} /><View style={{width: 22, height: 3, backgroundColor: OLIVE}} /></View>
         </TouchableOpacity>
       </View>
       {selectedRecipe ? (
@@ -12659,7 +12662,7 @@ const styles = StyleSheet.create({
   },
   hamburgerIcon: {
     fontSize: 28,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   sidebarOverlay: {
@@ -12701,7 +12704,7 @@ const styles = StyleSheet.create({
   },
   sidebarCloseButton: {
     fontSize: 28,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   sidebarMenuItem: {
@@ -12721,7 +12724,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
   },
   sidebarMenuTextActive: {
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   scrollView: {
@@ -12737,7 +12740,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 16,
     textTransform: 'uppercase',
   },
@@ -12764,13 +12767,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 6,
   },
   cardSummary: {
     fontFamily: 'Karla',
     fontSize: 14,
-    color: '#707940',
+    color: OLIVE,
     lineHeight: 20,
   },
   // Search + Filter
@@ -12810,7 +12813,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   filterButtonActive: {
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
   },
   filterButtonText: {
     fontFamily: 'Karla',
@@ -12838,7 +12841,7 @@ const styles = StyleSheet.create({
   },
   tableHeader: {
     flexDirection: 'row',
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
     paddingVertical: 12,
     paddingHorizontal: 16,
   },
@@ -12861,7 +12864,7 @@ const styles = StyleSheet.create({
   tableCell: {
     fontFamily: 'Karla',
     fontSize: 15,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: '600',
   },
   categoryPill: {
@@ -12874,7 +12877,7 @@ const styles = StyleSheet.create({
   categoryPillText: {
     fontFamily: 'Karla',
     fontSize: 13,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: '600',
   },
   // Recipe
@@ -12899,7 +12902,7 @@ const styles = StyleSheet.create({
   backButtonText: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: '600',
   },
   starButton: {
@@ -12907,12 +12910,12 @@ const styles = StyleSheet.create({
   },
   starIcon: {
     fontSize: 24,
-    color: '#707940',
+    color: OLIVE,
   },
   emptyFavouritesText: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#707940',
+    color: OLIVE,
     textAlign: 'center',
     lineHeight: 24,
     paddingHorizontal: 20,
@@ -12929,14 +12932,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 12,
     textAlign: 'center',
   },
   summary: {
     fontFamily: 'Karla',
     fontSize: 15,
-    color: '#707940',
+    color: OLIVE,
     textAlign: 'center',
     lineHeight: 22,
     paddingHorizontal: 10,
@@ -12961,14 +12964,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
   },
   dropdown: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#EBEEDD',
     borderWidth: 2,
-    borderColor: '#707940',
+    borderColor: OLIVE,
     borderRadius: 8,
     paddingHorizontal: 16,
     paddingVertical: 8,
@@ -12979,12 +12982,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Karla',
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#707940',
+    color: OLIVE,
     marginRight: 8,
   },
   dropdownArrow: {
     fontSize: 12,
-    color: '#707940',
+    color: OLIVE,
   },
   modalOverlay: {
     flex: 1,
@@ -13005,7 +13008,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 12,
   },
   modalOption: {
@@ -13018,12 +13021,12 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   modalOptionSelected: {
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
   },
   modalOptionText: {
     fontFamily: 'Karla',
     fontSize: 18,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   modalOptionTextSelected: {
@@ -13046,7 +13049,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'League Gothic',
     letterSpacing: 1,
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 16,
   },
   checkItem: {
@@ -13060,7 +13063,7 @@ const styles = StyleSheet.create({
     height: 28,
     borderRadius: 14,
     borderWidth: 2,
-    borderColor: '#707940',
+    borderColor: OLIVE,
     marginRight: 12,
     alignItems: 'center',
     justifyContent: 'center',
@@ -13068,15 +13071,15 @@ const styles = StyleSheet.create({
   },
   checkboxChecked: {
     backgroundColor: '#EBEEDD',
-    borderColor: '#707940',
+    borderColor: OLIVE,
   },
   checkmark: {
-    color: '#707940',
+    color: OLIVE,
     fontSize: 18,
     fontWeight: 'bold',
   },
   stepNumber: {
-    color: '#707940',
+    color: OLIVE,
     fontSize: 14,
     fontWeight: 'bold',
   },
@@ -13100,7 +13103,7 @@ const styles = StyleSheet.create({
   footerText: {
     fontFamily: 'Karla',
     fontSize: 20,
-    color: '#707940',
+    color: OLIVE,
   },
   nutritionSegments: {
     flexDirection: 'row',
@@ -13118,13 +13121,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   nutritionSegmentActive: {
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
   },
   nutritionSegmentText: {
     fontFamily: 'Karla',
     fontSize: 15,
     fontWeight: '600',
-    color: '#707940',
+    color: OLIVE,
   },
   nutritionSegmentTextActive: {
     color: '#FFFFFF',
@@ -13149,7 +13152,7 @@ const styles = StyleSheet.create({
   nutritionValue: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   // Toast
@@ -13192,13 +13195,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#EBEEDD',
   },
   viewToggleButtonActive: {
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
   },
   viewToggleText: {
     fontFamily: 'Karla',
     fontSize: 18,
     fontWeight: '600',
-    color: '#707940',
+    color: OLIVE,
   },
   viewToggleTextActive: {
     color: '#FFFFFF',
@@ -13230,14 +13233,14 @@ const styles = StyleSheet.create({
     minWidth: 70,
     alignItems: 'center',
     borderWidth: 2,
-    borderColor: '#707940',
+    borderColor: OLIVE,
   },
   dayButtonText: {
     fontFamily: 'League Gothic',
     letterSpacing: 1,
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#707940',
+    color: OLIVE,
   },
   weekSelector: {
     flexDirection: 'row',
@@ -13256,7 +13259,7 @@ const styles = StyleSheet.create({
   weekArrow: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#707940',
+    color: OLIVE,
     paddingHorizontal: 12,
   },
   weekTitle: {
@@ -13264,7 +13267,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#707940',
+    color: OLIVE,
     textAlign: 'center',
   },
   daySection: {
@@ -13283,7 +13286,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#707940',
+    color: OLIVE,
     marginBottom: 12,
   },
   emptyDay: {
@@ -13318,7 +13321,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Karla',
     fontSize: 15,
     fontWeight: '600',
-    color: '#707940',
+    color: OLIVE,
   },
   removeRecipeButton: {
     padding: 8,
@@ -13326,11 +13329,11 @@ const styles = StyleSheet.create({
   },
   removeRecipeText: {
     fontSize: 20,
-    color: '#707940',
+    color: OLIVE,
     fontWeight: 'bold',
   },
   copyButton: {
-    backgroundColor: '#707940',
+    backgroundColor: OLIVE,
     borderRadius: 10,
     paddingVertical: 12,
     paddingHorizontal: 20,
