@@ -11,6 +11,7 @@ const CREAM = '#EBEEDD';
 const BLACK = '#000';
 const GREY = '#F0F0F0';
 const GREY_MID = '#9E9E9E';
+const GREY_DARK = '#424242';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -12725,7 +12726,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Karla',
     fontSize: 18,
     fontWeight: '600',
-    color: '#424242',
+    color: GREY_DARK,
     letterSpacing: 1,
   },
   sidebarMenuTextActive: {
@@ -12795,7 +12796,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     fontFamily: 'Karla',
     fontSize: 15,
-    color: '#424242',
+    color: GREY_DARK,
     shadowColor: BLACK,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.08,
@@ -13092,7 +13093,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Karla',
     flex: 1,
     fontSize: 16,
-    color: '#424242',
+    color: GREY_DARK,
     lineHeight: 24,
     marginTop: 2,
   },
@@ -13151,7 +13152,7 @@ const styles = StyleSheet.create({
   nutritionLabel: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#424242',
+    color: GREY_DARK,
     fontWeight: '600',
   },
   nutritionValue: {
