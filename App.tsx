@@ -7,6 +7,7 @@ import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRi
 // --- Colors ---
 const OLIVE = '#707940';
 const WHITE = '#FFFFFF';
+const CREAM = '#EBEEDD';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11570,7 +11571,7 @@ function RecipeScreen({
         <Text style={styles.servingsLabel}>Raciones</Text>
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 0}}>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#F0F0F0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#F0F0F0' : CREAM, justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings > 1 && setServings(servings - 1)}
             activeOpacity={0.7}
           >
@@ -11578,7 +11579,7 @@ function RecipeScreen({
           </TouchableOpacity>
           <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: OLIVE}}>{servings}</Text>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#F0F0F0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#F0F0F0' : CREAM, justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings < 20 && setServings(servings + 1)}
             activeOpacity={0.7}
           >
@@ -12637,7 +12638,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
   },
   navbar: {
     flexDirection: 'row',
@@ -12860,7 +12861,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#EBEEDD',
+    borderBottomColor: CREAM,
   },
   tableCell: {
     fontFamily: 'Karla',
@@ -12869,7 +12870,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   categoryPill: {
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderRadius: 20,
     paddingHorizontal: 12,
     paddingVertical: 4,
@@ -12970,7 +12971,7 @@ const styles = StyleSheet.create({
   dropdown: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderWidth: 2,
     borderColor: OLIVE,
     borderRadius: 8,
@@ -13018,7 +13019,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     alignItems: 'flex-start',
     borderRadius: 8,
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     marginBottom: 6,
   },
   modalOptionSelected: {
@@ -13071,7 +13072,7 @@ const styles = StyleSheet.create({
     backgroundColor: WHITE,
   },
   checkboxChecked: {
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderColor: OLIVE,
   },
   checkmark: {
@@ -13186,14 +13187,14 @@ const styles = StyleSheet.create({
   },
   viewToggle: {
     flexDirection: 'row',
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderRadius: 8,
     overflow: 'hidden',
   },
   viewToggleButton: {
     paddingHorizontal: 14,
     paddingVertical: 8,
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
   },
   viewToggleButtonActive: {
     backgroundColor: OLIVE,
@@ -13227,7 +13228,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
   dayButton: {
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderRadius: 10,
     paddingVertical: 12,
     paddingHorizontal: 16,
@@ -13302,7 +13303,7 @@ const styles = StyleSheet.create({
   plannerRecipeCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#EBEEDD',
+    backgroundColor: CREAM,
     borderRadius: 10,
     padding: 8,
   },
