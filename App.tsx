@@ -6,6 +6,7 @@ import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRi
 
 // --- Colors ---
 const OLIVE = '#707940';
+const WHITE = '#FFFFFF';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11696,14 +11697,14 @@ function FavoritosScreen({
               onPress={() => setViewMode('card')}
               activeOpacity={0.7}
             >
-              <LayoutGrid size={18} color={viewMode === 'card' ? '#FFFFFF' : OLIVE} />
+              <LayoutGrid size={18} color={viewMode === 'card' ? WHITE : OLIVE} />
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.viewToggleButton, viewMode === 'table' && styles.viewToggleButtonActive]}
               onPress={() => setViewMode('table')}
               activeOpacity={0.7}
             >
-              <List size={18} color={viewMode === 'table' ? '#FFFFFF' : OLIVE} />
+              <List size={18} color={viewMode === 'table' ? WHITE : OLIVE} />
             </TouchableOpacity>
           </View>
         )}
@@ -11823,7 +11824,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
           <Text style={[styles.filterButtonText, selectedCategory && styles.filterButtonTextActive]}>
             {selectedCategory || 'Categoría'}
           </Text>
-          <ChevronDown size={16} color={selectedCategory ? '#FFFFFF' : OLIVE} />
+          <ChevronDown size={16} color={selectedCategory ? WHITE : OLIVE} />
         </TouchableOpacity>
       </View>
 
@@ -11937,7 +11938,7 @@ function WeekPickerModal({
               >
                 <Text style={[styles.modalOptionText, w.weekKey === selectedWeek && styles.modalOptionTextSelected]}>{w.label}</Text>
                 {weekRecipeNames.length > 0 && weekRecipeNames.map((name, i) => (
-                  <Text key={i} style={{ fontFamily: 'Karla', fontSize: 13, color: w.weekKey === selectedWeek ? '#FFFFFF' : OLIVE, marginTop: i === 0 ? 4 : 1 }}>• {name}</Text>
+                  <Text key={i} style={{ fontFamily: 'Karla', fontSize: 13, color: w.weekKey === selectedWeek ? WHITE : OLIVE, marginTop: i === 0 ? 4 : 1 }}>• {name}</Text>
                 ))}
               </TouchableOpacity>
               );
@@ -11955,7 +11956,7 @@ function WeekPickerModal({
                 onPress={() => selectedWeek && onSelectWeek(selectedWeek)}
                 activeOpacity={0.7}
               >
-                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: '#FFFFFF' }}>Guardar</Text>
+                <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: WHITE }}>Guardar</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -12642,7 +12643,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     paddingTop: 8,
     paddingBottom: 8,
     paddingHorizontal: 16,
@@ -12688,7 +12689,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: '70%',
     maxWidth: 300,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     shadowColor: '#000',
     shadowOffset: { width: -2, height: 0 },
     shadowOpacity: 0.3,
@@ -12745,7 +12746,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   recipeCard: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 16,
     marginBottom: 16,
     overflow: 'hidden',
@@ -12784,7 +12785,7 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 2,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 10,
     paddingHorizontal: 14,
     paddingVertical: 10,
@@ -12802,7 +12803,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 10,
     paddingHorizontal: 12,
     paddingVertical: 10,
@@ -12822,7 +12823,7 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   filterButtonTextActive: {
-    color: '#FFFFFF',
+    color: WHITE,
   },
   filterArrow: {
     fontSize: 10,
@@ -12830,7 +12831,7 @@ const styles = StyleSheet.create({
   },
   // Table
   table: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 12,
     overflow: 'hidden',
     shadowColor: '#000',
@@ -12850,7 +12851,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: WHITE,
     textTransform: 'uppercase',
   },
   tableRow: {
@@ -12950,7 +12951,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 20,
     marginHorizontal: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 12,
     padding: 16,
     shadowColor: '#000',
@@ -12996,7 +12997,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContent: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 16,
     padding: 20,
     width: '90%',
@@ -13030,12 +13031,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   modalOptionTextSelected: {
-    color: '#FFFFFF',
+    color: WHITE,
   },
   section: {
     marginBottom: 20,
     marginHorizontal: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 16,
     padding: 20,
     shadowColor: '#000',
@@ -13067,7 +13068,7 @@ const styles = StyleSheet.create({
     marginRight: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
   },
   checkboxChecked: {
     backgroundColor: '#EBEEDD',
@@ -13107,7 +13108,7 @@ const styles = StyleSheet.create({
   },
   nutritionSegments: {
     flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 10,
     marginBottom: 16,
     overflow: 'hidden',
@@ -13130,7 +13131,7 @@ const styles = StyleSheet.create({
     color: OLIVE,
   },
   nutritionSegmentTextActive: {
-    color: '#FFFFFF',
+    color: WHITE,
   },
   nutritionList: {
     marginTop: 8,
@@ -13172,7 +13173,7 @@ const styles = StyleSheet.create({
   toastText: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#FFFFFF',
+    color: WHITE,
     fontWeight: '600',
     textAlign: 'center',
   },
@@ -13204,7 +13205,7 @@ const styles = StyleSheet.create({
     color: OLIVE,
   },
   viewToggleTextActive: {
-    color: '#FFFFFF',
+    color: WHITE,
   },
   // Planner
   actionButtons: {
@@ -13246,7 +13247,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 12,
     padding: 16,
     marginBottom: 20,
@@ -13271,7 +13272,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   daySection: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 12,
     padding: 16,
     marginBottom: 16,
@@ -13345,11 +13346,11 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: WHITE,
   },
   // Day Picker Modal
   dayPickerModal: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: WHITE,
     borderRadius: 16,
     padding: 20,
     width: '80%',
