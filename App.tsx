@@ -12,6 +12,9 @@ const BLACK = '#000';
 const GREY = '#F0F0F0';
 const GREY_MID = '#9E9E9E';
 const GREY_DARK = '#424242';
+const GREY_LIGHT = '#F5F5F5';
+const GREY_DISABLED_A = '#C0C0C0';
+const GREY_DISABLED_B = '#B0B0B0';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11957,7 +11960,7 @@ function WeekPickerModal({
                 <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: OLIVE }}>Cerrar</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, backgroundColor: selectedWeek ? OLIVE : '#B0B0B0', alignItems: 'center' }}
+                style={{ flex: 1, paddingVertical: 12, borderRadius: 10, backgroundColor: selectedWeek ? OLIVE : GREY_DISABLED_B, alignItems: 'center' }}
                 onPress={() => selectedWeek && onSelectWeek(selectedWeek)}
                 activeOpacity={0.7}
               >
@@ -12331,7 +12334,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
       {/* Batch cooking */}
       {weekRecipes.length >= 2 && (
         <TouchableOpacity
-          style={[styles.copyButton, { marginTop: 24, marginBottom: 16, backgroundColor: (isGenerating || batchAlreadyGenerated) ? '#C0C0C0' : OLIVE }]}
+          style={[styles.copyButton, { marginTop: 24, marginBottom: 16, backgroundColor: (isGenerating || batchAlreadyGenerated) ? GREY_DISABLED_A : OLIVE }]}
           onPress={generateBatchCooking}
           activeOpacity={0.7}
           disabled={isGenerating || batchAlreadyGenerated}
@@ -12720,7 +12723,7 @@ const styles = StyleSheet.create({
     borderBottomColor: GREY,
   },
   sidebarMenuItemActive: {
-    backgroundColor: '#F5F5F5',
+    backgroundColor: GREY_LIGHT,
   },
   sidebarMenuText: {
     fontFamily: 'Karla',
