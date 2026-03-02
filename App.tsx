@@ -11566,7 +11566,7 @@ function RecipeScreen({
         <Text style={styles.servingsLabel}>Raciones</Text>
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 0}}>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#E0E0E0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#F0F0F0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings > 1 && setServings(servings - 1)}
             activeOpacity={0.7}
           >
@@ -11574,7 +11574,7 @@ function RecipeScreen({
           </TouchableOpacity>
           <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#707940'}}>{servings}</Text>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#E0E0E0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#F0F0F0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings < 20 && setServings(servings + 1)}
             activeOpacity={0.7}
           >
@@ -12697,7 +12697,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: '#F0F0F0',
   },
   sidebarCloseButton: {
     fontSize: 28,
@@ -13109,7 +13109,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: '#F0F0F0',
   },
   nutritionSegment: {
     flex: 1,
