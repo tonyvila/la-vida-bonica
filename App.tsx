@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List, Share2, Moon, Sun } from 'lucide-react';
 
 // --- Colors ---
 const OLIVE = '#707940';
@@ -12424,6 +12424,7 @@ export default function App() {
   const [favourites, setFavourites] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     setFavourites(getFavourites());
@@ -12626,6 +12627,17 @@ export default function App() {
                 ]}
               >
                 Sobre mí
+              </Text>
+            </TouchableOpacity>
+            <View style={{ flex: 1 }} />
+            <TouchableOpacity
+              style={{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 16, paddingHorizontal: 24, borderTopWidth: 1, borderTopColor: GREY }}
+              onPress={() => setDarkMode(!darkMode)}
+              activeOpacity={0.7}
+            >
+              {darkMode ? <Sun size={20} color={OLIVE} /> : <Moon size={20} color={OLIVE} />}
+              <Text style={styles.sidebarMenuText}>
+                {darkMode ? 'Modo claro' : 'Modo oscuro'}
               </Text>
             </TouchableOpacity>
           </Animated.View>
