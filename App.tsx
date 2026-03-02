@@ -9,6 +9,7 @@ const OLIVE = '#707940';
 const WHITE = '#FFFFFF';
 const CREAM = '#EBEEDD';
 const BLACK = '#000';
+const GREY = '#F0F0F0';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11572,7 +11573,7 @@ function RecipeScreen({
         <Text style={styles.servingsLabel}>Raciones</Text>
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 0}}>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#F0F0F0' : CREAM, justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? GREY : CREAM, justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings > 1 && setServings(servings - 1)}
             activeOpacity={0.7}
           >
@@ -11580,7 +11581,7 @@ function RecipeScreen({
           </TouchableOpacity>
           <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: OLIVE}}>{servings}</Text>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#F0F0F0' : CREAM, justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? GREY : CREAM, justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings < 20 && setServings(servings + 1)}
             activeOpacity={0.7}
           >
@@ -12703,7 +12704,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#F0F0F0',
+    borderBottomColor: GREY,
   },
   sidebarCloseButton: {
     fontSize: 28,
@@ -12714,7 +12715,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 24,
     borderBottomWidth: 1,
-    borderBottomColor: '#F0F0F0',
+    borderBottomColor: GREY,
   },
   sidebarMenuItemActive: {
     backgroundColor: '#F5F5F5',
@@ -13115,7 +13116,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#F0F0F0',
+    borderColor: GREY,
   },
   nutritionSegment: {
     flex: 1,
@@ -13144,7 +13145,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: '#F0F0F0',
+    borderBottomColor: GREY,
   },
   nutritionLabel: {
     fontFamily: 'Karla',
