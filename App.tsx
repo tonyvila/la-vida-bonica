@@ -11852,12 +11852,12 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
         <TextInput
           style={[styles.searchInput, {backgroundColor: t.white, color: t.greyDark}]}
           placeholder="Buscar receta..."
-          placeholderTextColor="#9E9E9E"
+          placeholderTextColor={t.greyMid}
           value={search}
           onChangeText={setSearch}
         />
         <TouchableOpacity
-          style={[styles.filterButton, selectedCategory && styles.filterButtonActive]}
+          style={[styles.filterButton, {backgroundColor: t.white, borderColor: t.grey}, selectedCategory && styles.filterButtonActive]}
           onPress={() => setCategoryDropdownOpen(true)}
           activeOpacity={0.7}
         >
