@@ -12377,13 +12377,13 @@ function SobreMiScreen() {
         <Image source={{ uri: 'images/sobre-mi.jpg' }} style={{ width: 180, height: 180, borderRadius: 90, alignSelf: 'center', marginBottom: 24 }} />
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>Hola!!!</Text>
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
-          Aquí una madre de dos peques de 7 y 9 años preocupada por la alimentación de su familia 🙋🏼‍♀️
+          Aquí una madre de dos peques preocupada por la alimentación de su familia 🙋🏼‍♀️
         </Text>
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
           Al mismo tiempo me encanta tener hobbies, que mis hijos jueguen en el parque, que mi marido ensaye con su grupo de música…. Es decir, no quiero ser una esclava de la cocina, así que intento cocinar un día a la semana y lo más sano posible.
         </Text>
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
-          Y en este blog os voy a intentar plasmar mis recetas con ingredientes reales y mis intentos para que mis cachorros se las coman. Ya os adelanto que no siempre será fácil, pero sabemos que dando ejemplo llegaremos lejos 💪🏽
+          Y en esta app os voy a intentar plasmar mis recetas con ingredientes reales y mis intentos para que mis cachorros se las coman. Ya os adelanto que no siempre será fácil, pero sabemos que dando ejemplo llegaremos lejos 💪🏽
         </Text>
         <Text style={[styles.itemText, { fontSize: 18, lineHeight: 28 }]}>
           Si tenéis las mismas inquietudes me encantaría conocer vuestro día a día y vuestras ideas para que nuestros hijos se alimenten de una manera saludable.
