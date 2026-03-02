@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, createContext, useContext, useMemo } from 'react';
 import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List, Share2, Moon, Sun } from 'lucide-react';
 
 // --- Colors ---
@@ -15,6 +15,35 @@ const GREY_DARK = '#424242';
 const GREY_LIGHT = '#F5F5F5';
 const GREY_DISABLED_A = '#C0C0C0';
 const GREY_DISABLED_B = '#B0B0B0';
+
+// --- Theme ---
+type ThemeColors = {
+  olive: string; white: string; cream: string; black: string;
+  grey: string; greyMid: string; greyDark: string; greyLight: string;
+  greyDisabledA: string; greyDisabledB: string;
+};
+
+const LIGHT: ThemeColors = {
+  olive: OLIVE, white: WHITE, cream: CREAM, black: BLACK,
+  grey: GREY, greyMid: GREY_MID, greyDark: GREY_DARK, greyLight: GREY_LIGHT,
+  greyDisabledA: GREY_DISABLED_A, greyDisabledB: GREY_DISABLED_B,
+};
+
+const DARK: ThemeColors = {
+  olive: '#A0B050',
+  white: '#2A2A2A',
+  cream: '#1A1A1A',
+  black: '#000000',
+  grey: '#3A3A3A',
+  greyMid: '#888888',
+  greyDark: '#E0E0E0',
+  greyLight: '#333333',
+  greyDisabledA: '#555555',
+  greyDisabledB: '#666666',
+};
+
+const ThemeCtx = createContext<ThemeColors>(LIGHT);
+const useT = () => useContext(ThemeCtx);
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11478,6 +11507,7 @@ function RecipeScreen({
   onAddToWeek?: (recipe: RecipeData) => void;
 }) {
   useKeepAwake();
+  const t = useT();
   const [servings, setServings] = useState(recipe.defaultServings);
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
   const [checkedSteps, setCheckedSteps] = useState<Set<number>>(new Set());
@@ -11529,7 +11559,7 @@ function RecipeScreen({
   };
 
   return (
-    <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
+    <ScrollView style={[styles.scrollView, {backgroundColor: t.cream}]} contentContainerStyle={styles.scrollContent}>
       <Image source={{ uri: recipe.image }} style={styles.heroImage} resizeMode="cover" />
 
       <View style={styles.breadcrumbRow}>
@@ -11595,8 +11625,8 @@ function RecipeScreen({
         </View>
       </View>
 
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Ingredientes</Text>
+      <View style={[styles.section, {backgroundColor: t.white}]}>
+        <Text style={[styles.sectionTitle, {color: t.olive}]}>Ingredientes</Text>
         {recipe.ingredients.map(item => (
           <TouchableOpacity key={item.id} style={styles.checkItem} onPress={() => toggleIngredient(item.id)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedIngredients.has(item.id) && styles.checkboxChecked]}>
@@ -11609,8 +11639,8 @@ function RecipeScreen({
         ))}
       </View>
 
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Preparación</Text>
+      <View style={[styles.section, {backgroundColor: t.white}]}>
+        <Text style={[styles.sectionTitle, {color: t.olive}]}>Preparación</Text>
         {recipe.steps.map((step, idx) => (
           <TouchableOpacity key={idx} style={styles.checkItem} onPress={() => toggleStep(idx)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedSteps.has(idx) && styles.checkboxChecked]}>
@@ -11626,8 +11656,8 @@ function RecipeScreen({
       </View>
 
       {recipe.nutrition && (
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Nutrición</Text>
+      <View style={[styles.section, {backgroundColor: t.white}]}>
+        <Text style={[styles.sectionTitle, {color: t.olive}]}>Nutrición</Text>
         <View style={styles.nutritionSegments}>
           <TouchableOpacity
             style={[styles.nutritionSegment, nutritionMode === 'perServing' && styles.nutritionSegmentActive]}
@@ -11688,6 +11718,7 @@ function FavoritosScreen({
     if (sortField === field) { setSortAsc(!sortAsc); } else { setSortField(field); setSortAsc(true); }
   };
 
+  const t = useT();
   const favouriteRecipes = RECIPES.filter(r => favourites.includes(r.id)).sort((a, b) => {
     const valA = sortField === 'title' ? a.title.toLowerCase() : a.category.toLowerCase();
     const valB = sortField === 'title' ? b.title.toLowerCase() : b.category.toLowerCase();
@@ -11695,7 +11726,7 @@ function FavoritosScreen({
   });
 
   return (
-    <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
+    <ScrollView style={[styles.scrollView, {backgroundColor: t.cream}]} contentContainerStyle={styles.homeContent}>
       <View style={styles.favouritesHeader}>
         <Text style={[styles.homeSectionTitle, { marginBottom: 0 }]}>Favoritos</Text>
         {favouriteRecipes.length > 0 && (
@@ -11740,7 +11771,7 @@ function FavoritosScreen({
         ))
       ) : (
         <View style={styles.table}>
-          <View style={styles.tableHeader}>
+          <View style={[styles.tableHeader, {backgroundColor: t.greyLight}]}>
             <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
               <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
             </TouchableOpacity>
@@ -11751,7 +11782,7 @@ function FavoritosScreen({
           {favouriteRecipes.map(recipe => (
             <TouchableOpacity
               key={recipe.id}
-              style={styles.tableRow}
+              style={[styles.tableRow, {backgroundColor: t.white}]}
               onPress={() => onSelectRecipe(recipe)}
               activeOpacity={0.7}
             >
@@ -11773,6 +11804,7 @@ function FavoritosScreen({
 const ALL_CATEGORIES = [...new Set(RECIPES.map(r => r.category))].sort();
 
 function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) => void }) {
+  const t = useT();
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
@@ -11794,7 +11826,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
   });
 
   return (
-    <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
+    <ScrollView style={[styles.scrollView, {backgroundColor: t.cream}]} contentContainerStyle={styles.homeContent}>
       {/* Recomendaciones del día */}
       <Text style={styles.homeSectionTitle}>Recomendaciones del día</Text>
       {DAILY_PICKS.map(recipe => (
@@ -11818,7 +11850,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       {/* Search + Filter row */}
       <View style={styles.searchFilterRow}>
         <TextInput
-          style={styles.searchInput}
+          style={[styles.searchInput, {backgroundColor: t.greyLight, color: t.greyDark}]}
           placeholder="Buscar receta..."
           placeholderTextColor="#9E9E9E"
           value={search}
@@ -11838,7 +11870,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
 
       <Modal visible={categoryDropdownOpen} transparent animationType="fade">
         <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={() => setCategoryDropdownOpen(false)}>
-          <View style={styles.modalContent}>
+          <View style={[styles.modalContent, {backgroundColor: t.white}]}>
             <Text style={styles.modalTitle}>Categoría</Text>
             <TouchableOpacity
               style={[styles.modalOption, !selectedCategory && styles.modalOptionSelected]}
@@ -11860,7 +11892,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       </Modal>
 
       <View style={styles.table}>
-        <View style={styles.tableHeader}>
+        <View style={[styles.tableHeader, {backgroundColor: t.greyLight}]}>
           <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
             <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
           </TouchableOpacity>
@@ -11871,7 +11903,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
         {filteredRecipes.map(recipe => (
           <TouchableOpacity
             key={recipe.id}
-            style={styles.tableRow}
+            style={[styles.tableRow, {backgroundColor: t.white}]}
             onPress={() => onSelectRecipe(recipe)}
             activeOpacity={0.7}
           >
@@ -11884,7 +11916,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
           </TouchableOpacity>
         ))}
         {filteredRecipes.length === 0 && (
-          <View style={styles.tableRow}>
+          <View style={[styles.tableRow, {backgroundColor: t.white}]}>
             <Text style={[styles.tableCell, { color: GREY_MID }]}>No se encontraron recetas</Text>
           </View>
         )}
@@ -12063,6 +12095,7 @@ function PlanificadorScreen({
   onSelectRecipe: (recipe: RecipeData) => void;
   onShowToast: (message: string) => void;
 }) {
+  const t = useT();
   const [currentWeekStart, setCurrentWeekStart] = useState(getMondayOfWeek(new Date()));
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
   const [, forceUpdate] = useState(0);
@@ -12244,7 +12277,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
   };
 
   return (
-    <ScrollView style={styles.scrollView} contentContainerStyle={styles.homeContent}>
+    <ScrollView style={[styles.scrollView, {backgroundColor: t.cream}]} contentContainerStyle={styles.homeContent}>
       {/* Week selector */}
       <View style={styles.weekSelector}>
         <TouchableOpacity onPress={() => navigateWeek(-1)} activeOpacity={0.7}>
@@ -12391,8 +12424,9 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
 
 // --- Sobre mí Screen ---
 function SobreMiScreen() {
+  const t = useT();
   return (
-    <ScrollView style={styles.scrollView} contentContainerStyle={{ paddingBottom: 40 }}>
+    <ScrollView style={[styles.scrollView, {backgroundColor: t.cream}]} contentContainerStyle={{ paddingBottom: 40 }}>
       <View style={[styles.section, { maxWidth: 700, alignSelf: 'center', width: '100%', marginTop: 20 }]}>
         <Text style={[styles.sectionTitle, { textAlign: 'center', fontSize: 28, marginBottom: 24 }]}>SOBRE MI</Text>
         <Image source={{ uri: 'images/sobre-mi.jpg' }} style={{ width: 180, height: 180, borderRadius: 90, alignSelf: 'center', marginBottom: 24 }} />
@@ -12424,7 +12458,10 @@ export default function App() {
   const [favourites, setFavourites] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    try { return localStorage.getItem('darkMode') === 'true'; } catch { return false; }
+  });
+  const theme = darkMode ? DARK : LIGHT;
 
   useEffect(() => {
     setFavourites(getFavourites());
@@ -12497,9 +12534,10 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="dark" />
-      <View style={styles.navbar}>
+    <ThemeCtx.Provider value={theme}>
+    <View style={[styles.container, {backgroundColor: theme.cream}]}>
+      <StatusBar style={darkMode ? 'light' : 'dark'} />
+      <View style={[styles.navbar, {backgroundColor: theme.white, borderBottomColor: theme.grey}]}>
         <TouchableOpacity onPress={handleLogoClick} activeOpacity={0.7}>
           <Image
             source={{ uri: 'https://lavidabonica.com/wp-content/uploads/2024/02/logo-small.png' }}
@@ -12553,17 +12591,17 @@ export default function App() {
           <Animated.View
             style={[
               styles.sidebarPanel,
-              { transform: [{ translateX: slideAnim }] },
+              { transform: [{ translateX: slideAnim }], backgroundColor: theme.white },
             ]}
           >
-            <View style={styles.sidebarHeader}>
+            <View style={[styles.sidebarHeader, {borderBottomColor: theme.grey}]}>
               <TouchableOpacity onPress={closeSidebar} activeOpacity={0.7}>
-                <X size={24} color="#707940" />
+                <X size={24} color={theme.olive} />
               </TouchableOpacity>
             </View>
             <TouchableOpacity
               style={[
-                styles.sidebarMenuItem,
+                styles.sidebarMenuItem, {borderBottomColor: theme.grey},
                 currentPage === 'recetas' && styles.sidebarMenuItemActive,
               ]}
               onPress={() => handleMenuItemPress('recetas')}
@@ -12571,7 +12609,7 @@ export default function App() {
             >
               <Text
                 style={[
-                  styles.sidebarMenuText,
+                  styles.sidebarMenuText, {color: theme.greyDark},
                   currentPage === 'recetas' && styles.sidebarMenuTextActive,
                 ]}
               >
@@ -12580,7 +12618,7 @@ export default function App() {
             </TouchableOpacity>
             <TouchableOpacity
               style={[
-                styles.sidebarMenuItem,
+                styles.sidebarMenuItem, {borderBottomColor: theme.grey},
                 currentPage === 'favoritos' && styles.sidebarMenuItemActive,
               ]}
               onPress={() => handleMenuItemPress('favoritos')}
@@ -12588,7 +12626,7 @@ export default function App() {
             >
               <Text
                 style={[
-                  styles.sidebarMenuText,
+                  styles.sidebarMenuText, {color: theme.greyDark},
                   currentPage === 'favoritos' && styles.sidebarMenuTextActive,
                 ]}
               >
@@ -12597,7 +12635,7 @@ export default function App() {
             </TouchableOpacity>
             <TouchableOpacity
               style={[
-                styles.sidebarMenuItem,
+                styles.sidebarMenuItem, {borderBottomColor: theme.grey},
                 currentPage === 'planificador' && styles.sidebarMenuItemActive,
               ]}
               onPress={() => handleMenuItemPress('planificador')}
@@ -12605,7 +12643,7 @@ export default function App() {
             >
               <Text
                 style={[
-                  styles.sidebarMenuText,
+                  styles.sidebarMenuText, {color: theme.greyDark},
                   currentPage === 'planificador' && styles.sidebarMenuTextActive,
                 ]}
               >
@@ -12614,7 +12652,7 @@ export default function App() {
             </TouchableOpacity>
             <TouchableOpacity
               style={[
-                styles.sidebarMenuItem,
+                styles.sidebarMenuItem, {borderBottomColor: theme.grey},
                 currentPage === 'sobremi' && styles.sidebarMenuItemActive,
               ]}
               onPress={() => handleMenuItemPress('sobremi')}
@@ -12622,7 +12660,7 @@ export default function App() {
             >
               <Text
                 style={[
-                  styles.sidebarMenuText,
+                  styles.sidebarMenuText, {color: theme.greyDark},
                   currentPage === 'sobremi' && styles.sidebarMenuTextActive,
                 ]}
               >
@@ -12631,12 +12669,12 @@ export default function App() {
             </TouchableOpacity>
             <View style={{ flex: 1 }} />
             <TouchableOpacity
-              style={{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 16, paddingHorizontal: 24, borderTopWidth: 1, borderTopColor: GREY }}
-              onPress={() => setDarkMode(!darkMode)}
+              style={{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 16, paddingHorizontal: 24, borderTopWidth: 1, borderTopColor: theme.grey }}
+              onPress={() => { const v = !darkMode; setDarkMode(v); try { localStorage.setItem('darkMode', String(v)); } catch {} }}
               activeOpacity={0.7}
             >
-              {darkMode ? <Sun size={20} color={OLIVE} /> : <Moon size={20} color={OLIVE} />}
-              <Text style={styles.sidebarMenuText}>
+              {darkMode ? <Sun size={20} color={theme.olive} /> : <Moon size={20} color={theme.olive} />}
+              <Text style={[styles.sidebarMenuText, {color: theme.greyDark}]}>
                 {darkMode ? 'Modo claro' : 'Modo oscuro'}
               </Text>
             </TouchableOpacity>
@@ -12650,6 +12688,7 @@ export default function App() {
         onSelectWeek={handleSelectWeek}
       />
     </View>
+    </ThemeCtx.Provider>
   );
 }
 
