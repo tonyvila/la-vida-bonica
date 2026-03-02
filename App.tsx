@@ -32,7 +32,7 @@ const LIGHT: ThemeColors = {
 const DARK: ThemeColors = {
   olive: '#A0B050',
   white: '#2A2A2A',
-  cream: '#1A1A1A',
+  cream: '#2A2A2A',
   black: '#000000',
   grey: '#3A3A3A',
   greyMid: '#888888',
