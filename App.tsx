@@ -11771,7 +11771,7 @@ function FavoritosScreen({
         ))
       ) : (
         <View style={styles.table}>
-          <View style={[styles.tableHeader, {backgroundColor: t.greyLight}]}>
+          <View style={[styles.tableHeader, {backgroundColor: t.olive}]}>
             <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
               <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
             </TouchableOpacity>
@@ -11850,7 +11850,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       {/* Search + Filter row */}
       <View style={styles.searchFilterRow}>
         <TextInput
-          style={[styles.searchInput, {backgroundColor: t.greyLight, color: t.greyDark}]}
+          style={[styles.searchInput, {backgroundColor: t.white, color: t.greyDark}]}
           placeholder="Buscar receta..."
           placeholderTextColor="#9E9E9E"
           value={search}
@@ -11892,7 +11892,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       </Modal>
 
       <View style={styles.table}>
-        <View style={[styles.tableHeader, {backgroundColor: t.greyLight}]}>
+        <View style={[styles.tableHeader, {backgroundColor: t.olive}]}>
           <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
             <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
           </TouchableOpacity>
