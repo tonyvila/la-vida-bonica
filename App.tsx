@@ -163,7 +163,7 @@ const RECIPES: RecipeData[] = [
     title: 'Nachos con guacamole',
     category: 'Hidratos',
     summary: 'Nachos caseros de harina de garbanzo horneados con guacamole fresco. Un snack saludable para dipear.',
-    image: 'images/2020_06_IMG_20200620_180549-1.jpg',
+    image: 'images/nachos-con-guacamole.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'harina de garbanzo' },
@@ -290,7 +290,7 @@ const RECIPES: RecipeData[] = [
     title: 'Merluza en salsa de puerros',
     category: 'Pescado',
     summary: 'Lomos de merluza en cremosa salsa de puerros con albahaca. Ideal para acompañar con arroz.',
-    image: 'images/2020_06_IMG_20200606_210922.jpg',
+    image: 'images/merluza-en-salsa-de-puerros.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'lomos de merluza' },
@@ -319,7 +319,7 @@ const RECIPES: RecipeData[] = [
     title: 'Galletas de naranja y almendra',
     category: 'Postres',
     summary: 'Galletas de naranja y almendra con frosting de queso crema, miel y mantequilla. Irresistibles.',
-    image: 'images/2022_02_IMG_20220202_195353-997x1024.jpg',
+    image: 'images/galletas-de-naranja-y-almendra.jpg',
     defaultServings: 12,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'naranjas (exprimidas)' },
@@ -895,7 +895,7 @@ const RECIPES: RecipeData[] = [
     title: 'Helado de frutos rojos y almendras',
     category: 'Postres',
     summary: 'Helado cremoso de plátano, frutos rojos congelados, almendras y queso fresco batido.',
-    image: 'images/2020_06_IMG_20200615_160752.jpg',
+    image: 'images/helado-de-frutos-rojos-y-almendras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'plátanos maduros previamente congelados' },
@@ -1619,7 +1619,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sardinas en escabeche',
     category: 'Pescado',
     summary: 'Sardinas frescas en escabeche casero con verduras, hierbas aromáticas, vino blanco y vinagre.',
-    image: 'images/2020_05_IMG_20200519_211628.jpg',
+    image: 'images/sardinas-en-escabeche.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: 'kg de', name: 'sardinas grandes (frescas, de mayo a octubre)' },
@@ -1681,7 +1681,7 @@ const RECIPES: RecipeData[] = [
     title: 'Merluza con salsa de jamón',
     category: 'Pescado',
     summary: 'Lomos de merluza con cremosa salsa de jamón, tomate, leche evaporada y patatas. Plato completo y reconfortante.',
-    image: 'images/2020_05_IMG_20200519_211628.jpg',
+    image: 'images/merluza-con-salsa-de-jamon.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'lomos de merluza' },
@@ -1711,7 +1711,7 @@ const RECIPES: RecipeData[] = [
     title: 'Paté de sardinas',
     category: 'Entrantes',
     summary: 'Paté cremoso de sardinas en conserva con limón, mostaza, semillas de sésamo y zanahoria rallada.',
-    image: 'images/2020_03_IMG_20200319_181147.jpg',
+    image: 'images/pate-de-sardinas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: 'latas de', name: 'sardinas en aceite de oliva' },
@@ -1739,7 +1739,7 @@ const RECIPES: RecipeData[] = [
     title: 'Merluza en salsa verde',
     category: 'Pescado',
     summary: 'Merluza con salsa verde clásica de perejil, vino blanco, guisantes y espárragos. Ideal con arroz.',
-    image: 'images/2020_06_IMG_20200606_210922.jpg',
+    image: 'images/merluza-en-salsa-verde.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'lomos de merluza' },
@@ -1863,7 +1863,7 @@ const RECIPES: RecipeData[] = [
     title: 'Paté de caballa y sardinas',
     category: 'Entrantes',
     summary: 'Paté cremoso de caballa y sardinas con limón, yogur natural y AOVE. Perfecto para bocadillos.',
-    image: 'images/2020_03_IMG_20200319_181147.jpg',
+    image: 'images/pate-de-caballa-y-sardinas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 160, unit: 'gr de', name: 'caballas en conserva escurridas' },
@@ -1890,7 +1890,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta integral con paté de caballa y sardinas y coliflor',
     category: 'Hidratos',
     summary: 'Pasta integral con paté de caballa y sardinas, coliflor al microondas y queso rallado. Aprovechamiento delicioso.',
-    image: 'images/2020_06_IMG_20200620_180549-1.jpg',
+    image: 'images/pasta-integral-con-pate-de-caballa-y-sardinas-y-coliflor.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 160, unit: 'gr de', name: 'caballas en conserva escurridas' },
@@ -1920,7 +1920,7 @@ const RECIPES: RecipeData[] = [
     title: 'Helado de plátano y mango',
     category: 'Postres',
     summary: 'Helado cremoso con plátanos y mango congelados, mantequilla de cacahuete y cacao. Sano y refrescante.',
-    image: 'images/2020_06_IMG_20200615_160752.jpg',
+    image: 'images/helado-de-platano-y-mango.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'plátanos maduros congelados' },
@@ -2011,7 +2011,7 @@ const RECIPES: RecipeData[] = [
     title: 'Tarta de 2 ingredientes',
     category: 'Postres',
     summary: 'Tarta de chocolate con solo huevos y chocolate negro. Textura esponjosa y sabor intenso, perfecta para ocasiones especiales.',
-    image: 'images/2022_10_donuts2.jpg',
+    image: 'images/tarta-de-2-ingredientes.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'chocolate 72% cacao' },
@@ -2038,7 +2038,7 @@ const RECIPES: RecipeData[] = [
     title: 'Piña colada con semillas de chía',
     category: 'Postres',
     summary: 'Pudding de chía con leche de coco, dátiles y vainilla, coronado con puré de piña fresca. Fresco y tropical.',
-    image: 'images/2020_06_IMG_20200615_160752.jpg',
+    image: 'images/pina-colada-con-semillas-de-chia.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 30, unit: 'gr de', name: 'semillas de chía' },
@@ -2127,7 +2127,7 @@ const RECIPES: RecipeData[] = [
     title: 'Galletas escandinavas',
     category: 'Postres',
     summary: 'Galletas especiadas con canela, cardamomo, clavo y jengibre, endulzadas con dátiles y ralladura de naranja.',
-    image: 'images/2022_02_IMG_20220202_195353-997x1024.jpg',
+    image: 'images/galletas-escandinavas.jpg',
     defaultServings: 10,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'claras de huevo' },
@@ -2158,7 +2158,7 @@ const RECIPES: RecipeData[] = [
     title: 'Muffins de almendras',
     category: 'Postres',
     summary: 'Muffins de almendra con caqui maduro, manzana rallada, canela y limón. Sin azúcar añadido.',
-    image: 'images/2022_10_donuts2.jpg',
+    image: 'images/muffins-de-almendras.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'harina de almendra (almendra molida)' },
@@ -2187,7 +2187,7 @@ const RECIPES: RecipeData[] = [
     title: 'Tarta de calabaza y chocolate',
     category: 'Postres',
     summary: 'Tarta con base crujiente de frutos secos y dátiles, relleno cremoso de calabaza, chocolate y requesón.',
-    image: 'images/2022_10_donuts2.jpg',
+    image: 'images/tarta-de-calabaza-y-chocolate.jpg',
     defaultServings: 8,
     ingredients: [
       { id: '1', baseQuantity: 8, unit: '', name: 'dátiles (base)' },
@@ -5671,7 +5671,7 @@ const RECIPES: RecipeData[] = [
     title: 'Curry de Pescado',
     category: 'Pescado',
     summary: 'Curry de Pescado al estilo La Vida Bonica.',
-    image: 'images/2019_03_IMG_20190331_114316-1024x841.jpg',
+    image: 'images/curry-de-pescado.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: '', name: 'alcachofas' },
@@ -5938,7 +5938,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Aguacate y Gambas',
     category: 'Verdura',
     summary: 'Ensalada de Aguacate y Gambas al estilo La Vida Bonica.',
-    image: 'images/2019_04_IMG_20190426_220626_resized_20190426_100900215.jpg',
+    image: 'images/ensalada-de-aguacate-y-gambas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: 'dientes de', name: 'ajo, troceados' },
@@ -6509,7 +6509,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Patata y Naranja',
     category: 'Verdura',
     summary: 'Ensalada de Patata y Naranja al estilo La Vida Bonica.',
-    image: 'images/2020_03_IMG_20200301_135407.jpg',
+    image: 'images/ensalada-de-patata-y-naranja.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: 'rebanadas de', name: 'gruesas de pan integral' },
@@ -6695,7 +6695,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensaladilla de Coliflor',
     category: 'Verdura',
     summary: 'Ensaladilla de Coliflor al estilo La Vida Bonica.',
-    image: 'images/2022_01_RBC-1-1024x1008.jpg',
+    image: 'images/ensaladilla-de-coliflor.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'ml de', name: 'leche' },
@@ -6721,7 +6721,7 @@ const RECIPES: RecipeData[] = [
     title: 'Espaguetis con Pesto de Guisantes',
     category: 'Hidratos',
     summary: 'Espaguetis con Pesto de Guisantes al estilo La Vida Bonica.',
-    image: 'images/2021_02_Polish_20210207_193855322_resized_20210207_073919808.jpg',
+    image: 'images/espaguetis-con-pesto-de-guisantes.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'guisantes frescos (yo he usado una bolsa de guisantes muy tiernos de Mercadona)' },
@@ -6810,7 +6810,7 @@ const RECIPES: RecipeData[] = [
     title: 'Fiambre de Pollo con Calabaza',
     category: 'Carne',
     summary: 'Fiambre de Pollo con Calabaza al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191019_173700-1-1024x879.jpg',
+    image: 'images/fiambre-de-pollo-con-calabaza.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: 'hojas de', name: 'endibia' },
@@ -6936,7 +6936,7 @@ const RECIPES: RecipeData[] = [
     title: 'Frittata de Verduras',
     category: 'Entrantes',
     summary: 'Frittata de Verduras al estilo La Vida Bonica.',
-    image: 'images/2022_05_IMG_20220522_191620-1024x856.jpg',
+    image: 'images/frittata-de-verduras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
@@ -7000,7 +7000,7 @@ const RECIPES: RecipeData[] = [
     title: 'Garbanzos al Vino Blanco',
     category: 'Legumbres',
     summary: 'Garbanzos al Vino Blanco al estilo La Vida Bonica.',
-    image: 'images/2020_03_IMG_20200301_135407.jpg',
+    image: 'images/garbanzos-al-vino-blanco.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: 'rebanadas de', name: 'gruesas de pan integral' },
@@ -7032,7 +7032,7 @@ const RECIPES: RecipeData[] = [
     title: 'Garbanzos con Boloñesa de Carne',
     category: 'Legumbres',
     summary: 'Garbanzos con Boloñesa de Carne al estilo La Vida Bonica.',
-    image: 'images/2019_11_IMG_20191109_185425-1024x629.jpg',
+    image: 'images/garbanzos-con-bolonesa-de-carne.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos' },
@@ -7084,7 +7084,7 @@ const RECIPES: RecipeData[] = [
     title: 'Garbanzos con Picada y Huevo',
     category: 'Legumbres',
     summary: 'Garbanzos con Picada y Huevo al estilo La Vida Bonica.',
-    image: 'images/2022_04_IMG_20220423_130751-1024x976.jpg',
+    image: 'images/garbanzos-con-picada-y-huevo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'muslos y contramuslos de pollo deshuesados' },
@@ -7115,7 +7115,7 @@ const RECIPES: RecipeData[] = [
     title: 'Garbanzos Especiados',
     category: 'Legumbres',
     summary: 'Garbanzos Especiados al estilo La Vida Bonica.',
-    image: 'images/2021_12_IMG_20211206_135954-1024x762.jpg',
+    image: 'images/garbanzos-especiados.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'manojo grande de acelgas frescas' },
@@ -7424,7 +7424,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Alubias',
     category: 'Legumbres',
     summary: 'Hamburguesas de Alubias al estilo La Vida Bonica.',
-    image: 'images/2020_11_Polish_20201115_195603593_resized_20201115_080313623.jpg',
+    image: 'images/hamburguesas-de-alubias.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'calabaza asada' },
@@ -7457,7 +7457,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Atún y Lentejas',
     category: 'Legumbres',
     summary: 'Hamburguesas de Atún y Lentejas al estilo La Vida Bonica.',
-    image: 'images/2021_11_RBC.jpg',
+    image: 'images/hamburguesas-de-atun-y-lentejas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'lentejas cocidas' },
@@ -7548,7 +7548,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Lentejas y Zanahorias',
     category: 'Legumbres',
     summary: 'Hamburguesas de Lentejas y Zanahorias al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220320_125957-1024x940.jpg',
+    image: 'images/hamburguesas-de-lentejas-y-zanahorias.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'lenteja pardina cocida' },
@@ -7642,7 +7642,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Pollo y Garbanzos',
     category: 'Legumbres',
     summary: 'Hamburguesas de Pollo y Garbanzos al estilo La Vida Bonica.',
-    image: 'images/2019_08_IMG_20190826_190620-2.jpg',
+    image: 'images/hamburguesas-de-pollo-y-garbanzos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla' },
@@ -7738,7 +7738,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Quinoa y Aguacate',
     category: 'Entrantes',
     summary: 'Hamburguesas de Quinoa y Aguacate al estilo La Vida Bonica.',
-    image: 'images/2019_06_IMG_20190623_202556_resized_20190623_083334136.jpg',
+    image: 'images/hamburguesas-de-quinoa-y-aguacate.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: null, unit: '', name: 'La fruta que más os guste y que sea de temporada. En nuestro caso hemos elegido:' },
@@ -7802,7 +7802,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Salmón',
     category: 'Pescado',
     summary: 'Hamburguesas de Salmón al estilo La Vida Bonica.',
-    image: 'images/2019_09_IMG_20190922_144306-1024x532.jpg',
+    image: 'images/hamburguesas-de-salmon.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'huevos' },
@@ -7859,7 +7859,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas de Verduras con Lentejas',
     category: 'Legumbres',
     summary: 'Hamburguesas de Verduras con Lentejas al estilo La Vida Bonica.',
-    image: 'images/2020_04_IMG_20200419_181113-1024x580.jpg',
+    image: 'images/hamburguesas-de-verduras-con-lentejas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'calabacines medianos.' },
@@ -7948,7 +7948,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hervido de Judías Verdes con Refrito',
     category: 'Verdura',
     summary: 'Hervido de Judías Verdes con Refrito al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191027_144805-1024x576.jpg',
+    image: 'images/hervido-de-judias-verdes-con-refrito.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla pelada y entera' },
@@ -8214,7 +8214,7 @@ const RECIPES: RecipeData[] = [
     title: 'Lentejas a las 1001 Noches',
     category: 'Legumbres',
     summary: 'Lentejas a las 1001 Noches al estilo La Vida Bonica.',
-    image: 'images/2022_02_RBC-1-1024x798.jpg',
+    image: 'images/lentejas-a-las-1001-noches.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: 'cucharadas de', name: 'salsa de soja' },
@@ -8369,7 +8369,7 @@ const RECIPES: RecipeData[] = [
     title: 'Lentejas con Setas y Arroz',
     category: 'Legumbres',
     summary: 'Lentejas con Setas y Arroz al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'images/lentejas-con-setas-y-arroz.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
@@ -8393,7 +8393,7 @@ const RECIPES: RecipeData[] = [
     title: 'Lentejas Estofadas con Arroz',
     category: 'Legumbres',
     summary: 'Lentejas Estofadas con Arroz al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191019_173700-1-1024x879.jpg',
+    image: 'images/lentejas-estofadas-con-arroz.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'lentejas pardinas secas' },
@@ -8542,7 +8542,7 @@ const RECIPES: RecipeData[] = [
     title: 'Magdalenas de Plátano y Manzana',
     category: 'Postres',
     summary: 'Magdalenas de Plátano y Manzana al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191005_184221-1024x564.jpg',
+    image: 'images/magdalenas-de-platano-y-manzana.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 220, unit: 'gr de', name: 'Pimientos Asados' },
@@ -8654,7 +8654,7 @@ const RECIPES: RecipeData[] = [
     title: 'Merluza a la Cazuela',
     category: 'Pescado',
     summary: 'Merluza a la Cazuela al estilo La Vida Bonica.',
-    image: 'images/2019_06_IMG_20190623_202556_resized_20190623_083334136.jpg',
+    image: 'images/merluza-a-la-cazuela.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'merluza en rodajas' },
@@ -8682,7 +8682,7 @@ const RECIPES: RecipeData[] = [
     title: 'Migas de Coliflor',
     category: 'Verdura',
     summary: 'Migas de Coliflor al estilo La Vida Bonica.',
-    image: 'images/2020_11_IMG_20201129_173206_resized_20201129_053240299.jpg',
+    image: 'images/migas-de-coliflor.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'pechugas enteras de pollo' },
@@ -8873,7 +8873,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pakoras',
     category: 'Verdura',
     summary: 'Pakoras al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191027_144805-1024x576.jpg',
+    image: 'images/pakoras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla pelada y entera' },
@@ -8900,7 +8900,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasta con Crema de Verduras',
     category: 'Sopa',
     summary: 'Pasta con Crema de Verduras al estilo La Vida Bonica.',
-    image: 'images/2020_10_RBC-3.jpg',
+    image: 'images/pasta-con-crema-de-verduras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: null, unit: '', name: 'Pasta integral del tipo que más os guste' },
@@ -9116,7 +9116,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pastel de Calabacín',
     category: 'Verdura',
     summary: 'Pastel de Calabacín al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220312_122729-1024x852.jpg',
+    image: 'images/pastel-de-calabacin.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias blancas cocidas' },
@@ -9181,7 +9181,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pasteles de Apio',
     category: 'Verdura',
     summary: 'Pasteles de Apio al estilo La Vida Bonica.',
-    image: 'images/2020_04_IMG_20200412_155820-1024x552.jpg',
+    image: 'images/pasteles-de-apio.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'habas peladas (las podemos comprar ya congeladas)' },
@@ -9247,7 +9247,7 @@ const RECIPES: RecipeData[] = [
     title: 'Patatas Adobadas al Horno',
     category: 'Verdura',
     summary: 'Patatas Adobadas al Horno al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'images/patatas-adobadas-al-horno.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'cebollas secas o cebolletas' },
@@ -9273,7 +9273,7 @@ const RECIPES: RecipeData[] = [
     title: 'Patatas al Horno con Limón',
     category: 'Verdura',
     summary: 'Patatas al Horno con Limón al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191019_173700-1-1024x879.jpg',
+    image: 'images/patatas-al-horno-con-limon.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'pechuga de pollo' },
@@ -9307,7 +9307,7 @@ const RECIPES: RecipeData[] = [
     title: 'Patatas Aliñadas con Limón, Ajo y Tomillo',
     category: 'Verdura',
     summary: 'Patatas Aliñadas con Limón, Ajo y Tomillo al estilo La Vida Bonica.',
-    image: 'images/2019_12_IMG_20191215_204545-2-1024x596.jpg',
+    image: 'images/patatas-alinadas-con-limon-ajo-y-tomillo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'patatas' },
@@ -9333,7 +9333,7 @@ const RECIPES: RecipeData[] = [
     title: 'Patatas y Huevos en Salsa Verde',
     category: 'Entrantes',
     summary: 'Patatas y Huevos en Salsa Verde al estilo La Vida Bonica.',
-    image: 'images/2021_02_Polish_20210214_181330351_resized_20210214_061405487.jpg',
+    image: 'images/patatas-y-huevos-en-salsa-verde.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'patatas' },
@@ -9393,7 +9393,7 @@ const RECIPES: RecipeData[] = [
     title: 'Paté de Tomates Secos',
     category: 'Verdura',
     summary: 'Paté de Tomates Secos al estilo La Vida Bonica.',
-    image: 'images/2022_01_RBC-1-1024x1008.jpg',
+    image: 'images/pate-de-tomates-secos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'remolachas enteras' },
@@ -9421,7 +9421,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pechugas de la Abuela',
     category: 'Verdura',
     summary: 'Pechugas de la Abuela al estilo La Vida Bonica.',
-    image: 'images/2021_10_RBC.jpg',
+    image: 'images/pechugas-de-la-abuela.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'guisantes (yo los uso congelados)' },
@@ -9534,7 +9534,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pescado Blanco con Leche de Coco',
     category: 'Pescado',
     summary: 'Pescado Blanco con Leche de Coco al estilo La Vida Bonica.',
-    image: 'images/2020_09_rbc-2.jpg',
+    image: 'images/pescado-blanco-con-leche-de-coco.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'pescado blanco (yo he utilizado filetes de merluza sin espina)' },
@@ -9680,7 +9680,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pescado en Salsa de Piquillos',
     category: 'Pescado',
     summary: 'Pescado en Salsa de Piquillos al estilo La Vida Bonica.',
-    image: 'images/2019_10_IMG_20191019_173700-1-1024x879.jpg',
+    image: 'images/pescado-en-salsa-de-piquillos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'amos filetes de pescado blanco' },
@@ -9705,7 +9705,7 @@ const RECIPES: RecipeData[] = [
     title: 'Picadillo Cubano Vegano',
     category: 'Verdura',
     summary: 'Picadillo Cubano Vegano al estilo La Vida Bonica.',
-    image: 'images/2020_10_rbc.jpg',
+    image: 'images/picadillo-cubano-vegano.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'langostinos crudos' },
@@ -10044,7 +10044,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pollo Tikka Masala',
     category: 'Carne',
     summary: 'Pollo Tikka Masala al estilo La Vida Bonica.',
-    image: 'images/2019_05_IMG_20190504_141225_resized_20190505_093153048.jpg',
+    image: 'images/pollo-tikka-masala.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: null, unit: '', name: '1/2 kg carne de cerdo picada' },
@@ -10143,7 +10143,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ragú de Carne a la Boloñesa',
     category: 'Carne',
     summary: 'Ragú de Carne a la Boloñesa al estilo La Vida Bonica.',
-    image: 'images/2022_02_RBC-1-1024x798.jpg',
+    image: 'images/ragu-de-carne-a-la-bolonesa.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'cebollas grandes' },
@@ -10231,7 +10231,7 @@ const RECIPES: RecipeData[] = [
     title: 'Salmón al Horno con Espárragos',
     category: 'Pescado',
     summary: 'Salmón al Horno con Espárragos al estilo La Vida Bonica.',
-    image: 'images/2019_12_IMG_20191215_204545-2-1024x596.jpg',
+    image: 'images/salmon-al-horno-con-esparragos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: 'rodajas de', name: 'salmón' },
@@ -10362,7 +10362,7 @@ const RECIPES: RecipeData[] = [
     title: 'Setas y Brócoli en Salsa Americana',
     category: 'Verdura',
     summary: 'Setas y Brócoli en Salsa Americana al estilo La Vida Bonica.',
-    image: 'images/2019_03_BATCH-COOKING-1024x562.jpg',
+    image: 'images/setas-y-brocoli-en-salsa-americana.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'habas (yo las tengo congeladas)' },
@@ -10731,7 +10731,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa de Lentejas con Leche de Coco',
     category: 'Sopa',
     summary: 'Sopa de Lentejas con Leche de Coco al estilo La Vida Bonica.',
-    image: 'images/2019_08_IMG_20190826_190620-2.jpg',
+    image: 'images/sopa-de-lentejas-con-leche-de-coco.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'muslos de pavo' },
@@ -10820,7 +10820,7 @@ const RECIPES: RecipeData[] = [
     title: 'Soufflé de Berenjena',
     category: 'Verdura',
     summary: 'Soufflé de Berenjena al estilo La Vida Bonica.',
-    image: 'images/2020_04_IMG_20200426_151045-1024x548.jpg',
+    image: 'images/souffle-de-berenjena.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla' },
@@ -11004,7 +11004,7 @@ const RECIPES: RecipeData[] = [
     title: 'Torta de Calabacín',
     category: 'Verdura',
     summary: 'Torta de Calabacín al estilo La Vida Bonica.',
-    image: 'images/2020_04_IMG_20200419_181113-1024x580.jpg',
+    image: 'images/torta-de-calabacin.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'espinacas' },
@@ -11254,7 +11254,7 @@ const RECIPES: RecipeData[] = [
     title: 'Tortitas de Espinacas con Queso',
     category: 'Verdura',
     summary: 'Tortitas de Espinacas con Queso al estilo La Vida Bonica.',
-    image: 'images/2019_09_IMG_20190922_144306-1024x532.jpg',
+    image: 'images/tortitas-de-espinacas-con-queso.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'huevos' },
