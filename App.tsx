@@ -11469,9 +11469,7 @@ function RecipeScreen({
   const [servings, setServings] = useState(recipe.defaultServings);
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(new Set());
   const [checkedSteps, setCheckedSteps] = useState<Set<number>>(new Set());
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [nutritionMode, setNutritionMode] = useState<'perServing' | 'per100g'>('perServing');
-  const servingsOptions = Array.from({ length: 10 }, (_, i) => i + 1);
 
   const toggleIngredient = (id: string) => {
     setCheckedIngredients(prev => {
@@ -11566,28 +11564,24 @@ function RecipeScreen({
 
       <View style={styles.servingsContainer}>
         <Text style={styles.servingsLabel}>Raciones</Text>
-        <TouchableOpacity style={styles.dropdown} onPress={() => setDropdownOpen(true)} activeOpacity={0.7}>
-          <Text style={styles.dropdownText}>{servings}</Text>
-          <ChevronDown size={16} color="#707940" />
-        </TouchableOpacity>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap: 0}}>
+          <TouchableOpacity
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#E0E0E0' : '#707940', justifyContent: 'center', alignItems: 'center'}}
+            onPress={() => servings > 1 && setServings(servings - 1)}
+            activeOpacity={0.7}
+          >
+            <Text style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>−</Text>
+          </TouchableOpacity>
+          <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#707940'}}>{servings}</Text>
+          <TouchableOpacity
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#E0E0E0' : '#707940', justifyContent: 'center', alignItems: 'center'}}
+            onPress={() => servings < 20 && setServings(servings + 1)}
+            activeOpacity={0.7}
+          >
+            <Text style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>+</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-
-      <Modal visible={dropdownOpen} transparent animationType="fade">
-        <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={() => setDropdownOpen(false)}>
-          <View style={styles.modalContent}>
-            <Text style={styles.modalTitle}>Raciones</Text>
-            {servingsOptions.map(n => (
-              <TouchableOpacity
-                key={n}
-                style={[styles.modalOption, n === servings && styles.modalOptionSelected]}
-                onPress={() => { setServings(n); setDropdownOpen(false); }}
-              >
-                <Text style={[styles.modalOptionText, n === servings && styles.modalOptionTextSelected]}>{n}</Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </TouchableOpacity>
-      </Modal>
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Ingredientes</Text>
