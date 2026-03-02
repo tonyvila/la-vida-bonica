@@ -12374,6 +12374,7 @@ function SobreMiScreen() {
     <ScrollView style={styles.scrollView} contentContainerStyle={{ paddingBottom: 40 }}>
       <View style={[styles.section, { maxWidth: 700, alignSelf: 'center', width: '100%', marginTop: 20 }]}>
         <Text style={[styles.sectionTitle, { textAlign: 'center', fontSize: 28, marginBottom: 24 }]}>SOBRE MI</Text>
+        <Image source={{ uri: 'images/sobre-mi.jpg' }} style={{ width: 180, height: 180, borderRadius: 90, alignSelf: 'center', marginBottom: 24 }} />
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>Hola!!!</Text>
         <Text style={[styles.itemText, { marginBottom: 16, fontSize: 18, lineHeight: 28 }]}>
           Aquí una madre de dos peques de 7 y 9 años preocupada por la alimentación de su familia 🙋🏼‍♀️

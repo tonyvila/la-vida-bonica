@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Vida Bonica — Tu recetario de batch cooking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --olive: #6B7B3A;
+      --olive-dark: #4A5628;
+      --olive-light: #E8EBDB;
+      --cream: #F5F3EE;
+      --text: #2C2C2C;
+      --text-light: #5A5A5A;
+      --white: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 1px solid rgba(107,123,58,0.1);
+    }
+    nav .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 1.6rem;
+      color: var(--olive);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    nav .cta-nav {
+      background: var(--olive);
+      color: var(--white);
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    nav .cta-nav:hover { background: var(--olive-dark); }
+
+    /* HERO */
+    .hero {
+      padding: 140px 24px 80px;
+      background: linear-gradient(170deg, var(--cream) 0%, var(--white) 100%);
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h1 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 3.5rem;
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: var(--olive-dark);
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text-light);
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .hero-text .cta-btn {
+      display: inline-block;
+      background: var(--olive);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero-text .cta-btn:hover {
+      background: var(--olive-dark);
+      transform: translateY(-2px);
+    }
+    .hero-text .subtitle {
+      display: block;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    .hero-mockup {
+      flex: 0 0 340px;
+      position: relative;
+    }
+    .hero-mockup img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 20px 60px rgba(0,0,0,0.15));
+    }
+
+    /* STATS BAR */
+    .stats {
+      background: var(--olive);
+      padding: 40px 24px;
+    }
+    .stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+      color: var(--white);
+    }
+    .stat-number {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 100px 24px;
+      background: var(--white);
+    }
+    .features-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .features h2 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      color: var(--olive-dark);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .feature-card {
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 36px 28px;
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+    .feature-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    .feature-card h3 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: var(--olive-dark);
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-light);
+    }
+
+    /* HOW IT WORKS */
+    .how {
+      padding: 100px 24px;
+      background: var(--cream);
+    }
+    .how-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .how h2 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      color: var(--olive-dark);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .steps {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .step {
+      flex: 1;
+      min-width: 220px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .step-number {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--olive);
+      color: var(--white);
+      font-family: 'League Gothic', sans-serif;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .step h3 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--olive-dark);
+    }
+    .step p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-light);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      padding: 100px 24px;
+      background: var(--olive-dark);
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 36px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-section .cta-btn {
+      display: inline-block;
+      background: var(--white);
+      color: var(--olive-dark);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: transform 0.2s;
+    }
+    .cta-section .cta-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      background: var(--white);
+      border-top: 1px solid rgba(107,123,58,0.1);
+    }
+    footer a {
+      color: var(--olive);
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-text h1 { font-size: 2.6rem; }
+      .hero-text p { margin-left: auto; margin-right: auto; }
+      .hero-mockup { flex: 0 0 260px; }
+      .features-grid { grid-template-columns: 1fr; gap: 20px; }
+      .stats-inner { gap: 40px; }
+      .steps { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="https://lavidabonica.com" class="logo"><img src="images/logo.png" alt="La Vida Bonica" style="height: 32px;"></a>
+      <a href="https://tonyvila.github.io/la-vida-bonica/" class="cta-nav">Abrir App</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Todas las recetas de La Vida Bonica en tu bolsillo</h1>
+        <p>Más de 380 recetas probadas, elaboradas con ingredientes naturales y 0 ultraprocesados. Busca, filtra, planifica tus menús semanales y genera tu lista de la compra automáticamente.</p>
+        <a href="https://tonyvila.github.io/la-vida-bonica/" class="cta-btn">Abrir la App — Gratis</a>
+        <span class="subtitle">No requiere instalación. Funciona en cualquier navegador.</span>
+      </div>
+      <div class="hero-mockup">
+        <img src="images/app-mockup.png" alt="La Vida Bonica App" />
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-number">382</div>
+        <div class="stat-label">Recetas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Gratuita</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">0</div>
+        <div class="stat-label">Anuncios</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <h2>Todo lo que necesitas para cocinar mejor</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Busca y filtra</h3>
+          <p>Encuentra recetas por nombre o categoría. Carne, pescado, legumbres, postres… todo organizado para que encuentres lo que buscas en segundos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3>Planificador semanal</h3>
+          <p>Arrastra recetas a tu planificador y organiza la semana entera. Sin improvisar, sin desperdiciar comida.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3>Lista de la compra</h3>
+          <p>Se genera automáticamente a partir de tu planificación semanal, organizada por categorías. Solo compra lo que necesitas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Favoritas</h3>
+          <p>Guarda tus recetas preferidas para acceder a ellas rápidamente. Tu colección personal, siempre a mano.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Batch Cooking con IA</h3>
+          <p>Selecciona varias recetas y la app te genera un plan de batch cooking optimizado: orden de preparación, tiempos y consejos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Siempre contigo</h3>
+          <p>App web que funciona en el móvil, tablet u ordenador. Sin descargas, sin registros, sin complicaciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="how-inner">
+      <h2>Así de fácil</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Explora las recetas</h3>
+          <p>Navega por más de 380 recetas saludables y reales de La Vida Bonica.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Planifica tu semana</h3>
+          <p>Añade recetas al planificador semanal con un solo toque.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Genera tu lista</h3>
+          <p>La lista de la compra se crea sola. Ve al súper con todo claro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿A qué esperas?</h2>
+    <p>Empieza a planificar tus comidas de forma sencilla. Sin registro, sin coste, sin excusas.</p>
+    <a href="https://tonyvila.github.io/la-vida-bonica/" class="cta-btn">Abrir la App</a>
+  </section>
+
+  <footer>
+    <p>Hecho con 🫒 por <a href="https://lavidabonica.com">La Vida Bonica</a></p>
+  </footer>
+
+</body>
+</html>
