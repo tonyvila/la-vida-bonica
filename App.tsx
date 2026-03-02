@@ -12770,7 +12770,7 @@ const styles = StyleSheet.create({
   cardSummary: {
     fontFamily: 'Karla',
     fontSize: 14,
-    color: '#4a5229',
+    color: '#707940',
     lineHeight: 20,
   },
   // Search + Filter
@@ -12912,7 +12912,7 @@ const styles = StyleSheet.create({
   emptyFavouritesText: {
     fontFamily: 'Karla',
     fontSize: 16,
-    color: '#4a5229',
+    color: '#707940',
     textAlign: 'center',
     lineHeight: 24,
     paddingHorizontal: 20,
@@ -12936,7 +12936,7 @@ const styles = StyleSheet.create({
   summary: {
     fontFamily: 'Karla',
     fontSize: 15,
-    color: '#4a5229',
+    color: '#707940',
     textAlign: 'center',
     lineHeight: 22,
     paddingHorizontal: 10,
