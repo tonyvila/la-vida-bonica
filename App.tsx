@@ -10,6 +10,7 @@ const WHITE = '#FFFFFF';
 const CREAM = '#EBEEDD';
 const BLACK = '#000';
 const GREY = '#F0F0F0';
+const GREY_MID = '#9E9E9E';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11880,7 +11881,7 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
         ))}
         {filteredRecipes.length === 0 && (
           <View style={styles.tableRow}>
-            <Text style={[styles.tableCell, { color: '#9E9E9E' }]}>No se encontraron recetas</Text>
+            <Text style={[styles.tableCell, { color: GREY_MID }]}>No se encontraron recetas</Text>
           </View>
         )}
       </View>
@@ -12822,7 +12823,7 @@ const styles = StyleSheet.create({
   filterButtonText: {
     fontFamily: 'Karla',
     fontSize: 14,
-    color: '#9E9E9E',
+    color: GREY_MID,
     marginRight: 6,
   },
   filterButtonTextActive: {
@@ -12830,7 +12831,7 @@ const styles = StyleSheet.create({
   },
   filterArrow: {
     fontSize: 10,
-    color: '#9E9E9E',
+    color: GREY_MID,
   },
   // Table
   table: {
@@ -13096,7 +13097,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   itemTextChecked: {
-    color: '#9E9E9E',
+    color: GREY_MID,
     textDecorationLine: 'line-through',
   },
   footer: {
@@ -13296,7 +13297,7 @@ const styles = StyleSheet.create({
   emptyDay: {
     fontFamily: 'Karla',
     fontSize: 14,
-    color: '#9E9E9E',
+    color: GREY_MID,
     fontStyle: 'italic',
   },
   dayRecipes: {
