@@ -864,7 +864,7 @@ const RECIPES: RecipeData[] = [
     title: 'Donuts con chocolate',
     category: 'Postres',
     summary: 'Donuts horneados con harina de avena, cacao y dátiles, cubiertos con cobertura de chocolate negro.',
-    image: 'images/2022_10_donuts2.jpg',
+    image: 'images/donuts-con-chocolate.jpg',
     defaultServings: 12,
     ingredients: [
       { id: '1', baseQuantity: 220, unit: 'gr de', name: 'harina de avena' },
@@ -6076,7 +6076,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Arroz con Toque Oriental',
     category: 'Verdura',
     summary: 'Ensalada de Arroz con Toque Oriental al estilo La Vida Bonica.',
-    image: 'images/2021_10_RBC-1.jpg',
+    image: 'images/ensalada-de-arroz-con-toque-oriental.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'arroz vaporizado' },
@@ -6569,7 +6569,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ensalada de Pimientos y Bacalao',
     category: 'Verdura',
     summary: 'Ensalada de Pimientos y Bacalao al estilo La Vida Bonica.',
-    image: 'images/2019_05_IMG_20190504_141225_resized_20190505_093153048.jpg',
+    image: 'images/ensalada-de-pimientos-y-bacalao.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: null, unit: '', name: '1/2 kg carne de cerdo picada' },
@@ -6839,7 +6839,7 @@ const RECIPES: RecipeData[] = [
     title: 'Fiambre de Pollo de Especias',
     category: 'Carne',
     summary: 'Fiambre de Pollo de Especias al estilo La Vida Bonica.',
-    image: 'images/2019_03_IMG_20190331_114316-1024x841.jpg',
+    image: 'images/fiambre-de-pollo-de-especias.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: '', name: 'alcachofas' },
@@ -6968,7 +6968,7 @@ const RECIPES: RecipeData[] = [
     title: 'Galletas de Queso y Nueces',
     category: 'Postres',
     summary: 'Galletas de Queso y Nueces al estilo La Vida Bonica.',
-    image: 'images/2019_04_IMG_20190426_220626_resized_20190426_100900215.jpg',
+    image: 'images/galletas-de-queso-y-nueces.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'harina integral de trigo' },
@@ -7370,7 +7370,7 @@ const RECIPES: RecipeData[] = [
     title: 'Guiso de Quinoa con Ternera',
     category: 'Carne',
     summary: 'Guiso de Quinoa con Ternera al estilo La Vida Bonica.',
-    image: 'images/2019_03_IMG_20190331_114316-1024x841.jpg',
+    image: 'images/guiso-de-quinoa-con-ternera.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: '', name: 'alcachofas' },
@@ -7922,7 +7922,7 @@ const RECIPES: RecipeData[] = [
     title: 'Hamburguesas Vegetales de Garbanzos y Calabacín',
     category: 'Legumbres',
     summary: 'Hamburguesas Vegetales de Garbanzos y Calabacín al estilo La Vida Bonica.',
-    image: 'images/2019_03_BATCH-COOKING-1024x562.jpg',
+    image: 'images/hamburguesas-vegetales-de-garbanzos-y-calabacin.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos' },
@@ -8454,7 +8454,7 @@ const RECIPES: RecipeData[] = [
     title: 'Lomos de Atún Marinado con Salsa de Pimientos',
     category: 'Pescado',
     summary: 'Lomos de Atún Marinado con Salsa de Pimientos al estilo La Vida Bonica.',
-    image: 'images/2020_08_IMG_20200823_115506-1024x845.jpg',
+    image: 'images/lomos-de-atun-marinado-con-salsa-de-pimientos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'pimientos asados' },
@@ -8774,7 +8774,7 @@ const RECIPES: RecipeData[] = [
     title: 'Muslos de Pollo a la Naranja',
     category: 'Carne',
     summary: 'Muslos de Pollo a la Naranja al estilo La Vida Bonica.',
-    image: 'images/2022_01_RBC-1024x710.jpg',
+    image: 'images/muslos-de-pollo-a-la-naranja.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'bandeja de muslos de pollo.' },
@@ -9827,7 +9827,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pollo al Horno con Quinoa',
     category: 'Carne',
     summary: 'Pollo al Horno con Quinoa al estilo La Vida Bonica.',
-    image: 'images/2021_11_RBC.jpg',
+    image: 'images/pollo-al-horno-con-quinoa.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'quinoa' },
@@ -10390,7 +10390,7 @@ const RECIPES: RecipeData[] = [
     title: 'Setas y Patatas al Ajillo',
     category: 'Verdura',
     summary: 'Setas y Patatas al Ajillo al estilo La Vida Bonica.',
-    image: 'images/2022_03_IMG_20220320_125957-1024x940.jpg',
+    image: 'images/setas-y-patatas-al-ajillo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'coles de bruselas' },
@@ -10513,7 +10513,7 @@ const RECIPES: RecipeData[] = [
     title: 'Sopa con Pelotas',
     category: 'Sopa',
     summary: 'Sopa con Pelotas al estilo La Vida Bonica.',
-    image: 'images/2019_05_IMG_20190504_141225_resized_20190505_093153048.jpg',
+    image: 'images/sopa-con-pelotas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'bacalao' },
@@ -10977,7 +10977,7 @@ const RECIPES: RecipeData[] = [
     title: 'Ternera al Horno con Boniato',
     category: 'Carne',
     summary: 'Ternera al Horno con Boniato al estilo La Vida Bonica.',
-    image: 'images/2021_11_RBC.jpg',
+    image: 'images/ternera-al-horno-con-boniato.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'quinoa' },
