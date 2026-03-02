@@ -11763,8 +11763,8 @@ function FavoritosScreen({
             <Image source={{ uri: recipe.image }} style={styles.cardImage} resizeMode="cover" />
             <View style={styles.cardInfo}>
               <Text style={[styles.cardTitle, {color: t.olive}]}>{recipe.title}</Text>
-              <View style={styles.categoryPill}>
-                <Text style={styles.categoryPillText}>{recipe.category}</Text>
+              <View style={[styles.categoryPill, {backgroundColor: t.grey}]}>
+                <Text style={[styles.categoryPillText, {color: t.olive}]}>{recipe.category}</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -11788,8 +11788,8 @@ function FavoritosScreen({
             >
               <Text style={[styles.tableCell, { flex: 2, paddingRight: 16 }]}>{recipe.title}</Text>
               <View style={{ flex: 1, alignItems: 'flex-start' }}>
-                <View style={styles.categoryPill}>
-                  <Text style={styles.categoryPillText}>{recipe.category}</Text>
+                <View style={[styles.categoryPill, {backgroundColor: t.grey}]}>
+                  <Text style={[styles.categoryPillText, {color: t.olive}]}>{recipe.category}</Text>
                 </View>
               </View>
             </TouchableOpacity>
@@ -11909,8 +11909,8 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
           >
             <Text style={[styles.tableCell, { flex: 2, paddingRight: 16 }]}>{recipe.title}</Text>
             <View style={{ flex: 1, alignItems: 'flex-start' }}>
-              <View style={styles.categoryPill}>
-                <Text style={styles.categoryPillText}>{recipe.category}</Text>
+              <View style={[styles.categoryPill, {backgroundColor: t.grey}]}>
+                <Text style={[styles.categoryPillText, {color: t.olive}]}>{recipe.category}</Text>
               </View>
             </View>
           </TouchableOpacity>
