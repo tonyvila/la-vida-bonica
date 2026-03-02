@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Image, Modal, TextInput, Animated } from 'react-native';
 import { useKeepAwake } from 'expo-keep-awake';
 import { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List } from 'lucide-react';
+import { ArrowLeft, Calendar, Star, Menu, X, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Check, ShoppingCart, ShoppingBasket, Trash2, Beef, Fish, Apple, Milk, Croissant, Wheat, Package, Droplets, Nut, Wine, Cake, LayoutGrid, List, Share2 } from 'lucide-react';
 
 // --- localStorage Helpers ---
 const getFavourites = (): string[] => {
@@ -11533,6 +11533,21 @@ function RecipeScreen({
             activeOpacity={0.7}
           >
             <Calendar size={22} color="#707940" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.starButton}
+            onPress={() => {
+              const url = `${window.location.origin}${window.location.pathname}`;
+              const text = `${recipe.title} — La Vida Bonica`;
+              if (navigator.share) {
+                navigator.share({ title: recipe.title, text, url }).catch(() => {});
+              } else {
+                navigator.clipboard.writeText(`${text}\n${url}`);
+              }
+            }}
+            activeOpacity={0.7}
+          >
+            <Share2 size={22} color="#707940" />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.starButton}
