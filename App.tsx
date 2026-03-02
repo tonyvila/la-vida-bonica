@@ -11566,19 +11566,19 @@ function RecipeScreen({
         <Text style={styles.servingsLabel}>Raciones</Text>
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 0}}>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#E0E0E0' : '#707940', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings <= 1 ? '#E0E0E0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings > 1 && setServings(servings - 1)}
             activeOpacity={0.7}
           >
-            <Text style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>−</Text>
+            <Text style={{color: '#707940', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>−</Text>
           </TouchableOpacity>
           <Text style={{minWidth: 36, textAlign: 'center', fontSize: 18, fontWeight: 'bold', color: '#707940'}}>{servings}</Text>
           <TouchableOpacity
-            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#E0E0E0' : '#707940', justifyContent: 'center', alignItems: 'center'}}
+            style={{width: 36, height: 36, borderRadius: 18, backgroundColor: servings >= 20 ? '#E0E0E0' : '#EBEEDD', justifyContent: 'center', alignItems: 'center'}}
             onPress={() => servings < 20 && setServings(servings + 1)}
             activeOpacity={0.7}
           >
-            <Text style={{color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>+</Text>
+            <Text style={{color: '#707940', fontSize: 20, fontWeight: 'bold', lineHeight: 22, marginTop: -1}}>+</Text>
           </TouchableOpacity>
         </View>
       </View>
