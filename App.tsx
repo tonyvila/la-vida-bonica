@@ -3853,7 +3853,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz Caldoso con Pollo, Habas y Aceitunas',
     category: 'Hidratos',
     summary: 'Arroz caldoso con pollo de corral, habas frescas y aceitunas negras.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-caldoso-con-pollo-habas-y-aceitunas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'arroz' },
