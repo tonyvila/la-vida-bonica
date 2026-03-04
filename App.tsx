@@ -11816,7 +11816,8 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
   };
 
   const filteredRecipes = RECIPES.filter(r => {
-    const matchesSearch = !search || r.title.toLowerCase().includes(search.toLowerCase());
+    const norm = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const matchesSearch = !search || norm(r.title).includes(norm(search));
     const matchesCategory = !selectedCategory || r.category === selectedCategory;
     return matchesSearch && matchesCategory;
   }).sort((a, b) => {
