@@ -2261,7 +2261,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz con leche y anís estrellado',
     category: 'Postres',
     summary: 'Arroz con leche aromatizado con anís estrellado, canela y limón, endulzado con pasta de dátil.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_06_IMG_20200607_173009.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-con-leche-y-anis-estrellado.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: 'litro de', name: 'leche' },
@@ -3885,7 +3885,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz con Leche de Coco y Champiñones',
     category: 'Hidratos',
     summary: 'Arroz vaporizado cocido en leche de coco con champiñones salteados, comino y canela.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-con-leche-de-coco-y-champinones.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'arroz vaporizado' },
@@ -3913,7 +3913,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz con Leche de Coco y Pescado a la Plancha',
     category: 'Pescado',
     summary: 'Arroz basmati cocido con leche de coco y verduras, acompañado de pescado blanco.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-con-leche-de-coco-y-pescado-a-la-plancha.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'arroz basmati' },
@@ -3942,7 +3942,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz con Salsa de Soja y Tahini',
     category: 'Hidratos',
     summary: 'Arroz vaporizado salteado con ajos tiernos, judías verdes, salchichas y salsa de soja con tahini.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-con-salsa-de-soja-y-tahini.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 250, unit: 'gr de', name: 'arroz vaporizado' },
@@ -3972,7 +3972,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz con Verduras y Bacalao',
     category: 'Pescado',
     summary: 'Arroz tipo paella con verduras pochadas, bacalao, atún y azafrán.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-con-verduras-y-bacalao.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 250, unit: 'gr de', name: 'arroz tipo bomba' },
@@ -4005,7 +4005,7 @@ const RECIPES: RecipeData[] = [
     title: 'Arroz de Coliflor con Bacalao',
     category: 'Pescado',
     summary: 'Falso arroz de coliflor rallada con garbanzos, ajos tiernos y bacalao dorado.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz_arroz.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/arroz-de-coliflor-con-bacalao.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'coliflor' },
