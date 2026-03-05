@@ -3547,7 +3547,7 @@ const RECIPES: RecipeData[] = [
     title: 'Albóndigas de Garbanzos',
     category: 'Legumbres',
     summary: 'Albóndigas vegetales de garbanzos al horno con salsa de verduras.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas_albondigas3-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas-de-garbanzos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos' },
