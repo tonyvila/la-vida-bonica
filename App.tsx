@@ -4973,7 +4973,7 @@ const RECIPES: RecipeData[] = [
     title: 'Cookies Brownie sin Azúcar',
     category: 'Postres',
     summary: 'Cookies Brownie sin Azúcar al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_09_IMG_20190915_145818-1024x510.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/cookies-brownie-sin-azucar.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos y lavados' },
