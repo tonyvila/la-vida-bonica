@@ -5803,7 +5803,7 @@ const RECIPES: RecipeData[] = [
     title: 'Empanada de Carne',
     category: 'Carne',
     summary: 'Empanada de Carne al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_09_IMG_20190928_184735-1024x593.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/empanada-de-carne.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: '', name: 'manzanas' },
