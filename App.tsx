@@ -1844,7 +1844,7 @@ const RECIPES: RecipeData[] = [
     title: 'Crema de puerros con migas de bacalao',
     category: 'Sopa',
     summary: 'Cremosa sopa de puerros con comino, coronada con migas de bacalao doradas. Reconfortante y completa.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_06_IMG_20200531_224414.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/crema-puerros-bacalao.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: '', name: 'puerros' },
