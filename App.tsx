@@ -4675,7 +4675,7 @@ const RECIPES: RecipeData[] = [
     title: 'Champiñones Rellenos de Jamón y Queso',
     category: 'Verdura',
     summary: 'Champiñones Rellenos de Jamón y Queso al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/champinones-rellenos-de-jamon-y-queso.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
