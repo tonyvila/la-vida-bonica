@@ -3646,7 +3646,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alcachofas y Mozzarella',
     category: 'Verdura',
     summary: 'Alcachofas cocidas salteadas con gambas, ajos tiernos, tomate y mozzarella fundida.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alcachofas_LENTEJAS-CON-ALCACHOFAS1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alcachofas-y-mozzarella.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 8, unit: '', name: 'alcachofas grandes' },
