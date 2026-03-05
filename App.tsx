@@ -8106,7 +8106,7 @@ const RECIPES: RecipeData[] = [
     title: 'Kebabs de Pollo Marinado',
     category: 'Carne',
     summary: 'Kebabs de Pollo Marinado al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_09_IMG_20190915_145818-1024x510.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/kebabs-de-pollo-marinado.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 200, unit: 'gr de', name: 'quinoa.' },
