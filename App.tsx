@@ -4034,7 +4034,7 @@ const RECIPES: RecipeData[] = [
     title: 'Asado de Garbanzos',
     category: 'Legumbres',
     summary: 'Garbanzos asados al horno con patatas, pimiento, cebolla y hierbas aromáticas.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado_asado2-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado-de-garbanzos.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'patatas medianas' },
@@ -4095,7 +4095,7 @@ const RECIPES: RecipeData[] = [
     title: 'Asado de Pollo con Coles de Bruselas',
     category: 'Carne',
     summary: 'Asado de muslos de pollo al horno con coles de bruselas, patatas y una salsa cremosa de tomate y nata.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado_asado2-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado-de-pollo-con-coles-de-bruselas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'muslos y contramuslos de pollo' },
@@ -4127,7 +4127,7 @@ const RECIPES: RecipeData[] = [
     title: 'Asado de Pollo con Salsa de Coco',
     category: 'Carne',
     summary: 'Muslos de pollo al horno con patatas, calabaza y espárragos en una exótica salsa de leche de coco y curry.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado_asado2-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado-de-pollo-con-salsa-de-coco.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 6, unit: '', name: 'muslos y contramuslos de pollo' },
@@ -4159,7 +4159,7 @@ const RECIPES: RecipeData[] = [
     title: 'Asado en Salsa de Tomates Secos y Romero',
     category: 'Carne',
     summary: 'Pechugas de pollo al horno con patatas y champiñones bañados en una salsa de tomates secos, nueces y romero.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado_asado2-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/asado-en-salsa-de-tomates-secos-y-romero.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 3, unit: '', name: 'pechugas enteras de pollo' },
