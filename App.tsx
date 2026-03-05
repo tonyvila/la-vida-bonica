@@ -1873,7 +1873,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con setas y bacalao',
     category: 'Legumbres',
     summary: 'Guiso de alubias con setas salteadas, bacalao y sofrito de verduras con vino blanco y pimentón.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_05_IMG_20200528_224544-1024x859.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-setas-bacalao.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
