@@ -3584,7 +3584,7 @@ const RECIPES: RecipeData[] = [
     title: 'Albóndigas de Soja Texturizada con Salsa de Pimientos Asados',
     category: 'Verdura',
     summary: 'Albóndigas vegetales de soja texturizada y brócoli con salsa cremosa de pimientos.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas_albondigas3-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas-de-soja-texturizada-con-salsa-de-pimientos-asados.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 150, unit: 'gr de', name: 'soja texturizada' },
