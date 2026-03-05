@@ -1695,7 +1695,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bacalao dorado',
     category: 'Pescado',
     summary: 'Receta portuguesa de bacalao con patatas y cebolla al microondas, terminado con huevos batidos. Sencillo y sabroso.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_05_IMG_20200511_165903_resized_20200511_050951800.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bacalao-dorado.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'migas de bacalao congeladas' },
@@ -2021,7 +2021,7 @@ const RECIPES: RecipeData[] = [
     title: 'Carrot cake',
     category: 'Postres',
     summary: 'Bizcocho clásico de zanahoria con almendras, dátiles y mezcla aromática de especias. Sin azúcar refinado.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2022_02_IMG_20220202_195353-997x1024.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/carrot-cake.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'zanahoria rallada' },
@@ -4188,7 +4188,7 @@ const RECIPES: RecipeData[] = [
     title: 'Atún al Jerez',
     category: 'Pescado',
     summary: 'Tacos de atún sellados con una aromática salsa de vino de Jerez, ajo y perejil.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/atun_atun.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/atun-al-jerez.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'lomo de atún en tacos' },
@@ -4243,7 +4243,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bacalao a la Americana',
     category: 'Pescado',
     summary: 'Lomos de bacalao en una rica salsa americana de tomate, cebolla, pimiento y vino blanco.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bacalao_BACALAO.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bacalao-a-la-americana.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: '', name: 'lomos de bacalao' },
@@ -4273,7 +4273,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bacalao con Salsa de Almendras',
     category: 'Pescado',
     summary: 'Lomos de bacalao al horno con una salsa tradicional de almendras, ajo, pan y tomate.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bacalao_BACALAO.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bacalao-con-salsa-de-almendras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'lomos de bacalao desalado' },
@@ -4479,7 +4479,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bizcocho de Piña',
     category: 'Postres',
     summary: 'Bizcocho facilísimo de piña con harina integral, sin azúcar, cubierto de chocolate negro.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bizcocho_BIZCOCHO-DE-PIÑA.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bizcocho-de-pina.jpg',
     defaultServings: 8,
     ingredients: [
       { id: '1', baseQuantity: 140, unit: 'gr de', name: 'piña (sin azúcar añadido)' },
@@ -4699,7 +4699,7 @@ const RECIPES: RecipeData[] = [
     title: 'Chili Ahumado de Verduras',
     category: 'Verdura',
     summary: 'Chili Ahumado de Verduras al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2022_04_IMG_20220403_134617-1024x825.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/chili-ahumado-de-verduras.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 2, unit: '', name: 'cebollas' },
@@ -4732,7 +4732,7 @@ const RECIPES: RecipeData[] = [
     title: 'Chorizo Casero con Carne de Pollo',
     category: 'Carne',
     summary: 'Chorizo Casero con Carne de Pollo al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_11_IMG_20191116_151705-1024x566.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/chorizo-casero-con-carne-de-pollo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'pan integral seco' },
@@ -4809,7 +4809,7 @@ const RECIPES: RecipeData[] = [
     title: 'Coliflor al Horno con Bechamel de Trufa',
     category: 'Verdura',
     summary: 'Coliflor al Horno con Bechamel de Trufa al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_12_IMG_20191201_121322-1024x541.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/coliflor-al-horno-con-bechamel-de-trufa.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'coliflor' },
@@ -5302,7 +5302,7 @@ const RECIPES: RecipeData[] = [
     title: 'Crema de Garbanzos con Setas',
     category: 'Sopa',
     summary: 'Crema de Garbanzos con Setas al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_02_IMG_20200209_094820-1024x746.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/crema-de-garbanzos-con-setas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'setas variadas' },
@@ -5409,7 +5409,7 @@ const RECIPES: RecipeData[] = [
     title: 'Crema de Lentejas con Pavo',
     category: 'Sopa',
     summary: 'Crema de Lentejas con Pavo al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2021_10_RBC-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/crema-de-lentejas-con-pavo.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'lentejas cocidas' },
@@ -5554,7 +5554,7 @@ const RECIPES: RecipeData[] = [
     title: 'Crema de Verduras con Crema de Cacahuete',
     category: 'Sopa',
     summary: 'Crema de Verduras con Crema de Cacahuete al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_11_IMG_20191123_130841-1024x566.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/crema-de-verduras-con-crema-de-cacahuete.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'garbanzos cocidos' },
@@ -9106,7 +9106,7 @@ const RECIPES: RecipeData[] = [
     title: 'Pastel de Atún y Gambas',
     category: 'Pescado',
     summary: 'Pastel de Atún y Gambas al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_11_IMG_20191116_151705-1024x566.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/pastel-de-atun-y-gambas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'coliflor' },
@@ -9251,7 +9251,7 @@ const RECIPES: RecipeData[] = [
     title: 'Patatas a la Riojana con Chorizo Casero',
     category: 'Verdura',
     summary: 'Patatas a la Riojana con Chorizo Casero al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_12_IMG_20191201_121322-1024x541.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/patatas-a-la-riojana-con-chorizo-casero.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'guisantes frescos (yo he usado una bolsa de guisantes muy tiernos de Mercadona)' },
