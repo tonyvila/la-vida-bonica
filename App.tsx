@@ -16743,7 +16743,7 @@ function RecipeScreen({
 
       <View style={styles.breadcrumbRow}>
         <TouchableOpacity style={styles.backButton} onPress={onBack} activeOpacity={0.7}>
-          <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}><ArrowLeft size={18} color="#707940" /><Text style={styles.backButtonText}>{backLabel || 'Recetas'}</Text></View>
+          <View style={{flexDirection: 'row', alignItems: 'center', gap: 6}}><ArrowLeft size={18} color={t.cream === CREAM ? "#707940" : t.greyDark} /><Text style={styles.backButtonText}>{backLabel || 'Recetas'}</Text></View>
         </TouchableOpacity>
         <View style={styles.actionButtons}>
           <TouchableOpacity
@@ -16751,7 +16751,7 @@ function RecipeScreen({
             onPress={() => onAddToWeek?.(recipe)}
             activeOpacity={0.7}
           >
-            <Calendar size={22} color="#707940" />
+            <Calendar size={22} color={t.cream === CREAM ? "#707940" : t.greyDark} />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.starButton}
@@ -16766,14 +16766,14 @@ function RecipeScreen({
             }}
             activeOpacity={0.7}
           >
-            <Share2 size={22} color="#707940" />
+            <Share2 size={22} color={t.cream === CREAM ? "#707940" : t.greyDark} />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.starButton}
             onPress={() => onToggleFavourite(recipe.id)}
             activeOpacity={0.7}
           >
-            {isFavourite ? <Star size={22} color="#707940" fill="#707940" /> : <Star size={22} color="#707940" />}
+            {isFavourite ? <Star size={22} color={t.cream === CREAM ? "#707940" : t.greyDark} fill="#707940" /> : <Star size={22} color={t.cream === CREAM ? "#707940" : t.greyDark} />}
           </TouchableOpacity>
         </View>
       </View>
@@ -16809,7 +16809,7 @@ function RecipeScreen({
         {recipe.ingredients.map(item => (
           <TouchableOpacity key={item.id} style={styles.checkItem} onPress={() => toggleIngredient(item.id)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedIngredients.has(item.id) && styles.checkboxChecked]}>
-              {checkedIngredients.has(item.id) && <Check size={16} color="#707940" />}
+              {checkedIngredients.has(item.id) && <Check size={16} color={t.cream === CREAM ? "#707940" : t.greyDark} />}
             </View>
             <Text style={[styles.itemText, checkedIngredients.has(item.id) && styles.itemTextChecked]}>
               {getIngredientText(item)}
@@ -16824,7 +16824,7 @@ function RecipeScreen({
           <TouchableOpacity key={idx} style={styles.checkItem} onPress={() => toggleStep(idx)} activeOpacity={0.7}>
             <View style={[styles.checkbox, checkedSteps.has(idx) && styles.checkboxChecked]}>
               {checkedSteps.has(idx) ? (
-                <Check size={16} color="#707940" />
+                <Check size={16} color={t.cream === CREAM ? "#707940" : t.greyDark} />
               ) : (
                 <Text style={styles.stepNumber}>{idx + 1}</Text>
               )}
@@ -16952,10 +16952,10 @@ function FavoritosScreen({
         <View style={styles.table}>
           <View style={[styles.tableHeader, {backgroundColor: t.cream === CREAM ? t.olive : t.grey}]}>
             <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
-              <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
+              <Text style={[styles.tableHeaderText, {color: t.cream === CREAM ? WHITE : t.greyDark}]}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} /> : <ChevronDown size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} />) : null}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
-              <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
+              <Text style={[styles.tableHeaderText, {color: t.cream === CREAM ? WHITE : t.greyDark}]}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} /> : <ChevronDown size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} />) : null}</Text>
             </TouchableOpacity>
           </View>
           {favouriteRecipes.map(recipe => (
@@ -17074,10 +17074,10 @@ function HomeScreen({ onSelectRecipe }: { onSelectRecipe: (recipe: RecipeData) =
       <View style={styles.table}>
         <View style={[styles.tableHeader, {backgroundColor: t.cream === CREAM ? t.olive : t.grey}]}>
           <TouchableOpacity style={{ flex: 2 }} onPress={() => handleSort('title')} activeOpacity={0.7}>
-            <Text style={styles.tableHeaderText}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
+            <Text style={[styles.tableHeaderText, {color: t.cream === CREAM ? WHITE : t.greyDark}]}>Receta {sortField === 'title' ? (sortAsc ? <ChevronUp size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} /> : <ChevronDown size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} />) : null}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flex: 1 }} onPress={() => handleSort('category')} activeOpacity={0.7}>
-            <Text style={styles.tableHeaderText}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color="#707940" /> : <ChevronDown size={14} color="#707940" />) : null}</Text>
+            <Text style={[styles.tableHeaderText, {color: t.cream === CREAM ? WHITE : t.greyDark}]}>Categoría {sortField === 'category' ? (sortAsc ? <ChevronUp size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} /> : <ChevronDown size={14} color={t.cream === CREAM ? "#707940" : t.greyDark} />) : null}</Text>
           </TouchableOpacity>
         </View>
         {filteredRecipes.map(recipe => (
@@ -17461,11 +17461,11 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
       {/* Week selector */}
       <View style={styles.weekSelector}>
         <TouchableOpacity onPress={() => navigateWeek(-1)} activeOpacity={0.7}>
-          <ChevronLeft size={28} color="#707940" />
+          <ChevronLeft size={28} color={t.cream === CREAM ? "#707940" : t.greyDark} />
         </TouchableOpacity>
         <Text style={styles.weekTitle}>Semana del {formatWeekRange(currentWeekStart)}</Text>
         <TouchableOpacity onPress={() => navigateWeek(1)} activeOpacity={0.7}>
-          <ChevronRight size={28} color="#707940" />
+          <ChevronRight size={28} color={t.cream === CREAM ? "#707940" : t.greyDark} />
         </TouchableOpacity>
       </View>
 
@@ -17493,7 +17493,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
                   onPress={() => handleRemoveRecipe(recipe.id)}
                   activeOpacity={0.7}
                 >
-                  <X size={20} color="#707940" />
+                  <X size={20} color={t.cream === CREAM ? "#707940" : t.greyDark} />
                 </TouchableOpacity>
               </View>
             ))}
@@ -17512,7 +17512,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
             return (
               <View key={cat.key} style={{ marginBottom: catIdx < arr.length - 1 ? 16 : 0 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-                  <IconComponent size={18} color="#707940" />
+                  <IconComponent size={18} color={t.cream === CREAM ? "#707940" : t.greyDark} />
                   <Text style={{ fontFamily: 'Karla', fontSize: 16, fontWeight: 'bold', color: OLIVE }}>{group.label}</Text>
                 </View>
                 {group.formatted.map((ingredient, idx) => (
@@ -17523,7 +17523,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
                     activeOpacity={0.7}
                   >
                     <View style={[styles.checkbox, checkedIngredients.has(ingredient) && styles.checkboxChecked]}>
-                      {checkedIngredients.has(ingredient) && <Check size={16} color="#707940" />}
+                      {checkedIngredients.has(ingredient) && <Check size={16} color={t.cream === CREAM ? "#707940" : t.greyDark} />}
                     </View>
                     <Text style={[styles.itemText, checkedIngredients.has(ingredient) && styles.itemTextChecked]}>
                       {ingredient}
@@ -17588,7 +17588,7 @@ Sé conciso y práctico. No repitas los ingredientes completos, solo referencia 
                     activeOpacity={0.7}
                   >
                     <View style={[styles.checkbox, batchCookingChecked.has(item.key) && styles.checkboxChecked]}>
-                      {batchCookingChecked.has(item.key) ? <Check size={16} color="#707940" /> : <Text style={{ fontFamily: 'Karla', fontSize: 12, fontWeight: 'bold', color: OLIVE }}>{item.num}</Text>}
+                      {batchCookingChecked.has(item.key) ? <Check size={16} color={t.cream === CREAM ? "#707940" : t.greyDark} /> : <Text style={{ fontFamily: 'Karla', fontSize: 12, fontWeight: 'bold', color: OLIVE }}>{item.num}</Text>}
                     </View>
                     <Text style={[styles.itemText, batchCookingChecked.has(item.key) && styles.itemTextChecked]}>{item.text}</Text>
                   </TouchableOpacity>
