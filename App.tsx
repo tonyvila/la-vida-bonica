@@ -4837,7 +4837,7 @@ const RECIPES: RecipeData[] = [
     title: 'Coliflor en Salsa',
     category: 'Verdura',
     summary: 'Coliflor en Salsa al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2021_02_Polish_20210207_193855322_resized_20210207_073919808.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/coliflor-en-salsa.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'lentejas cocidas' },
