@@ -2138,7 +2138,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bizcocho con frutos rojos',
     category: 'Postres',
     summary: 'Bizcocho con plátano maduro, frutos rojos congelados, cacahuetes y fruta seca. Dulzor natural y saludable.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_06_IMG_20200607_173009.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bizcocho-frutos-rojos.jpg',
     defaultServings: 8,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'harina integral de trigo' },
