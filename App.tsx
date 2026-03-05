@@ -4894,7 +4894,7 @@ const RECIPES: RecipeData[] = [
     title: 'Contramuslos de Pollo con Salsa de Naranja y Soja',
     category: 'Carne',
     summary: 'Contramuslos de Pollo con Salsa de Naranja y Soja al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_10_rbc.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/contramuslos-de-pollo-con-salsa-de-naranja-y-soja.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 4, unit: '', name: 'contramuslos de pollo' },
