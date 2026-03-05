@@ -1813,7 +1813,7 @@ const RECIPES: RecipeData[] = [
     title: 'Croquetas de bacalao y champiñones',
     category: 'Entrantes',
     summary: 'Croquetas horneadas de bacalao y champiñones con bechamel integral, perfectas para congelar.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_06_IMG_20200620_175655.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/croquetas-bacalao-champinones.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 500, unit: 'gr de', name: 'bacalao desalado' },
