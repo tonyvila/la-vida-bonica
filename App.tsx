@@ -2107,7 +2107,7 @@ const RECIPES: RecipeData[] = [
     title: 'Bizcocho con arándanos',
     category: 'Postres',
     summary: 'Bizcocho esponjoso con harinas integrales, arándanos, cacahuetes y fruta desecada. Perfecto para acompañar café.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_06_IMG_20200607_173009.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/bizcocho-arandanos.jpg',
     defaultServings: 8,
     ingredients: [
       { id: '1', baseQuantity: 100, unit: 'gr de', name: 'harina integral de trigo' },
