@@ -4643,7 +4643,7 @@ const RECIPES: RecipeData[] = [
     title: 'Cazuela Marinera',
     category: 'Pescado',
     summary: 'Cazuela Marinera al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2020_10_rbc.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/cazuela-marinera.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 300, unit: 'gr de', name: 'langostinos crudos' },
