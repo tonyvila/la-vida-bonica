@@ -3700,7 +3700,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con Coles de Bruselas',
     category: 'Legumbres',
     summary: 'Guiso de alubias con coles de bruselas, carne y salsa al curry.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias_alubias.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-con-coles-de-bruselas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
@@ -3730,7 +3730,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con Espárragos',
     category: 'Legumbres',
     summary: 'Guiso de alubias grandes con ternera, setas, espárragos y vino blanco.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias_alubias.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-con-esparragos.jpg',
     defaultServings: 6,
     ingredients: [
       { id: '1', baseQuantity: 800, unit: 'gr de', name: 'alubias grandes cocidas' },
@@ -3762,7 +3762,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con Quinoa y Espinacas',
     category: 'Legumbres',
     summary: 'Guiso de alubias con quinoa, espinacas, tomates secos y especias.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias_alubias.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-con-quinoa-y-espinacas.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 1, unit: '', name: 'cebolla' },
@@ -3794,7 +3794,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con Salsa de Tomate',
     category: 'Legumbres',
     summary: 'Alubias en salsa de tomate especiada con garam masala, cúrcuma y jengibre.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias_alubias.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-con-salsa-de-tomate.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
@@ -3823,7 +3823,7 @@ const RECIPES: RecipeData[] = [
     title: 'Alubias con Setas y Chorizo Ibérico',
     category: 'Legumbres',
     summary: 'Guiso de alubias con setas variadas, chorizo ibérico, arroz y salsa de soja.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias_alubias.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/alubias-con-setas-y-chorizo-iberico.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'alubias cocidas' },
