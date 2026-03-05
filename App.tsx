@@ -5250,7 +5250,7 @@ const RECIPES: RecipeData[] = [
     title: 'Crema de Espinacas y Aguacate',
     category: 'Sopa',
     summary: 'Crema de Espinacas y Aguacate al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2022_03_IMG_20220306_193841-1024x938.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/crema-de-espinacas-y-aguacate.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 400, unit: 'gr de', name: 'champiñones' },
