@@ -3511,7 +3511,7 @@ const RECIPES: RecipeData[] = [
     title: 'Albóndigas al Curry',
     category: 'Carne',
     summary: 'Albóndigas de cerdo y pollo al horno con una sabrosa salsa de verduras al curry.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas_albondigas3-1.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/albondigas-al-curry.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 600, unit: 'gr de', name: 'carne de cerdo y pollo picada' },
