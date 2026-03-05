@@ -4946,7 +4946,7 @@ const RECIPES: RecipeData[] = [
     title: 'Contramuslos de Pollo Marinados con Soja',
     category: 'Carne',
     summary: 'Contramuslos de Pollo Marinados con Soja al estilo La Vida Bonica.',
-    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/2019_09_IMG_20190928_184735-1024x593.jpg',
+    image: 'https://pub-fa1af9f8dcc549b2bb26b617013551dc.r2.dev/contramuslos-de-pollo-marinados-con-soja.jpg',
     defaultServings: 4,
     ingredients: [
       { id: '1', baseQuantity: 50, unit: 'ml de', name: 'salsa de soja sin azúcar' },
