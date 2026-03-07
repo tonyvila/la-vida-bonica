@@ -99,6 +99,30 @@
       margin-bottom: 32px;
       max-width: 480px;
     }
+    .hero-features {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 32px 0;
+      max-width: 480px;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text-light);
+    }
+    .hero-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .hero-features li svg { flex-shrink: 0; }
+    @media (max-width: 768px) {
+      .hero-features li {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+        margin-bottom: 16px;
+      }
+    }
     .hero-text .cta-btn {
       display: inline-block;
       background: var(--olive);
@@ -340,10 +364,10 @@
       <div class="hero-text">
         <h1>Todas las recetas de La Vida Bonica en tu bolsillo</h1>
         <p>Más de 550 recetas probadas, elaboradas con ingredientes naturales y 0 ultraprocesados.</p>
-        <ul style="list-style: none; padding: 0; margin: 16px 0 32px 0; max-width: 480px; font-size: 1.15rem; line-height: 1.7; color: var(--text-light);">
-          <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Busca, filtra, planifica tus menús semanales</li>
-          <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> Genera tu lista de la compra automáticamente</li>
-          <li style="display: flex; align-items: center; gap: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.98-.86.86"/><path d="m15.14 5.02-.86.86"/></svg> Crea una sesión de batch cooking para la semana</li>
+        <ul class="hero-features">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span>Busca, filtra, planifica tus menús semanales</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span>Genera tu lista de la compra automáticamente</span></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.98-.86.86"/><path d="m15.14 5.02-.86.86"/></svg><span>Crea una sesión de batch cooking para la semana</span></li>
         </ul>
         <a href="https://app.lavidabonica.com/" class="cta-btn">Abrir la App — Gratis</a>
         <span class="subtitle">No requiere instalación. Funciona en cualquier navegador.</span>
