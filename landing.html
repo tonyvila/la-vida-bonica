@@ -335,6 +335,72 @@
     }
 
     /* RESPONSIVE */
+    /* PLATFORM TABS */
+    .platform-tabs {
+      display: inline-flex;
+      background: var(--olive-light);
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 20px;
+      gap: 4px;
+    }
+    .platform-tab {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 10px;
+      background: transparent;
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-light);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .platform-tab .tab-icon { flex-shrink: 0; }
+    .platform-tab.active {
+      background: var(--white);
+      color: var(--olive-dark);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .platform-panel { display: none; }
+    .platform-panel.active { display: block; }
+    .platform-panel .cta-btn {
+      display: inline-block;
+      background: var(--olive);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .platform-panel .cta-btn:hover {
+      background: var(--olive-dark);
+      transform: translateY(-2px);
+    }
+    .cta-btn-secondary {
+      background: transparent !important;
+      color: var(--olive) !important;
+      border: 2px solid var(--olive) !important;
+      margin-left: 12px;
+    }
+    .cta-btn-secondary:hover {
+      background: var(--olive-light) !important;
+    }
+    .install-btn { display: none; }
+    .install-btn.visible { display: inline-block; }
+
+    @media (max-width: 768px) {
+      .platform-panel .cta-btn { display: block; width: 100%; margin-bottom: 12px; }
+      .cta-btn-secondary { margin-left: 0 !important; }
+    }
+
     @media (max-width: 768px) {
       .hero-inner {
         flex-direction: column-reverse;
@@ -369,8 +435,33 @@
           <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span>Genera tu lista de la compra automáticamente</span></li>
           <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.98-.86.86"/><path d="m15.14 5.02-.86.86"/></svg><span>Crea una sesión de batch cooking para la semana</span></li>
         </ul>
-        <a href="https://app.lavidabonica.com/" class="cta-btn">Abrir la App — Gratis</a>
-        <span class="subtitle">No requiere instalación. Funciona en cualquier navegador.</span>
+        <!-- Platform Tabs -->
+        <div class="platform-tabs">
+          <button class="platform-tab active" data-tab="android">
+            <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.237a.625.625 0 0 0-.853.226l-1.196 2.01A7.27 7.27 0 0 0 12 3.75a7.27 7.27 0 0 0-3.474.723L7.33 2.463a.625.625 0 1 0-1.08.627l1.14 1.915A7.1 7.1 0 0 0 4.75 10.75h14.5a7.1 7.1 0 0 0-2.64-5.745l1.14-1.915a.625.625 0 0 0-.227-.853ZM9.5 8.5a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Zm5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM5 12.25a.75.75 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0v-5a.75.75 0 0 0-.75-.75Zm14 0a.75.75 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0v-5a.75.75 0 0 0-.75-.75ZM6 12v7.25A1.75 1.75 0 0 0 7.75 21h1.5v2.25a.75.75 0 0 0 1.5 0V21h2.5v2.25a.75.75 0 0 0 1.5 0V21h1.5A1.75 1.75 0 0 0 18 19.25V12H6Z"/></svg>
+            Android
+          </button>
+          <button class="platform-tab" data-tab="ios">
+            <svg class="tab-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11Z"/></svg>
+            iOS
+          </button>
+        </div>
+
+        <!-- Android Panel -->
+        <div class="platform-panel active" id="panel-android">
+          <button id="install-btn-hero" class="cta-btn install-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.523 2.237a.625.625 0 0 0-.853.226l-1.196 2.01A7.27 7.27 0 0 0 12 3.75a7.27 7.27 0 0 0-3.474.723L7.33 2.463a.625.625 0 1 0-1.08.627l1.14 1.915A7.1 7.1 0 0 0 4.75 10.75h14.5a7.1 7.1 0 0 0-2.64-5.745l1.14-1.915a.625.625 0 0 0-.227-.853ZM9.5 8.5a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Zm5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM5 12.25a.75.75 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0v-5a.75.75 0 0 0-.75-.75Zm14 0a.75.75 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0v-5a.75.75 0 0 0-.75-.75ZM6 12v7.25A1.75 1.75 0 0 0 7.75 21h1.5v2.25a.75.75 0 0 0 1.5 0V21h2.5v2.25a.75.75 0 0 0 1.5 0V21h1.5A1.75 1.75 0 0 0 18 19.25V12H6Z"/></svg>
+            Instalar App — Gratis
+          </button>
+          <a href="https://app.lavidabonica.com/" class="cta-btn cta-btn-secondary" id="open-app-fallback">Abrir en el navegador</a>
+          <span class="subtitle">Se instala como una app nativa. Sin tienda, sin espacio extra.</span>
+        </div>
+
+        <!-- iOS Panel -->
+        <div class="platform-panel" id="panel-ios">
+          <p class="ios-placeholder" style="color: var(--text-light); font-size: 1rem;">Instrucciones para iOS próximamente.</p>
+          <a href="https://app.lavidabonica.com/" class="cta-btn">Abrir en Safari</a>
+        </div>
       </div>
       <div class="hero-mockup">
         <img src="app-mockup.png" alt="La Vida Bonica App" />
@@ -468,26 +559,56 @@
   </footer>
 
   <script>
+    // Platform tabs
+    document.querySelectorAll('.platform-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.platform-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.platform-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // PWA install
     let deferredPrompt;
-    const installBtn = document.getElementById('install-btn');
+    const installBtnHero = document.getElementById('install-btn-hero');
+    const installBtnCta = document.getElementById('install-btn');
+    const openAppFallback = document.getElementById('open-app-fallback');
 
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredPrompt = e;
-      installBtn.style.display = 'inline-block';
+      installBtnHero.classList.add('visible');
+      if (openAppFallback) openAppFallback.style.display = 'inline-block';
+      if (installBtnCta) installBtnCta.style.display = 'inline-block';
     });
 
-    installBtn.addEventListener('click', async () => {
+    async function doInstall() {
       if (!deferredPrompt) return;
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
       deferredPrompt = null;
-      installBtn.style.display = 'none';
-    });
+      installBtnHero.classList.remove('visible');
+      if (installBtnCta) installBtnCta.style.display = 'none';
+    }
+
+    installBtnHero.addEventListener('click', doInstall);
+    if (installBtnCta) installBtnCta.addEventListener('click', doInstall);
 
     window.addEventListener('appinstalled', () => {
-      installBtn.style.display = 'none';
+      installBtnHero.classList.remove('visible');
+      if (installBtnCta) installBtnCta.style.display = 'none';
     });
+
+    // If no install prompt available, show "Abrir en navegador" as primary
+    setTimeout(() => {
+      if (!deferredPrompt) {
+        if (openAppFallback) {
+          openAppFallback.classList.remove('cta-btn-secondary');
+          openAppFallback.style.marginLeft = '0';
+        }
+      }
+    }, 3000);
   </script>
 
 </body>
