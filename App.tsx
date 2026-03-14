@@ -15822,7 +15822,11 @@ const RECIPES: RecipeData[] = [
         'Para la salsa, mezclar en un cazo el caldo de pollo y la leche de coco. Cocinar a fuego medio-bajo unos minutos.',
         'Servir el pollo con la salsa de coco. Acompañar de ensalada verde y cuscús.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 2385,
+      perServing: { calories: 851, protein: 132.6, carbs: 17.7, fat: 17.9, fiber: 1.4 },
+      per100g: { calories: 143, protein: 22.2, carbs: 3.0, fat: 3.0, fiber: 0.2 },
+    }
     },
     {
       id: 'pollo-guisado-con-pasta-integral',
@@ -15850,7 +15854,11 @@ const RECIPES: RecipeData[] = [
         'Batir la verdura hasta obtener un puré (opcional). Mezclar con el pollo troceado.',
         'Cocer la pasta integral en agua con sal y servir con la salsa de pollo y queso rallado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1880,
+      perServing: { calories: 379, protein: 38.5, carbs: 41.5, fat: 6.6, fiber: 6.2 },
+      per100g: { calories: 81, protein: 8.2, carbs: 8.8, fat: 1.4, fiber: 1.3 },
+    }
     },
     {
       id: 'pollo-marinado-al-limon',
@@ -15872,7 +15880,11 @@ const RECIPES: RecipeData[] = [
         'Introducir la carne y refrigerar tapado durante un mínimo de 30 minutos.',
         'Cocinar a la plancha. Acompañar de cuscús.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 895,
+      perServing: { calories: 344, protein: 43.6, carbs: 1.9, fat: 17.1, fiber: 0.6 },
+      per100g: { calories: 192, protein: 24.4, carbs: 1.0, fat: 9.6, fiber: 0.3 },
+    }
     },
     {
       id: 'pollo-marinado-con-mostaza',
@@ -15896,7 +15908,11 @@ const RECIPES: RecipeData[] = [
         'Incorporar las pechugas fileteadas y dejar macerar tapado en la nevera un mínimo de 30 minutos (mejor 2 horas).',
         'Pasar por la plancha 2 minutos por cada lado a fuego medio.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 855,
+      perServing: { calories: 356, protein: 48.0, carbs: 7.7, fat: 13.4, fiber: 0.8 },
+      per100g: { calories: 167, protein: 22.5, carbs: 3.6, fat: 6.3, fiber: 0.4 },
+    }
     },
     {
       id: 'pollo-y-chorizo-con-patatas-de-jamie-oliver',
@@ -15927,7 +15943,11 @@ const RECIPES: RecipeData[] = [
         'Tapar con papel vegetal y hornear 30 minutos. Destapar, colocar la carne arriba y hornear otros 30 minutos.',
         'Preparar aderezo mezclando yogur, ralladura y zumo de lima, perejil picado y almendras picadas. Servir junto al asado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 2390,
+      perServing: { calories: 615, protein: 53.2, carbs: 59.2, fat: 17.5, fiber: 9.1 },
+      per100g: { calories: 103, protein: 8.9, carbs: 9.9, fat: 2.9, fiber: 1.5 },
+    }
     },
     {
       id: 'quiche-de-verduras-y-salmon',
@@ -15955,7 +15975,11 @@ const RECIPES: RecipeData[] = [
         'Mezclar los huevos con las verduras picadas, salmón, leche y 3 cucharadas de queso rallado. Salpimentar.',
         'Sacar las patatas, verter la mezcla por encima y hornear 45 minutos. Dejar atemperar antes de servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 2010,
+      perServing: { calories: 393, protein: 27.8, carbs: 31.4, fat: 18.2, fiber: 6.9 },
+      per100g: { calories: 78, protein: 5.5, carbs: 6.3, fat: 3.6, fiber: 1.4 },
+    }
     },
     {
       id: 'quinoa-con-atun-y-leche-de-coco',
@@ -15981,7 +16005,11 @@ const RECIPES: RecipeData[] = [
         'Añadir caldo, leche de coco, sal y pimienta. Cuando hierva, incorporar la quinoa y cocer 15 minutos.',
         'Cuando falten 5 minutos, añadir el atún. Al servir, añadir ralladura de limón.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1715,
+      perServing: { calories: 350, protein: 32.3, carbs: 38.4, fat: 8.1, fiber: 4.4 },
+      per100g: { calories: 82, protein: 7.5, carbs: 8.9, fat: 1.9, fiber: 1.0 },
+    }
     },
     {
       id: 'quinoa-con-brocoli-y-lomo',
@@ -16005,7 +16033,11 @@ const RECIPES: RecipeData[] = [
         'Sofreír ajos tiernos en aceite. Añadir lomo cortado a tiras y sellar. Incorporar tomate frito y salsa de soja. Tapar 5 minutos.',
         'Añadir la quinoa, remover con cuidado. Corregir de soja al gusto. Cocinar 2 minutos más. Servir con brócoli por encima.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1135,
+      perServing: { calories: 448, protein: 32.5, carbs: 48.5, fat: 14.8, fiber: 5.1 },
+      per100g: { calories: 158, protein: 11.4, carbs: 17.1, fat: 5.2, fiber: 1.8 },
+    }
     },
     {
       id: 'quinoa-con-pavo-y-verduras',
@@ -16029,7 +16061,11 @@ const RECIPES: RecipeData[] = [
         'Batir la verdura pochada (opcional), añadir la quinoa cocida y el pavo dorado.',
         'Añadir caldo de verduras para dar melosidad. Cocinar 3 minutos más y servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1125,
+      perServing: { calories: 210, protein: 26.0, carbs: 18.0, fat: 3.3, fiber: 3.5 },
+      per100g: { calories: 75, protein: 9.3, carbs: 6.4, fat: 1.2, fiber: 1.2 },
+    }
     },
     {
       id: 'rape-a-la-americana',
@@ -16056,7 +16092,11 @@ const RECIPES: RecipeData[] = [
         'Añadir el caldo reservado, salpimentar y cocinar 10 minutos.',
         'Pasar el rape por harina integral y añadir a la salsa. Cocinar 10 minutos (6 si se va a congelar). Cuando falten 2 minutos incorporar las gambas y perejil picado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1855,
+      perServing: { calories: 426, protein: 51.7, carbs: 22.5, fat: 15.7, fiber: 5.4 },
+      per100g: { calories: 92, protein: 11.1, carbs: 4.9, fat: 3.4, fiber: 1.2 },
+    }
     },
     {
       id: 'salmon-en-salsa',
@@ -16083,7 +16123,11 @@ const RECIPES: RecipeData[] = [
         'Incorporar leche, queso rallado, perejil y albahaca. Cocinar 10 minutos a fuego medio-bajo.',
         'Añadir el salmón, rectificar de sal y cocinar todo junto 5 minutos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1070,
+      perServing: { calories: 388, protein: 27.5, carbs: 10.0, fat: 26.1, fiber: 2.3 },
+      per100g: { calories: 145, protein: 10.3, carbs: 3.7, fat: 9.8, fiber: 0.9 },
+    }
     },
     {
       id: 'salmon-marinado-con-soja-boniato-asado-y-brocoli-al-vapor',
@@ -16109,7 +16153,11 @@ const RECIPES: RecipeData[] = [
         'Sacar pulpa del boniato y mezclar con mantequilla, sal y pimienta.',
         'Hacer los lomos de salmón a la plancha. Servir todo por separado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 980,
+      perServing: { calories: 331, protein: 25.9, carbs: 14.2, fat: 18.2, fiber: 3.0 },
+      per100g: { calories: 169, protein: 13.2, carbs: 7.2, fat: 9.3, fiber: 1.5 },
+    }
     },
     {
       id: 'solomillo-de-cerdo-con-salsa-de-cebolla',
@@ -16131,7 +16179,11 @@ const RECIPES: RecipeData[] = [
         'Incorporar vino tinto y laurel. Esperar a que evapore el alcohol, bajar fuego y cocinar 20 minutos.',
         'Batir la salsa, volver a la sartén e incorporar los medallones. Cocinar 2 minutos. Acompañar de quinoa y brócoli al vapor.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1085,
+      perServing: { calories: 473, protein: 34.6, carbs: 7.5, fat: 26.9, fiber: 1.0 },
+      per100g: { calories: 174, protein: 12.7, carbs: 2.8, fat: 9.9, fiber: 0.4 },
+    }
     },
     {
       id: 'sopa-de-garbanzos-con-leche-de-coco',
@@ -16158,7 +16210,11 @@ const RECIPES: RecipeData[] = [
         'Subir fuego, añadir caldo, garbanzos y patata en dados. Cuando hierva, bajar fuego y cocinar 15 minutos.',
         'Añadir leche de coco y curry. Dejar 2 minutos más y servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1745,
+      perServing: { calories: 356, protein: 17.2, carbs: 60.1, fat: 6.4, fiber: 13.8 },
+      per100g: { calories: 82, protein: 3.9, carbs: 13.8, fat: 1.5, fiber: 3.2 },
+    }
     },
     {
       id: 'sopa-de-lentejas-al-limon',
@@ -16184,7 +16240,11 @@ const RECIPES: RecipeData[] = [
         'Añadir arroz y otro vaso de caldo. Cocinar a fuego medio 15 minutos.',
         'Incorporar lentejas, vinagre y zumo de limón. Añadir más caldo al gusto. Cocinar 15 minutos más hasta que todo esté hecho.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 700,
+      perServing: { calories: 351, protein: 17.5, carbs: 51.0, fat: 8.6, fiber: 8.7 },
+      per100g: { calories: 201, protein: 10.0, carbs: 29.1, fat: 4.9, fiber: 5.0 },
+    }
     },
     {
       id: 'albondigas-de-merluza-en-salsa-de-vino-blanco',
@@ -16213,7 +16273,11 @@ const RECIPES: RecipeData[] = [
         'Para la salsa: sofreír cebolla, ajo y perejil. Añadir harina, vino blanco y caldo de pescado. Dejar reducir y triturar.',
         'Añadir albóndigas a la salsa y cocer todo junto unos minutos removiendo con cuidado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1550,
+      perServing: { calories: 586, protein: 54.3, carbs: 39.5, fat: 20.2, fiber: 2.2 },
+      per100g: { calories: 151, protein: 14.0, carbs: 10.2, fat: 5.2, fiber: 0.6 },
+    }
     },
     {
       id: 'arroz-caldoso-con-pollo-y-verduras',
@@ -16242,7 +16306,11 @@ const RECIPES: RecipeData[] = [
         'Añadir 100 ml de agua y triturar todo para el sofrito. Sellar la pechuga de pollo troceada.',
         'Unir sofrito y carne, añadir arroz y caldo de pollo. Cocinar a fuego medio hasta que el arroz esté hecho.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 2690,
+      perServing: { calories: 605, protein: 89.1, carbs: 24.3, fat: 12.1, fiber: 2.1 },
+      per100g: { calories: 90, protein: 13.2, carbs: 3.6, fat: 1.8, fiber: 0.3 },
+    }
     },
     {
       id: 'bacalao-con-costra-receta-de-jamie-oliver',
@@ -16268,7 +16336,11 @@ const RECIPES: RecipeData[] = [
         'Triturar anchoas, tomates secos, albahaca, queso, ralladura de limón y vinagre balsámico hasta obtener pasta homogénea.',
         'Sacar bacalao, untar la pasta por encima y cubrir con la miga de pan. Hornear 20 minutos más. Acompañar con ensalada.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1885,
+      perServing: { calories: 572, protein: 80.3, carbs: 24.0, fat: 16.1, fiber: 2.1 },
+      per100g: { calories: 121, protein: 17.0, carbs: 5.1, fat: 3.4, fiber: 0.4 },
+    }
     },
     {
       id: 'calabacines-con-tomate',
@@ -16291,7 +16363,11 @@ const RECIPES: RecipeData[] = [
         'Salpimentar, añadir salsa de tomate y 100 ml de agua. Cocinar 2 minutos más.',
         'Rallar queso por encima y servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 725,
+      perServing: { calories: 144, protein: 6.0, carbs: 12.6, fat: 8.1, fiber: 1.7 },
+      per100g: { calories: 40, protein: 1.7, carbs: 3.5, fat: 2.2, fiber: 0.5 },
+    }
     },
     {
       id: 'dhal-de-lentejas',
@@ -16318,7 +16394,11 @@ const RECIPES: RecipeData[] = [
         'Añadir ramilletes de brócoli y lentejas rojas. Bajar fuego y cocinar 15 minutos.',
         'Rectificar de sal y servir acompañado de arroz cocido.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1625,
+      perServing: { calories: 358, protein: 23.6, carbs: 59.5, fat: 3.3, fiber: 10.9 },
+      per100g: { calories: 88, protein: 5.8, carbs: 14.7, fat: 0.8, fiber: 2.7 },
+    }
     },
     {
       id: 'dorada-a-la-plancja-con-vinagreta-de-pimientos-asados',
@@ -16340,7 +16420,11 @@ const RECIPES: RecipeData[] = [
         'Hacer la dorada a la plancha sin aceite (suelta grasa sola).',
         'Al servir, trocear pimiento, huevos y tomate. Aliñar con AOVE, vinagre, sal y pimienta.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 855,
+      perServing: { calories: 162, protein: 17.1, carbs: 5.7, fat: 8.0, fiber: 1.7 },
+      per100g: { calories: 76, protein: 8.0, carbs: 2.7, fat: 3.7, fiber: 0.8 },
+    }
     },
     {
       id: 'ensalada-de-judias-verdes-con-anchoas',
@@ -16361,7 +16445,11 @@ const RECIPES: RecipeData[] = [
         'Preparar vinagreta con ralladura de limón, AOVE, vinagre, sal y pimienta.',
         'Trocear anchoas y huevos, disponer con las judías. Añadir vinagreta y servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 855,
+      perServing: { calories: 439, protein: 46.9, carbs: 19.1, fat: 21.0, fiber: 6.8 },
+      per100g: { calories: 103, protein: 11.0, carbs: 4.5, fat: 4.9, fiber: 1.6 },
+    }
     },
     {
       id: 'ensalada-de-pasta-con-salmon',
@@ -16383,7 +16471,11 @@ const RECIPES: RecipeData[] = [
         'Picar salmón ahumado. Cocer pasta integral en agua con sal.',
         'Mezclar pasta cocida, salmón, olivas y verduras asadas. Aliñar con AOVE, sal y eneldo.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 825,
+      perServing: { calories: 221, protein: 12.5, carbs: 25.5, fat: 7.3, fiber: 2.6 },
+      per100g: { calories: 107, protein: 6.1, carbs: 12.4, fat: 3.6, fiber: 1.3 },
+    }
     },
     {
       id: 'escalivada-de-cebolla-con-huevo',
@@ -16405,7 +16497,11 @@ const RECIPES: RecipeData[] = [
         'Pelar tomates y pimientos. Trocear junto con las cebollas. Picar los ajos y mezclar.',
         'Condimentar con AOVE, sal y pimienta. Acompañar de huevos cocidos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1025,
+      perServing: { calories: 153, protein: 8.7, carbs: 14.9, fat: 7.1, fiber: 3.3 },
+      per100g: { calories: 60, protein: 3.4, carbs: 5.8, fat: 2.8, fiber: 1.3 },
+    }
     },
     {
       id: 'espinacas-con-patatas',
@@ -16424,7 +16520,11 @@ const RECIPES: RecipeData[] = [
         'Salpimentar, cerrar olla. Llevar a ebullición, bajar fuego y cocinar 15 minutos.',
         'Aliñar con AOVE y zumo de limón al servir.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 905,
+      perServing: { calories: 160, protein: 4.7, carbs: 35.0, fat: 0.3, fiber: 5.0 },
+      per100g: { calories: 71, protein: 2.1, carbs: 15.5, fat: 0.1, fiber: 2.2 },
+    }
     },
     {
       id: 'filetes-de-merluza-con-salsa-de-zanahorias',
@@ -16450,7 +16550,11 @@ const RECIPES: RecipeData[] = [
         'Añadir harina, remover. Incorporar caldo, vino y laurel. Hervir para evaporar alcohol, luego cocinar 15 minutos a fuego bajo. Batir la salsa.',
         'Dorar el pescado en otra sartén con AOVE. Servir con la salsa y acompañar de arroz cocido.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1785,
+      perServing: { calories: 574, protein: 52.0, carbs: 17.6, fat: 28.8, fiber: 3.3 },
+      per100g: { calories: 129, protein: 11.7, carbs: 4.0, fat: 6.5, fiber: 0.7 },
+    }
     },
     {
       id: 'ternera-guisada-con-boniato-y-setas',
@@ -16474,7 +16578,11 @@ const RECIPES: RecipeData[] = [
         'En la misma sartén rehogar cebolla picada. Cuando esté tierna, añadir tomillo, la carne y la harina. Rehogar 2 minutos.',
         'Pasar todo a recipiente apto para horno. Añadir calabaza en trozos, setas y caldo. Hornear 1 hora y media.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 2670,
+      perServing: { calories: 1343, protein: 133.9, carbs: 17.0, fat: 76.8, fiber: 1.7 },
+      per100g: { calories: 201, protein: 20.1, carbs: 2.5, fat: 11.5, fiber: 0.3 },
+    }
     },
     {
       id: 'tortilla-de-patatas-con-guisantes',
@@ -16496,7 +16604,11 @@ const RECIPES: RecipeData[] = [
         'Batir huevos (sin meter mucho aire). Mezclar con las patatas y cebolla. Incorporar guisantes y rectificar de sal.',
         'Verter en recipiente engrasado apto para horno. Hornear a 180º unos 25 minutos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1875,
+      perServing: { calories: 300, protein: 16.0, carbs: 38.0, fat: 9.5, fiber: 6.6 },
+      per100g: { calories: 96, protein: 5.1, carbs: 12.2, fat: 3.0, fiber: 2.1 },
+    }
     },
     {
       id: 'tortilla-de-patatas-con-verduras',
@@ -16517,7 +16629,11 @@ const RECIPES: RecipeData[] = [
         'Tapar y programar 15 minutos a máxima potencia. Sacar, remover y meter 10 minutos más.',
         'Batir huevos, mezclar con la verdura. Cuajar en sartén con AOVE o al horno a 180º.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1770,
+      perServing: { calories: 307, protein: 17.2, carbs: 33.6, fat: 11.5, fiber: 4.7 },
+      per100g: { calories: 69, protein: 3.9, carbs: 7.6, fat: 2.6, fiber: 1.1 },
+    }
     },
     {
       id: 'tortilla-de-patatas-prenada',
@@ -16539,7 +16655,11 @@ const RECIPES: RecipeData[] = [
         'Batir huevos y mezclar con las patatas. Echar la mitad en sartén con AOVE, colocar el relleno y cubrir con la otra mitad.',
         'Cuajar la tortilla dándole la vuelta con cuidado.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1355,
+      perServing: { calories: 317, protein: 18.0, carbs: 36.8, fat: 10.7, fiber: 4.5 },
+      per100g: { calories: 94, protein: 5.3, carbs: 10.9, fat: 3.2, fiber: 1.3 },
+    }
     },
     {
       id: 'tortilla-de-setas-y-de-espinacas',
@@ -16563,7 +16683,11 @@ const RECIPES: RecipeData[] = [
         'Batir otros 4 huevos con 1 yogur y curry. Sofreír brevemente espinacas y mezclar.',
         'Verter cada mezcla en recipiente engrasado apto para horno. Hornear a 180º durante 25 minutos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1965,
+      perServing: { calories: 294, protein: 21.8, carbs: 22.3, fat: 14.8, fiber: 5.8 },
+      per100g: { calories: 60, protein: 4.4, carbs: 4.5, fat: 3.0, fiber: 1.2 },
+    }
     },
     {
       id: 'tortillla-de-quinoa-con-verduras',
@@ -16586,7 +16710,11 @@ const RECIPES: RecipeData[] = [
         'Mezclar verduras con quinoa y huevos batidos. Verter en recipiente apto para horno.',
         'Hornear a 180º durante 30 minutos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 900,
+      perServing: { calories: 201, protein: 11.9, carbs: 16.3, fat: 10.2, fiber: 3.6 },
+      per100g: { calories: 89, protein: 5.3, carbs: 7.3, fat: 4.5, fiber: 1.6 },
+    }
     },
     {
       id: 'tortitas-de-pescado-con-boniato',
@@ -16608,7 +16736,11 @@ const RECIPES: RecipeData[] = [
         'Cortar pescado en dados de 1 cm. Mezclar con el puré frío, salpimentar, añadir mostaza y ralladura de limón.',
         'Formar 10 tortitas de 3 cm de grosor. Dorar 3 minutos por cada lado en sartén con AOVE. Acompañar de ensalada.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1620,
+      perServing: { calories: 394, protein: 26.2, carbs: 40.4, fat: 13.5, fiber: 5.9 },
+      per100g: { calories: 121, protein: 8.1, carbs: 12.5, fat: 4.2, fiber: 1.8 },
+    }
     },
     {
       id: 'truchas-rellenas-de-cus-cus',
@@ -16634,7 +16766,11 @@ const RECIPES: RecipeData[] = [
         'Mezclar sofrito con cuscús. Rellenar cada trucha con la mezcla, apretando bien.',
         'Cocinar a la plancha un par de minutos por cada lado. Si se congela, cocinar algo menos.',
       ],
-      nutrition: { calories: 0, protein: 0, carbs: 0, fat: 0 },
+      nutrition: {
+      totalWeightGrams: 1055,
+      perServing: { calories: 344, protein: 18.2, carbs: 17.8, fat: 22.6, fiber: 2.3 },
+      per100g: { calories: 130, protein: 6.9, carbs: 6.8, fat: 8.6, fiber: 0.9 },
+    }
     },
 
 
