@@ -3502,8 +3502,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 825,
-      perServing: {"calories":421,"protein":23.8,"carbs":43.1,"fat":20.5,"fiber":6.3},
-      per100g: {"calories":203,"protein":11.5,"carbs":20.8,"fat":9.9,"fiber":3},
+      perServing: { calories: 421, protein: 23.8, carbs: 43.1, fat: 20.5, fiber: 6.3 },
+      per100g: { calories: 203, protein: 11.5, carbs: 20.8, fat: 9.9, fiber: 3 },
     },
   },
   {
@@ -3538,8 +3538,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1721,
-      perServing: {"calories":734,"protein":37.4,"carbs":43.9,"fat":43.8,"fiber":2.5},
-      per100g: {"calories":296,"protein":15.1,"carbs":17.8,"fat":17.8,"fiber":1},
+      perServing: { calories: 734, protein: 37.4, carbs: 43.9, fat: 43.8, fiber: 2.5 },
+      per100g: { calories: 296, protein: 15.1, carbs: 17.8, fat: 17.8, fiber: 1 },
     },
   },
   {
@@ -3575,8 +3575,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1204,
-      perServing: {"calories":503,"protein":20.9,"carbs":54.1,"fat":22.1,"fiber":6.8},
-      per100g: {"calories":208,"protein":8.6,"carbs":22.4,"fat":9.1,"fiber":2.8},
+      perServing: { calories: 503, protein: 20.9, carbs: 54.1, fat: 22.1, fiber: 6.8 },
+      per100g: { calories: 208, protein: 8.6, carbs: 22.4, fat: 9.1, fiber: 2.8 },
     },
   },
   {
@@ -3608,8 +3608,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 851,
-      perServing: {"calories":394,"protein":24.5,"carbs":24.5,"fat":20.8,"fiber":4.5},
-      per100g: {"calories":185,"protein":11.6,"carbs":11.6,"fat":9.8,"fiber":2.1},
+      perServing: { calories: 394, protein: 24.5, carbs: 24.5, fat: 20.8, fiber: 4.5 },
+      per100g: { calories: 185, protein: 11.6, carbs: 11.6, fat: 9.8, fiber: 2.1 },
     },
   },
   {
@@ -3637,8 +3637,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":544,"protein":35.6,"carbs":24.4,"fat":34.9,"fiber":6.1},
-      per100g: {"calories":227,"protein":14.9,"carbs":10.2,"fat":14.6,"fiber":2.6},
+      perServing: { calories: 544, protein: 35.6, carbs: 24.4, fat: 34.9, fiber: 6.1 },
+      per100g: { calories: 227, protein: 14.9, carbs: 10.2, fat: 14.6, fiber: 2.6 },
     },
   },
   {
@@ -3665,8 +3665,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 941,
-      perServing: {"calories":444,"protein":26.8,"carbs":20.9,"fat":28.5,"fiber":4.4},
-      per100g: {"calories":188,"protein":11.4,"carbs":8.9,"fat":12.1,"fiber":1.9},
+      perServing: { calories: 444, protein: 26.8, carbs: 20.9, fat: 28.5, fiber: 4.4 },
+      per100g: { calories: 188, protein: 11.4, carbs: 8.9, fat: 12.1, fiber: 1.9 },
     },
   },
   {
@@ -3691,8 +3691,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 640,
-      perServing: {"calories":360,"protein":24.1,"carbs":12.2,"fat":23.9,"fiber":1.4},
-      per100g: {"calories":178,"protein":11.9,"carbs":6,"fat":11.8,"fiber":0.7},
+      perServing: { calories: 360, protein: 24.1, carbs: 12.2, fat: 23.9, fiber: 1.4 },
+      per100g: { calories: 178, protein: 11.9, carbs: 6, fat: 11.8, fiber: 0.7 },
     },
   },
   {
@@ -3721,8 +3721,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":555,"protein":31.9,"carbs":43.4,"fat":30.6,"fiber":8.4},
-      per100g: {"calories":222,"protein":12.7,"carbs":17.3,"fat":12.2,"fiber":3.4},
+      perServing: { calories: 555, protein: 31.9, carbs: 43.4, fat: 30.6, fiber: 8.4 },
+      per100g: { calories: 222, protein: 12.7, carbs: 17.3, fat: 12.2, fiber: 3.4 },
     },
   },
   {
@@ -3753,8 +3753,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2550,
-      perServing: {"calories":734,"protein":37.4,"carbs":63.1,"fat":34.5,"fiber":9.3},
-      per100g: {"calories":243,"protein":12.4,"carbs":21,"fat":11.4,"fiber":3.1},
+      perServing: { calories: 734, protein: 37.4, carbs: 63.1, fat: 34.5, fiber: 9.3 },
+      per100g: { calories: 243, protein: 12.4, carbs: 21, fat: 11.4, fiber: 3.1 },
     },
   },
   {
@@ -3785,8 +3785,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1701,
-      perServing: {"calories":544,"protein":23.1,"carbs":63.9,"fat":20.5,"fiber":9.5},
-      per100g: {"calories":204,"protein":8.6,"carbs":23.9,"fat":7.7,"fiber":3.6},
+      perServing: { calories: 544, protein: 23.1, carbs: 63.9, fat: 20.5, fiber: 9.5 },
+      per100g: { calories: 204, protein: 8.6, carbs: 23.9, fat: 7.7, fiber: 3.6 },
     },
   },
   {
@@ -3814,8 +3814,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1015,
-      perServing: {"calories":446,"protein":20.5,"carbs":54.1,"fat":20.1,"fiber":8.1},
-      per100g: {"calories":192,"protein":8.8,"carbs":23.3,"fat":8.7,"fiber":3.5},
+      perServing: { calories: 446, protein: 20.5, carbs: 54.1, fat: 20.1, fiber: 8.1 },
+      per100g: { calories: 192, protein: 8.8, carbs: 23.3, fat: 8.7, fiber: 3.5 },
     },
   },
   {
@@ -3844,8 +3844,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1300,
-      perServing: {"calories":573,"protein":26.3,"carbs":43.9,"fat":34.9,"fiber":7.3},
-      per100g: {"calories":237,"protein":10.9,"carbs":18.2,"fat":14.5,"fiber":3},
+      perServing: { calories: 573, protein: 26.3, carbs: 43.9, fat: 34.9, fiber: 7.3 },
+      per100g: { calories: 237, protein: 10.9, carbs: 18.2, fat: 14.5, fiber: 3 },
     },
   },
   {
@@ -3876,8 +3876,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":544,"protein":26.8,"carbs":63.9,"fat":20.9,"fiber":4.9},
-      per100g: {"calories":206,"protein":10.2,"carbs":24.4,"fat":7.9,"fiber":1.9},
+      perServing: { calories: 544, protein: 26.8, carbs: 63.9, fat: 20.9, fiber: 4.9 },
+      per100g: { calories: 206, protein: 10.2, carbs: 24.4, fat: 7.9, fiber: 1.9 },
     },
   },
   {
@@ -3904,8 +3904,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":446,"protein":10.9,"carbs":54.5,"fat":25.1,"fiber":3.4},
-      per100g: {"calories":223,"protein":5.4,"carbs":27.3,"fat":12.6,"fiber":1.7},
+      perServing: { calories: 446, protein: 10.9, carbs: 54.5, fat: 25.1, fiber: 3.4 },
+      per100g: { calories: 223, protein: 5.4, carbs: 27.3, fat: 12.6, fiber: 1.7 },
     },
   },
   {
@@ -3933,8 +3933,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 900,
-      perServing: {"calories":360,"protein":23.8,"carbs":30.4,"fat":17.1,"fiber":2.1},
-      per100g: {"calories":178,"protein":11.8,"carbs":15,"fat":8.5,"fiber":1},
+      perServing: { calories: 360, protein: 23.8, carbs: 30.4, fat: 17.1, fiber: 2.1 },
+      per100g: { calories: 178, protein: 11.8, carbs: 15, fat: 8.5, fiber: 1 },
     },
   },
   {
@@ -3963,8 +3963,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 700,
-      perServing: {"calories":394,"protein":18.5,"carbs":43.9,"fat":20.1,"fiber":3.9},
-      per100g: {"calories":198,"protein":9.3,"carbs":22.1,"fat":10.1,"fiber":2},
+      perServing: { calories: 394, protein: 18.5, carbs: 43.9, fat: 20.1, fiber: 3.9 },
+      per100g: { calories: 198, protein: 9.3, carbs: 22.1, fat: 10.1, fiber: 2 },
     },
   },
   {
@@ -3996,8 +3996,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":446,"protein":24.1,"carbs":43.4,"fat":23.5,"fiber":4.5},
-      per100g: {"calories":205,"protein":11,"carbs":19.8,"fat":10.7,"fiber":2.1},
+      perServing: { calories: 446, protein: 24.1, carbs: 43.4, fat: 23.5, fiber: 4.5 },
+      per100g: { calories: 205, protein: 11, carbs: 19.8, fat: 10.7, fiber: 2.1 },
     },
   },
   {
@@ -4025,8 +4025,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1220,
-      perServing: {"calories":503,"protein":33.9,"carbs":20.5,"fat":29.5,"fiber":4.9},
-      per100g: {"calories":217,"protein":14.7,"carbs":8.9,"fat":12.7,"fiber":2.1},
+      perServing: { calories: 503, protein: 33.9, carbs: 20.5, fat: 29.5, fiber: 4.9 },
+      per100g: { calories: 217, protein: 14.7, carbs: 8.9, fat: 12.7, fiber: 2.1 },
     },
   },
   {
@@ -4055,8 +4055,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":394,"protein":18.5,"carbs":43.4,"fat":20.1,"fiber":6.8},
-      per100g: {"calories":196,"protein":9.2,"carbs":21.6,"fat":10,"fiber":3.4},
+      perServing: { calories: 394, protein: 18.5, carbs: 43.4, fat: 20.1, fiber: 6.8 },
+      per100g: { calories: 196, protein: 9.2, carbs: 21.6, fat: 10, fiber: 3.4 },
     },
   },
   {
@@ -4085,8 +4085,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":544,"protein":35.6,"carbs":24.4,"fat":34.5,"fiber":2.6},
-      per100g: {"calories":228,"protein":14.9,"carbs":10.2,"fat":14.4,"fiber":1.1},
+      perServing: { calories: 544, protein: 35.6, carbs: 24.4, fat: 34.5, fiber: 2.6 },
+      per100g: { calories: 228, protein: 14.9, carbs: 10.2, fat: 14.4, fiber: 1.1 },
     },
   },
   // --- Batch cooking recipes (batch 2: 50 recipes) ---
@@ -4118,8 +4118,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1870,
-      perServing: {"calories":743,"protein":53.8,"carbs":43.1,"fat":43.8,"fiber":6.3},
-      per100g: {"calories":398,"protein":28.8,"carbs":23.1,"fat":23.4,"fiber":3.4},
+      perServing: { calories: 743, protein: 53.8, carbs: 43.1, fat: 43.8, fiber: 6.3 },
+      per100g: { calories: 398, protein: 28.8, carbs: 23.1, fat: 23.4, fiber: 3.4 },
     },
   },
   {
@@ -4150,8 +4150,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2830,
-      perServing: {"calories":1042,"protein":54.9,"carbs":63.1,"fat":64.9,"fiber":7.1},
-      per100g: {"calories":369,"protein":19.4,"carbs":22.4,"fat":23.1,"fiber":2.5},
+      perServing: { calories: 1042, protein: 54.9, carbs: 63.1, fat: 64.9, fiber: 7.1 },
+      per100g: { calories: 369, protein: 19.4, carbs: 22.4, fat: 23.1, fiber: 2.5 },
     },
   },
   {
@@ -4179,8 +4179,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1930,
-      perServing: {"calories":734,"protein":51.4,"carbs":34.9,"fat":43.1,"fiber":5.5},
-      per100g: {"calories":382,"protein":26.7,"carbs":18.2,"fat":22.5,"fiber":2.9},
+      perServing: { calories: 734, protein: 51.4, carbs: 34.9, fat: 43.1, fiber: 5.5 },
+      per100g: { calories: 382, protein: 26.7, carbs: 18.2, fat: 22.5, fiber: 2.9 },
     },
   },
   {
@@ -4207,8 +4207,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 920,
-      perServing: {"calories":440,"protein":53.5,"carbs":4.9,"fat":20.8,"fiber":0.8},
-      per100g: {"calories":479,"protein":58.2,"carbs":5.3,"fat":22.6,"fiber":0.9},
+      perServing: { calories: 440, protein: 53.5, carbs: 4.9, fat: 20.8, fiber: 0.8 },
+      per100g: { calories: 479, protein: 58.2, carbs: 5.3, fat: 22.6, fiber: 0.9 },
     },
   },
   {
@@ -4234,8 +4234,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":540,"protein":54.8,"carbs":11.1,"fat":31.4,"fiber":3.4},
-      per100g: {"calories":433,"protein":44.1,"carbs":8.9,"fat":25.1,"fiber":2.7},
+      perServing: { calories: 540, protein: 54.8, carbs: 11.1, fat: 31.4, fiber: 3.4 },
+      per100g: { calories: 433, protein: 44.1, carbs: 8.9, fat: 25.1, fiber: 2.7 },
     },
   },
   {
@@ -4264,8 +4264,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2060,
-      perServing: {"calories":823,"protein":53.9,"carbs":34.1,"fat":51.1,"fiber":5.3},
-      per100g: {"calories":399,"protein":26.2,"carbs":16.5,"fat":24.8,"fiber":2.6},
+      perServing: { calories: 823, protein: 53.9, carbs: 34.1, fat: 51.1, fiber: 5.3 },
+      per100g: { calories: 399, protein: 26.2, carbs: 16.5, fat: 24.8, fiber: 2.6 },
     },
   },
   {
@@ -4294,8 +4294,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1610,
-      perServing: {"calories":694,"protein":51.1,"carbs":24.9,"fat":43.9,"fiber":4.1},
-      per100g: {"calories":383,"protein":28.2,"carbs":13.8,"fat":24.2,"fiber":2.3},
+      perServing: { calories: 694, protein: 51.1, carbs: 24.9, fat: 43.9, fiber: 4.1 },
+      per100g: { calories: 383, protein: 28.2, carbs: 13.8, fat: 24.2, fiber: 2.3 },
     },
   },
   {
@@ -4322,8 +4322,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 920,
-      perServing: {"calories":440,"protein":43.5,"carbs":14.1,"fat":22.1,"fiber":2.3},
-      per100g: {"calories":479,"protein":47.4,"carbs":15.4,"fat":24.1,"fiber":2.5},
+      perServing: { calories: 440, protein: 43.5, carbs: 14.1, fat: 22.1, fiber: 2.3 },
+      per100g: { calories: 479, protein: 47.4, carbs: 15.4, fat: 24.1, fiber: 2.5 },
     },
   },
   {
@@ -4347,8 +4347,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":580,"protein":44.8,"carbs":8.1,"fat":41.1,"fiber":2.5},
-      per100g: {"calories":466,"protein":36.1,"carbs":6.5,"fat":33.1,"fiber":2},
+      perServing: { calories: 580, protein: 44.8, carbs: 8.1, fat: 41.1, fiber: 2.5 },
+      per100g: { calories: 466, protein: 36.1, carbs: 6.5, fat: 33.1, fiber: 2 },
     },
   },
   {
@@ -4377,8 +4377,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1860,
-      perServing: {"calories":803,"protein":33.9,"carbs":63.9,"fat":43.9,"fiber":8.1},
-      per100g: {"calories":432,"protein":18.3,"carbs":34.4,"fat":23.6,"fiber":4.3},
+      perServing: { calories: 803, protein: 33.9, carbs: 63.9, fat: 43.9, fiber: 8.1 },
+      per100g: { calories: 432, protein: 18.3, carbs: 34.4, fat: 23.6, fiber: 4.3 },
     },
   },
   {
@@ -4404,8 +4404,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1130,
-      perServing: {"calories":563,"protein":24.1,"carbs":34.9,"fat":37.1,"fiber":6.1},
-      per100g: {"calories":497,"protein":21.3,"carbs":30.8,"fat":32.7,"fiber":5.4},
+      perServing: { calories: 563, protein: 24.1, carbs: 34.9, fat: 37.1, fiber: 6.1 },
+      per100g: { calories: 497, protein: 21.3, carbs: 30.8, fat: 32.7, fiber: 5.4 },
     },
   },
   {
@@ -4438,8 +4438,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":580,"protein":23.5,"carbs":63.1,"fat":24.9,"fiber":8.5},
-      per100g: {"calories":466,"protein":18.9,"carbs":50.6,"fat":20,"fiber":6.8},
+      perServing: { calories: 580, protein: 23.5, carbs: 63.1, fat: 24.9, fiber: 8.5 },
+      per100g: { calories: 466, protein: 18.9, carbs: 50.6, fat: 20, fiber: 6.8 },
     },
   },
   {
@@ -4470,8 +4470,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1040,
-      perServing: {"calories":494,"protein":8.1,"carbs":63.9,"fat":24.1,"fiber":4.9},
-      per100g: {"calories":408,"protein":6.7,"carbs":52.8,"fat":19.9,"fiber":4.1},
+      perServing: { calories: 494, protein: 8.1, carbs: 63.9, fat: 24.1, fiber: 4.9 },
+      per100g: { calories: 408, protein: 6.7, carbs: 52.8, fat: 19.9, fiber: 4.1 },
     },
   },
   {
@@ -4495,8 +4495,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 840,
-      perServing: {"calories":563,"protein":10.3,"carbs":73.1,"fat":29.1,"fiber":3.4},
-      per100g: {"calories":471,"protein":8.7,"carbs":61.4,"fat":24.4,"fiber":2.9},
+      perServing: { calories: 563, protein: 10.3, carbs: 73.1, fat: 29.1, fiber: 3.4 },
+      per100g: { calories: 471, protein: 8.7, carbs: 61.4, fat: 24.4, fiber: 2.9 },
     },
   },
   {
@@ -4523,8 +4523,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1040,
-      perServing: {"calories":494,"protein":20.9,"carbs":24.1,"fat":33.5,"fiber":3.4},
-      per100g: {"calories":408,"protein":17.2,"carbs":19.9,"fat":27.7,"fiber":2.8},
+      perServing: { calories: 494, protein: 20.9, carbs: 24.1, fat: 33.5, fiber: 3.4 },
+      per100g: { calories: 408, protein: 17.2, carbs: 19.9, fat: 27.7, fiber: 2.8 },
     },
   },
   {
@@ -4550,8 +4550,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":580,"protein":53.1,"carbs":4.9,"fat":35.1,"fiber":1.3},
-      per100g: {"calories":466,"protein":42.6,"carbs":3.9,"fat":28.2,"fiber":1.1},
+      perServing: { calories: 580, protein: 53.1, carbs: 4.9, fat: 35.1, fiber: 1.3 },
+      per100g: { calories: 466, protein: 42.6, carbs: 3.9, fat: 28.2, fiber: 1.1 },
     },
   },
   {
@@ -4575,8 +4575,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":580,"protein":43.5,"carbs":8.1,"fat":37.9,"fiber":2.1},
-      per100g: {"calories":466,"protein":35.1,"carbs":6.5,"fat":30.6,"fiber":1.7},
+      perServing: { calories: 580, protein: 43.5, carbs: 8.1, fat: 37.9, fiber: 2.1 },
+      per100g: { calories: 466, protein: 35.1, carbs: 6.5, fat: 30.6, fiber: 1.7 },
     },
   },
   {
@@ -4602,8 +4602,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 520,
-      perServing: {"calories":260,"protein":14.9,"carbs":8.1,"fat":17.1,"fiber":2.5},
-      per100g: {"calories":500,"protein":28.7,"carbs":15.5,"fat":33.1,"fiber":4.8},
+      perServing: { calories: 260, protein: 14.9, carbs: 8.1, fat: 17.1, fiber: 2.5 },
+      per100g: { calories: 500, protein: 28.7, carbs: 15.5, fat: 33.1, fiber: 4.8 },
     },
   },
   {
@@ -4634,8 +4634,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1860,
-      perServing: {"calories":803,"protein":53.9,"carbs":8.1,"fat":51.1,"fiber":2.5},
-      per100g: {"calories":432,"protein":29.1,"carbs":4.4,"fat":27.6,"fiber":1.4},
+      perServing: { calories: 803, protein: 53.9, carbs: 8.1, fat: 51.1, fiber: 2.5 },
+      per100g: { calories: 432, protein: 29.1, carbs: 4.4, fat: 27.6, fiber: 1.4 },
     },
   },
   {
@@ -4666,8 +4666,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2450,
-      perServing: {"calories":742,"protein":43.8,"carbs":34.9,"fat":46.3,"fiber":4.3},
-      per100g: {"calories":304,"protein":18,"carbs":14.3,"fat":19,"fiber":1.8},
+      perServing: { calories: 742, protein: 43.8, carbs: 34.9, fat: 46.3, fiber: 4.3 },
+      per100g: { calories: 304, protein: 18, carbs: 14.3, fat: 19, fiber: 1.8 },
     },
   },
   {
@@ -4690,8 +4690,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 450,
-      perServing: {"calories":281,"protein":18.4,"carbs":5.1,"fat":20.6,"fiber":1.4},
-      per100g: {"calories":624,"protein":40.9,"carbs":11.4,"fat":45.8,"fiber":3.1},
+      perServing: { calories: 281, protein: 18.4, carbs: 5.1, fat: 20.6, fiber: 1.4 },
+      per100g: { calories: 624, protein: 40.9, carbs: 11.4, fat: 45.8, fiber: 3.1 },
     },
   },
   {
@@ -4723,8 +4723,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 3400,
-      perServing: {"calories":531,"protein":14.1,"carbs":73.4,"fat":20.5,"fiber":10.3},
-      per100g: {"calories":156,"protein":4.1,"carbs":21.5,"fat":6,"fiber":3},
+      perServing: { calories: 531, protein: 14.1, carbs: 73.4, fat: 20.5, fiber: 10.3 },
+      per100g: { calories: 156, protein: 4.1, carbs: 21.5, fat: 6, fiber: 3 },
     },
   },
   {
@@ -4751,8 +4751,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 650,
-      perServing: {"calories":434,"protein":33.9,"carbs":10.3,"fat":29.5,"fiber":2.5},
-      per100g: {"calories":283,"protein":22.1,"carbs":6.7,"fat":19.2,"fiber":1.6},
+      perServing: { calories: 434, protein: 33.9, carbs: 10.3, fat: 29.5, fiber: 2.5 },
+      per100g: { calories: 283, protein: 22.1, carbs: 6.7, fat: 19.2, fiber: 1.6 },
     },
   },
   {
@@ -4775,8 +4775,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":382,"protein":29.5,"carbs":14.1,"fat":23.9,"fiber":4.1},
-      per100g: {"calories":181,"protein":14,"carbs":6.7,"fat":11.4,"fiber":2},
+      perServing: { calories: 382, protein: 29.5, carbs: 14.1, fat: 23.9, fiber: 4.1 },
+      per100g: { calories: 181, protein: 14, carbs: 6.7, fat: 11.4, fiber: 2 },
     },
   },
   {
@@ -4800,8 +4800,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 575,
-      perServing: {"calories":201,"protein":13.4,"carbs":14.1,"fat":10.3,"fiber":4.5},
-      per100g: {"calories":111,"protein":7.4,"carbs":7.8,"fat":5.7,"fiber":2.5},
+      perServing: { calories: 201, protein: 13.4, carbs: 14.1, fat: 10.3, fiber: 4.5 },
+      per100g: { calories: 111, protein: 7.4, carbs: 7.8, fat: 5.7, fiber: 2.5 },
     },
   },
   {
@@ -4828,8 +4828,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":442,"protein":14.9,"carbs":24.9,"fat":31.9,"fiber":4.9},
-      per100g: {"calories":203,"protein":6.8,"carbs":11.5,"fat":14.7,"fiber":2.3},
+      perServing: { calories: 442, protein: 14.9, carbs: 24.9, fat: 31.9, fiber: 4.9 },
+      per100g: { calories: 203, protein: 6.8, carbs: 11.5, fat: 14.7, fiber: 2.3 },
     },
   },
   {
@@ -4858,8 +4858,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2100,
-      perServing: {"calories":541,"protein":37.4,"carbs":23.1,"fat":34.5,"fiber":5.5},
-      per100g: {"calories":260,"protein":17.9,"carbs":11.1,"fat":16.6,"fiber":2.6},
+      perServing: { calories: 541, protein: 37.4, carbs: 23.1, fat: 34.5, fiber: 5.5 },
+      per100g: { calories: 260, protein: 17.9, carbs: 11.1, fat: 16.6, fiber: 2.6 },
     },
   },
   {
@@ -4885,8 +4885,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":246,"protein":10.3,"carbs":24.9,"fat":12.1,"fiber":4.5},
-      per100g: {"calories":117,"protein":4.9,"carbs":11.9,"fat":5.8,"fiber":2.2},
+      perServing: { calories: 246, protein: 10.3, carbs: 24.9, fat: 12.1, fiber: 4.5 },
+      per100g: { calories: 117, protein: 4.9, carbs: 11.9, fat: 5.8, fiber: 2.2 },
     },
   },
   {
@@ -4910,8 +4910,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":361,"protein":31.9,"carbs":10.3,"fat":20.5,"fiber":2.1},
-      per100g: {"calories":180,"protein":15.9,"carbs":5.1,"fat":10.2,"fiber":1.1},
+      perServing: { calories: 361, protein: 31.9, carbs: 10.3, fat: 20.5, fiber: 2.1 },
+      per100g: { calories: 180, protein: 15.9, carbs: 5.1, fat: 10.2, fiber: 1.1 },
     },
   },
   {
@@ -4937,8 +4937,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1850,
-      perServing: {"calories":444,"protein":37.4,"carbs":14.5,"fat":29.1,"fiber":4.3},
-      per100g: {"calories":240,"protein":20.2,"carbs":7.9,"fat":15.7,"fiber":2.3},
+      perServing: { calories: 444, protein: 37.4, carbs: 14.5, fat: 29.1, fiber: 4.3 },
+      per100g: { calories: 240, protein: 20.2, carbs: 7.9, fat: 15.7, fiber: 2.3 },
     },
   },
   {
@@ -4964,8 +4964,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":321,"protein":29.1,"carbs":10.9,"fat":17.3,"fiber":2.9},
-      per100g: {"calories":174,"protein":15.7,"carbs":5.9,"fat":9.3,"fiber":1.6},
+      perServing: { calories: 321, protein: 29.1, carbs: 10.9, fat: 17.3, fiber: 2.9 },
+      per100g: { calories: 174, protein: 15.7, carbs: 5.9, fat: 9.3, fiber: 1.6 },
     },
   },
   {
@@ -4997,8 +4997,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 770,
-      perServing: {"calories":382,"protein":10.9,"carbs":34.5,"fat":22.1,"fiber":6.3},
-      per100g: {"calories":368,"protein":10.5,"carbs":33.3,"fat":21.3,"fiber":6.1},
+      perServing: { calories: 382, protein: 10.9, carbs: 34.5, fat: 22.1, fiber: 6.3 },
+      per100g: { calories: 368, protein: 10.5, carbs: 33.3, fat: 21.3, fiber: 6.1 },
     },
   },
   {
@@ -5027,8 +5027,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2400,
-      perServing: {"calories":743,"protein":43.8,"carbs":20.5,"fat":53.5,"fiber":3.5},
-      per100g: {"calories":304,"protein":17.9,"carbs":8.4,"fat":21.9,"fiber":1.4},
+      perServing: { calories: 743, protein: 43.8, carbs: 20.5, fat: 53.5, fiber: 3.5 },
+      per100g: { calories: 304, protein: 17.9, carbs: 8.4, fat: 21.9, fiber: 1.4 },
     },
   },
   {
@@ -5056,8 +5056,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1950,
-      perServing: {"calories":444,"protein":24.1,"carbs":23.1,"fat":29.5,"fiber":4.5},
-      per100g: {"calories":228,"protein":12.4,"carbs":11.9,"fat":15.2,"fiber":2.3},
+      perServing: { calories: 444, protein: 24.1, carbs: 23.1, fat: 29.5, fiber: 4.5 },
+      per100g: { calories: 228, protein: 12.4, carbs: 11.9, fat: 15.2, fiber: 2.3 },
     },
   },
   {
@@ -5091,8 +5091,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2150,
-      perServing: {"calories":541,"protein":25.9,"carbs":43.9,"fat":29.1,"fiber":8.1},
-      per100g: {"calories":260,"protein":12.4,"carbs":21.1,"fat":14,"fiber":3.9},
+      perServing: { calories: 541, protein: 25.9, carbs: 43.9, fat: 29.1, fiber: 8.1 },
+      per100g: { calories: 260, protein: 12.4, carbs: 21.1, fat: 14, fiber: 3.9 },
     },
   },
   {
@@ -5120,8 +5120,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":361,"protein":29.5,"carbs":14.1,"fat":20.9,"fiber":3.1},
-      per100g: {"calories":204,"protein":16.6,"carbs":8,"fat":11.8,"fiber":1.8},
+      perServing: { calories: 361, protein: 29.5, carbs: 14.1, fat: 20.9, fiber: 3.1 },
+      per100g: { calories: 204, protein: 16.6, carbs: 8, fat: 11.8, fiber: 1.8 },
     },
   },
   {
@@ -5148,8 +5148,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1300,
-      perServing: {"calories":381,"protein":14.1,"carbs":24.5,"fat":24.9,"fiber":4.3},
-      per100g: {"calories":191,"protein":7.1,"carbs":12.3,"fat":12.5,"fiber":2.2},
+      perServing: { calories: 381, protein: 14.1, carbs: 24.5, fat: 24.9, fiber: 4.3 },
+      per100g: { calories: 191, protein: 7.1, carbs: 12.3, fat: 12.5, fiber: 2.2 },
     },
   },
   {
@@ -5186,8 +5186,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":141,"protein":2.5,"carbs":24.9,"fat":4.5,"fiber":4.9},
-      per100g: {"calories":67,"protein":1.2,"carbs":12,"fat":2.2,"fiber":2.4},
+      perServing: { calories: 141, protein: 2.5, carbs: 24.9, fat: 4.5, fiber: 4.9 },
+      per100g: { calories: 67, protein: 1.2, carbs: 12, fat: 2.2, fiber: 2.4 },
     },
   },
   {
@@ -5214,8 +5214,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":281,"protein":10.9,"carbs":14.5,"fat":19.1,"fiber":2.9},
-      per100g: {"calories":143,"protein":5.5,"carbs":7.4,"fat":9.7,"fiber":1.5},
+      perServing: { calories: 281, protein: 10.9, carbs: 14.5, fat: 19.1, fiber: 2.9 },
+      per100g: { calories: 143, protein: 5.5, carbs: 7.4, fat: 9.7, fiber: 1.5 },
     },
   },
   {
@@ -5241,8 +5241,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1280,
-      perServing: {"calories":241,"protein":13.4,"carbs":14.1,"fat":16.2,"fiber":6.3},
-      per100g: {"calories":188,"protein":10.5,"carbs":11,"fat":12.6,"fiber":4.9},
+      perServing: { calories: 241, protein: 13.4, carbs: 14.1, fat: 16.2, fiber: 6.3 },
+      per100g: { calories: 188, protein: 10.5, carbs: 11, fat: 12.6, fiber: 4.9 },
     },
   },
   {
@@ -5265,8 +5265,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 450,
-      perServing: {"calories":143,"protein":8.1,"carbs":6.4,"fat":9.5,"fiber":2.5},
-      per100g: {"calories":317,"protein":18,"carbs":14.2,"fat":21.1,"fiber":5.6},
+      perServing: { calories: 143, protein: 8.1, carbs: 6.4, fat: 9.5, fiber: 2.5 },
+      per100g: { calories: 317, protein: 18, carbs: 14.2, fat: 21.1, fiber: 5.6 },
     },
   },
   {
@@ -5293,8 +5293,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 600,
-      perServing: {"calories":186,"protein":13.4,"carbs":8.1,"fat":12.9,"fiber":2.9},
-      per100g: {"calories":155,"protein":11.2,"carbs":6.8,"fat":10.8,"fiber":2.4},
+      perServing: { calories: 186, protein: 13.4, carbs: 8.1, fat: 12.9, fiber: 2.9 },
+      per100g: { calories: 155, protein: 11.2, carbs: 6.8, fat: 10.8, fiber: 2.4 },
     },
   },
   {
@@ -5326,8 +5326,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1606,
-      perServing: {"calories":322,"protein":17.1,"carbs":34.9,"fat":14.1,"fiber":8.1},
-      per100g: {"calories":200,"protein":10.6,"carbs":21.7,"fat":8.8,"fiber":5},
+      perServing: { calories: 322, protein: 17.1, carbs: 34.9, fat: 14.1, fiber: 8.1 },
+      per100g: { calories: 200, protein: 10.6, carbs: 21.7, fat: 8.8, fiber: 5 },
     },
   },
   {
@@ -5352,8 +5352,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1202,
-      perServing: {"calories":201,"protein":5.5,"carbs":30.4,"fat":8.1,"fiber":4.9},
-      per100g: {"calories":167,"protein":4.6,"carbs":25.3,"fat":6.8,"fiber":4.1},
+      perServing: { calories: 201, protein: 5.5, carbs: 30.4, fat: 8.1, fiber: 4.9 },
+      per100g: { calories: 167, protein: 4.6, carbs: 25.3, fat: 6.8, fiber: 4.1 },
     },
   },
   {
@@ -5378,8 +5378,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":143,"protein":4.3,"carbs":24.1,"fat":4.1,"fiber":4.1},
-      per100g: {"calories":179,"protein":5.4,"carbs":30.1,"fat":5.1,"fiber":5.1},
+      perServing: { calories: 143, protein: 4.3, carbs: 24.1, fat: 4.1, fiber: 4.1 },
+      per100g: { calories: 179, protein: 5.4, carbs: 30.1, fat: 5.1, fiber: 5.1 },
     },
   },
   {
@@ -5400,8 +5400,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":55,"protein":2.6,"carbs":10.3,"fat":0.3,"fiber":3.9},
-      per100g: {"calories":52,"protein":2.5,"carbs":9.8,"fat":0.3,"fiber":3.7},
+      perServing: { calories: 55, protein: 2.6, carbs: 10.3, fat: 0.3, fiber: 3.9 },
+      per100g: { calories: 52, protein: 2.5, carbs: 9.8, fat: 0.3, fiber: 3.7 },
     },
   },
   {
@@ -5425,8 +5425,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":321,"protein":30.8,"carbs":20.6,"fat":16.2,"fiber":6.3},
-      per100g: {"calories":184,"protein":17.7,"carbs":11.8,"fat":9.3,"fiber":3.6},
+      perServing: { calories: 321, protein: 30.8, carbs: 20.6, fat: 16.2, fiber: 6.3 },
+      per100g: { calories: 184, protein: 17.7, carbs: 11.8, fat: 9.3, fiber: 3.6 },
     },
   },
   {
@@ -5456,8 +5456,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":186,"protein":2.9,"carbs":24.9,"fat":9.5,"fiber":4.5},
-      per100g: {"calories":141,"protein":2.2,"carbs":19,"fat":7.3,"fiber":3.4},
+      perServing: { calories: 186, protein: 2.9, carbs: 24.9, fat: 9.5, fiber: 4.5 },
+      per100g: { calories: 141, protein: 2.2, carbs: 19, fat: 7.3, fiber: 3.4 },
     },
   },
   {
@@ -5480,8 +5480,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 600,
-      perServing: {"calories":143,"protein":1.4,"carbs":22.1,"fat":8.1,"fiber":4.9},
-      per100g: {"calories":143,"protein":1.4,"carbs":22.1,"fat":8.1,"fiber":4.9},
+      perServing: { calories: 143, protein: 1.4, carbs: 22.1, fat: 8.1, fiber: 4.9 },
+      per100g: { calories: 143, protein: 1.4, carbs: 22.1, fat: 8.1, fiber: 4.9 },
     },
   },
   // --- Batch cooking recipes (batch 3: 70 recipes) ---
@@ -5518,8 +5518,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":276,"protein":24.9,"carbs":14.9,"fat":16.2,"fiber":4.5},
-      per100g: {"calories":173,"protein":15.6,"carbs":9.3,"fat":10.2,"fiber":2.8},
+      perServing: { calories: 276, protein: 24.9, carbs: 14.9, fat: 16.2, fiber: 4.5 },
+      per100g: { calories: 173, protein: 15.6, carbs: 9.3, fat: 10.2, fiber: 2.8 },
     },
   },
   {
@@ -5545,8 +5545,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1700,
-      perServing: {"calories":186,"protein":4.5,"carbs":25.9,"fat":8.5,"fiber":5.5},
-      per100g: {"calories":109,"protein":2.6,"carbs":15.1,"fat":5,"fiber":3.2},
+      perServing: { calories: 186, protein: 4.5, carbs: 25.9, fat: 8.5, fiber: 5.5 },
+      per100g: { calories: 109, protein: 2.6, carbs: 15.1, fat: 5, fiber: 3.2 },
     },
   },
   {
@@ -5577,8 +5577,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1550,
-      perServing: {"calories":276,"protein":20.8,"carbs":14.5,"fat":18.5,"fiber":4.9},
-      per100g: {"calories":179,"protein":13.5,"carbs":9.4,"fat":12,"fiber":3.2},
+      perServing: { calories: 276, protein: 20.8, carbs: 14.5, fat: 18.5, fiber: 4.9 },
+      per100g: { calories: 179, protein: 13.5, carbs: 9.4, fat: 12, fiber: 3.2 },
     },
   },
   {
@@ -5609,8 +5609,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2400,
-      perServing: {"calories":345,"protein":26.9,"carbs":24.5,"fat":18.9,"fiber":6.1},
-      per100g: {"calories":144,"protein":11.3,"carbs":10.2,"fat":7.9,"fiber":2.6},
+      perServing: { calories: 345, protein: 26.9, carbs: 24.5, fat: 18.9, fiber: 6.1 },
+      per100g: { calories: 144, protein: 11.3, carbs: 10.2, fat: 7.9, fiber: 2.6 },
     },
   },
   {
@@ -5640,8 +5640,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1400,
-      perServing: {"calories":186,"protein":2.9,"carbs":25.5,"fat":10.3,"fiber":4.9},
-      per100g: {"calories":133,"protein":2.1,"carbs":18.2,"fat":7.4,"fiber":3.5},
+      perServing: { calories: 186, protein: 2.9, carbs: 25.5, fat: 10.3, fiber: 4.9 },
+      per100g: { calories: 133, protein: 2.1, carbs: 18.2, fat: 7.4, fiber: 3.5 },
     },
   },
   {
@@ -5669,8 +5669,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":276,"protein":14.1,"carbs":36.5,"fat":12.9,"fiber":6.9},
-      per100g: {"calories":173,"protein":8.9,"carbs":22.9,"fat":8.1,"fiber":4.3},
+      perServing: { calories: 276, protein: 14.1, carbs: 36.5, fat: 12.9, fiber: 6.9 },
+      per100g: { calories: 173, protein: 8.9, carbs: 22.9, fat: 8.1, fiber: 4.3 },
     },
   },
   {
@@ -5703,8 +5703,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1000,
-      perServing: {"calories":201,"protein":13.4,"carbs":25.9,"fat":8.1,"fiber":6.1},
-      per100g: {"calories":143,"protein":9.6,"carbs":18.5,"fat":5.8,"fiber":4.3},
+      perServing: { calories: 201, protein: 13.4, carbs: 25.9, fat: 8.1, fiber: 6.1 },
+      per100g: { calories: 143, protein: 9.6, carbs: 18.5, fat: 5.8, fiber: 4.3 },
     },
   },
   {
@@ -5733,8 +5733,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":143,"protein":10.5,"carbs":10.3,"fat":6.9,"fiber":3.5},
-      per100g: {"calories":143,"protein":10.5,"carbs":10.3,"fat":6.9,"fiber":3.5},
+      perServing: { calories: 143, protein: 10.5, carbs: 10.3, fat: 6.9, fiber: 3.5 },
+      per100g: { calories: 143, protein: 10.5, carbs: 10.3, fat: 6.9, fiber: 3.5 },
     },
   },
   {
@@ -5762,8 +5762,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 900,
-      perServing: {"calories":241,"protein":8.1,"carbs":34.5,"fat":10.9,"fiber":4.5},
-      per100g: {"calories":179,"protein":6,"carbs":25.5,"fat":8.1,"fiber":3.3},
+      perServing: { calories: 241, protein: 8.1, carbs: 34.5, fat: 10.9, fiber: 4.5 },
+      per100g: { calories: 179, protein: 6, carbs: 25.5, fat: 8.1, fiber: 3.3 },
     },
   },
   {
@@ -5794,8 +5794,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1400,
-      perServing: {"calories":276,"protein":30.8,"carbs":10.6,"fat":16.2,"fiber":3.9},
-      per100g: {"calories":173,"protein":19.4,"carbs":6.7,"fat":10.2,"fiber":2.5},
+      perServing: { calories: 276, protein: 30.8, carbs: 10.6, fat: 16.2, fiber: 3.9 },
+      per100g: { calories: 173, protein: 19.4, carbs: 6.7, fat: 10.2, fiber: 2.5 },
     },
   },
   {
@@ -5818,8 +5818,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 760,
-      perServing: {"calories":191,"protein":2.5,"carbs":24.8,"fat":10.3,"fiber":4.5},
-      per100g: {"calories":251,"protein":3.3,"carbs":32.7,"fat":13.6,"fiber":5.9},
+      perServing: { calories: 191, protein: 2.5, carbs: 24.8, fat: 10.3, fiber: 4.5 },
+      per100g: { calories: 251, protein: 3.3, carbs: 32.7, fat: 13.6, fiber: 5.9 },
     },
   },
   {
@@ -5856,8 +5856,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1425,
-      perServing: {"calories":520,"protein":31.9,"carbs":43.8,"fat":24.5,"fiber":4.3},
-      per100g: {"calories":365,"protein":22.5,"carbs":30.8,"fat":17.2,"fiber":3},
+      perServing: { calories: 520, protein: 31.9, carbs: 43.8, fat: 24.5, fiber: 4.3 },
+      per100g: { calories: 365, protein: 22.5, carbs: 30.8, fat: 17.2, fiber: 3 },
     },
   },
   {
@@ -5882,8 +5882,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 820,
-      perServing: {"calories":240,"protein":29.8,"carbs":8.3,"fat":12.3,"fiber":2.8},
-      per100g: {"calories":293,"protein":36.3,"carbs":10.1,"fat":15,"fiber":3.4},
+      perServing: { calories: 240, protein: 29.8, carbs: 8.3, fat: 12.3, fiber: 2.8 },
+      per100g: { calories: 293, protein: 36.3, carbs: 10.1, fat: 15, fiber: 3.4 },
     },
   },
   {
@@ -5908,8 +5908,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 820,
-      perServing: {"calories":240,"protein":29.8,"carbs":8.3,"fat":12.3,"fiber":2.8},
-      per100g: {"calories":293,"protein":36.3,"carbs":10.1,"fat":15,"fiber":3.4},
+      perServing: { calories: 240, protein: 29.8, carbs: 8.3, fat: 12.3, fiber: 2.8 },
+      per100g: { calories: 293, protein: 36.3, carbs: 10.1, fat: 15, fiber: 3.4 },
     },
   },
   {
@@ -5940,8 +5940,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":440,"protein":37.5,"carbs":34.5,"fat":20.8,"fiber":4.5},
-      per100g: {"calories":369,"protein":31.4,"carbs":29,"fat":17.4,"fiber":3.8},
+      perServing: { calories: 440, protein: 37.5, carbs: 34.5, fat: 20.8, fiber: 4.5 },
+      per100g: { calories: 369, protein: 31.4, carbs: 29, fat: 17.4, fiber: 3.8 },
     },
   },
   {
@@ -5970,8 +5970,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 200,
-      perServing: {"calories":120,"protein":2.5,"carbs":12.8,"fat":7.5,"fiber":2},
-      per100g: {"calories":600,"protein":12.5,"carbs":64,"fat":37.5,"fiber":10},
+      perServing: { calories: 120, protein: 2.5, carbs: 12.8, fat: 7.5, fiber: 2 },
+      per100g: { calories: 600, protein: 12.5, carbs: 64, fat: 37.5, fiber: 10 },
     },
   },
   {
@@ -6010,8 +6010,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":380,"protein":20.3,"carbs":24.5,"fat":23.8,"fiber":6.3},
-      per100g: {"calories":284,"protein":15.1,"carbs":18.2,"fat":17.8,"fiber":4.7},
+      perServing: { calories: 380, protein: 20.3, carbs: 24.5, fat: 23.8, fiber: 6.3 },
+      per100g: { calories: 284, protein: 15.1, carbs: 18.2, fat: 17.8, fiber: 4.7 },
     },
   },
   {
@@ -6039,8 +6039,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 950,
-      perServing: {"calories":360,"protein":24.3,"carbs":30.3,"fat":17.3,"fiber":6},
-      per100g: {"calories":379,"protein":25.6,"carbs":31.9,"fat":18.2,"fiber":6.3},
+      perServing: { calories: 360, protein: 24.3, carbs: 30.3, fat: 17.3, fiber: 6 },
+      per100g: { calories: 379, protein: 25.6, carbs: 31.9, fat: 18.2, fiber: 6.3 },
     },
   },
   {
@@ -6071,8 +6071,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":420,"protein":35.5,"carbs":24.5,"fat":24.5,"fiber":5.8},
-      per100g: {"calories":401,"protein":33.9,"carbs":23.4,"fat":23.4,"fiber":5.5},
+      perServing: { calories: 420, protein: 35.5, carbs: 24.5, fat: 24.5, fiber: 5.8 },
+      per100g: { calories: 401, protein: 33.9, carbs: 23.4, fat: 23.4, fiber: 5.5 },
     },
   },
   {
@@ -6108,8 +6108,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 950,
-      perServing: {"calories":340,"protein":24.8,"carbs":28.8,"fat":16.5,"fiber":5.8},
-      per100g: {"calories":359,"protein":26.1,"carbs":30.3,"fat":17.4,"fiber":6.1},
+      perServing: { calories: 340, protein: 24.8, carbs: 28.8, fat: 16.5, fiber: 5.8 },
+      per100g: { calories: 359, protein: 26.1, carbs: 30.3, fat: 17.4, fiber: 6.1 },
     },
   },
   {
@@ -6145,8 +6145,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":400,"protein":20.5,"carbs":44.8,"fat":16.8,"fiber":5.5},
-      per100g: {"calories":381,"protein":19.5,"carbs":42.6,"fat":15.9,"fiber":5.2},
+      perServing: { calories: 400, protein: 20.5, carbs: 44.8, fat: 16.8, fiber: 5.5 },
+      per100g: { calories: 381, protein: 19.5, carbs: 42.6, fat: 15.9, fiber: 5.2 },
     },
   },
   {
@@ -6175,8 +6175,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 650,
-      perServing: {"calories":260,"protein":5.5,"carbs":34.5,"fat":12.3,"fiber":5},
-      per100g: {"calories":401,"protein":8.5,"carbs":53.1,"fat":19,"fiber":7.7},
+      perServing: { calories: 260, protein: 5.5, carbs: 34.5, fat: 12.3, fiber: 5 },
+      per100g: { calories: 401, protein: 8.5, carbs: 53.1, fat: 19, fiber: 7.7 },
     },
   },
   {
@@ -6200,8 +6200,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 550,
-      perServing: {"calories":220,"protein":14.3,"carbs":20.5,"fat":12,"fiber":4.3},
-      per100g: {"calories":400,"protein":26,"carbs":37.3,"fat":21.8,"fiber":7.8},
+      perServing: { calories: 220, protein: 14.3, carbs: 20.5, fat: 12, fiber: 4.3 },
+      per100g: { calories: 400, protein: 26, carbs: 37.3, fat: 21.8, fiber: 7.8 },
     },
   },
   {
@@ -6225,8 +6225,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 450,
-      perServing: {"calories":180,"protein":11.5,"carbs":8.8,"fat":12,"fiber":3.5},
-      per100g: {"calories":400,"protein":25.6,"carbs":19.6,"fat":26.7,"fiber":7.8},
+      perServing: { calories: 180, protein: 11.5, carbs: 8.8, fat: 12, fiber: 3.5 },
+      per100g: { calories: 400, protein: 25.6, carbs: 19.6, fat: 26.7, fiber: 7.8 },
     },
   },
   {
@@ -6254,8 +6254,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 700,
-      perServing: {"calories":300,"protein":25.5,"carbs":30.5,"fat":14.5,"fiber":3.8},
-      per100g: {"calories":429,"protein":36.4,"carbs":43.6,"fat":20.7,"fiber":5.4},
+      perServing: { calories: 300, protein: 25.5, carbs: 30.5, fat: 14.5, fiber: 3.8 },
+      per100g: { calories: 429, protein: 36.4, carbs: 43.6, fat: 20.7, fiber: 5.4 },
     },
   },
   {
@@ -6283,8 +6283,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 500,
-      perServing: {"calories":240,"protein":18.5,"carbs":15.5,"fat":14.5,"fiber":3.5},
-      per100g: {"calories":480,"protein":37,"carbs":31,"fat":29,"fiber":7},
+      perServing: { calories: 240, protein: 18.5, carbs: 15.5, fat: 14.5, fiber: 3.5 },
+      per100g: { calories: 480, protein: 37, carbs: 31, fat: 29, fiber: 7 },
     },
   },
   {
@@ -6308,8 +6308,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 200,
-      perServing: {"calories":140,"protein":5,"carbs":25.5,"fat":5.5,"fiber":2},
-      per100g: {"calories":700,"protein":25,"carbs":127.5,"fat":27.5,"fiber":10},
+      perServing: { calories: 140, protein: 5, carbs: 25.5, fat: 5.5, fiber: 2 },
+      per100g: { calories: 700, protein: 25, carbs: 127.5, fat: 27.5, fiber: 10 },
     },
   },
   {
@@ -6339,8 +6339,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 950,
-      perServing: {"calories":380,"protein":29.3,"carbs":26.8,"fat":20.5,"fiber":5.8},
-      per100g: {"calories":401,"protein":30.9,"carbs":28.3,"fat":21.6,"fiber":6.1},
+      perServing: { calories: 380, protein: 29.3, carbs: 26.8, fat: 20.5, fiber: 5.8 },
+      per100g: { calories: 401, protein: 30.9, carbs: 28.3, fat: 21.6, fiber: 6.1 },
     },
   },
   {
@@ -6368,8 +6368,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":360,"protein":30.5,"carbs":24.5,"fat":18.5,"fiber":5.5},
-      per100g: {"calories":343,"protein":29.1,"carbs":23.4,"fat":17.6,"fiber":5.2},
+      perServing: { calories: 360, protein: 30.5, carbs: 24.5, fat: 18.5, fiber: 5.5 },
+      per100g: { calories: 343, protein: 29.1, carbs: 23.4, fat: 17.6, fiber: 5.2 },
     },
   },
   {
@@ -6391,8 +6391,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 700,
-      perServing: {"calories":280,"protein":20.5,"carbs":20.8,"fat":14.8,"fiber":4.5},
-      per100g: {"calories":400,"protein":29.3,"carbs":29.8,"fat":21.2,"fiber":6.4},
+      perServing: { calories: 280, protein: 20.5, carbs: 20.8, fat: 14.8, fiber: 4.5 },
+      per100g: { calories: 400, protein: 29.3, carbs: 29.8, fat: 21.2, fiber: 6.4 },
     },
   },
   {
@@ -6422,8 +6422,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2250,
-      perServing: {"calories":945,"protein":43.8,"carbs":93.1,"fat":41.9,"fiber":6.3},
-      per100g: {"calories":420,"protein":19.4,"carbs":41.4,"fat":18.6,"fiber":2.8},
+      perServing: { calories: 945, protein: 43.8, carbs: 93.1, fat: 41.9, fiber: 6.3 },
+      per100g: { calories: 420, protein: 19.4, carbs: 41.4, fat: 18.6, fiber: 2.8 },
     },
   },
   {
@@ -6451,8 +6451,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1930,
-      perServing: {"calories":813,"protein":37.4,"carbs":83.9,"fat":30.8,"fiber":8.1},
-      per100g: {"calories":422,"protein":19.4,"carbs":43.5,"fat":16,"fiber":4.2},
+      perServing: { calories: 813, protein: 37.4, carbs: 83.9, fat: 30.8, fiber: 8.1 },
+      per100g: { calories: 422, protein: 19.4, carbs: 43.5, fat: 16, fiber: 4.2 },
     },
   },
   {
@@ -6484,8 +6484,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1730,
-      perServing: {"calories":734,"protein":24.9,"carbs":69.1,"fat":34.9,"fiber":9.5},
-      per100g: {"calories":383,"protein":13,"carbs":36,"fat":18.2,"fiber":5},
+      perServing: { calories: 734, protein: 24.9, carbs: 69.1, fat: 34.9, fiber: 9.5 },
+      per100g: { calories: 383, protein: 13, carbs: 36, fat: 18.2, fiber: 5 },
     },
   },
   {
@@ -6513,8 +6513,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1550,
-      perServing: {"calories":541,"protein":20.8,"carbs":63.9,"fat":16.1,"fiber":7.3},
-      per100g: {"calories":233,"protein":9,"carbs":27.6,"fat":7,"fiber":3.2},
+      perServing: { calories: 541, protein: 20.8, carbs: 63.9, fat: 16.1, fiber: 7.3 },
+      per100g: { calories: 233, protein: 9, carbs: 27.6, fat: 7, fiber: 3.2 },
     },
   },
   {
@@ -6541,8 +6541,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2150,
-      perServing: {"calories":944,"protein":43.8,"carbs":63.1,"fat":43.9,"fiber":6.1},
-      per100g: {"calories":439,"protein":20.4,"carbs":29.4,"fat":20.5,"fiber":2.9},
+      perServing: { calories: 944, protein: 43.8, carbs: 63.1, fat: 43.9, fiber: 6.1 },
+      per100g: { calories: 439, protein: 20.4, carbs: 29.4, fat: 20.5, fiber: 2.9 },
     },
   },
   {
@@ -6573,8 +6573,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1850,
-      perServing: {"calories":761,"protein":34.4,"carbs":74.9,"fat":29.5,"fiber":6.5},
-      per100g: {"calories":369,"protein":16.7,"carbs":36.4,"fat":14.3,"fiber":3.2},
+      perServing: { calories: 761, protein: 34.4, carbs: 74.9, fat: 29.5, fiber: 6.5 },
+      per100g: { calories: 369, protein: 16.7, carbs: 36.4, fat: 14.3, fiber: 3.2 },
     },
   },
   {
@@ -6601,8 +6601,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":541,"protein":20.8,"carbs":43.9,"fat":26.1,"fiber":4.5},
-      per100g: {"calories":289,"protein":11.1,"carbs":23.4,"fat":14,"fiber":2.4},
+      perServing: { calories: 541, protein: 20.8, carbs: 43.9, fat: 26.1, fiber: 4.5 },
+      per100g: { calories: 289, protein: 11.1, carbs: 23.4, fat: 14, fiber: 2.4 },
     },
   },
   {
@@ -6644,8 +6644,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":944,"protein":43.4,"carbs":43.1,"fat":43.9,"fiber":4.1},
-      per100g: {"calories":454,"protein":20.9,"carbs":20.8,"fat":21.1,"fiber":2},
+      perServing: { calories: 944, protein: 43.4, carbs: 43.1, fat: 43.9, fiber: 4.1 },
+      per100g: { calories: 454, protein: 20.9, carbs: 20.8, fat: 21.1, fiber: 2 },
     },
   },
   {
@@ -6672,8 +6672,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":401,"protein":14.1,"carbs":44.9,"fat":16.5,"fiber":6.9},
-      per100g: {"calories":194,"protein":6.8,"carbs":21.7,"fat":8,"fiber":3.3},
+      perServing: { calories: 401, protein: 14.1, carbs: 44.9, fat: 16.5, fiber: 6.9 },
+      per100g: { calories: 194, protein: 6.8, carbs: 21.7, fat: 8, fiber: 3.3 },
     },
   },
   {
@@ -6698,8 +6698,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 850,
-      perServing: {"calories":469,"protein":18.4,"carbs":43.1,"fat":23.9,"fiber":6.3},
-      per100g: {"calories":278,"protein":10.9,"carbs":25.6,"fat":14.2,"fiber":3.7},
+      perServing: { calories: 469, protein: 18.4, carbs: 43.1, fat: 23.9, fiber: 6.3 },
+      per100g: { calories: 278, protein: 10.9, carbs: 25.6, fat: 14.2, fiber: 3.7 },
     },
   },
   {
@@ -6727,8 +6727,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1650,
-      perServing: {"calories":734,"protein":24.5,"carbs":63.1,"fat":30.9,"fiber":6.1},
-      per100g: {"calories":353,"protein":11.8,"carbs":30.3,"fat":14.8,"fiber":2.9},
+      perServing: { calories: 734, protein: 24.5, carbs: 63.1, fat: 30.9, fiber: 6.1 },
+      per100g: { calories: 353, protein: 11.8, carbs: 30.3, fat: 14.8, fiber: 2.9 },
     },
   },
   {
@@ -6753,8 +6753,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 200,
-      perServing: {"calories":94,"protein":4.5,"carbs":6.3,"fat":4.5,"fiber":2.5},
-      per100g: {"calories":470,"protein":22.5,"carbs":31.5,"fat":22.5,"fiber":12.5},
+      perServing: { calories: 94, protein: 4.5, carbs: 6.3, fat: 4.5, fiber: 2.5 },
+      per100g: { calories: 470, protein: 22.5, carbs: 31.5, fat: 22.5, fiber: 12.5 },
     },
   },
   {
@@ -6783,8 +6783,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1450,
-      perServing: {"calories":734,"protein":34.9,"carbs":63.9,"fat":29.1,"fiber":6.5},
-      per100g: {"calories":383,"protein":18.2,"carbs":33.3,"fat":15.1,"fiber":3.4},
+      perServing: { calories: 734, protein: 34.9, carbs: 63.9, fat: 29.1, fiber: 6.5 },
+      per100g: { calories: 383, protein: 18.2, carbs: 33.3, fat: 15.1, fiber: 3.4 },
     },
   },
   {
@@ -6814,8 +6814,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2350,
-      perServing: {"calories":1061,"protein":43.8,"carbs":93.1,"fat":41.9,"fiber":6.3},
-      per100g: {"calories":455,"protein":18.7,"carbs":39.7,"fat":17.9,"fiber":2.7},
+      perServing: { calories: 1061, protein: 43.8, carbs: 93.1, fat: 41.9, fiber: 6.3 },
+      per100g: { calories: 455, protein: 18.7, carbs: 39.7, fat: 17.9, fiber: 2.7 },
     },
   },
   {
@@ -6842,8 +6842,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":469,"protein":20.4,"carbs":43.9,"fat":20.5,"fiber":6.1},
-      per100g: {"calories":278,"protein":12.1,"carbs":26.1,"fat":12.2,"fiber":3.6},
+      perServing: { calories: 469, protein: 20.4, carbs: 43.9, fat: 20.5, fiber: 6.1 },
+      per100g: { calories: 278, protein: 12.1, carbs: 26.1, fat: 12.2, fiber: 3.6 },
     },
   },
   {
@@ -6871,8 +6871,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":541,"protein":24.9,"carbs":34.9,"fat":26.1,"fiber":4.1},
-      per100g: {"calories":289,"protein":13.3,"carbs":18.6,"fat":14,"fiber":2.2},
+      perServing: { calories: 541, protein: 24.9, carbs: 34.9, fat: 26.1, fiber: 4.1 },
+      per100g: { calories: 289, protein: 13.3, carbs: 18.6, fat: 14, fiber: 2.2 },
     },
   },
   {
@@ -6901,8 +6901,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":401,"protein":20.4,"carbs":24.9,"fat":16.5,"fiber":4.5},
-      per100g: {"calories":194,"protein":9.9,"carbs":12.1,"fat":8,"fiber":2.2},
+      perServing: { calories: 401, protein: 20.4, carbs: 24.9, fat: 16.5, fiber: 4.5 },
+      per100g: { calories: 194, protein: 9.9, carbs: 12.1, fat: 8, fiber: 2.2 },
     },
   },
   {
@@ -6939,8 +6939,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 850,
-      perServing: {"calories":294,"protein":14.5,"carbs":24.5,"fat":12.3,"fiber":4.9},
-      per100g: {"calories":174,"protein":8.6,"carbs":14.5,"fat":7.3,"fiber":2.9},
+      perServing: { calories: 294, protein: 14.5, carbs: 24.5, fat: 12.3, fiber: 4.9 },
+      per100g: { calories: 174, protein: 8.6, carbs: 14.5, fat: 7.3, fiber: 2.9 },
     },
   },
   {
@@ -6968,8 +6968,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1850,
-      perServing: {"calories":734,"protein":43.4,"carbs":43.1,"fat":29.5,"fiber":4.3},
-      per100g: {"calories":369,"protein":21.8,"carbs":21.7,"fat":14.8,"fiber":2.2},
+      perServing: { calories: 734, protein: 43.4, carbs: 43.1, fat: 29.5, fiber: 4.3 },
+      per100g: { calories: 369, protein: 21.8, carbs: 21.7, fat: 14.8, fiber: 2.2 },
     },
   },
   {
@@ -7000,8 +7000,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":761,"protein":37.4,"carbs":53.9,"fat":30.8,"fiber":6.5},
-      per100g: {"calories":383,"protein":18.8,"carbs":27.1,"fat":15.5,"fiber":3.3},
+      perServing: { calories: 761, protein: 37.4, carbs: 53.9, fat: 30.8, fiber: 6.5 },
+      per100g: { calories: 383, protein: 18.8, carbs: 27.1, fat: 15.5, fiber: 3.3 },
     },
   },
   {
@@ -7032,8 +7032,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 620,
-      perServing: {"calories":541,"protein":23.4,"carbs":29.1,"fat":40.6,"fiber":3.4},
-      per100g: {"calories":437,"protein":11.9,"carbs":14.8,"fat":20.7,"fiber":1.7},
+      perServing: { calories: 541, protein: 23.4, carbs: 29.1, fat: 40.6, fiber: 3.4 },
+      per100g: { calories: 437, protein: 11.9, carbs: 14.8, fat: 20.7, fiber: 1.7 },
     },
   },
   {
@@ -7064,8 +7064,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1854,
-      perServing: {"calories":462,"protein":37.4,"carbs":34.9,"fat":20.9,"fiber":6.4},
-      per100g: {"calories":250,"protein":20.3,"carbs":19,"fat":11.4,"fiber":3.5},
+      perServing: { calories: 462, protein: 37.4, carbs: 34.9, fat: 20.9, fiber: 6.4 },
+      per100g: { calories: 250, protein: 20.3, carbs: 19, fat: 11.4, fiber: 3.5 },
     },
   },
   {
@@ -7087,8 +7087,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 900,
-      perServing: {"calories":644,"protein":34.9,"carbs":43.1,"fat":37.4,"fiber":8.4},
-      per100g: {"calories":716,"protein":38.9,"carbs":48.1,"fat":41.7,"fiber":9.4},
+      perServing: { calories: 644, protein: 34.9, carbs: 43.1, fat: 37.4, fiber: 8.4 },
+      per100g: { calories: 716, protein: 38.9, carbs: 48.1, fat: 41.7, fiber: 9.4 },
     },
   },
   {
@@ -7116,8 +7116,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1306,
-      perServing: {"calories":654,"protein":43.8,"carbs":24.9,"fat":43.8,"fiber":3.4},
-      per100g: {"calories":501,"protein":33.5,"carbs":19.1,"fat":33.5,"fiber":2.6},
+      perServing: { calories: 654, protein: 43.8, carbs: 24.9, fat: 43.8, fiber: 3.4 },
+      per100g: { calories: 501, protein: 33.5, carbs: 19.1, fat: 33.5, fiber: 2.6 },
     },
   },
   {
@@ -7147,8 +7147,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1074,
-      perServing: {"calories":432,"protein":37.4,"carbs":14.9,"fat":26.4,"fiber":3.4},
-      per100g: {"calories":402,"protein":34.7,"carbs":13.8,"fat":24.5,"fiber":3.2},
+      perServing: { calories: 432, protein: 37.4, carbs: 14.9, fat: 26.4, fiber: 3.4 },
+      per100g: { calories: 402, protein: 34.7, carbs: 13.8, fat: 24.5, fiber: 3.2 },
     },
   },
   {
@@ -7181,8 +7181,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 725,
-      perServing: {"calories":421,"protein":23.1,"carbs":36.4,"fat":24.1,"fiber":6.1},
-      per100g: {"calories":582,"protein":31.9,"carbs":50.3,"fat":33.3,"fiber":8.4},
+      perServing: { calories: 421, protein: 23.1, carbs: 36.4, fat: 24.1, fiber: 6.1 },
+      per100g: { calories: 582, protein: 31.9, carbs: 50.3, fat: 33.3, fiber: 8.4 },
     },
   },
   {
@@ -7211,8 +7211,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":122,"protein":3.4,"carbs":25.1,"fat":2.4,"fiber":4.4},
-      per100g: {"calories":98,"protein":2.7,"carbs":20.1,"fat":1.9,"fiber":3.5},
+      perServing: { calories: 122, protein: 3.4, carbs: 25.1, fat: 2.4, fiber: 4.4 },
+      per100g: { calories: 98, protein: 2.7, carbs: 20.1, fat: 1.9, fiber: 3.5 },
     },
   },
   {
@@ -7242,8 +7242,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1700,
-      perServing: {"calories":394,"protein":22.9,"carbs":43.1,"fat":17.4,"fiber":9.4},
-      per100g: {"calories":232,"protein":13.5,"carbs":25.5,"fat":10.3,"fiber":5.6},
+      perServing: { calories: 394, protein: 22.9, carbs: 43.1, fat: 17.4, fiber: 9.4 },
+      per100g: { calories: 232, protein: 13.5, carbs: 25.5, fat: 10.3, fiber: 5.6 },
     },
   },
   {
@@ -7271,8 +7271,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2100,
-      perServing: {"calories":844,"protein":53.9,"carbs":10.4,"fat":63.9,"fiber":2.4},
-      per100g: {"calories":402,"protein":25.7,"carbs":5,"fat":30.5,"fiber":1.1},
+      perServing: { calories: 844, protein: 53.9, carbs: 10.4, fat: 63.9, fiber: 2.4 },
+      per100g: { calories: 402, protein: 25.7, carbs: 5, fat: 30.5, fiber: 1.1 },
     },
   },
   {
@@ -7296,8 +7296,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 500,
-      perServing: {"calories":282,"protein":18.4,"carbs":24.1,"fat":12.1,"fiber":4.4},
-      per100g: {"calories":282,"protein":18.4,"carbs":24.1,"fat":12.1,"fiber":4.4},
+      perServing: { calories: 282, protein: 18.4, carbs: 24.1, fat: 12.1, fiber: 4.4 },
+      per100g: { calories: 282, protein: 18.4, carbs: 24.1, fat: 12.1, fiber: 4.4 },
     },
   },
   {
@@ -7325,8 +7325,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1550,
-      perServing: {"calories":444,"protein":24.1,"carbs":54.4,"fat":18.4,"fiber":10.4},
-      per100g: {"calories":287,"protein":15.6,"carbs":35.2,"fat":11.9,"fiber":6.7},
+      perServing: { calories: 444, protein: 24.1, carbs: 54.4, fat: 18.4, fiber: 10.4 },
+      per100g: { calories: 287, protein: 15.6, carbs: 35.2, fat: 11.9, fiber: 6.7 },
     },
   },
   {
@@ -7352,8 +7352,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1600,
-      perServing: {"calories":314,"protein":14.1,"carbs":43.9,"fat":12.4,"fiber":6.4},
-      per100g: {"calories":196,"protein":8.8,"carbs":27.4,"fat":7.7,"fiber":4},
+      perServing: { calories: 314, protein: 14.1, carbs: 43.9, fat: 12.4, fiber: 6.4 },
+      per100g: { calories: 196, protein: 8.8, carbs: 27.4, fat: 7.7, fiber: 4 },
     },
   },
   {
@@ -7379,8 +7379,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1800,
-      perServing: {"calories":444,"protein":35.1,"carbs":34.1,"fat":22.4,"fiber":6.4},
-      per100g: {"calories":247,"protein":19.5,"carbs":19,"fat":12.4,"fiber":3.6},
+      perServing: { calories: 444, protein: 35.1, carbs: 34.1, fat: 22.4, fiber: 6.4 },
+      per100g: { calories: 247, protein: 19.5, carbs: 19, fat: 12.4, fiber: 3.6 },
     },
   },
   {
@@ -7402,8 +7402,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1600,
-      perServing: {"calories":362,"protein":29.4,"carbs":28.4,"fat":17.4,"fiber":4.4},
-      per100g: {"calories":226,"protein":18.4,"carbs":17.8,"fat":10.9,"fiber":2.8},
+      perServing: { calories: 362, protein: 29.4, carbs: 28.4, fat: 17.4, fiber: 4.4 },
+      per100g: { calories: 226, protein: 18.4, carbs: 17.8, fat: 10.9, fiber: 2.8 },
     },
   },
   {
@@ -7432,8 +7432,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":522,"protein":35.4,"carbs":24.9,"fat":33.4,"fiber":4.4},
-      per100g: {"calories":435,"protein":29.5,"carbs":20.8,"fat":27.9,"fiber":3.7},
+      perServing: { calories: 522, protein: 35.4, carbs: 24.9, fat: 33.4, fiber: 4.4 },
+      per100g: { calories: 435, protein: 29.5, carbs: 20.8, fat: 27.9, fiber: 3.7 },
     },
   },
   {
@@ -7456,8 +7456,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 900,
-      perServing: {"calories":294,"protein":18.4,"carbs":23.1,"fat":16.4,"fiber":4.4},
-      per100g: {"calories":327,"protein":20.5,"carbs":25.7,"fat":18.3,"fiber":4.9},
+      perServing: { calories: 294, protein: 18.4, carbs: 23.1, fat: 16.4, fiber: 4.4 },
+      per100g: { calories: 327, protein: 20.5, carbs: 25.7, fat: 18.3, fiber: 4.9 },
     },
   },
   {
@@ -7489,8 +7489,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1500,
-      perServing: {"calories":394,"protein":20.4,"carbs":34.4,"fat":20.9,"fiber":6.4},
-      per100g: {"calories":262,"protein":13.6,"carbs":23,"fat":13.9,"fiber":4.3},
+      perServing: { calories: 394, protein: 20.4, carbs: 34.4, fat: 20.9, fiber: 6.4 },
+      per100g: { calories: 262, protein: 13.6, carbs: 23, fat: 13.9, fiber: 4.3 },
     },
   },
   {
@@ -7516,8 +7516,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":444,"protein":39.4,"carbs":24.1,"fat":24.1,"fiber":6.4},
-      per100g: {"calories":370,"protein":32.9,"carbs":20.1,"fat":20.1,"fiber":5.3},
+      perServing: { calories: 444, protein: 39.4, carbs: 24.1, fat: 24.1, fiber: 6.4 },
+      per100g: { calories: 370, protein: 32.9, carbs: 20.1, fat: 20.1, fiber: 5.3 },
     },
   },
   {
@@ -7550,8 +7550,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1700,
-      perServing: {"calories":542,"protein":34.9,"carbs":20.9,"fat":36.4,"fiber":4.4},
-      per100g: {"calories":318,"protein":20.5,"carbs":12.3,"fat":21.4,"fiber":2.6},
+      perServing: { calories: 542, protein: 34.9, carbs: 20.9, fat: 36.4, fiber: 4.4 },
+      per100g: { calories: 318, protein: 20.5, carbs: 12.3, fat: 21.4, fiber: 2.6 },
     },
   },
   {
@@ -7579,8 +7579,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":462,"protein":24.1,"carbs":34.1,"fat":26.4,"fiber":6.4},
-      per100g: {"calories":385,"protein":20.1,"carbs":28.4,"fat":22,"fiber":5.3},
+      perServing: { calories: 462, protein: 24.1, carbs: 34.1, fat: 26.4, fiber: 6.4 },
+      per100g: { calories: 385, protein: 20.1, carbs: 28.4, fat: 22, fiber: 5.3 },
     },
   },
   // --- Batch cooking recipes (batch 4: 70 recipes) ---
@@ -7613,8 +7613,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 734,
-      perServing: {"calories":372,"protein":22.8,"carbs":43.8,"fat":14.5,"fiber":6.3},
-      per100g: {"calories":184,"protein":11.1,"carbs":21.6,"fat":7.1,"fiber":3.1},
+      perServing: { calories: 372, protein: 22.8, carbs: 43.8, fat: 14.5, fiber: 6.3 },
+      per100g: { calories: 184, protein: 11.1, carbs: 21.6, fat: 7.1, fiber: 3.1 },
     },
   },
   {
@@ -7646,8 +7646,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1230,
-      perServing: {"calories":543,"protein":34.9,"carbs":63.1,"fat":20.6,"fiber":8.5},
-      per100g: {"calories":221,"protein":14.2,"carbs":25.7,"fat":8.4,"fiber":3.5},
+      perServing: { calories: 543, protein: 34.9, carbs: 63.1, fat: 20.6, fiber: 8.5 },
+      per100g: { calories: 221, protein: 14.2, carbs: 25.7, fat: 8.4, fiber: 3.5 },
     },
   },
   {
@@ -7674,8 +7674,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 940,
-      perServing: {"calories":394,"protein":15.1,"carbs":55.5,"fat":15.6,"fiber":7.3},
-      per100g: {"calories":167,"protein":6.4,"carbs":23.6,"fat":6.6,"fiber":3.1},
+      perServing: { calories: 394, protein: 15.1, carbs: 55.5, fat: 15.6, fiber: 7.3 },
+      per100g: { calories: 167, protein: 6.4, carbs: 23.6, fat: 6.6, fiber: 3.1 },
     },
   },
   {
@@ -7704,8 +7704,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1410,
-      perServing: {"calories":503,"protein":29.5,"carbs":54.9,"fat":23.1,"fiber":7.1},
-      per100g: {"calories":196,"protein":11.5,"carbs":21.4,"fat":9,"fiber":2.8},
+      perServing: { calories: 503, protein: 29.5, carbs: 54.9, fat: 23.1, fiber: 7.1 },
+      per100g: { calories: 196, protein: 11.5, carbs: 21.4, fat: 9, fiber: 2.8 },
     },
   },
   {
@@ -7732,8 +7732,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 630,
-      perServing: {"calories":335,"protein":20.9,"carbs":36.5,"fat":15.1,"fiber":4.9},
-      per100g: {"calories":212,"protein":13.2,"carbs":23.1,"fat":9.6,"fiber":3.1},
+      perServing: { calories: 335, protein: 20.9, carbs: 36.5, fat: 15.1, fiber: 4.9 },
+      per100g: { calories: 212, protein: 13.2, carbs: 23.1, fat: 9.6, fiber: 3.1 },
     },
   },
   {
@@ -7770,8 +7770,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":456,"protein":37.4,"carbs":25.9,"fat":22.5,"fiber":4.5},
-      per100g: {"calories":184,"protein":15.1,"carbs":10.5,"fat":9.1,"fiber":1.8},
+      perServing: { calories: 456, protein: 37.4, carbs: 25.9, fat: 22.5, fiber: 4.5 },
+      per100g: { calories: 184, protein: 15.1, carbs: 10.5, fat: 9.1, fiber: 1.8 },
     },
   },
   {
@@ -7804,8 +7804,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 840,
-      perServing: {"calories":374,"protein":14.5,"carbs":51.9,"fat":18.5,"fiber":7.5},
-      per100g: {"calories":177,"protein":6.9,"carbs":24.7,"fat":8.8,"fiber":3.6},
+      perServing: { calories: 374, protein: 14.5, carbs: 51.9, fat: 18.5, fiber: 7.5 },
+      per100g: { calories: 177, protein: 6.9, carbs: 24.7, fat: 8.8, fiber: 3.6 },
     },
   },
   {
@@ -7834,8 +7834,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1540,
-      perServing: {"calories":544,"protein":20.8,"carbs":73.1,"fat":22.1,"fiber":9.3},
-      per100g: {"calories":206,"protein":7.9,"carbs":27.8,"fat":8.4,"fiber":3.5},
+      perServing: { calories: 544, protein: 20.8, carbs: 73.1, fat: 22.1, fiber: 9.3 },
+      per100g: { calories: 206, protein: 7.9, carbs: 27.8, fat: 8.4, fiber: 3.5 },
     },
   },
   {
@@ -7859,8 +7859,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 740,
-      perServing: {"calories":343,"protein":26.4,"carbs":20.5,"fat":18.3,"fiber":2.5},
-      per100g: {"calories":207,"protein":16,"carbs":12.4,"fat":11.1,"fiber":1.5},
+      perServing: { calories: 343, protein: 26.4, carbs: 20.5, fat: 18.3, fiber: 2.5 },
+      per100g: { calories: 207, protein: 16, carbs: 12.4, fat: 11.1, fiber: 1.5 },
     },
   },
   {
@@ -7891,8 +7891,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1340,
-      perServing: {"calories":483,"protein":28.9,"carbs":55.6,"fat":20.9,"fiber":8.1},
-      per100g: {"calories":204,"protein":12.2,"carbs":23.5,"fat":8.8,"fiber":3.4},
+      perServing: { calories: 483, protein: 28.9, carbs: 55.6, fat: 20.9, fiber: 8.1 },
+      per100g: { calories: 204, protein: 12.2, carbs: 23.5, fat: 8.8, fiber: 3.4 },
     },
   },
   {
@@ -7924,8 +7924,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1040,
-      perServing: {"calories":421,"protein":25.6,"carbs":48.9,"fat":19.3,"fiber":7.1},
-      per100g: {"calories":203,"protein":12.3,"carbs":23.5,"fat":9.3,"fiber":3.4},
+      perServing: { calories: 421, protein: 25.6, carbs: 48.9, fat: 19.3, fiber: 7.1 },
+      per100g: { calories: 203, protein: 12.3, carbs: 23.5, fat: 9.3, fiber: 3.4 },
     },
   },
   {
@@ -7954,8 +7954,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1740,
-      perServing: {"calories":574,"protein":34.8,"carbs":63.1,"fat":25.5,"fiber":8.5},
-      per100g: {"calories":233,"protein":14.2,"carbs":25.7,"fat":10.4,"fiber":3.5},
+      perServing: { calories: 574, protein: 34.8, carbs: 63.1, fat: 25.5, fiber: 8.5 },
+      per100g: { calories: 233, protein: 14.2, carbs: 25.7, fat: 10.4, fiber: 3.5 },
     },
   },
   {
@@ -7980,8 +7980,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 940,
-      perServing: {"calories":394,"protein":22.5,"carbs":43.8,"fat":18.5,"fiber":6.3},
-      per100g: {"calories":184,"protein":10.6,"carbs":20.6,"fat":8.7,"fiber":3},
+      perServing: { calories: 394, protein: 22.5, carbs: 43.8, fat: 18.5, fiber: 6.3 },
+      per100g: { calories: 184, protein: 10.6, carbs: 20.6, fat: 8.7, fiber: 3 },
     },
   },
   {
@@ -8007,8 +8007,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1540,
-      perServing: {"calories":245,"protein":6.3,"carbs":43.5,"fat":7.5,"fiber":6.5},
-      per100g: {"calories":101,"protein":2.6,"carbs":17.9,"fat":3.1,"fiber":2.7},
+      perServing: { calories: 245, protein: 6.3, carbs: 43.5, fat: 7.5, fiber: 6.5 },
+      per100g: { calories: 101, protein: 2.6, carbs: 17.9, fat: 3.1, fiber: 2.7 },
     },
   },
   {
@@ -8038,8 +8038,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 840,
-      perServing: {"calories":335,"protein":15.1,"carbs":43.9,"fat":17.3,"fiber":7.1},
-      per100g: {"calories":177,"protein":8,"carbs":23.2,"fat":9.2,"fiber":3.8},
+      perServing: { calories: 335, protein: 15.1, carbs: 43.9, fat: 17.3, fiber: 7.1 },
+      per100g: { calories: 177, protein: 8, carbs: 23.2, fat: 9.2, fiber: 3.8 },
     },
   },
   {
@@ -8071,8 +8071,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 740,
-      perServing: {"calories":394,"protein":16.5,"carbs":43.5,"fat":23.9,"fiber":7.3},
-      per100g: {"calories":212,"protein":8.9,"carbs":23.4,"fat":12.9,"fiber":3.9},
+      perServing: { calories: 394, protein: 16.5, carbs: 43.5, fat: 23.9, fiber: 7.3 },
+      per100g: { calories: 212, protein: 8.9, carbs: 23.4, fat: 12.9, fiber: 3.9 },
     },
   },
   {
@@ -8097,8 +8097,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 640,
-      perServing: {"calories":294,"protein":14.9,"carbs":36.5,"fat":16.5,"fiber":6.5},
-      per100g: {"calories":173,"protein":8.8,"carbs":21.6,"fat":9.8,"fiber":3.8},
+      perServing: { calories: 294, protein: 14.9, carbs: 36.5, fat: 16.5, fiber: 6.5 },
+      per100g: { calories: 173, protein: 8.8, carbs: 21.6, fat: 9.8, fiber: 3.8 },
     },
   },
   {
@@ -8122,8 +8122,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1040,
-      perServing: {"calories":421,"protein":35.5,"carbs":25.9,"fat":23.9,"fiber":4.5},
-      per100g: {"calories":203,"protein":17.1,"carbs":12.5,"fat":11.5,"fiber":2.2},
+      perServing: { calories: 421, protein: 35.5, carbs: 25.9, fat: 23.9, fiber: 4.5 },
+      per100g: { calories: 203, protein: 17.1, carbs: 12.5, fat: 11.5, fiber: 2.2 },
     },
   },
   {
@@ -8152,8 +8152,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1640,
-      perServing: {"calories":543,"protein":29.5,"carbs":55.6,"fat":25.9,"fiber":7.3},
-      per100g: {"calories":221,"protein":12,"carbs":22.7,"fat":10.6,"fiber":3},
+      perServing: { calories: 543, protein: 29.5, carbs: 55.6, fat: 25.9, fiber: 7.3 },
+      per100g: { calories: 221, protein: 12, carbs: 22.7, fat: 10.6, fiber: 3 },
     },
   },
   {
@@ -8183,8 +8183,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1440,
-      perServing: {"calories":503,"protein":34.9,"carbs":43.1,"fat":25.5,"fiber":6.3},
-      per100g: {"calories":217,"protein":15.1,"carbs":18.7,"fat":11,"fiber":2.7},
+      perServing: { calories: 503, protein: 34.9, carbs: 43.1, fat: 25.5, fiber: 6.3 },
+      per100g: { calories: 217, protein: 15.1, carbs: 18.7, fat: 11, fiber: 2.7 },
     },
   },
   {
@@ -8212,8 +8212,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1410,
-      perServing: {"calories":523,"protein":37.8,"carbs":23.9,"fat":34.9,"fiber":4.8},
-      per100g: {"calories":371,"protein":26.8,"carbs":16.9,"fat":24.7,"fiber":3.4},
+      perServing: { calories: 523, protein: 37.8, carbs: 23.9, fat: 34.9, fiber: 4.8 },
+      per100g: { calories: 371, protein: 26.8, carbs: 16.9, fat: 24.7, fiber: 3.4 },
     },
   },
   {
@@ -8246,8 +8246,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2830,
-      perServing: {"calories":943,"protein":63.9,"carbs":54.8,"fat":57.8,"fiber":6.1},
-      per100g: {"calories":334,"protein":22.7,"carbs":19.4,"fat":20.5,"fiber":2.2},
+      perServing: { calories: 943, protein: 63.9, carbs: 54.8, fat: 57.8, fiber: 6.1 },
+      per100g: { calories: 334, protein: 22.7, carbs: 19.4, fat: 20.5, fiber: 2.2 },
     },
   },
   {
@@ -8276,8 +8276,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 240,
-      perServing: {"calories":120,"protein":2.5,"carbs":6.3,"fat":10.5,"fiber":1.9},
-      per100g: {"calories":500,"protein":10.4,"carbs":26.3,"fat":43.8,"fiber":7.9},
+      perServing: { calories: 120, protein: 2.5, carbs: 6.3, fat: 10.5, fiber: 1.9 },
+      per100g: { calories: 500, protein: 10.4, carbs: 26.3, fat: 43.8, fiber: 7.9 },
     },
   },
   {
@@ -8305,8 +8305,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1410,
-      perServing: {"calories":523,"protein":37.8,"carbs":23.9,"fat":34.9,"fiber":4.8},
-      per100g: {"calories":371,"protein":26.8,"carbs":16.9,"fat":24.7,"fiber":3.4},
+      perServing: { calories: 523, protein: 37.8, carbs: 23.9, fat: 34.9, fiber: 4.8 },
+      per100g: { calories: 371, protein: 26.8, carbs: 16.9, fat: 24.7, fiber: 3.4 },
     },
   },
   {
@@ -8336,8 +8336,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1820,
-      perServing: {"calories":734,"protein":43.8,"carbs":34.9,"fat":51.9,"fiber":5.5},
-      per100g: {"calories":403,"protein":24.1,"carbs":19.2,"fat":28.5,"fiber":3},
+      perServing: { calories: 734, protein: 43.8, carbs: 34.9, fat: 51.9, fiber: 5.5 },
+      per100g: { calories: 403, protein: 24.1, carbs: 19.2, fat: 28.5, fiber: 3 },
     },
   },
   {
@@ -8371,8 +8371,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2460,
-      perServing: {"calories":857,"protein":54.5,"carbs":24.1,"fat":53.9,"fiber":7.1},
-      per100g: {"calories":348,"protein":22.2,"carbs":9.8,"fat":22,"fiber":2.9},
+      perServing: { calories: 857, protein: 54.5, carbs: 24.1, fat: 53.9, fiber: 7.1 },
+      per100g: { calories: 348, protein: 22.2, carbs: 9.8, fat: 22, fiber: 2.9 },
     },
   },
   {
@@ -8401,8 +8401,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2140,
-      perServing: {"calories":734,"protein":51.5,"carbs":24.9,"fat":46.9,"fiber":6.3},
-      per100g: {"calories":343,"protein":24.1,"carbs":11.7,"fat":22,"fiber":2.9},
+      perServing: { calories: 734, protein: 51.5, carbs: 24.9, fat: 46.9, fiber: 6.3 },
+      per100g: { calories: 343, protein: 24.1, carbs: 11.7, fat: 22, fiber: 2.9 },
     },
   },
   {
@@ -8425,8 +8425,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1010,
-      perServing: {"calories":454,"protein":23.9,"carbs":26.5,"fat":29.5,"fiber":4.5},
-      per100g: {"calories":449,"protein":23.7,"carbs":26.2,"fat":29.3,"fiber":4.5},
+      perServing: { calories: 454, protein: 23.9, carbs: 26.5, fat: 29.5, fiber: 4.5 },
+      per100g: { calories: 449, protein: 23.7, carbs: 26.2, fat: 29.3, fiber: 4.5 },
     },
   },
   {
@@ -8458,8 +8458,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1720,
-      perServing: {"calories":573,"protein":21.1,"carbs":73.5,"fat":20.5,"fiber":8.9},
-      per100g: {"calories":333,"protein":12.3,"carbs":42.9,"fat":11.9,"fiber":5.2},
+      perServing: { calories: 573, protein: 21.1, carbs: 73.5, fat: 20.5, fiber: 8.9 },
+      per100g: { calories: 333, protein: 12.3, carbs: 42.9, fat: 11.9, fiber: 5.2 },
     },
   },
   {
@@ -8486,8 +8486,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 950,
-      perServing: {"calories":369,"protein":43.8,"carbs":4.1,"fat":23.5,"fiber":1.3},
-      per100g: {"calories":389,"protein":46.3,"carbs":4.3,"fat":24.9,"fiber":1.4},
+      perServing: { calories: 369, protein: 43.8, carbs: 4.1, fat: 23.5, fiber: 1.3 },
+      per100g: { calories: 389, protein: 46.3, carbs: 4.3, fat: 24.9, fiber: 1.4 },
     },
   },
   {
@@ -8512,8 +8512,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 250,
-      perServing: {"calories":141,"protein":12.3,"carbs":6.9,"fat":8.5,"fiber":2.1},
-      per100g: {"calories":564,"protein":49.2,"carbs":27.6,"fat":34,"fiber":8.4},
+      perServing: { calories: 141, protein: 12.3, carbs: 6.9, fat: 8.5, fiber: 2.1 },
+      per100g: { calories: 564, protein: 49.2, carbs: 27.6, fat: 34, fiber: 8.4 },
     },
   },
   {
@@ -8545,8 +8545,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":494,"protein":37.5,"carbs":23.5,"fat":29.9,"fiber":6.1},
-      per100g: {"calories":282,"protein":21.5,"carbs":13.4,"fat":17.1,"fiber":3.5},
+      perServing: { calories: 494, protein: 37.5, carbs: 23.5, fat: 29.9, fiber: 6.1 },
+      per100g: { calories: 282, protein: 21.5, carbs: 13.4, fat: 17.1, fiber: 3.5 },
     },
   },
   {
@@ -8574,8 +8574,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":454,"protein":26.5,"carbs":30.9,"fat":28.5,"fiber":3.9},
-      per100g: {"calories":432,"protein":25.4,"carbs":29.6,"fat":27.3,"fiber":3.7},
+      perServing: { calories: 454, protein: 26.5, carbs: 30.9, fat: 28.5, fiber: 3.9 },
+      per100g: { calories: 432, protein: 25.4, carbs: 29.6, fat: 27.3, fiber: 3.7 },
     },
   },
   {
@@ -8601,8 +8601,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 520,
-      perServing: {"calories":283,"protein":4.8,"carbs":34.9,"fat":14.5,"fiber":4.3},
-      per100g: {"calories":543,"protein":9.2,"carbs":66.9,"fat":27.8,"fiber":8.3},
+      perServing: { calories: 283, protein: 4.8, carbs: 34.9, fat: 14.5, fiber: 4.3 },
+      per100g: { calories: 543, protein: 9.2, carbs: 66.9, fat: 27.8, fiber: 8.3 },
     },
   },
   {
@@ -8630,8 +8630,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1120,
-      perServing: {"calories":503,"protein":20.5,"carbs":54.9,"fat":25.9,"fiber":5.5},
-      per100g: {"calories":448,"protein":18.3,"carbs":49.1,"fat":23.1,"fiber":4.9},
+      perServing: { calories: 503, protein: 20.5, carbs: 54.9, fat: 25.9, fiber: 5.5 },
+      per100g: { calories: 448, protein: 18.3, carbs: 49.1, fat: 23.1, fiber: 4.9 },
     },
   },
   {
@@ -8659,8 +8659,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 250,
-      perServing: {"calories":141,"protein":4.5,"carbs":6.5,"fat":11.9,"fiber":2.5},
-      per100g: {"calories":564,"protein":18,"carbs":26,"fat":47.6,"fiber":10},
+      perServing: { calories: 141, protein: 4.5, carbs: 6.5, fat: 11.9, fiber: 2.5 },
+      per100g: { calories: 564, protein: 18, carbs: 26, fat: 47.6, fiber: 10 },
     },
   },
   {
@@ -8686,8 +8686,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 530,
-      perServing: {"calories":258,"protein":10.3,"carbs":14.9,"fat":17.5,"fiber":2.9},
-      per100g: {"calories":486,"protein":19.4,"carbs":28.1,"fat":33.1,"fiber":5.5},
+      perServing: { calories: 258, protein: 10.3, carbs: 14.9, fat: 17.5, fiber: 2.9 },
+      per100g: { calories: 486, protein: 19.4, carbs: 28.1, fat: 33.1, fiber: 5.5 },
     },
   },
   {
@@ -8714,8 +8714,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1650,
-      perServing: {"calories":573,"protein":43.1,"carbs":14.5,"fat":37.5,"fiber":3.5},
-      per100g: {"calories":347,"protein":26.1,"carbs":8.8,"fat":22.7,"fiber":2.1},
+      perServing: { calories: 573, protein: 43.1, carbs: 14.5, fat: 37.5, fiber: 3.5 },
+      per100g: { calories: 347, protein: 26.1, carbs: 8.8, fat: 22.7, fiber: 2.1 },
     },
   },
   {
@@ -8746,8 +8746,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2230,
-      perServing: {"calories":734,"protein":43.5,"carbs":34.1,"fat":46.9,"fiber":6.9},
-      per100g: {"calories":329,"protein":19.5,"carbs":15.3,"fat":21.1,"fiber":3.1},
+      perServing: { calories: 734, protein: 43.5, carbs: 34.1, fat: 46.9, fiber: 6.9 },
+      per100g: { calories: 329, protein: 19.5, carbs: 15.3, fat: 21.1, fiber: 3.1 },
     },
   },
   {
@@ -8775,8 +8775,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":523,"protein":37.9,"carbs":23.1,"fat":34.1,"fiber":3.9},
-      per100g: {"calories":422,"protein":30.6,"carbs":18.6,"fat":27.6,"fiber":3.1},
+      perServing: { calories: 523, protein: 37.9, carbs: 23.1, fat: 34.1, fiber: 3.9 },
+      per100g: { calories: 422, protein: 30.6, carbs: 18.6, fat: 27.6, fiber: 3.1 },
     },
   },
   {
@@ -8806,8 +8806,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 740,
-      perServing: {"calories":241,"protein":14.8,"carbs":23.4,"fat":10.3,"fiber":5.6},
-      per100g: {"calories":109,"protein":6.7,"carbs":10.6,"fat":4.7,"fiber":2.5},
+      perServing: { calories: 241, protein: 14.8, carbs: 23.4, fat: 10.3, fiber: 5.6 },
+      per100g: { calories: 109, protein: 6.7, carbs: 10.6, fat: 4.7, fiber: 2.5 },
     },
   },
   {
@@ -8834,8 +8834,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2500,
-      perServing: {"calories":734,"protein":43.9,"carbs":43.1,"fat":34.9,"fiber":4.9},
-      per100g: {"calories":147,"protein":8.8,"carbs":8.6,"fat":7,"fiber":1},
+      perServing: { calories: 734, protein: 43.9, carbs: 43.1, fat: 34.9, fiber: 4.9 },
+      per100g: { calories: 147, protein: 8.8, carbs: 8.6, fat: 7, fiber: 1 },
     },
   },
   {
@@ -8864,8 +8864,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 600,
-      perServing: {"calories":255,"protein":4.4,"carbs":25.9,"fat":14.1,"fiber":7.4},
-      per100g: {"calories":106,"protein":1.8,"carbs":10.8,"fat":5.9,"fiber":3.1},
+      perServing: { calories: 255, protein: 4.4, carbs: 25.9, fat: 14.1, fiber: 7.4 },
+      per100g: { calories: 106, protein: 1.8, carbs: 10.8, fat: 5.9, fiber: 3.1 },
     },
   },
   {
@@ -8905,8 +8905,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":444,"protein":24.9,"carbs":24.1,"fat":26.3,"fiber":4.1},
-      per100g: {"calories":127,"protein":7.1,"carbs":6.9,"fat":7.5,"fiber":1.2},
+      perServing: { calories: 444, protein: 24.9, carbs: 24.1, fat: 26.3, fiber: 4.1 },
+      per100g: { calories: 127, protein: 7.1, carbs: 6.9, fat: 7.5, fiber: 1.2 },
     },
   },
   {
@@ -8932,8 +8932,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1700,
-      perServing: {"calories":394,"protein":7.4,"carbs":54.9,"fat":15.6,"fiber":6.3},
-      per100g: {"calories":116,"protein":2.2,"carbs":16.3,"fat":4.6,"fiber":1.9},
+      perServing: { calories: 394, protein: 7.4, carbs: 54.9, fat: 15.6, fiber: 6.3 },
+      per100g: { calories: 116, protein: 2.2, carbs: 16.3, fat: 4.6, fiber: 1.9 },
     },
   },
   {
@@ -8957,8 +8957,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":421,"protein":26.8,"carbs":34.4,"fat":20.5,"fiber":3.5},
-      per100g: {"calories":158,"protein":10.1,"carbs":12.9,"fat":7.7,"fiber":1.3},
+      perServing: { calories: 421, protein: 26.8, carbs: 34.4, fat: 20.5, fiber: 3.5 },
+      per100g: { calories: 158, protein: 10.1, carbs: 12.9, fat: 7.7, fiber: 1.3 },
     },
   },
   {
@@ -8982,8 +8982,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":544,"protein":35.6,"carbs":35.1,"fat":28.4,"fiber":4.3},
-      per100g: {"calories":163,"protein":10.7,"carbs":10.5,"fat":8.5,"fiber":1.3},
+      perServing: { calories: 544, protein: 35.6, carbs: 35.1, fat: 28.4, fiber: 4.3 },
+      per100g: { calories: 163, protein: 10.7, carbs: 10.5, fat: 8.5, fiber: 1.3 },
     },
   },
   {
@@ -9011,8 +9011,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2400,
-      perServing: {"calories":644,"protein":29.5,"carbs":69.4,"fat":26.8,"fiber":6.8},
-      per100g: {"calories":142,"protein":6.5,"carbs":15.3,"fat":5.9,"fiber":1.5},
+      perServing: { calories: 644, protein: 29.5, carbs: 69.4, fat: 26.8, fiber: 6.8 },
+      per100g: { calories: 142, protein: 6.5, carbs: 15.3, fat: 5.9, fiber: 1.5 },
     },
   },
   {
@@ -9035,8 +9035,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":521,"protein":30.8,"carbs":34.4,"fat":27.9,"fiber":4.4},
-      per100g: {"calories":155,"protein":9.2,"carbs":10.3,"fat":8.3,"fiber":1.3},
+      perServing: { calories: 521, protein: 30.8, carbs: 34.4, fat: 27.9, fiber: 4.4 },
+      per100g: { calories: 155, protein: 9.2, carbs: 10.3, fat: 8.3, fiber: 1.3 },
     },
   },
   {
@@ -9068,8 +9068,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2000,
-      perServing: {"calories":533,"protein":24.1,"carbs":63.9,"fat":18.4,"fiber":7.9},
-      per100g: {"calories":133,"protein":6,"carbs":16,"fat":4.6,"fiber":2},
+      perServing: { calories: 533, protein: 24.1, carbs: 63.9, fat: 18.4, fiber: 7.9 },
+      per100g: { calories: 133, protein: 6, carbs: 16, fat: 4.6, fiber: 2 },
     },
   },
   {
@@ -9097,8 +9097,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1400,
-      perServing: {"calories":321,"protein":18.2,"carbs":20.5,"fat":17.4,"fiber":4.5},
-      per100g: {"calories":114,"protein":6.5,"carbs":7.3,"fat":6.2,"fiber":1.6},
+      perServing: { calories: 321, protein: 18.2, carbs: 20.5, fat: 17.4, fiber: 4.5 },
+      per100g: { calories: 114, protein: 6.5, carbs: 7.3, fat: 6.2, fiber: 1.6 },
     },
   },
   {
@@ -9118,8 +9118,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 600,
-      perServing: {"calories":201,"protein":20.9,"carbs":4.1,"fat":10.3,"fiber":1.9},
-      per100g: {"calories":84,"protein":8.7,"carbs":1.7,"fat":4.3,"fiber":0.8},
+      perServing: { calories: 201, protein: 20.9, carbs: 4.1, fat: 10.3, fiber: 1.9 },
+      per100g: { calories: 84, protein: 8.7, carbs: 1.7, fat: 4.3, fiber: 0.8 },
     },
   },
   {
@@ -9148,8 +9148,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2000,
-      perServing: {"calories":444,"protein":25.9,"carbs":34.9,"fat":22.5,"fiber":6.1},
-      per100g: {"calories":124,"protein":7.2,"carbs":9.7,"fat":6.3,"fiber":1.7},
+      perServing: { calories: 444, protein: 25.9, carbs: 34.9, fat: 22.5, fiber: 6.1 },
+      per100g: { calories: 124, protein: 7.2, carbs: 9.7, fat: 6.3, fiber: 1.7 },
     },
   },
   {
@@ -9185,8 +9185,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1600,
-      perServing: {"calories":411,"protein":30.8,"carbs":25.6,"fat":20.9,"fiber":5.3},
-      per100g: {"calories":129,"protein":9.6,"carbs":8,"fat":6.5,"fiber":1.7},
+      perServing: { calories: 411, protein: 30.8, carbs: 25.6, fat: 20.9, fiber: 5.3 },
+      per100g: { calories: 129, protein: 9.6, carbs: 8, fat: 6.5, fiber: 1.7 },
     },
   },
   {
@@ -9213,8 +9213,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":224,"protein":14.1,"carbs":17.3,"fat":12.1,"fiber":2.9},
-      per100g: {"calories":112,"protein":7.1,"carbs":8.7,"fat":6.1,"fiber":1.5},
+      perServing: { calories: 224, protein: 14.1, carbs: 17.3, fat: 12.1, fiber: 2.9 },
+      per100g: { calories: 112, protein: 7.1, carbs: 8.7, fat: 6.1, fiber: 1.5 },
     },
   },
   {
@@ -9242,8 +9242,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":341,"protein":15.6,"carbs":34.5,"fat":16.4,"fiber":5.6},
-      per100g: {"calories":113,"protein":5.2,"carbs":11.5,"fat":5.5,"fiber":1.9},
+      perServing: { calories: 341, protein: 15.6, carbs: 34.5, fat: 16.4, fiber: 5.6 },
+      per100g: { calories: 113, protein: 5.2, carbs: 11.5, fat: 5.5, fiber: 1.9 },
     },
   },
   {
@@ -9279,8 +9279,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":394,"protein":20.5,"carbs":34.4,"fat":19.1,"fiber":4.4},
-      per100g: {"calories":131,"protein":6.9,"carbs":11.5,"fat":6.4,"fiber":1.5},
+      perServing: { calories: 394, protein: 20.5, carbs: 34.4, fat: 19.1, fiber: 4.4 },
+      per100g: { calories: 131, protein: 6.9, carbs: 11.5, fat: 6.4, fiber: 1.5 },
     },
   },
   {
@@ -9305,8 +9305,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1400,
-      perServing: {"calories":276,"protein":7.4,"carbs":33.5,"fat":12.1,"fiber":4.6},
-      per100g: {"calories":99,"protein":2.7,"carbs":12.1,"fat":4.4,"fiber":1.7},
+      perServing: { calories: 276, protein: 7.4, carbs: 33.5, fat: 12.1, fiber: 4.6 },
+      per100g: { calories: 99, protein: 2.7, carbs: 12.1, fat: 4.4, fiber: 1.7 },
     },
   },
   {
@@ -9339,8 +9339,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":324,"protein":15.6,"carbs":30.9,"fat":15.6,"fiber":4.1},
-      per100g: {"calories":108,"protein":5.2,"carbs":10.3,"fat":5.2,"fiber":1.4},
+      perServing: { calories: 324, protein: 15.6, carbs: 30.9, fat: 15.6, fiber: 4.1 },
+      per100g: { calories: 108, protein: 5.2, carbs: 10.3, fat: 5.2, fiber: 1.4 },
     },
   },
   {
@@ -9365,8 +9365,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 600,
-      perServing: {"calories":174,"protein":3.4,"carbs":25.1,"fat":7.4,"fiber":3.9},
-      per100g: {"calories":87,"protein":1.7,"carbs":12.6,"fat":3.7,"fiber":2},
+      perServing: { calories: 174, protein: 3.4, carbs: 25.1, fat: 7.4, fiber: 3.9 },
+      per100g: { calories: 87, protein: 1.7, carbs: 12.6, fat: 3.7, fiber: 2 },
     },
   },
   {
@@ -9395,8 +9395,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2150,
-      perServing: {"calories":541,"protein":33.8,"carbs":43.9,"fat":26.3,"fiber":6.3},
-      per100g: {"calories":252,"protein":15.7,"carbs":20.4,"fat":12.2,"fiber":2.9},
+      perServing: { calories: 541, protein: 33.8, carbs: 43.9, fat: 26.3, fiber: 6.3 },
+      per100g: { calories: 252, protein: 15.7, carbs: 20.4, fat: 12.2, fiber: 2.9 },
     },
   },
   {
@@ -9425,8 +9425,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 760,
-      perServing: {"calories":369,"protein":14.5,"carbs":43.8,"fat":17.4,"fiber":8.5},
-      per100g: {"calories":193,"protein":7.6,"carbs":22.9,"fat":9.1,"fiber":4.5},
+      perServing: { calories: 369, protein: 14.5, carbs: 43.8, fat: 17.4, fiber: 8.5 },
+      per100g: { calories: 193, protein: 7.6, carbs: 22.9, fat: 9.1, fiber: 4.5 },
     },
   },
   {
@@ -9453,8 +9453,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":201,"protein":3.4,"carbs":24.9,"fat":9.5,"fiber":4.2},
-      per100g: {"calories":167,"protein":2.8,"carbs":20.7,"fat":7.9,"fiber":3.5},
+      perServing: { calories: 201, protein: 3.4, carbs: 24.9, fat: 9.5, fiber: 4.2 },
+      per100g: { calories: 167, protein: 2.8, carbs: 20.7, fat: 7.9, fiber: 3.5 },
     },
   },
   {
@@ -9478,8 +9478,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1040,
-      perServing: {"calories":321,"protein":30.6,"carbs":14.1,"fat":17.3,"fiber":4.5},
-      per100g: {"calories":154,"protein":14.7,"carbs":6.8,"fat":8.3,"fiber":2.2},
+      perServing: { calories: 321, protein: 30.6, carbs: 14.1, fat: 17.3, fiber: 4.5 },
+      per100g: { calories: 154, protein: 14.7, carbs: 6.8, fat: 8.3, fiber: 2.2 },
     },
   },
   {
@@ -9509,8 +9509,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":407,"protein":41.9,"carbs":8.5,"fat":26.5,"fiber":2.1},
-      per100g: {"calories":205,"protein":21.1,"carbs":4.3,"fat":13.4,"fiber":1.1},
+      perServing: { calories: 407, protein: 41.9, carbs: 8.5, fat: 26.5, fiber: 2.1 },
+      per100g: { calories: 205, protein: 21.1, carbs: 4.3, fat: 13.4, fiber: 1.1 },
     },
   },
   {
@@ -9534,8 +9534,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 630,
-      perServing: {"calories":246,"protein":34.8,"carbs":4.3,"fat":12.9,"fiber":0.5},
-      per100g: {"calories":163,"protein":23.1,"carbs":2.9,"fat":8.6,"fiber":0.3},
+      perServing: { calories: 246, protein: 34.8, carbs: 4.3, fat: 12.9, fiber: 0.5 },
+      per100g: { calories: 163, protein: 23.1, carbs: 2.9, fat: 8.6, fiber: 0.3 },
     },
   },
   {
@@ -9566,8 +9566,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1030,
-      perServing: {"calories":344,"protein":37.4,"carbs":10.9,"fat":18.5,"fiber":3.1},
-      per100g: {"calories":167,"protein":18.1,"carbs":5.3,"fat":9,"fiber":1.5},
+      perServing: { calories: 344, protein: 37.4, carbs: 10.9, fat: 18.5, fiber: 3.1 },
+      per100g: { calories: 167, protein: 18.1, carbs: 5.3, fat: 9, fiber: 1.5 },
     },
   },
   {
@@ -9593,8 +9593,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1220,
-      perServing: {"calories":341,"protein":37.4,"carbs":8.5,"fat":20.6,"fiber":2.1},
-      per100g: {"calories":159,"protein":17.3,"carbs":4,"fat":9.6,"fiber":1},
+      perServing: { calories: 341, protein: 37.4, carbs: 8.5, fat: 20.6, fiber: 2.1 },
+      per100g: { calories: 159, protein: 17.3, carbs: 4, fat: 9.6, fiber: 1 },
     },
   },
   {
@@ -9617,8 +9617,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 910,
-      perServing: {"calories":374,"protein":35.6,"carbs":6.3,"fat":25.9,"fiber":2.5},
-      per100g: {"calories":206,"protein":19.7,"carbs":3.5,"fat":14.3,"fiber":1.4},
+      perServing: { calories: 374, protein: 35.6, carbs: 6.3, fat: 25.9, fiber: 2.5 },
+      per100g: { calories: 206, protein: 19.7, carbs: 3.5, fat: 14.3, fiber: 1.4 },
     },
   },
   {
@@ -9652,8 +9652,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1610,
-      perServing: {"calories":382,"protein":41.5,"carbs":14.1,"fat":20.5,"fiber":3.5},
-      per100g: {"calories":168,"protein":18.3,"carbs":6.2,"fat":9,"fiber":1.5},
+      perServing: { calories: 382, protein: 41.5, carbs: 14.1, fat: 20.5, fiber: 3.5 },
+      per100g: { calories: 168, protein: 18.3, carbs: 6.2, fat: 9, fiber: 1.5 },
     },
   },
   // --- Batch cooking recipes (batch 5: 61 recipes) ---
@@ -9682,8 +9682,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1230,
-      perServing: {"calories":394,"protein":38.9,"carbs":16.5,"fat":23.1,"fiber":3.3},
-      per100g: {"calories":176,"protein":17.4,"carbs":7.4,"fat":10.4,"fiber":1.5},
+      perServing: { calories: 394, protein: 38.9, carbs: 16.5, fat: 23.1, fiber: 3.3 },
+      per100g: { calories: 176, protein: 17.4, carbs: 7.4, fat: 10.4, fiber: 1.5 },
     },
   },
   {
@@ -9712,8 +9712,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1250,
-      perServing: {"calories":421,"protein":42.1,"carbs":10.3,"fat":28.9,"fiber":3.9},
-      per100g: {"calories":191,"protein":19.1,"carbs":4.7,"fat":13.1,"fiber":1.8},
+      perServing: { calories: 421, protein: 42.1, carbs: 10.3, fat: 28.9, fiber: 3.9 },
+      per100g: { calories: 191, protein: 19.1, carbs: 4.7, fat: 13.1, fiber: 1.8 },
     },
   },
   {
@@ -9737,8 +9737,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 900,
-      perServing: {"calories":306,"protein":31.4,"carbs":12.1,"fat":18.3,"fiber":2.9},
-      per100g: {"calories":170,"protein":17.5,"carbs":6.8,"fat":10.2,"fiber":1.6},
+      perServing: { calories: 306, protein: 31.4, carbs: 12.1, fat: 18.3, fiber: 2.9 },
+      per100g: { calories: 170, protein: 17.5, carbs: 6.8, fat: 10.2, fiber: 1.6 },
     },
   },
   {
@@ -9769,8 +9769,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1700,
-      perServing: {"calories":544,"protein":34.8,"carbs":43.1,"fat":29.5,"fiber":6.1},
-      per100g: {"calories":255,"protein":16.3,"carbs":20.3,"fat":13.8,"fiber":2.9},
+      perServing: { calories: 544, protein: 34.8, carbs: 43.1, fat: 29.5, fiber: 6.1 },
+      per100g: { calories: 255, protein: 16.3, carbs: 20.3, fat: 13.8, fiber: 2.9 },
     },
   },
   {
@@ -9797,8 +9797,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1550,
-      perServing: {"calories":321,"protein":20.5,"carbs":15.1,"fat":20.9,"fiber":4.5},
-      per100g: {"calories":165,"protein":10.5,"carbs":7.7,"fat":10.7,"fiber":2.3},
+      perServing: { calories: 321, protein: 20.5, carbs: 15.1, fat: 20.9, fiber: 4.5 },
+      per100g: { calories: 165, protein: 10.5, carbs: 7.7, fat: 10.7, fiber: 2.3 },
     },
   },
   {
@@ -9827,8 +9827,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1000,
-      perServing: {"calories":374,"protein":35.9,"carbs":6.5,"fat":25.9,"fiber":2.3},
-      per100g: {"calories":187,"protein":18,"carbs":3.3,"fat":13,"fiber":1.2},
+      perServing: { calories: 374, protein: 35.9, carbs: 6.5, fat: 25.9, fiber: 2.3 },
+      per100g: { calories: 187, protein: 18, carbs: 3.3, fat: 13, fiber: 1.2 },
     },
   },
   {
@@ -9859,8 +9859,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1400,
-      perServing: {"calories":364,"protein":33.5,"carbs":14.5,"fat":20.9,"fiber":4.1},
-      per100g: {"calories":163,"protein":15,"carbs":6.5,"fat":9.4,"fiber":1.8},
+      perServing: { calories: 364, protein: 33.5, carbs: 14.5, fat: 20.9, fiber: 4.1 },
+      per100g: { calories: 163, protein: 15, carbs: 6.5, fat: 9.4, fiber: 1.8 },
     },
   },
   {
@@ -9886,8 +9886,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1200,
-      perServing: {"calories":421,"protein":38.5,"carbs":25.9,"fat":23.9,"fiber":4.5},
-      per100g: {"calories":196,"protein":18,"carbs":12.1,"fat":11.2,"fiber":2.1},
+      perServing: { calories: 421, protein: 38.5, carbs: 25.9, fat: 23.9, fiber: 4.5 },
+      per100g: { calories: 196, protein: 18, carbs: 12.1, fat: 11.2, fiber: 2.1 },
     },
   },
   {
@@ -9916,8 +9916,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2000,
-      perServing: {"calories":544,"protein":41.9,"carbs":24.5,"fat":30.9,"fiber":4.9},
-      per100g: {"calories":227,"protein":17.5,"carbs":10.2,"fat":12.9,"fiber":2.1},
+      perServing: { calories: 544, protein: 41.9, carbs: 24.5, fat: 30.9, fiber: 4.9 },
+      per100g: { calories: 227, protein: 17.5, carbs: 10.2, fat: 12.9, fiber: 2.1 },
     },
   },
   {
@@ -9944,8 +9944,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1130,
-      perServing: {"calories":366,"protein":32.9,"carbs":15.3,"fat":22.5,"fiber":3.5},
-      per100g: {"calories":174,"protein":15.7,"carbs":7.3,"fat":10.7,"fiber":1.7},
+      perServing: { calories: 366, protein: 32.9, carbs: 15.3, fat: 22.5, fiber: 3.5 },
+      per100g: { calories: 174, protein: 15.7, carbs: 7.3, fat: 10.7, fiber: 1.7 },
     },
   },
   {
@@ -9975,8 +9975,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":743,"protein":43.8,"carbs":63.9,"fat":34.9,"fiber":4.3},
-      per100g: {"calories":261,"protein":15.3,"carbs":22.5,"fat":12.3,"fiber":1.5},
+      perServing: { calories: 743, protein: 43.8, carbs: 63.9, fat: 34.9, fiber: 4.3 },
+      per100g: { calories: 261, protein: 15.3, carbs: 22.5, fat: 12.3, fiber: 1.5 },
     },
   },
   {
@@ -10006,8 +10006,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2400,
-      perServing: {"calories":654,"protein":37.4,"carbs":54.8,"fat":25.5,"fiber":3.5},
-      per100g: {"calories":272,"protein":15.5,"carbs":22.8,"fat":10.6,"fiber":1.5},
+      perServing: { calories: 654, protein: 37.4, carbs: 54.8, fat: 25.5, fiber: 3.5 },
+      per100g: { calories: 272, protein: 15.5, carbs: 22.8, fat: 10.6, fiber: 1.5 },
     },
   },
   {
@@ -10039,8 +10039,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":351,"protein":26.3,"carbs":14.1,"fat":20.5,"fiber":4.5},
-      per100g: {"calories":334,"protein":25.1,"carbs":13.4,"fat":19.5,"fiber":4.3},
+      perServing: { calories: 351, protein: 26.3, carbs: 14.1, fat: 20.5, fiber: 4.5 },
+      per100g: { calories: 334, protein: 25.1, carbs: 13.4, fat: 19.5, fiber: 4.3 },
     },
   },
   {
@@ -10076,8 +10076,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 3450,
-      perServing: {"calories":1034,"protein":43.8,"carbs":43.9,"fat":63.9,"fiber":5.8},
-      per100g: {"calories":299,"protein":12.7,"carbs":12.7,"fat":18.5,"fiber":1.7},
+      perServing: { calories: 1034, protein: 43.8, carbs: 43.9, fat: 63.9, fiber: 5.8 },
+      per100g: { calories: 299, protein: 12.7, carbs: 12.7, fat: 18.5, fiber: 1.7 },
     },
   },
   {
@@ -10119,8 +10119,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":634,"protein":31.9,"carbs":34.9,"fat":37.4,"fiber":2.8},
-      per100g: {"calories":362,"protein":18.3,"carbs":20.1,"fat":21.5,"fiber":1.6},
+      perServing: { calories: 634, protein: 31.9, carbs: 34.9, fat: 37.4, fiber: 2.8 },
+      per100g: { calories: 362, protein: 18.3, carbs: 20.1, fat: 21.5, fiber: 1.6 },
     },
   },
   {
@@ -10145,8 +10145,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":184,"protein":11.4,"carbs":14.9,"fat":8.5,"fiber":4.9},
-      per100g: {"calories":175,"protein":10.8,"carbs":14.1,"fat":8.1,"fiber":4.7},
+      perServing: { calories: 184, protein: 11.4, carbs: 14.9, fat: 8.5, fiber: 4.9 },
+      per100g: { calories: 175, protein: 10.8, carbs: 14.1, fat: 8.1, fiber: 4.7 },
     },
   },
   {
@@ -10175,8 +10175,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2250,
-      perServing: {"calories":543,"protein":29.5,"carbs":34.5,"fat":26.3,"fiber":5.5},
-      per100g: {"calories":241,"protein":13.1,"carbs":15.3,"fat":11.7,"fiber":2.4},
+      perServing: { calories: 543, protein: 29.5, carbs: 34.5, fat: 26.3, fiber: 5.5 },
+      per100g: { calories: 241, protein: 13.1, carbs: 15.3, fat: 11.7, fiber: 2.4 },
     },
   },
   {
@@ -10210,8 +10210,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 3450,
-      perServing: {"calories":1039,"protein":43.5,"carbs":43.9,"fat":63.5,"fiber":5.5},
-      per100g: {"calories":300,"protein":12.5,"carbs":12.6,"fat":18.3,"fiber":1.6},
+      perServing: { calories: 1039, protein: 43.5, carbs: 43.9, fat: 63.5, fiber: 5.5 },
+      per100g: { calories: 300, protein: 12.5, carbs: 12.6, fat: 18.3, fiber: 1.6 },
     },
   },
   {
@@ -10240,8 +10240,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2000,
-      perServing: {"calories":573,"protein":30.9,"carbs":24.9,"fat":36.4,"fiber":2.9},
-      per100g: {"calories":286,"protein":15.5,"carbs":12.5,"fat":18.2,"fiber":1.5},
+      perServing: { calories: 573, protein: 30.9, carbs: 24.9, fat: 36.4, fiber: 2.9 },
+      per100g: { calories: 286, protein: 15.5, carbs: 12.5, fat: 18.2, fiber: 1.5 },
     },
   },
   {
@@ -10263,8 +10263,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":351,"protein":23.5,"carbs":10.5,"fat":23.9,"fiber":2.5},
-      per100g: {"calories":334,"protein":22.4,"carbs":10.1,"fat":22.9,"fiber":2.4},
+      perServing: { calories: 351, protein: 23.5, carbs: 10.5, fat: 23.9, fiber: 2.5 },
+      per100g: { calories: 334, protein: 22.4, carbs: 10.1, fat: 22.9, fiber: 2.4 },
     },
   },
   {
@@ -10288,8 +10288,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":278,"protein":29.5,"carbs":0.9,"fat":16.5,"fiber":0.5},
-      per100g: {"calories":264,"protein":28.1,"carbs":0.9,"fat":15.7,"fiber":0.5},
+      perServing: { calories: 278, protein: 29.5, carbs: 0.9, fat: 16.5, fiber: 0.5 },
+      per100g: { calories: 264, protein: 28.1, carbs: 0.9, fat: 15.7, fiber: 0.5 },
     },
   },
   {
@@ -10314,8 +10314,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1550,
-      perServing: {"calories":364,"protein":30.9,"carbs":10.5,"fat":20.9,"fiber":2.5},
-      per100g: {"calories":235,"protein":20.1,"carbs":6.8,"fat":13.5,"fiber":1.6},
+      perServing: { calories: 364, protein: 30.9, carbs: 10.5, fat: 20.9, fiber: 2.5 },
+      per100g: { calories: 235, protein: 20.1, carbs: 6.8, fat: 13.5, fiber: 1.6 },
     },
   },
   {
@@ -10341,8 +10341,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2350,
-      perServing: {"calories":444,"protein":34.9,"carbs":20.5,"fat":24.5,"fiber":4.9},
-      per100g: {"calories":189,"protein":14.9,"carbs":8.7,"fat":10.4,"fiber":2.1},
+      perServing: { calories: 444, protein: 34.9, carbs: 20.5, fat: 24.5, fiber: 4.9 },
+      per100g: { calories: 189, protein: 14.9, carbs: 8.7, fat: 10.4, fiber: 2.1 },
     },
   },
   {
@@ -10364,8 +10364,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1650,
-      perServing: {"calories":201,"protein":10.5,"carbs":24.1,"fat":6.5,"fiber":4.5},
-      per100g: {"calories":122,"protein":6.4,"carbs":14.6,"fat":3.9,"fiber":2.7},
+      perServing: { calories: 201, protein: 10.5, carbs: 24.1, fat: 6.5, fiber: 4.5 },
+      per100g: { calories: 122, protein: 6.4, carbs: 14.6, fat: 3.9, fiber: 2.7 },
     },
   },
   {
@@ -10394,8 +10394,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1450,
-      perServing: {"calories":394,"protein":24.5,"carbs":14.9,"fat":25.9,"fiber":4.5},
-      per100g: {"calories":271,"protein":16.9,"carbs":10.3,"fat":17.9,"fiber":3.1},
+      perServing: { calories: 394, protein: 24.5, carbs: 14.9, fat: 25.9, fiber: 4.5 },
+      per100g: { calories: 271, protein: 16.9, carbs: 10.3, fat: 17.9, fiber: 3.1 },
     },
   },
   {
@@ -10422,8 +10422,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":246,"protein":14.9,"carbs":14.5,"fat":14.5,"fiber":3.5},
-      per100g: {"calories":234,"protein":14.2,"carbs":13.8,"fat":13.8,"fiber":3.3},
+      perServing: { calories: 246, protein: 14.9, carbs: 14.5, fat: 14.5, fiber: 3.5 },
+      per100g: { calories: 234, protein: 14.2, carbs: 13.8, fat: 13.8, fiber: 3.3 },
     },
   },
   {
@@ -10453,8 +10453,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2050,
-      perServing: {"calories":421,"protein":17.5,"carbs":43.5,"fat":22.5,"fiber":6.5},
-      per100g: {"calories":205,"protein":8.5,"carbs":21.1,"fat":10.9,"fiber":3.2},
+      perServing: { calories: 421, protein: 17.5, carbs: 43.5, fat: 22.5, fiber: 6.5 },
+      per100g: { calories: 205, protein: 8.5, carbs: 21.1, fat: 10.9, fiber: 3.2 },
     },
   },
   {
@@ -10484,8 +10484,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":654,"protein":37.4,"carbs":43.9,"fat":34.9,"fiber":5.8},
-      per100g: {"calories":229,"protein":13.1,"carbs":15.3,"fat":12.2,"fiber":2.1},
+      perServing: { calories: 654, protein: 37.4, carbs: 43.9, fat: 34.9, fiber: 5.8 },
+      per100g: { calories: 229, protein: 13.1, carbs: 15.3, fat: 12.2, fiber: 2.1 },
     },
   },
   {
@@ -10518,8 +10518,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2350,
-      perServing: {"calories":634,"protein":34.9,"carbs":34.5,"fat":37.4,"fiber":4.5},
-      per100g: {"calories":269,"protein":14.8,"carbs":14.6,"fat":15.8,"fiber":1.9},
+      perServing: { calories: 634, protein: 34.9, carbs: 34.5, fat: 37.4, fiber: 4.5 },
+      per100g: { calories: 269, protein: 14.8, carbs: 14.6, fat: 15.8, fiber: 1.9 },
     },
   },
   {
@@ -10545,8 +10545,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1050,
-      perServing: {"calories":351,"protein":29.5,"carbs":10.5,"fat":20.5,"fiber":2.5},
-      per100g: {"calories":334,"protein":28.1,"carbs":10.1,"fat":19.5,"fiber":2.4},
+      perServing: { calories: 351, protein: 29.5, carbs: 10.5, fat: 20.5, fiber: 2.5 },
+      per100g: { calories: 334, protein: 28.1, carbs: 10.1, fat: 19.5, fiber: 2.4 },
     },
   },
   {
@@ -10571,8 +10571,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2150,
-      perServing: {"calories":442,"protein":34.8,"carbs":23.9,"fat":24.9,"fiber":4.2},
-      per100g: {"calories":205,"protein":16.2,"carbs":11.1,"fat":11.6,"fiber":2},
+      perServing: { calories: 442, protein: 34.8, carbs: 23.9, fat: 24.9, fiber: 4.2 },
+      per100g: { calories: 205, protein: 16.2, carbs: 11.1, fat: 11.6, fiber: 2 },
     },
   },
   {
@@ -10599,8 +10599,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 550,
-      perServing: {"calories":174,"protein":8.5,"carbs":12.4,"fat":10.3,"fiber":2.5},
-      per100g: {"calories":316,"protein":15.5,"carbs":22.5,"fat":18.7,"fiber":4.5},
+      perServing: { calories: 174, protein: 8.5, carbs: 12.4, fat: 10.3, fiber: 2.5 },
+      per100g: { calories: 316, protein: 15.5, carbs: 22.5, fat: 18.7, fiber: 4.5 },
     },
   },
   {
@@ -10634,8 +10634,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2350,
-      perServing: {"calories":394,"protein":20.9,"carbs":43.8,"fat":17.1,"fiber":7.3},
-      per100g: {"calories":168,"protein":8.9,"carbs":18.7,"fat":7.3,"fiber":3.1},
+      perServing: { calories: 394, protein: 20.9, carbs: 43.8, fat: 17.1, fiber: 7.3 },
+      per100g: { calories: 168, protein: 8.9, carbs: 18.7, fat: 7.3, fiber: 3.1 },
     },
   },
   {
@@ -10665,8 +10665,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2000,
-      perServing: {"calories":321,"protein":19.2,"carbs":34.5,"fat":12.9,"fiber":6.3},
-      per100g: {"calories":161,"protein":9.6,"carbs":17.2,"fat":6.4,"fiber":3.1},
+      perServing: { calories: 321, protein: 19.2, carbs: 34.5, fat: 12.9, fiber: 6.3 },
+      per100g: { calories: 161, protein: 9.6, carbs: 17.2, fat: 6.4, fiber: 3.1 },
     },
   },
   {
@@ -10697,8 +10697,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2800,
-      perServing: {"calories":544,"protein":35.6,"carbs":54.1,"fat":20.5,"fiber":2.5},
-      per100g: {"calories":193,"protein":12.6,"carbs":19.2,"fat":7.3,"fiber":0.9},
+      perServing: { calories: 544, protein: 35.6, carbs: 54.1, fat: 20.5, fiber: 2.5 },
+      per100g: { calories: 193, protein: 12.6, carbs: 19.2, fat: 7.3, fiber: 0.9 },
     },
   },
   {
@@ -10730,8 +10730,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":451,"protein":22.1,"carbs":46.9,"fat":23.4,"fiber":6.9},
-      per100g: {"calories":178,"protein":8.7,"carbs":18.5,"fat":9.2,"fiber":2.7},
+      perServing: { calories: 451, protein: 22.1, carbs: 46.9, fat: 23.4, fiber: 6.9 },
+      per100g: { calories: 178, protein: 8.7, carbs: 18.5, fat: 9.2, fiber: 2.7 },
     },
   },
   {
@@ -10763,8 +10763,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2100,
-      perServing: {"calories":246,"protein":6.3,"carbs":37.4,"fat":10.3,"fiber":5.5},
-      per100g: {"calories":123,"protein":3.1,"carbs":18.6,"fat":5.1,"fiber":2.7},
+      perServing: { calories: 246, protein: 6.3, carbs: 37.4, fat: 10.3, fiber: 5.5 },
+      per100g: { calories: 123, protein: 3.1, carbs: 18.6, fat: 5.1, fiber: 2.7 },
     },
   },
   {
@@ -10788,8 +10788,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2500,
-      perServing: {"calories":632,"protein":37.4,"carbs":54.2,"fat":34.9,"fiber":8.1},
-      per100g: {"calories":252,"protein":14.9,"carbs":21.6,"fat":13.9,"fiber":3.2},
+      perServing: { calories: 632, protein: 37.4, carbs: 54.2, fat: 34.9, fiber: 8.1 },
+      per100g: { calories: 252, protein: 14.9, carbs: 21.6, fat: 13.9, fiber: 3.2 },
     },
   },
   {
@@ -10820,8 +10820,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 3400,
-      perServing: {"calories":444,"protein":30.8,"carbs":37.2,"fat":20.5,"fiber":6.3},
-      per100g: {"calories":147,"protein":10.2,"carbs":12.3,"fat":6.8,"fiber":2.1},
+      perServing: { calories: 444, protein: 30.8, carbs: 37.2, fat: 20.5, fiber: 6.3 },
+      per100g: { calories: 147, protein: 10.2, carbs: 12.3, fat: 6.8, fiber: 2.1 },
     },
   },
   {
@@ -10852,8 +10852,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 3200,
-      perServing: {"calories":540,"protein":43.9,"carbs":24.9,"fat":30.8,"fiber":4.9},
-      per100g: {"calories":212,"protein":17.2,"carbs":9.8,"fat":12.1,"fiber":1.9},
+      perServing: { calories: 540, protein: 43.9, carbs: 24.9, fat: 30.8, fiber: 4.9 },
+      per100g: { calories: 212, protein: 17.2, carbs: 9.8, fat: 12.1, fiber: 1.9 },
     },
   },
   {
@@ -10884,8 +10884,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2200,
-      perServing: {"calories":421,"protein":32.9,"carbs":23.1,"fat":23.9,"fiber":4.5},
-      per100g: {"calories":191,"protein":14.9,"carbs":10.5,"fat":10.9,"fiber":2},
+      perServing: { calories: 421, protein: 32.9, carbs: 23.1, fat: 23.9, fiber: 4.5 },
+      per100g: { calories: 191, protein: 14.9, carbs: 10.5, fat: 10.9, fiber: 2 },
     },
   },
   {
@@ -10915,8 +10915,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 925,
-      perServing: {"calories":394,"protein":4.8,"carbs":43.9,"fat":23.1,"fiber":4.9},
-      per100g: {"calories":425,"protein":5.2,"carbs":47.4,"fat":25.1,"fiber":5.3},
+      perServing: { calories: 394, protein: 4.8, carbs: 43.9, fat: 23.1, fiber: 4.9 },
+      per100g: { calories: 425, protein: 5.2, carbs: 47.4, fat: 25.1, fiber: 5.3 },
     },
   },
   {
@@ -10944,8 +10944,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":544,"protein":24.5,"carbs":43.9,"fat":32.1,"fiber":4.9},
-      per100g: {"calories":191,"protein":8.6,"carbs":15.4,"fat":11.3,"fiber":1.7},
+      perServing: { calories: 544, protein: 24.5, carbs: 43.9, fat: 32.1, fiber: 4.9 },
+      per100g: { calories: 191, protein: 8.6, carbs: 15.4, fat: 11.3, fiber: 1.7 },
     },
   },
   {
@@ -10980,8 +10980,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2450,
-      perServing: {"calories":523,"protein":26.8,"carbs":36.2,"fat":29.5,"fiber":4.3},
-      per100g: {"calories":233,"protein":12,"carbs":16.2,"fat":13.2,"fiber":1.9},
+      perServing: { calories: 523, protein: 26.8, carbs: 36.2, fat: 29.5, fiber: 4.3 },
+      per100g: { calories: 233, protein: 12, carbs: 16.2, fat: 13.2, fiber: 1.9 },
     },
   },
   {
@@ -11009,8 +11009,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":544,"protein":24.5,"carbs":43.9,"fat":32.1,"fiber":4.9},
-      per100g: {"calories":191,"protein":8.6,"carbs":15.4,"fat":11.3,"fiber":1.7},
+      perServing: { calories: 544, protein: 24.5, carbs: 43.9, fat: 32.1, fiber: 4.9 },
+      per100g: { calories: 191, protein: 8.6, carbs: 15.4, fat: 11.3, fiber: 1.7 },
     },
   },
   {
@@ -11036,8 +11036,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2100,
-      perServing: {"calories":462,"protein":37.4,"carbs":23.9,"fat":24.5,"fiber":4.1},
-      per100g: {"calories":220,"protein":17.8,"carbs":11.4,"fat":11.7,"fiber":2},
+      perServing: { calories: 462, protein: 37.4, carbs: 23.9, fat: 24.5, fiber: 4.1 },
+      per100g: { calories: 220, protein: 17.8, carbs: 11.4, fat: 11.7, fiber: 2 },
     },
   },
   {
@@ -11065,8 +11065,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2850,
-      perServing: {"calories":444,"protein":29.8,"carbs":29.2,"fat":24.1,"fiber":3.9},
-      per100g: {"calories":196,"protein":13.2,"carbs":12.9,"fat":10.7,"fiber":1.7},
+      perServing: { calories: 444, protein: 29.8, carbs: 29.2, fat: 24.1, fiber: 3.9 },
+      per100g: { calories: 196, protein: 13.2, carbs: 12.9, fat: 10.7, fiber: 1.7 },
     },
   },
   {
@@ -11091,8 +11091,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1750,
-      perServing: {"calories":321,"protein":19.2,"carbs":23.1,"fat":17.3,"fiber":4.3},
-      per100g: {"calories":184,"protein":11,"carbs":13.3,"fat":9.9,"fiber":2.5},
+      perServing: { calories: 321, protein: 19.2, carbs: 23.1, fat: 17.3, fiber: 4.3 },
+      per100g: { calories: 184, protein: 11, carbs: 13.3, fat: 9.9, fiber: 2.5 },
     },
   },
   {
@@ -11122,8 +11122,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 2350,
-      perServing: {"calories":394,"protein":29.5,"carbs":24.9,"fat":20.5,"fiber":4.1},
-      per100g: {"calories":168,"protein":12.6,"carbs":10.7,"fat":8.8,"fiber":1.8},
+      perServing: { calories: 394, protein: 29.5, carbs: 24.9, fat: 20.5, fiber: 4.1 },
+      per100g: { calories: 168, protein: 12.6, carbs: 10.7, fat: 8.8, fiber: 1.8 },
     },
   },
   {
@@ -11152,8 +11152,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1850,
-      perServing: {"calories":276,"protein":15.6,"carbs":20.3,"fat":15.1,"fiber":4.1},
-      per100g: {"calories":149,"protein":8.4,"carbs":10.9,"fat":8.1,"fiber":2.2},
+      perServing: { calories: 276, protein: 15.6, carbs: 20.3, fat: 15.1, fiber: 4.1 },
+      per100g: { calories: 149, protein: 8.4, carbs: 10.9, fat: 8.1, fiber: 2.2 },
     },
   },
   {
@@ -11178,8 +11178,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1308,
-      perServing: {"calories":321,"protein":26.8,"carbs":10.9,"fat":20.4,"fiber":2.3},
-      per100g: {"calories":245,"protein":20.5,"carbs":8.3,"fat":15.6,"fiber":1.8},
+      perServing: { calories: 321, protein: 26.8, carbs: 10.9, fat: 20.4, fiber: 2.3 },
+      per100g: { calories: 245, protein: 20.5, carbs: 8.3, fat: 15.6, fiber: 1.8 },
     },
   },
   {
@@ -11201,8 +11201,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 604,
-      perServing: {"calories":201,"protein":14.1,"carbs":12.2,"fat":11.4,"fiber":3.5},
-      per100g: {"calories":333,"protein":23.4,"carbs":20.3,"fat":18.9,"fiber":5.8},
+      perServing: { calories: 201, protein: 14.1, carbs: 12.2, fat: 11.4, fiber: 3.5 },
+      per100g: { calories: 333, protein: 23.4, carbs: 20.3, fat: 18.9, fiber: 5.8 },
     },
   },
   {
@@ -11226,8 +11226,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1206,
-      perServing: {"calories":143,"protein":3.4,"carbs":25.6,"fat":4.9,"fiber":4.1},
-      per100g: {"calories":119,"protein":2.8,"carbs":21.3,"fat":4.1,"fiber":3.4},
+      perServing: { calories: 143, protein: 3.4, carbs: 25.6, fat: 4.9, fiber: 4.1 },
+      per100g: { calories: 119, protein: 2.8, carbs: 21.3, fat: 4.1, fiber: 3.4 },
     },
   },
   {
@@ -11256,8 +11256,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 822,
-      perServing: {"calories":234,"protein":11.9,"carbs":15.1,"fat":15.6,"fiber":3.5},
-      per100g: {"calories":284,"protein":14.5,"carbs":18.3,"fat":19,"fiber":4.3},
+      perServing: { calories: 234, protein: 11.9, carbs: 15.1, fat: 15.6, fiber: 3.5 },
+      per100g: { calories: 284, protein: 14.5, carbs: 18.3, fat: 19, fiber: 4.3 },
     },
   },
   {
@@ -11286,8 +11286,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1240,
-      perServing: {"calories":181,"protein":4.3,"carbs":29.5,"fat":6.8,"fiber":4.9},
-      per100g: {"calories":146,"protein":3.5,"carbs":23.9,"fat":5.5,"fiber":4},
+      perServing: { calories: 181, protein: 4.3, carbs: 29.5, fat: 6.8, fiber: 4.9 },
+      per100g: { calories: 146, protein: 3.5, carbs: 23.9, fat: 5.5, fiber: 4 },
     },
   },
   {
@@ -11311,8 +11311,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 520,
-      perServing: {"calories":163,"protein":9.5,"carbs":14.1,"fat":8.5,"fiber":2.5},
-      per100g: {"calories":313,"protein":18.3,"carbs":27.1,"fat":16.3,"fiber":4.8},
+      perServing: { calories: 163, protein: 9.5, carbs: 14.1, fat: 8.5, fiber: 2.5 },
+      per100g: { calories: 313, protein: 18.3, carbs: 27.1, fat: 16.3, fiber: 4.8 },
     },
   },
   {
@@ -11335,8 +11335,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 800,
-      perServing: {"calories":223,"protein":29.8,"carbs":2.5,"fat":12.9,"fiber":0.5},
-      per100g: {"calories":178,"protein":23.9,"carbs":2,"fat":10.3,"fiber":0.4},
+      perServing: { calories: 223, protein: 29.8, carbs: 2.5, fat: 12.9, fiber: 0.5 },
+      per100g: { calories: 178, protein: 23.9, carbs: 2, fat: 10.3, fiber: 0.4 },
     },
   },
   {
@@ -11366,8 +11366,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1220,
-      perServing: {"calories":264,"protein":20.9,"carbs":24.5,"fat":12.1,"fiber":4.3},
-      per100g: {"calories":216,"protein":17.1,"carbs":20.1,"fat":9.9,"fiber":3.5},
+      perServing: { calories: 264, protein: 20.9, carbs: 24.5, fat: 12.1, fiber: 4.3 },
+      per100g: { calories: 216, protein: 17.1, carbs: 20.1, fat: 9.9, fiber: 3.5 },
     },
   },
   {
@@ -11396,8 +11396,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 940,
-      perServing: {"calories":142,"protein":6.8,"carbs":10.3,"fat":9.5,"fiber":3.9},
-      per100g: {"calories":151,"protein":7.3,"carbs":11,"fat":10.1,"fiber":4.2},
+      perServing: { calories: 142, protein: 6.8, carbs: 10.3, fat: 9.5, fiber: 3.9 },
+      per100g: { calories: 151, protein: 7.3, carbs: 11, fat: 10.1, fiber: 4.2 },
     },
   },
   {
@@ -11436,8 +11436,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 1636,
-      perServing: {"calories":196,"protein":5.6,"carbs":30.6,"fat":7.3,"fiber":6.3},
-      per100g: {"calories":120,"protein":3.4,"carbs":18.7,"fat":4.5,"fiber":3.8},
+      perServing: { calories: 196, protein: 5.6, carbs: 30.6, fat: 7.3, fiber: 6.3 },
+      per100g: { calories: 120, protein: 3.4, carbs: 18.7, fat: 4.5, fiber: 3.8 },
     },
   },
   {
@@ -11460,8 +11460,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 610,
-      perServing: {"calories":206,"protein":14.1,"carbs":5.9,"fat":15.6,"fiber":1.9},
-      per100g: {"calories":338,"protein":23.2,"carbs":9.7,"fat":25.6,"fiber":3.1},
+      perServing: { calories: 206, protein: 14.1, carbs: 5.9, fat: 15.6, fiber: 1.9 },
+      per100g: { calories: 338, protein: 23.2, carbs: 9.7, fat: 25.6, fiber: 3.1 },
     },
   },
   {
@@ -11493,8 +11493,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 32444, protein: 1467, carbs: 2183.9, fat: 956.3, fiber: 1.8 },
+      per100g: { calories: 20, protein: 0.9, carbs: 1.3, fat: 0.6, fiber: 0 },
     },
   },
   {
@@ -11531,8 +11531,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 31035, protein: 1659.7, carbs: 2416.2, fat: 1675.3, fiber: 2.8 },
+      per100g: { calories: 62, protein: 3.3, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -11557,8 +11557,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 71, protein: 3.2, carbs: 15.5, fat: 0.4, fiber: 3.9 },
+      per100g: { calories: 63, protein: 2.8, carbs: 13.8, fat: 0.4, fiber: 3.5 },
     },
   },
   {
@@ -11584,8 +11584,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 105, protein: 8.4, carbs: 1.3, fat: 7, fiber: 0.3 },
+      per100g: { calories: 156, protein: 12.4, carbs: 1.9, fat: 10.4, fiber: 0.4 },
     },
   },
   {
@@ -11619,8 +11619,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 94295, protein: 11721.8, carbs: 994.6, fat: 1374.9, fiber: 3.3 },
+      per100g: { calories: 125, protein: 15.6, carbs: 1.3, fat: 1.8, fiber: 0 },
     },
   },
   {
@@ -11648,8 +11648,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 64418, protein: 1375.1, carbs: 2115.7, fat: 5656.5, fiber: 15.4 },
+      per100g: { calories: 128, protein: 2.7, carbs: 4.2, fat: 11.3, fiber: 0 },
     },
   },
   {
@@ -11679,8 +11679,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 6638, protein: 647.4, carbs: 695.7, fat: 127, fiber: 16.1 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.6, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -11709,8 +11709,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 176, protein: 13.3, carbs: 21, fat: 3.9, fiber: 0.9 },
+      per100g: { calories: 108, protein: 8.1, carbs: 12.9, fat: 2.4, fiber: 0.6 },
     },
   },
   {
@@ -11739,8 +11739,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 143, protein: 6.3, carbs: 22.8, fat: 3.3, fiber: 2.6 },
+      per100g: { calories: 57, protein: 2.5, carbs: 9.1, fat: 1.3, fiber: 1 },
     },
   },
   {
@@ -11767,8 +11767,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 279, protein: 24, carbs: 15.4, fat: 12.8, fiber: 0.3 },
+      per100g: { calories: 186, protein: 16, carbs: 10.3, fat: 8.5, fiber: 0.2 },
     },
   },
   {
@@ -11797,8 +11797,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 365, protein: 27.7, carbs: 22.7, fat: 16.6, fiber: 1.5 },
+      per100g: { calories: 127, protein: 9.6, carbs: 7.9, fat: 5.8, fiber: 0.5 },
     },
   },
   {
@@ -11827,8 +11827,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 192, protein: 2.3, carbs: 22.5, fat: 10.4, fiber: 1.4 },
+      per100g: { calories: 153, protein: 1.8, carbs: 17.9, fat: 8.3, fiber: 1.1 },
     },
   },
   {
@@ -11858,8 +11858,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 53257, protein: 66.5, carbs: 1652.2, fat: 0.6, fiber: 1.1 },
+      per100g: { calories: 85, protein: 0.1, carbs: 2.6, fat: 0, fiber: 0 },
     },
   },
   {
@@ -11887,8 +11887,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 62573, protein: 7783.5, carbs: 657.3, fat: 901, fiber: 1.1 },
+      per100g: { calories: 125, protein: 15.5, carbs: 1.3, fat: 1.8, fiber: 0 },
     },
   },
   {
@@ -11917,8 +11917,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 93811, protein: 11670.8, carbs: 979.3, fat: 1350.9, fiber: 0.5 },
+      per100g: { calories: 125, protein: 15.6, carbs: 1.3, fat: 1.8, fiber: 0 },
     },
   },
   {
@@ -11947,8 +11947,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 416, protein: 61.4, carbs: 21, fat: 8.3, fiber: 1.9 },
+      per100g: { calories: 99, protein: 14.6, carbs: 5, fat: 2, fiber: 0.5 },
     },
   },
   {
@@ -11978,8 +11978,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 2611, protein: 253.9, carbs: 271.6, fat: 51.2, fiber: 3.1 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -12007,8 +12007,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 140, protein: 3.7, carbs: 25.9, fat: 0.5, fiber: 2.3 },
+      per100g: { calories: 80, protein: 2.1, carbs: 14.8, fat: 0.3, fiber: 1.3 },
     },
   },
   {
@@ -12040,8 +12040,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 90, protein: 9.2, carbs: 11.3, fat: 1.2, fiber: 2.4 },
+      per100g: { calories: 59, protein: 6.1, carbs: 7.4, fat: 0.8, fiber: 1.6 },
     },
   },
   {
@@ -12070,8 +12070,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 250, protein: 46.5, carbs: 0.3, fat: 5.4, fiber: 0 },
+      per100g: { calories: 158, protein: 29.4, carbs: 0.2, fat: 3.4, fiber: 0 },
     },
   },
   {
@@ -12098,8 +12098,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 348, protein: 46.6, carbs: 8.7, fat: 12.9, fiber: 0 },
+      per100g: { calories: 206, protein: 27.5, carbs: 5.1, fat: 7.6, fiber: 0 },
     },
   },
   {
@@ -12133,8 +12133,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 787, protein: 55.7, carbs: 76.8, fat: 28.9, fiber: 19.8 },
+      per100g: { calories: 175, protein: 12.4, carbs: 17, fat: 6.4, fiber: 4.4 },
     },
   },
   {
@@ -12174,8 +12174,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 966, protein: 70.3, carbs: 89.9, fat: 37.6, fiber: 21.1 },
+      per100g: { calories: 207, protein: 15.1, carbs: 19.3, fat: 8.1, fiber: 4.5 },
     },
   },
   {
@@ -12199,8 +12199,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 7512, protein: 750.4, carbs: 752.7, fat: 12.5, fiber: 100.5 },
+      per100g: { calories: 60, protein: 6, carbs: 6, fat: 0.1, fiber: 0.8 },
     },
   },
   {
@@ -12223,8 +12223,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 50, protein: 0.3, carbs: 1.2, fat: 5.1, fiber: 0.1 },
+      per100g: { calories: 500, protein: 3, carbs: 12, fat: 51, fiber: 1 },
     },
   },
   {
@@ -12251,8 +12251,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 48604, protein: 17.6, carbs: 12536.2, fat: 1.6, fiber: 7.6 },
+      per100g: { calories: 384, protein: 0.1, carbs: 99.1, fat: 0, fiber: 0.1 },
     },
   },
   {
@@ -12281,8 +12281,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 368, protein: 20.2, carbs: 56.2, fat: 7.1, fiber: 7.8 },
+      per100g: { calories: 160, protein: 8.8, carbs: 24.4, fat: 3.1, fiber: 3.4 },
     },
   },
   {
@@ -12310,8 +12310,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 1253, protein: 136, carbs: 3, fat: 73.1, fiber: 0.5 },
+      per100g: { calories: 230, protein: 25, carbs: 0.6, fat: 13.4, fiber: 0.1 },
     },
   },
   {
@@ -12339,8 +12339,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 165105, protein: 31018.6, carbs: 3.5, fat: 3602.1, fiber: 1 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -12364,8 +12364,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 75, protein: 4.3, carbs: 3.3, fat: 5.1, fiber: 0.7 },
+      per100g: { calories: 115, protein: 6.6, carbs: 5.1, fat: 7.8, fiber: 1.1 },
     },
   },
   {
@@ -12391,8 +12391,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 79, protein: 2.6, carbs: 19.3, fat: 0.3, fiber: 2.6 },
+      per100g: { calories: 29, protein: 0.9, carbs: 7, fat: 0.1, fiber: 0.9 },
     },
   },
   {
@@ -12417,8 +12417,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 38139, protein: 2000.4, carbs: 3002.9, fat: 2062.5, fiber: 0.1 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -12448,8 +12448,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 249, protein: 14.7, carbs: 21.5, fat: 11.4, fiber: 1.7 },
+      per100g: { calories: 68, protein: 4, carbs: 5.8, fat: 3.1, fiber: 0.5 },
     },
   },
   {
@@ -12477,8 +12477,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 6286, protein: 628.1, carbs: 628.5, fat: 126.1, fiber: 0.5 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -12505,8 +12505,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 30546, protein: 1600.6, carbs: 2404.2, fat: 1653.1, fiber: 0.5 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -12534,8 +12534,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 161, protein: 5.4, carbs: 15.7, fat: 9.7, fiber: 2.3 },
+      per100g: { calories: 83, protein: 2.8, carbs: 8.1, fat: 5, fiber: 1.2 },
     },
   },
   {
@@ -12562,8 +12562,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 36777, protein: 2225.8, carbs: 3031.5, fat: 1775.1, fiber: 1.3 },
+      per100g: { calories: 21, protein: 1.3, carbs: 1.7, fat: 1, fiber: 0 },
     },
   },
   {
@@ -12588,8 +12588,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 59, protein: 1.6, carbs: 14.1, fat: 0.3, fiber: 3.4 },
+      per100g: { calories: 34, protein: 0.9, carbs: 8.1, fat: 0.2, fiber: 1.9 },
     },
   },
   {
@@ -12623,8 +12623,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 24535, protein: 287.4, carbs: 435.3, fat: 2420.4, fiber: 1.9 },
+      per100g: { calories: 194, protein: 2.3, carbs: 3.4, fat: 19.1, fiber: 0 },
     },
   },
   {
@@ -12650,8 +12650,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 314, protein: 31.9, carbs: 13.7, fat: 14.1, fiber: 0.9 },
+      per100g: { calories: 193, protein: 19.6, carbs: 8.4, fat: 8.7, fiber: 0.6 },
     },
   },
   {
@@ -12683,8 +12683,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 252, protein: 16.8, carbs: 43.7, fat: 1.2, fiber: 9.6 },
+      per100g: { calories: 149, protein: 9.9, carbs: 25.8, fat: 0.7, fiber: 5.7 },
     },
   },
   {
@@ -12717,8 +12717,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 15609, protein: 818.6, carbs: 1251.3, fat: 833.9, fiber: 2.7 },
+      per100g: { calories: 62, protein: 3.2, carbs: 5, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -12743,8 +12743,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 94, protein: 18.2, carbs: 3, fat: 0.7, fiber: 0.6 },
+      per100g: { calories: 75, protein: 14.5, carbs: 2.4, fat: 0.6, fiber: 0.5 },
     },
   },
   {
@@ -12773,8 +12773,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 74, protein: 4.5, carbs: 7.8, fat: 2.9, fiber: 1.3 },
+      per100g: { calories: 73, protein: 4.4, carbs: 7.7, fat: 2.9, fiber: 1.3 },
     },
   },
   {
@@ -12805,8 +12805,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 240, protein: 28.4, carbs: 12.9, fat: 8.3, fiber: 1 },
+      per100g: { calories: 119, protein: 14.1, carbs: 6.4, fat: 4.1, fiber: 0.5 },
     },
   },
   {
@@ -12832,8 +12832,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 58, protein: 11.5, carbs: 1.6, fat: 0.5, fiber: 0.5 },
+      per100g: { calories: 66, protein: 13, carbs: 1.8, fat: 0.6, fiber: 0.6 },
     },
   },
   {
@@ -12859,8 +12859,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 245, protein: 15.4, carbs: 10.7, fat: 16.7, fiber: 4.4 },
+      per100g: { calories: 160, protein: 10, carbs: 7, fat: 10.9, fiber: 2.9 },
     },
   },
   {
@@ -12891,8 +12891,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 10800, protein: 564.8, carbs: 853.3, fat: 584.2, fiber: 4.1 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -12916,8 +12916,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 200, protein: 12.9, carbs: 3.3, fat: 15.2, fiber: 0.7 },
+      per100g: { calories: 227, protein: 14.7, carbs: 3.8, fat: 17.3, fiber: 0.8 },
     },
   },
   {
@@ -12945,8 +12945,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 63, protein: 3.9, carbs: 4.7, fat: 3.1, fiber: 0.5 },
+      per100g: { calories: 116, protein: 7.2, carbs: 8.6, fat: 5.7, fiber: 0.9 },
     },
   },
   {
@@ -12970,8 +12970,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 299, protein: 11.3, carbs: 10.1, fat: 25, fiber: 2.7 },
+      per100g: { calories: 299, protein: 11.3, carbs: 10.1, fat: 25, fiber: 2.7 },
     },
   },
   {
@@ -12997,8 +12997,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 283, protein: 18.5, carbs: 43.1, fat: 3.9, fiber: 6.5 },
+      per100g: { calories: 212, protein: 13.9, carbs: 32.3, fat: 2.9, fiber: 4.9 },
     },
   },
   {
@@ -13026,8 +13026,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 588, protein: 53.8, carbs: 65.6, fat: 12.4, fiber: 17.5 },
+      per100g: { calories: 232, protein: 21.2, carbs: 25.9, fat: 4.9, fiber: 6.9 },
     },
   },
   {
@@ -13054,8 +13054,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 410, protein: 28.8, carbs: 64.5, fat: 3.8, fiber: 11.5 },
+      per100g: { calories: 272, protein: 19.1, carbs: 42.7, fat: 2.5, fiber: 7.6 },
     },
   },
   {
@@ -13080,8 +13080,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 134, protein: 20.5, carbs: 11.4, fat: 1.3, fiber: 3.5 },
+      per100g: { calories: 36, protein: 5.5, carbs: 3, fat: 0.3, fiber: 0.9 },
     },
   },
   {
@@ -13108,8 +13108,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 174, protein: 10.8, carbs: 6.8, fat: 11.5, fiber: 1 },
+      per100g: { calories: 173, protein: 10.7, carbs: 6.8, fat: 11.4, fiber: 1 },
     },
   },
   {
@@ -13133,8 +13133,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 21, protein: 0.8, carbs: 4.8, fat: 0.2, fiber: 1.3 },
+      per100g: { calories: 28, protein: 1.1, carbs: 6.4, fat: 0.3, fiber: 1.7 },
     },
   },
   {
@@ -13165,8 +13165,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 123931, protein: 23264.1, carbs: 28.3, fat: 2701.4, fiber: 6 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -13197,8 +13197,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 413, protein: 20, carbs: 70.4, fat: 7.4, fiber: 16.4 },
+      per100g: { calories: 206, protein: 10, carbs: 35.1, fat: 3.7, fiber: 8.2 },
     },
   },
   {
@@ -13229,8 +13229,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 618, protein: 29.4, carbs: 104.6, fat: 10, fiber: 23 },
+      per100g: { calories: 247, protein: 11.7, carbs: 41.8, fat: 4, fiber: 9.2 },
     },
   },
   {
@@ -13257,8 +13257,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 751, protein: 81.2, carbs: 1.5, fat: 42, fiber: 0.1 },
+      per100g: { calories: 229, protein: 24.8, carbs: 0.5, fat: 12.8, fiber: 0 },
     },
   },
   {
@@ -13287,8 +13287,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 455, protein: 80.9, carbs: 1.1, fat: 11.8, fiber: 0.1 },
+      per100g: { calories: 164, protein: 29.2, carbs: 0.4, fat: 4.3, fiber: 0 },
     },
   },
   {
@@ -13319,8 +13319,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 32384, protein: 87, carbs: 1041.2, fat: 6.5, fiber: 18.1 },
+      per100g: { calories: 86, protein: 0.2, carbs: 2.8, fat: 0, fiber: 0 },
     },
   },
   {
@@ -13349,8 +13349,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 643, protein: 46.8, carbs: 68.2, fat: 22.2, fiber: 20.1 },
+      per100g: { calories: 128, protein: 9.3, carbs: 13.6, fat: 4.4, fiber: 4 },
     },
   },
   {
@@ -13377,8 +13377,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 713, protein: 36, carbs: 111.8, fat: 17.3, fiber: 31.3 },
+      per100g: { calories: 168, protein: 8.5, carbs: 26.3, fat: 4.1, fiber: 7.4 },
     },
   },
   {
@@ -13408,8 +13408,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 289224, protein: 54273.2, carbs: 76.4, fat: 6309.5, fiber: 17.9 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -13437,8 +13437,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 73, protein: 2.8, carbs: 16.7, fat: 0.6, fiber: 4.4 },
+      per100g: { calories: 23, protein: 0.9, carbs: 5.2, fat: 0.2, fiber: 1.4 },
     },
   },
   {
@@ -13465,8 +13465,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 70, protein: 2.9, carbs: 15.7, fat: 0.6, fiber: 4.5 },
+      per100g: { calories: 22, protein: 0.9, carbs: 4.9, fat: 0.2, fiber: 1.4 },
     },
   },
   {
@@ -13494,8 +13494,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 47, protein: 2, carbs: 10.3, fat: 0.4, fiber: 2.9 },
+      per100g: { calories: 22, protein: 0.9, carbs: 4.7, fat: 0.2, fiber: 1.3 },
     },
   },
   {
@@ -13524,8 +13524,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 323, protein: 18, carbs: 48.4, fat: 7.4, fiber: 13.4 },
+      per100g: { calories: 214, protein: 11.9, carbs: 32, fat: 4.9, fiber: 8.9 },
     },
   },
   {
@@ -13553,8 +13553,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 6608, protein: 646.3, carbs: 690.5, fat: 126.5, fiber: 15.4 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.6, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13583,8 +13583,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 243, protein: 15.7, carbs: 37.2, fat: 3.4, fiber: 6.5 },
+      per100g: { calories: 203, protein: 13.1, carbs: 31.1, fat: 2.8, fiber: 5.4 },
     },
   },
   {
@@ -13613,8 +13613,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 5270, protein: 528.6, carbs: 525.9, fat: 103.2, fiber: 3.6 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13646,8 +13646,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 38182, protein: 664, carbs: 1612.7, fat: 125.2, fiber: 1.6 },
+      per100g: { calories: 23, protein: 0.4, carbs: 1, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13676,8 +13676,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 59487, protein: 697.7, carbs: 2264.9, fat: 126.1, fiber: 1.4 },
+      per100g: { calories: 32, protein: 0.4, carbs: 1.2, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13707,8 +13707,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 289186, protein: 54295.6, carbs: 51.3, fat: 6304.8, fiber: 10.7 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -13738,8 +13738,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 58451, protein: 585.8, carbs: 2151.1, fat: 113.3, fiber: 3.9 },
+      per100g: { calories: 36, protein: 0.4, carbs: 1.3, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13770,8 +13770,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 6598, protein: 654.4, carbs: 644.3, fat: 141.2, fiber: 3.9 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -13795,8 +13795,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 73, protein: 15, carbs: 0.2, fat: 1.5, fiber: 0 },
+      per100g: { calories: 146, protein: 30, carbs: 0.4, fat: 3, fiber: 0 },
     },
   },
   {
@@ -13820,8 +13820,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 53, protein: 3.8, carbs: 3.6, fat: 2.8, fiber: 0.7 },
+      per100g: { calories: 71, protein: 5.1, carbs: 4.8, fat: 3.7, fiber: 0.9 },
     },
   },
   {
@@ -13851,8 +13851,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 24, protein: 3.9, carbs: 0.9, fat: 0.4, fiber: 0 },
+      per100g: { calories: 94, protein: 15.3, carbs: 3.5, fat: 1.6, fiber: 0 },
     },
   },
   {
@@ -13875,8 +13875,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 153, protein: 24.7, carbs: 0.5, fat: 5.3, fiber: 0 },
+      per100g: { calories: 100, protein: 16.1, carbs: 0.3, fat: 3.5, fiber: 0 },
     },
   },
   {
@@ -13903,8 +13903,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 129, protein: 4, carbs: 27.4, fat: 0.4, fiber: 2.3 },
+      per100g: { calories: 129, protein: 4, carbs: 27.3, fat: 0.4, fiber: 2.3 },
     },
   },
   {
@@ -13929,8 +13929,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 246, protein: 18.1, carbs: 34.6, fat: 4.3, fiber: 9.1 },
+      per100g: { calories: 237, protein: 17.4, carbs: 33.3, fat: 4.1, fiber: 8.8 },
     },
   },
   {
@@ -13956,8 +13956,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 588, protein: 27.4, carbs: 76.8, fat: 21, fiber: 19.1 },
+      per100g: { calories: 305, protein: 14.2, carbs: 39.9, fat: 10.9, fiber: 9.9 },
     },
   },
   {
@@ -13982,8 +13982,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 201, protein: 9.7, carbs: 40.5, fat: 4.7, fiber: 13.5 },
+      per100g: { calories: 56, protein: 2.7, carbs: 11.3, fat: 1.3, fiber: 3.8 },
     },
   },
   {
@@ -14010,8 +14010,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 193, protein: 7.6, carbs: 32.9, fat: 3.2, fiber: 2.2 },
+      per100g: { calories: 170, protein: 6.7, carbs: 29, fat: 2.8, fiber: 1.9 },
     },
   },
   {
@@ -14039,8 +14039,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 116, protein: 3.8, carbs: 16.7, fat: 4, fiber: 1.9 },
+      per100g: { calories: 107, protein: 3.5, carbs: 15.5, fat: 3.7, fiber: 1.8 },
     },
   },
   {
@@ -14068,8 +14068,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 594, protein: 30.5, carbs: 75.6, fat: 21.6, fiber: 22 },
+      per100g: { calories: 254, protein: 13, carbs: 32.3, fat: 9.2, fiber: 9.4 },
     },
   },
   {
@@ -14097,8 +14097,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 318, protein: 16.7, carbs: 43.4, fat: 9.2, fiber: 9.9 },
+      per100g: { calories: 223, protein: 11.7, carbs: 30.5, fat: 6.5, fiber: 6.9 },
     },
   },
   {
@@ -14126,8 +14126,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 510, protein: 29.6, carbs: 73.4, fat: 11.6, fiber: 13.4 },
+      per100g: { calories: 318, protein: 18.4, carbs: 45.7, fat: 7.2, fiber: 8.3 },
     },
   },
   {
@@ -14150,8 +14150,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 223, protein: 39.3, carbs: 3.8, fat: 4.6, fiber: 1 },
+      per100g: { calories: 127, protein: 22.5, carbs: 2.2, fat: 2.6, fiber: 0.6 },
     },
   },
   {
@@ -14180,8 +14180,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 174, protein: 14.2, carbs: 19, fat: 4.6, fiber: 2.1 },
+      per100g: { calories: 114, protein: 9.3, carbs: 12.5, fat: 3, fiber: 1.4 },
     },
   },
   {
@@ -14209,8 +14209,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 213, protein: 11.8, carbs: 14.9, fat: 11.6, fiber: 1.1 },
+      per100g: { calories: 240, protein: 13.3, carbs: 16.8, fat: 13.1, fiber: 1.2 },
     },
   },
   {
@@ -14237,8 +14237,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 102, protein: 5.7, carbs: 11.3, fat: 3.7, fiber: 1.2 },
+      per100g: { calories: 149, protein: 8.4, carbs: 16.6, fat: 5.4, fiber: 1.8 },
     },
   },
   {
@@ -14266,8 +14266,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 423, protein: 27.5, carbs: 58.8, fat: 8.3, fiber: 9.6 },
+      per100g: { calories: 264, protein: 17.2, carbs: 36.8, fat: 5.2, fiber: 6 },
     },
   },
   {
@@ -14297,8 +14297,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 464, protein: 22.5, carbs: 80.9, fat: 7.1, fiber: 19.7 },
+      per100g: { calories: 205, protein: 9.9, carbs: 35.8, fat: 3.1, fiber: 8.7 },
     },
   },
   {
@@ -14322,8 +14322,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 936, protein: 56.5, carbs: 164.4, fat: 6.6, fiber: 38.4 },
+      per100g: { calories: 288, protein: 17.4, carbs: 50.6, fat: 2, fiber: 11.8 },
     },
   },
   {
@@ -14344,8 +14344,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 43, protein: 3.5, carbs: 1.3, fat: 2.8, fiber: 0.3 },
+      per100g: { calories: 86, protein: 7, carbs: 2.6, fat: 5.6, fiber: 0.6 },
     },
   },
   {
@@ -14376,8 +14376,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 61417, protein: 3228.3, carbs: 4872.4, fat: 3301.9, fiber: 14.3 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.9, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -14407,8 +14407,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 30882, protein: 1626.6, carbs: 2464.1, fat: 1651.9, fiber: 11.5 },
+      per100g: { calories: 62, protein: 3.2, carbs: 4.9, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -14436,8 +14436,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 412733, protein: 77525.5, carbs: 27.4, fat: 9002.3, fiber: 5.3 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -14465,8 +14465,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 12520, protein: 1250.5, carbs: 1254.8, fat: 250.1, fiber: 1.1 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -14493,8 +14493,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 12595, protein: 1264.5, carbs: 1257.8, fat: 250.8, fiber: 2.2 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -14522,8 +14522,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 15698, protein: 827.1, carbs: 1274.2, fat: 829.5, fiber: 12.6 },
+      per100g: { calories: 62, protein: 3.3, carbs: 5.1, fat: 3.3, fiber: 0.1 },
     },
   },
   {
@@ -14550,8 +14550,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 17789, protein: 1326.2, carbs: 2833.1, fat: 275.4, fiber: 601.6 },
+      per100g: { calories: 8, protein: 0.6, carbs: 1.3, fat: 0.1, fiber: 0.3 },
     },
   },
   {
@@ -14581,8 +14581,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 12543, protein: 1251.2, carbs: 1259.6, fat: 250.2, fiber: 1.3 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -14606,8 +14606,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 22, protein: 0.5, carbs: 5.3, fat: 0.1, fiber: 1 },
+      per100g: { calories: 44, protein: 1, carbs: 10.6, fat: 0.2, fiber: 2 },
     },
   },
   {
@@ -14637,8 +14637,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 30751, protein: 1624.1, carbs: 2408.6, fat: 1663.2, fiber: 1.1 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -14665,8 +14665,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 332, protein: 25, carbs: 2.5, fat: 24.7, fiber: 0.7 },
+      per100g: { calories: 246, protein: 18.5, carbs: 1.9, fat: 18.3, fiber: 0.5 },
     },
   },
   {
@@ -14692,8 +14692,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 256, protein: 8.6, carbs: 21.2, fat: 16.9, fiber: 2.4 },
+      per100g: { calories: 225, protein: 7.6, carbs: 18.6, fat: 14.9, fiber: 2.1 },
     },
   },
   {
@@ -14723,8 +14723,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 12637, protein: 1253.8, carbs: 1280.3, fat: 250.3, fiber: 4.4 },
+      per100g: { calories: 5, protein: 0.5, carbs: 0.5, fat: 0.1, fiber: 0 },
     },
   },
   {
@@ -14749,8 +14749,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 15, protein: 0.7, carbs: 3.3, fat: 0.1, fiber: 0.8 },
+      per100g: { calories: 30, protein: 1.4, carbs: 6.6, fat: 0.2, fiber: 1.6 },
     },
   },
   {
@@ -14782,8 +14782,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 142, protein: 20.8, carbs: 12.6, fat: 0.8, fiber: 1.2 },
+      per100g: { calories: 97, protein: 14.3, carbs: 8.6, fat: 0.5, fiber: 0.8 },
     },
   },
   {
@@ -14811,8 +14811,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 69, protein: 9.1, carbs: 4.6, fat: 1.9, fiber: 1 },
+      per100g: { calories: 66, protein: 8.8, carbs: 4.4, fat: 1.8, fiber: 1 },
     },
   },
   {
@@ -14839,8 +14839,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 302, protein: 15.8, carbs: 38.6, fat: 9.3, fiber: 0.5 },
+      per100g: { calories: 326, protein: 17.1, carbs: 41.7, fat: 10.1, fiber: 0.5 },
     },
   },
   {
@@ -14869,8 +14869,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 30743, protein: 1623.4, carbs: 2406.8, fat: 1663.1, fiber: 0.5 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -14897,8 +14897,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 23026, protein: 1208.5, carbs: 1810.2, fat: 1246.2, fiber: 1.4 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -14924,8 +14924,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 148, protein: 6.9, carbs: 13.4, fat: 8.1, fiber: 1.5 },
+      per100g: { calories: 156, protein: 7.3, carbs: 14.1, fat: 8.5, fiber: 1.6 },
     },
   },
   {
@@ -14956,8 +14956,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 182, protein: 16.5, carbs: 28.1, fat: 1.1, fiber: 8.3 },
+      per100g: { calories: 55, protein: 5, carbs: 8.5, fat: 0.3, fiber: 2.5 },
     },
   },
   {
@@ -14985,8 +14985,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 118, protein: 12.2, carbs: 3.7, fat: 6, fiber: 0.7 },
+      per100g: { calories: 129, protein: 13.4, carbs: 4.1, fat: 6.6, fiber: 0.8 },
     },
   },
   {
@@ -15015,8 +15015,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 94076, protein: 11688, carbs: 981.7, fat: 1371.7, fiber: 2.3 },
+      per100g: { calories: 125, protein: 15.6, carbs: 1.3, fat: 1.8, fiber: 0 },
     },
   },
   {
@@ -15042,8 +15042,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 15336, protein: 818.9, carbs: 1202.7, fat: 825.3, fiber: 0.7 },
+      per100g: { calories: 61, protein: 3.3, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -15072,8 +15072,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 210, protein: 21.9, carbs: 13.5, fat: 8.2, fiber: 1.5 },
+      per100g: { calories: 133, protein: 13.9, carbs: 8.6, fat: 5.2, fiber: 1 },
     },
   },
   {
@@ -15101,8 +15101,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 446, protein: 39.7, carbs: 18.1, fat: 22.5, fiber: 2.1 },
+      per100g: { calories: 176, protein: 15.7, carbs: 7.2, fat: 8.9, fiber: 0.8 },
     },
   },
   {
@@ -15131,8 +15131,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 251648, protein: 15661.6, carbs: 822.7, fat: 20647.3, fiber: 2 },
+      per100g: { calories: 401, protein: 24.9, carbs: 1.3, fat: 32.9, fiber: 0 },
     },
   },
   {
@@ -15163,8 +15163,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 289, protein: 24.9, carbs: 31.3, fat: 11.3, fiber: 7.8 },
+      per100g: { calories: 64, protein: 5.5, carbs: 7, fat: 2.5, fiber: 1.7 },
     },
   },
   {
@@ -15197,8 +15197,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 89596, protein: 1220.4, carbs: 1872.2, fat: 8742.1, fiber: 3.7 },
+      per100g: { calories: 198, protein: 2.7, carbs: 4.1, fat: 19.3, fiber: 0 },
     },
   },
   {
@@ -15223,8 +15223,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 412, protein: 18.7, carbs: 49.3, fat: 16.3, fiber: 6.6 },
+      per100g: { calories: 220, protein: 10, carbs: 26.3, fat: 8.7, fiber: 3.5 },
     },
   },
   {
@@ -15246,8 +15246,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 19, protein: 0.5, carbs: 4.3, fat: 0, fiber: 0.5 },
+      per100g: { calories: 76, protein: 2, carbs: 17.2, fat: 0, fiber: 2 },
     },
   },
   {
@@ -15272,8 +15272,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 259, protein: 16.3, carbs: 5.3, fat: 19.3, fiber: 0.5 },
+      per100g: { calories: 258, protein: 16.3, carbs: 5.3, fat: 19.3, fiber: 0.5 },
     },
   },
   {
@@ -15304,8 +15304,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 27, protein: 0.8, carbs: 5.2, fat: 0.4, fiber: 0.7 },
+      per100g: { calories: 98, protein: 2.9, carbs: 18.9, fat: 1.5, fiber: 2.5 },
     },
   },
   {
@@ -15330,8 +15330,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 43, protein: 7.9, carbs: 0, fat: 1, fiber: 0 },
+      per100g: { calories: 167, protein: 30.7, carbs: 0, fat: 3.9, fiber: 0 },
     },
   },
   {
@@ -15360,8 +15360,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 134, protein: 4.3, carbs: 5.5, fat: 9, fiber: 1.5 },
+      per100g: { calories: 120, protein: 3.9, carbs: 4.9, fat: 8.1, fiber: 1.3 },
     },
   },
   {
@@ -15384,8 +15384,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 39, protein: 1.7, carbs: 8.5, fat: 0.4, fiber: 2.4 },
+      per100g: { calories: 22, protein: 1, carbs: 4.9, fat: 0.2, fiber: 1.4 },
     },
   },
   {
@@ -15411,8 +15411,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 53, protein: 8.1, carbs: 2.7, fat: 0.9, fiber: 0.4 },
+      per100g: { calories: 103, protein: 15.8, carbs: 5.3, fat: 1.8, fiber: 0.8 },
     },
   },
   {
@@ -15442,8 +15442,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 119382, protein: 16388, carbs: 1858, fat: 2634.4, fiber: 0.9 },
+      per100g: { calories: 119, protein: 16.3, carbs: 1.9, fat: 2.6, fiber: 0 },
     },
   },
   {
@@ -15469,8 +15469,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 22972, protein: 1210.9, carbs: 1802.6, fat: 1242.1, fiber: 0.4 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -15502,8 +15502,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 154321, protein: 24859.1, carbs: 2404.5, fat: 4351.8, fiber: 0.7 },
+      per100g: { calories: 123, protein: 19.9, carbs: 1.9, fat: 3.5, fiber: 0 },
     },
   },
   {
@@ -15529,8 +15529,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 172770, protein: 23837.1, carbs: 878.9, fat: 7529.7, fiber: 8.4 },
+      per100g: { calories: 172, protein: 23.7, carbs: 0.9, fat: 7.5, fiber: 0 },
     },
   },
   {
@@ -15561,8 +15561,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 116319, protein: 7126.8, carbs: 1539.8, fat: 9096.8, fiber: 2.7 },
+      per100g: { calories: 231, protein: 14.1, carbs: 3.1, fat: 18, fiber: 0 },
     },
   },
   {
@@ -15587,8 +15587,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 277, protein: 38.8, carbs: 2, fat: 12, fiber: 0.5 },
+      per100g: { calories: 158, protein: 22.1, carbs: 1.1, fat: 6.8, fiber: 0.3 },
     },
   },
   {
@@ -15615,8 +15615,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 289049, protein: 54268.9, carbs: 47, fat: 6304.1, fiber: 9.1 },
+      per100g: { calories: 165, protein: 31, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -15639,8 +15639,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 174, protein: 31.4, carbs: 1.9, fat: 3.7, fiber: 0.7 },
+      per100g: { calories: 128, protein: 23, carbs: 1.4, fat: 2.7, fiber: 0.5 },
     },
   },
   {
@@ -15665,8 +15665,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 82608, protein: 15510.1, carbs: 15.3, fat: 1801.4, fiber: 4.3 },
+      per100g: { calories: 164, protein: 30.9, carbs: 0, fat: 3.6, fiber: 0 },
     },
   },
   {
@@ -15700,8 +15700,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 44344, protein: 1239, carbs: 2460.8, fat: 1251.3, fiber: 1.6 },
+      per100g: { calories: 71, protein: 2, carbs: 3.9, fat: 2, fiber: 0 },
     },
   },
   {
@@ -15727,8 +15727,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 22977, protein: 1211.1, carbs: 1804.7, fat: 1241.9, fiber: 1.2 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
   {
@@ -15756,8 +15756,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 130, protein: 13.3, carbs: 4.3, fat: 6.8, fiber: 1 },
+      per100g: { calories: 112, protein: 11.5, carbs: 3.7, fat: 5.9, fiber: 0.9 },
     },
   },
   {
@@ -15789,8 +15789,8 @@ const RECIPES: RecipeData[] = [
     ],
     nutrition: {
       totalWeightGrams: 0,
-      perServing: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
-      per100g: { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 },
+      perServing: { calories: 30560, protein: 1608.8, carbs: 2403.5, fat: 1651, fiber: 0.6 },
+      per100g: { calories: 61, protein: 3.2, carbs: 4.8, fat: 3.3, fiber: 0 },
     },
   },
     {
